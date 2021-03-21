@@ -1,0 +1,24 @@
+@import "abstracts/animations";
+@import "abstracts/mixin";
+@import "abstracts/variables";
+
+@import "components/bg-video";
+@import "components/btn-main";
+@import "components/btn-secondary";
+@import "components/heading";
+@import "components/message-options";
+@import "components/slider";
+@import "components/subheading";
+@import "components/svg";
+
+@import "base/base";
+@import "base/utilities";
+@import "base/typography";
+
+@import "layout/benefits";
+@import "layout/contact";
+@import "layout/evaluations";
+@import "layout/footer";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/whatsapp-call";

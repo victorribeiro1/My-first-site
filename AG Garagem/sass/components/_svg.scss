@@ -1,0 +1,49 @@
+.icon {
+    width: 5rem;
+    height: 5rem;
+    display: inline-block;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: rgb(172, 172, 172);
+    
+    &-dollar-sign {
+        fill: $fill-dollar-sign;
+    }
+    
+    &-shield {
+        fill: $fill-shield;
+    }
+
+    &-snowflake-o {
+        fill: $fill-snowflake-o;
+    }
+
+    &-bug {
+        fill: $fill-bug;
+    }
+
+    &-heart {
+        fill: $fill-heart;
+    }
+    
+    &-whatsapp {
+
+        fill: $fill-whatsapp;
+    }
+
+    &-facebook {
+        fill: $fill-facebook;
+    }
+
+    &-youtube {
+        fill: $fill-youtube;
+    }
+
+    &-instagram {
+        fill: $fill-instagram;
+    }
+
+    &-emal {
+        fill: $fill-email;
+    }
+}

@@ -1,0 +1,31 @@
+.contact-section {
+    background: $background-color-contact-section;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: $height-section;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    &__text-box {
+        text-align: center;
+        position: absolute;
+        top: 8%;
+        left: 50%;
+        transform: translate(-50%, -0%);
+
+        h2 {
+            font-size: 5rem;
+            text-transform: capitalize;
+        }
+        
+        p {
+            font-size: 3rem;
+        }
+
+    }
+}
