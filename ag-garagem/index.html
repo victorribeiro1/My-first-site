@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/logo-small.png"> <!-- Ajustar logo -->
 
-        <title>Sugestões</title>
+        <title>AG Garagem</title>
     </head>
     <body>
         <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -93,7 +93,7 @@
                 <nav class="navigation__nav">
                     <ul class="navigation__list">
                         <li class="navigation__item">
-                            <a href="" class="navigation__link">
+                            <a href="#contact" class="navigation__link">
                                 <span class="navigation__number u-margin-right-small">
                                     01
                                 </span>
@@ -101,7 +101,7 @@
                             </a>
                         </li>
                         <li class="navigation__item">
-                            <a href="" class="navigation__link">
+                            <a href="#about" class="navigation__link">
                                 <span class="navigation__number u-margin-right-small">
                                     02
                                 </span>
@@ -109,7 +109,7 @@
                             </a>
                         </li>
                         <li class="navigation__item">
-                            <a href="" class="navigation__link">
+                            <a href="#benefits" class="navigation__link">
                                 <span class="navigation__number u-margin-right-small">
                                     03
                                 </span>
@@ -117,7 +117,7 @@
                             </a>
                         </li>
                         <li class="navigation__item">
-                            <a href="" class="navigation__link">
+                            <a href="#evaluations" class="navigation__link">
                                 <span class="navigation__number u-margin-right-small">
                                     04
                                 </span>
@@ -128,10 +128,10 @@
                 </nav>
             </div> <!-- end of the navigation -->
 
-            <header class="header header--video">
+            <header class="header header--video" id="header">
                 <div class="bg-video">
                     <video class="bg-video__content" autoplay muted loop>
-                        <source src="videos/checking-car.mp4" type="video/mp4">
+                        <source src="videos/original.mp4" type="video/mp4">
                         <source src="videos/video.webm" type="video/webm">
                             Your browser don't support the video :(
                     </video>
@@ -147,7 +147,7 @@
                             <span class="heading-primary--sub__content">Linha pesada e veículos agrículas</span>
                         </span>
                     </h1>
-                    <a href="#" class="btn btn--main-color btn--main u-margin-top-medium">Fazer Contato</a>
+                    <a href="#contact" class="btn btn--main-color btn--main u-margin-top-medium">Fazer Contato</a>
                 </div>
                 <div class="header__scroll-down-indicative-box--2">
                     <div class="header__scroll-down-indicative--2"></div>
@@ -164,22 +164,41 @@
 
 
 
-            <section class="about-section">
-                <div class="about-section__service-focus">
-                    <div class="about-section__text-box">
-                        <h2 class="about-section__subheading">Conheça nosso Trabalho</h2>
-                        <h3 class="about-section__tertiary-header">Foco em:</h3>
+            <section class="about-section" id="about">
+                <div class="about-section__text-box">
+                    <h2 class="about-section__subheading">Conheça nosso Trabalho</h2>
+                </div>
+
+                <div class="about-section__content-container">
+                    <div class="about-section__information-box">
+                        <div class="about-section__information">
+                            <h4 class="about-section__information-heading">Tipos de serviços</h4>
+                            <div class="about-section__information-text-box">
+                                <p class="about-section__information-text">
+                                    Realização de manutenção preventivas e corretivas em sistemas de ar condicionado e climatização de baús
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-section__information">
+                            <h4 class="about-section__information-heading">Como atendemos</h4>
+                            <div class="about-section__information-text-box">
+                                <p class="about-section__information-text">
+                                    Realizamos atendimento no local com profissionais treinados, uniformizados e com unidade móvel totalmente equipada
+                                </p>
+                            </div>
+                        </div>
                     </div>
-    
-                    <div class="about-section__photos-box">
-                        <div class="about-section__photo-box about-section__photo-box--first">
-                            <div class="about-section__photo-description">Linha Pesada</div>
-                        </div>
-                        <div class="about-section__photo-box about-section__photo-box--second">
-                            <div class="about-section__photo-description">Linha Agrícola</div>
-                        </div>
-                        <div class="about-section__photo-box about-section__photo-box--third">
-                            <div class="about-section__photo-description about-section__photo-description--refrigeration-system">Sistema de Refrigeração</div>
+                    <div class="about-section__service-focus">
+                        <div class="about-section__photos-box">
+                            <div class="about-section__photo-box about-section__photo-box--first">
+                                <div class="about-section__photo-description">Linha Pesada</div>
+                            </div>
+                            <div class="about-section__photo-box about-section__photo-box--second">
+                                <div class="about-section__photo-description">Linha Agrícola</div>
+                            </div>
+                            <div class="about-section__photo-box about-section__photo-box--third">
+                                <div class="about-section__photo-description about-section__photo-description--refrigeration-system">Sistema de Refrigeração</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -198,7 +217,7 @@
 
 
 
-            <section class="benefits-section">
+            <section class="benefits-section" id="benefits">
                 <h2 class="subheading subheading--benefits-section"> 
                     Seus 
                     <span>
@@ -269,11 +288,14 @@
 
 
 
-            <section class="evaluations-section">
+            <section class="evaluations-section" id="evaluations">
                 <div class="evaluations-section__text-box">
                     <h2>Avaliações</h2>
-                    <p>Veja o que andam falando de nós</p>
+                    <h3>Veja o que andam falando de nós</h3>
                 </div>
+                
+                <div class="evaluations-section__shadow"></div>
+
                 <div class="slider">
                     <div class="slider__slides">
                         <input class="slider__input" type="radio" name="radio-btn" id="radio1">
@@ -284,7 +306,7 @@
                         <div class="slider__slide slider__slide--first">
                             <div class="slider__content-box">
                                 <div class="slider__evaluator-box">
-                                    <div class="slider__evaluator-name">Tatiane Ribeiro</div>
+                                    <div class="slider__evaluator-name">WeCare Auto</div>
                                     <div class="slider__evaluator-photo slider__evaluator-photo--tatiane"></div>
                                 </div>
                                 <div class="slider__evaluator-evaluation-box">
@@ -297,7 +319,7 @@
                         <div class="slider__slide">
                             <div class="slider__content-box">
                                 <div class="slider__evaluator-box">
-                                    <div class="slider__evaluator-name">Washington Luis</div>
+                                    <div class="slider__evaluator-name">Solística</div>
                                     <div class="slider__evaluator-photo slider__evaluator-photo--washington"></div>
                                 </div>
                                 <div class="slider__evaluator-evaluation-box">
@@ -311,7 +333,7 @@
                         <div class="slider__slide">
                             <div class="slider__content-box">
                                 <div class="slider__evaluator-box">
-                                    <div class="slider__evaluator-name">Tatiane Ribeiro Silva</div>
+                                    <div class="slider__evaluator-name">Top Lyne</div>
                                     <div class="slider__evaluator-photo slider__evaluator-photo--abdala"></div>
                                 </div>
                                 <div class="slider__evaluator-evaluation-box">
@@ -338,32 +360,32 @@
             </section> <!-- end of the evaluations -->
 
 
-            <section class="companies-section">
+            <section class="companies-section" id="companies">
                 <div class="companies-section__text-box">
                     <h2 class="companies-section__subheading">Empresas que confiam em nosso trabalho</h2>
                 </div>
                 <div class="companies-section__companies-box">
-                    <a href="">
+                    <a href="https://www.linkedin.com/company/inhauslogistica" target="_blank">
                        <img src="/img/In Haus.png" id="inHaus" alt="" class="companies-section__companie companies-section__companie--in-haus">
                     </a>
-                       <a href="">
+                       <a href="http://toplyneesata.com/" target="_blank">
                        <img src="/img/Top Lyne.png" id="topLyne" alt="" class="companies-section__companie companies-section__companie--top-lyne">
                     </a>
-                       <a href="">
+                       <a href="https://solistica.com/pt-br" target="_blank">
                        <img src="/img/Solistica.png" id="solistica" alt="" class="companies-section__companie companies-section__companie--solistica">
                     </a>
-                    <a href="">
+                    <a href="https://www.wecareauto.com.br/" target="_blank">
                        <img src="/img/wecare-auto.png" id="wecareAuto" alt="" class="companies-section__companie companies-section__companie--wecare-auto">
                     </a>
                 </div>
             </section> <!-- end of the companies section -->
 
 
-            <section class="contact-section">
+            <section class="contact-section" id="contact">
                 <div class="contact-section__message-box">
                     <div class="contact-section__text-box">
                         <h2>Contato</h2>
-                        <p>Estamos esperando sua mensagem ;)</p>
+                        <h3>Estamos esperando sua mensagem ;)</h3>
                     </div>
 
                     <div class="message-options-box">
@@ -380,7 +402,7 @@
                                 </p>
                             </div>
 
-                            <a href="https://www.messenger.com/t/100109504772290" class="message-option__btn message-option__btn--facebook">
+                            <a href="https://www.facebook.com/garagemagar" class="message-option__btn message-option__btn--facebook">
                                 Mandar mensagem
                             </a>      
                         </div>
@@ -416,7 +438,7 @@
                                 </p>
                             </div>
         
-                            <a href="https://api.whatsapp.com/send?phone=5511991226633" class="message-option__btn message-option__btn--whatsapp">
+                            <a href="https://api.whatsapp.com/send?phone=5511953065563" class="message-option__btn message-option__btn--whatsapp">
                                 Mandar mensagem
                             </a>
                         </div>
@@ -431,7 +453,7 @@
 
 
 
-            <section class="history-section">
+            <section class="history-section" id="history">
                 <div class="history-section__text-box">
                     <h2 class="history-section__subheading">Sobre nós</h2>
                     <h3 class="history-section__tertiary-header">Conheça nossa história</h3>
@@ -443,27 +465,27 @@
                             <h4 class="history-section__topic-heading">Quem somos</h4>
                             <div class="history-section__topic-information-box">
                                 <p class="history-section__topic-information">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quasi veritatis eum beatae? Debitis quis quidem ab repellat ea iste ipsam eligendi ex, excepturi porro modi dolore atque ullam distinctio!
+                                    Somos uma empresa especializada há mais de 10 anos no seguimento automotivo epecializado em manutenções de sistemas de ar condicionado e refrigeração de baús. 
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="history-section__topic-box history-section__topic-box--right">
                         <div class="history-section__topic history-section__topic--right">
-                            <h4 class="history-section__topic-heading">Se sabemos o que estamos fazendo?</h4>
+                            <h4 class="history-section__topic-heading">O que fazemos</h4>
                             <div class="history-section__topic-information-box">
                                 <p class="history-section__topic-information">
-                                    Já estamos no mercado a mais de 10 anos... Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum ea, laudantium consectetur veniam saepe labore iure aliquam quod eligendi accusantium! 
+                                     Ajudamos empresas do seguimento de transporte de cargas e também no seguimento agrícula a manterem, em perfeitas condições de uso, os sistemas de climatização de cabines automotivas e de baús refrigerados.
                                 </p>
                             </div>
                         </div>
                     </div>
                     <div class="history-section__topic-box history-section__topic-box--left">
                         <div class="history-section__topic history-section__topic--left">
-                            <h4 class="history-section__topic-heading">Outro Tópico</h4>
+                            <h4 class="history-section__topic-heading">como fazemos</h4>
                             <div class="history-section__topic-information-box">
                                 <p class="history-section__topic-information">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quo nobis repellendus molestias alias laudantium numquam vero! Nostrum, earum vel?
+                                    Através de análise técnica, identificamos a real necessidade para manutenção corretiva ou preventiva indo até o local levando comodidade, agilidade e segurança nos serviços realizados.
                                 </p>
                             </div>
                         </div>
@@ -471,7 +493,7 @@
                 </div>
 
                 <div class="history-section__wave-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f6feff" fill-opacity="1" d="M0,224L80,186.7C160,149,320,75,480,74.7C640,75,800,149,960,170.7C1120,192,1280,160,1360,144L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>    
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#CEDFEA" fill-opacity="1" d="M0,224L80,186.7C160,149,320,75,480,74.7C640,75,800,149,960,170.7C1120,192,1280,160,1360,144L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>    
                 </div>
             </section> <!-- end of the history section -->
 
@@ -488,16 +510,16 @@
                             <h3 class="footer__information-heading">Sobre nós</h3>
                         </div>
                         <div class="footer__information-options-box">
-                            <a class="footer__information-option" href="#">
+                            <a class="footer__information-option" href="#benefits">
                                 Benefícios
                             </a>
-                            <a class="footer__information-option" href="#">
+                            <a class="footer__information-option" href="#about">
                                 Quem somos
                             </a>
-                            <a class="footer__information-option" href="#">
+                            <a class="footer__information-option" href="#evaluations">
                                 Avaliações
                             </a>
-                            <a class="footer__information-option" href="#">
+                            <a class="footer__information-option" href="#history">
                                 O que fazemos
                             </a>
                         </div>
@@ -507,11 +529,11 @@
                             <h3 class="footer__information-heading">Legal</h3>
                         </div>
                         <div class="footer__information-options-box">
-                            <a class="footer__information-option" href="#">
-                                Política de privacidade
+                            <a class="footer__information-option" href="https://arcondicionado.garagemag.com.br/termo-uso" target="_blank">
+                                Termos de uso
                             </a>
-                            <a class="footer__information-option" href="#">
-                                Política de anúncios
+                            <a class="footer__information-option" href="https://arcondicionado.garagemag.com.br/politica-privacidade" target="_blank">
+                                Política de privacidade
                             </a>
                         </div>
                     </div>
@@ -520,30 +542,30 @@
                             <h3 class="footer__information-heading">Contato</h3>
                         </div>
                         <div class="footer__information-options-box">
-                            <a class="footer__information-option" href="#">
-                                Clique aqui
+                            <a class="footer__information-option" href="#contact">
+                                Fazer contato
                             </a>
-                            <p class="footer__information-option footer__information-option--none-animate" href="#">
+                            <p class="footer__information-option footer__information-option--none-animate">
                                 email@gmail.com
                             </p>
-                            <p class="footer__information-option footer__information-option--none-animate" href="#">
-                                tel: (xx) yy zzzzz-zzzz
+                            <p class="footer__information-option footer__information-option--none-animate">
+                                tel: +55 11 95306-5563
                             </p>
                         </div>
                     </div>
                     <div class="footer__information-box footer__information-box--social-medias">    
                         <div class="footer__information-options-box">
-                            <a class="footer__information-option footer__information-option--none-animate" id="a" href="#">
+                            <a class="footer__information-option footer__information-option--none-animate" href="https://www.facebook.com/garagemagar">
                                 <svg class="icon icon-facebook footer__svg footer__svg">
                                     <use xlink:href="#icon-facebook"></use>
                                 </svg>
                             </a>
-                            <a class="footer__information-option footer__information-option--none-animate" href="#">
+                            <a class="footer__information-option footer__information-option--none-animate" href="https://www.youtube.com/channel/UCjq_mQn8IM0g1jdw391kCKg">
                                 <svg class="icon icon-youtube footer__svg footer__svg">
                                     <use xlink:href="#icon-youtube"></use>
                                 </svg>
                             </a>
-                            <a class="footer__information-option footer__information-option--none-animate" href="#">
+                            <a class="footer__information-option footer__information-option--none-animate" href="https://www.instagram.com/aggaragemsp/">
                                 <svg class="icon icon-instagram footer__svg footer__svg">
                                     <use xlink:href="#icon-instagram"></use>
                                 </svg>
@@ -568,7 +590,7 @@
                 </div>
             </footer> <!-- end of the footer -->
 
-            <a class="whatsapp-call" id="whatsapp-call" href="https://api.whatsapp.com/send?phone=5511991226633">
+            <a class="whatsapp-call" id="whatsapp-call" href="https://api.whatsapp.com/send?phone=5511953065563">
                 <svg class="icon icon-whatsapp benefits-section__svg">
                     <use xlink:href="#icon-whatsapp"></use>
                 </svg>
