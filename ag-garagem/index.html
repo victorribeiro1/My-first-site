@@ -82,14 +82,14 @@
             </defs>
         </svg>
         <div class="container">
-            <div class="navigation">
+            <div class="navigation" id="navigation">
                 <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
 
                 <label for="nav-toggle" class="navigation__button">
                     <span class="navigation__icon"></span>
                 </label>
 
-                <div class="navigation__background">&nbsp;</div>
+                <div class="navigation__background" id="navigationBackground">&nbsp;</div>
                 <nav class="navigation__nav">
                     <ul class="navigation__list">
                         <li class="navigation__item">
@@ -144,7 +144,7 @@
                         <span class="heading-primary heading-primary--main">AG Garagem</span>
                         <span class="heading-primary heading-primary--sub">
                             <span class="heading-primary--sub__content">Ar e sistema de refrigeração</span>
-                            <span class="heading-primary--sub__content">Linha pesada e veículos agrículas</span>
+                            <span class="heading-primary--sub__content">Linha pesada e maquinário de construção</span>
                         </span>
                     </h1>
                     <a href="#contact" class="btn btn--main-color btn--main u-margin-top-medium">Fazer Contato</a>
@@ -194,10 +194,10 @@
                                 <div class="about-section__photo-description">Linha Pesada</div>
                             </div>
                             <div class="about-section__photo-box about-section__photo-box--second">
-                                <div class="about-section__photo-description">Linha Agrícola</div>
+                                <div class="about-section__photo-description about-section__photo-description--construction">Maquinário de Construção</div>
                             </div>
                             <div class="about-section__photo-box about-section__photo-box--third">
-                                <div class="about-section__photo-description about-section__photo-description--refrigeration-system">Sistema de Refrigeração</div>
+                                <div class="about-section__photo-description about-section__photo-description--refrigeration-system">Refrigeração de Baú</div>
                             </div>
                         </div>
                     </div>
@@ -298,9 +298,9 @@
 
                 <div class="slider">
                     <div class="slider__slides">
-                        <input class="slider__input" type="radio" name="radio-btn" id="radio1">
-                        <input class="slider__input" type="radio" name="radio-btn" id="radio2">
-                        <input class="slider__input" type="radio" name="radio-btn" id="radio3">
+                        <input class="slider__input" type="radio" name="radio-btn" id="radio1" />
+                        <input class="slider__input" type="radio" name="radio-btn" id="radio2" />
+                        <input class="slider__input" type="radio" name="radio-btn" id="radio3" />
 
                         
                         <div class="slider__slide slider__slide--first">
@@ -319,7 +319,7 @@
                         <div class="slider__slide">
                             <div class="slider__content-box">
                                 <div class="slider__evaluator-box">
-                                    <div class="slider__evaluator-name">Solística</div>
+                                    <div class="slider__evaluator-name">Solística <br> Empresa de logística</div>
                                     <div class="slider__evaluator-photo slider__evaluator-photo--washington"></div>
                                 </div>
                                 <div class="slider__evaluator-evaluation-box">
@@ -333,7 +333,7 @@
                         <div class="slider__slide">
                             <div class="slider__content-box">
                                 <div class="slider__evaluator-box">
-                                    <div class="slider__evaluator-name">Top Lyne</div>
+                                    <div class="slider__evaluator-name"></div>
                                     <div class="slider__evaluator-photo slider__evaluator-photo--abdala"></div>
                                 </div>
                                 <div class="slider__evaluator-evaluation-box">
@@ -344,20 +344,20 @@
                             </div>
                         </div>
 
-                        <div class="slider__navigation-auto">
-                            <div class="slider__auto-btn slider__auto-btn--1"></div>
+                        <div class="slider__navigation-auto" id="navigation-auto">
+                            <div class="slider__auto-btn slider__auto-btn--1" id="btn1"></div>
                             <div class="slider__auto-btn slider__auto-btn--2"></div>
                             <div class="slider__auto-btn slider__auto-btn--3"></div>
                         </div>
                     </div>
 
                     <div class="slider__navigation-manual">
-                        <label for="radio1" class="slider__manual-btn slider__manual-btn--1"></label>
-                        <label for="radio2" class="slider__manual-btn slider__manual-btn--2"></label>
-                        <label for="radio3" class="slider__manual-btn slider__manual-btn--3"></label>
+                        <label for="radio1" class="slider__manual-btn slider__manual-btn--1" id="btn1"></label>
+                        <label for="radio2" class="slider__manual-btn slider__manual-btn--2" id="btn2"></label>
+                        <label for="radio3" class="slider__manual-btn slider__manual-btn--3" id="btn3"></label>
                     </div>
                 </div>
-            </section> <!-- end of the evaluations -->
+            </section> <!-- end of the evaluations section -->
 
 
             <section class="companies-section" id="companies">
@@ -420,7 +420,9 @@
                                 </p>
                             </div>
 
-                            <a href="" class="message-option__btn message-option__btn--email">
+                            <!-- mailto: marcelo@garagemag.com.br -->
+
+                            <a href="https://mail.google.com/mail/u/1/#inbox?compose=DmwnWsmBHMlqtLwpfXxzPQcKjNqRpvMcTwSsMPqVzCMGmgbSvhPPVtZnLDsNklcKKlHSFbLTDxcl" class="message-option__btn message-option__btn--email">
                                 Mandar mensagem
                             </a>
                         </div>
@@ -475,7 +477,7 @@
                             <h4 class="history-section__topic-heading">O que fazemos</h4>
                             <div class="history-section__topic-information-box">
                                 <p class="history-section__topic-information">
-                                     Ajudamos empresas do seguimento de transporte de cargas e também no seguimento agrícula a manterem, em perfeitas condições de uso, os sistemas de climatização de cabines automotivas e de baús refrigerados.
+                                     Ajudamos empresas do seguimento de transporte de cargas e também no seguimento construtor a manterem, em perfeitas condições de uso, os sistemas de climatização de cabines automotivas e de baús refrigerados.
                                 </p>
                             </div>
                         </div>
@@ -493,7 +495,7 @@
                 </div>
 
                 <div class="history-section__wave-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#CEDFEA" fill-opacity="1" d="M0,224L80,186.7C160,149,320,75,480,74.7C640,75,800,149,960,170.7C1120,192,1280,160,1360,144L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>    
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#CEDFEA" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,245.3C480,245,600,203,720,181.3C840,160,960,160,1080,181.3C1200,203,1320,245,1380,266.7L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
                 </div>
             </section> <!-- end of the history section -->
 
@@ -546,7 +548,7 @@
                                 Fazer contato
                             </a>
                             <p class="footer__information-option footer__information-option--none-animate">
-                                email@gmail.com
+                                marcelo@garagemag.com.br
                             </p>
                             <p class="footer__information-option footer__information-option--none-animate">
                                 tel: +55 11 95306-5563
@@ -598,6 +600,7 @@
         </div>
         <script src="js/companies-animation.js"></script>
         <script src="js/magic-scroll.js"></script>
+        <script src="js/menu-fix.js"></script>
         <script src="js/removing-and-adding-things.js"></script>
         <script src="js/slider-auto-change.js"></script>
         <script src="js/whatsapp-call.js"></script>
