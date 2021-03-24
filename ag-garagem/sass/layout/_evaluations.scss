@@ -1,5 +1,6 @@
 .evaluations-section {
-    min-height: $height-section;
+    min-height: $height-evaluations-section;
+    height: 100vh;
     background: $background-color-evaluations-section;
 
     position: relative;
@@ -28,16 +29,18 @@
 
     &__shadow {
         height: 35rem;
-        width: 65rem;
+        width: 70rem;
+
+        border-top-right-radius: 35px;
+        // border-bottom-left-radius: 35px;
 
         position: absolute;
 
-        right: 26.7rem;
-        bottom: 9.6rem;
+        right: 24rem;
+        bottom: 5rem;
 
-        opacity: .6;
         filter: blur(9px);
 
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.157);
     }
 }

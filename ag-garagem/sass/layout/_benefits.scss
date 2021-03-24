@@ -1,7 +1,8 @@
 .benefits-section {
-    position: relative;
-    height: $height-section;
+    min-height: $height-benefits-section;
     background: $background-color-benefits-section;
+    
+    position: relative;
 
     display: flex;
     justify-content: center;

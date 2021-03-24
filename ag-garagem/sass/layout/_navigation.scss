@@ -23,7 +23,8 @@
         }
     }
     
-    &__background {
+    &__background,
+    &__background.hide {
         height: 6rem;
         width: 6rem;
         border-radius: 50%;
@@ -32,12 +33,13 @@
         right: 6.5rem;
         background: radial-gradient($color-secondary 40%, $color-cold);
         z-index: 5000;
+
         transition: transform .8s cubic-bezier(0.85, 0, 0.15, 1);
-        
-        // transform: scale(80)
+        transform: scale(0) !important;
     }
     
-    &__nav {
+    &__nav,
+    &.hide ~ &__nav {
         height: 68rem;
         position: fixed;
         top: 0;
@@ -64,11 +66,11 @@
         &:link,
         &:visited {
             display: inline-block;
-            font-size: 3rem;
-            font-weight: 300;
-            color: white;
+            font-size: 4rem;
+            font-weight: 100;
+            color: $color-tertiary;
             text-transform: uppercase;
-            padding: 1rem 2rem;
+            padding: 1.5rem 3rem;
             text-decoration: none;
             background: linear-gradient(120deg, transparent 50%, white 50%);
             background-size: 225%;
@@ -88,11 +90,13 @@
         }
     }
 
-    &__checkbox:checked~&__background {
-        transform: scale(60);
+    &__checkbox:checked~&__background,
+    .bg-show {
+        transform: scale(60) !important;
     }
 
-    &__checkbox:checked~&__nav {
+    &__checkbox:checked~&__nav,
+    &.show ~ &__nav {
         left: 0;
         opacity: 1;
         width: 100%;
@@ -143,11 +147,13 @@
         top: 1rem;
     }
 
-    &__checkbox:checked ~ &__button {
+    &__checkbox:checked ~ &__button,
+    &.show ~ &__button {
         background: radial-gradient(black, $color-tertiary 70%);
     }
 
-    &__checkbox:checked~&__button &__icon {
+    &__checkbox:checked~&__button &__icon,
+    &.show ~ &__button &__icon {
         background-color: transparent;
     }
 

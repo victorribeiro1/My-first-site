@@ -1,5 +1,5 @@
 .history-section {
-    // height: 110rem;
+    // min-height: 110rem;
     background-color: #fff;
 
     position: relative;
@@ -39,23 +39,15 @@
     
     &__topic-box {
         // background-color: red;
-        margin-bottom: 5rem;
+        margin-bottom: 0rem;
         
         position: relative;
         
         display: flex;
         align-items: center;
         justify-content: center;
-        
-        // &--left {
-            //     justify-content: flex-start;
-            // }
-            
-            // &--right {
-                //     justify-content: flex-end;
-                
-                // }
-            }
+
+    }
             
     &__topic {
         // background-color: blue;
@@ -81,7 +73,7 @@
     }
     
     &__wave-box {
-        margin-bottom: -2rem
+        margin-bottom: -1rem
     }
     
     

@@ -1,6 +1,6 @@
 .slider {
     background-color: white;
-    box-shadow: inset 3px 3px 20px #00000025;
+    box-shadow: inset 0 0 10px 2px #dddddd;
     border-top-right-radius: 35px;
     border-bottom-left-radius: 35px;
     overflow: hidden;
@@ -115,9 +115,7 @@
     &__navigation-auto {
         position: absolute;
         width: 10rem;
-        left: 10rem;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 35rem;
         bottom: 2.5rem;
 
         display: flex;
@@ -130,6 +128,8 @@
         width: 1.4rem;
         border-radius: 50%;
         border: 2px solid lightblue;
+
+        transition: all .5s;
 
         // &--1 {
             
@@ -184,14 +184,14 @@
     margin-left: -40%
 }
 
-#radio1:checked ~ .slider__navigation-auto .slider__auto-btn--1{
-    background-color: #40D3DC;
-}
+#radio1:checked ~ .slider__navigation-auto .slider__auto-btn--1 {
+    background-color: lightblue !important;
+} 
 
-#radio2:checked ~ .slider__navigation-auto .slider__auto-btn--2{
-    background-color: #40D3DC;
-}
+#radio2:checked ~ .slider__navigation-auto .slider__auto-btn--2 {
+    background-color: lightblue;
+} 
 
-#radio3:checked ~ .slider__navigation-auto .slider__auto-btn--3{
-    background-color: #40D3DC;
-}
+#radio3:checked ~ .slider__navigation-auto .slider__auto-btn--3 {
+    background-color: lightblue;
+} 

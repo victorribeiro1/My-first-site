@@ -1,9 +1,11 @@
 .contact-section {
+    min-height: $height-contact-section;
+    height: 100vh;
     background: $background-color-contact-section;
+
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: $height-section;
 
     display: flex;
     justify-content: center;

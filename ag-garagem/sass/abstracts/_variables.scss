@@ -1,5 +1,4 @@
 // COLORS
-
 $color-primary: #85BFE6;
 $color-secondary: #CEDFEA;
 $color-tertiary: #1F233F;
@@ -7,15 +6,16 @@ $color-tertiary: #1F233F;
 $color-cold: rgb(102, 230, 208);
 
 $color-flowing-text: #8189A9;
-
-$color-btn: $color-primary;
 $color-text-light: rgb(238, 238, 238);
 
+$color-btn: $color-primary;
+
 // LINEAR-GRADIENT
-$linear-gradient-dark-1: linear-gradient(
+$linear-gradient-dark-1:linear-gradient(
                             145deg, 
                             rgba(0, 0, 0, 0.692) 25%,
-                           rgba(60,60,71,1) 75%);
+                            rgba(60,60,71,1) 75%
+                        );
 
 // BACKGROUND-COLOR
 $background-color-body: $color-secondary;
@@ -32,8 +32,14 @@ $background-color-message-option: white;
 $background-color-close-menu: rgb(168, 2, 2);
 
 // HEIGHT
-$height-header: 73rem;
-$height-section: 75rem;
+$height-header: 64.5rem;
+$height-section: 68rem;
+$height-about-section: 100rem;
+$height-benefits-section: 68rem;
+$height-companies-section: 75rem;
+$height-contact-section: 68rem;
+$height-evaluations-section: 70rem;
+$height-history-section: 75rem;
 $height-footer: 60rem;
 
 // FILL

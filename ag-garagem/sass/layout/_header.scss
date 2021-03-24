@@ -1,5 +1,6 @@
 .header {
-    height: $height-header;
+    min-height: $height-header;
+    height: 95vh;
     position: relative;
 
     // &--img {
@@ -11,9 +12,10 @@
 
     &--video {
         background: linear-gradient(
-        145deg, 
-        rgba(0, 0, 0, 0.4) 15%,
-        rgba(60,60,71,0.4) 75%);
+            145deg, 
+            rgba(0, 0, 0, 0.4) 15%,
+            rgba(60,60,71,0.4) 75%
+        );
         background-size: cover;
         background-position: center;
     }
