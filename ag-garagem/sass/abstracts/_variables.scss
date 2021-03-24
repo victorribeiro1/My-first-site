@@ -1,25 +1,35 @@
 // COLORS
-$color-primary: #e63e3e;
-$color-secondary: #e64e4e;
-$color-tertiary: #319dcf;
+
+$color-primary: #85BFE6;
+$color-secondary: #CEDFEA;
+$color-tertiary: #1F233F;
+
 $color-cold: rgb(102, 230, 208);
 
 $color-flowing-text: #8189A9;
 
-$btn-color: #319dcf;
+$color-btn: $color-primary;
 $color-text-light: rgb(238, 238, 238);
 
 // LINEAR-GRADIENT
 $linear-gradient-dark-1: linear-gradient(
                             145deg, 
                             rgba(0, 0, 0, 0.692) 25%,
-                            rgba(60,60,71,1) 75%);
+                           rgba(60,60,71,1) 75%);
 
 // BACKGROUND-COLOR
-$color-1: $color-tertiary;
-$background-color-body: #272e47;
-$background-color-contact-section: rgb(255, 255, 255);
-$background-color-message-option: $background-color-contact-section;
+$background-color-body: $color-secondary;
+$background-color-about-section: $color-secondary;
+$background-color-benefits-section: $color-tertiary;
+$background-color-companies-section: #f3f3f3;
+$background-color-contact-section: $color-secondary;
+$background-color-evaluations-section: $color-secondary;
+$background-color-footer: $color-secondary;
+$background-color-history-section: $color-primary;
+
+$background-color-message-option: white;
+
+$background-color-close-menu: rgb(168, 2, 2);
 
 // HEIGHT
 $height-header: 73rem;

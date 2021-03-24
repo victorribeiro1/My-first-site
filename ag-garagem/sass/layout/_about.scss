@@ -1,16 +1,14 @@
 .about-section {
-    background-color: rgb(214, 255, 252);
-    height: 78rem;
+    background-color: $background-color-about-section;
+    height: 100rem;
 
     position: relative;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
 
     &__text-box {
-        // background-color: rgb(255, 137, 137);
-
         position: absolute;
         top: 5rem;
         left: 50%;
@@ -19,28 +17,62 @@
     }
     
     &__subheading {
+        color: $color-tertiary;
         font-size: 5rem;
     }
-    
-    &__tertiary-header {
-        font-size: 3rem;
-        font-weight: 100;
-        text-align: center;
+
+    &__content-container {
+        height: 84rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
+    &__information-box {
+        padding: 0 3rem 0 3rem;
+        
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    &__information {
+        width: 40%;
+    }
+    
+    &__information-heading {
+        color: $color-tertiary;
+        font-size: 3rem;
+    }
+    
+    // &__information-text-box {
+    //
+    // }
+    
+    &__information-text {
+        margin-top: .5rem;
+        font-size: 2rem;
+        text-align: left;
+    }
+    
+    &__important-information {
+        font-size: 2.5rem;
+    }
+    
     &__service-focus {
-
-}
+        height: 50rem;
+    }
 
     &__photos-box {
-        background-color: #adb6be;
-        height: 50rem;
-        margin-top: 20rem;
+        margin: 0 auto;
+        height: 100%;
+        width: 95%;
         display: flex;
     }
     
     &__photo-box {
         background-color: rgb(109, 255, 109);
+        background-repeat: no-repeat;
         height: auto;
         width: 100%;
         
@@ -48,9 +80,6 @@
         
         transition: all 1s;
 
-        background-repeat: no-repeat;
-        
-        
         
         &:hover {
 
@@ -61,7 +90,7 @@
             background: white url('/img/trucks-small-d.jpg');
             background-position: -27.5rem 0;
             background-repeat: no-repeat;
-            background-size: 168%;
+            background-size: 178%;
             clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
             
             &:hover {
@@ -73,7 +102,7 @@
             background: white url('/img/tractor-d.jpg');
             background-position: center;
             background-repeat: no-repeat;
-            background-size: 170%;
+            background-size: 178%;
             clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
 
             &:hover {
@@ -85,7 +114,7 @@
             background: white url('/img/truck-small-d.jpg');
             background-position: center;
             background-repeat: no-repeat;
-            background-size: 168%;
+            background-size: 179%;
             clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 10% 50%, 0% 0%);
 
             &:hover {
@@ -120,8 +149,5 @@
             width: 47rem;
             padding-left: 13rem;
         }
-    }
-
-    &__kind-of-service {
     }
 }

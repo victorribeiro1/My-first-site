@@ -1,6 +1,6 @@
 .evaluations-section {
     min-height: $height-section;
-    background: rgb(193, 219, 228);
+    background: $background-color-evaluations-section;
 
     position: relative;
 
@@ -11,13 +11,33 @@
         left: 50%;
         transform: translate(-50%, -0%);
 
+        z-index: 10;
+
         h2 {
+            color: $color-tertiary;
             font-size: 5rem;
             text-transform: capitalize;
         }
         
-        p {
+        h3 {
+            color: $color-tertiary;
+            font-weight: 400;
             font-size: 3rem;
         }
+    }
+
+    &__shadow {
+        height: 35rem;
+        width: 65rem;
+
+        position: absolute;
+
+        right: 26.7rem;
+        bottom: 9.6rem;
+
+        opacity: .6;
+        filter: blur(9px);
+
+        background-color: black;
     }
 }

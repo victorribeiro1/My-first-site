@@ -1,6 +1,6 @@
 .slider {
     background-color: white;
-    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.37);
+    box-shadow: inset 3px 3px 20px #00000025;
     border-top-right-radius: 35px;
     border-bottom-left-radius: 35px;
     overflow: hidden;
@@ -76,22 +76,22 @@
         overflow: hidden;
         
         &--tatiane {
-            background: url("/img/tatiane-d.jpeg");
-            background-position: 0 -2rem;
+            background: url("/img/wecare-auto.png");
+            background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }
         
         &--washington {
-            background: url("/img/washington-d.jpeg");
-            background-position: -2rem center;
+            background: url("/img/Solistica.png");
+            background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }
 
         &--abdala {
-            // background: url("/img/tatiane-d.jpeg");
-            background-position: 0 -2rem;
+            background: url("/img/Top\ Lyne.png");
+            background-position: center;
             background-size: cover;
         }
     }
@@ -131,15 +131,17 @@
         border-radius: 50%;
         border: 2px solid lightblue;
 
-        &--1 {
+        // &--1 {
             
-        }
-        &--2 {
+        // }
 
-        }
-        &--3 {
+        // &--2 {
 
-        }
+        // }
+
+        // &--3 {
+
+        // }
     }
 
     &__navigation-manual {

@@ -1,5 +1,5 @@
 .contact-section {
-    background: rgb(193, 219, 228);
+    background: $background-color-contact-section;
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -19,12 +19,15 @@
         transform: translate(-50%, -0%);
 
         h2 {
+            color: $color-tertiary;
             font-size: 5rem;
             text-transform: capitalize;
         }
         
-        p {
+        h3 {
+            color: $color-tertiary;
             font-size: 3rem;
+            font-weight: 400;
         }
 
     }

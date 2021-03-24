@@ -2,19 +2,18 @@
     height: $height-header;
     position: relative;
 
-    &--img {
-        background: $linear-gradient-dark-1,
-                    url("/img/panel-1.jpg");
-        background-size: cover;
-        background-position: center;
-                    
-    }
+    // &--img {
+    //     background: $linear-gradient-dark-1,
+    //                 url("/img/panel-1.jpg");
+    //     background-size: cover;
+    //     background-position: center;               
+    // }
 
     &--video {
         background: linear-gradient(
         145deg, 
-        rgba(0, 0, 0, 0.7) 25%,
-        rgba(60,60,71,0.7) 75%);
+        rgba(0, 0, 0, 0.4) 15%,
+        rgba(60,60,71,0.4) 75%);
         background-size: cover;
         background-position: center;
     }

@@ -6,7 +6,7 @@
     }
 
     &__button {
-        background-color: $color-1;
+        background-color: $color-tertiary;
         height: 7rem;
         width: 7rem;
         position: fixed;
@@ -42,7 +42,7 @@
         position: fixed;
         top: 0;
         left: -30rem;
-        z-index: 1500;
+        z-index: 5000;
         opacity: 0;
         width: 10%;
         transition: all 0.8s cubic-bezier(.68, -.55, .27, 1.55);
@@ -53,7 +53,6 @@
         @include absolute-centering;
         list-style: none;
         text-align: center;
-
     }
 
     &__item {
@@ -84,7 +83,7 @@
         &:hover,
         &:active {
             background-position: 100%;
-            color: $color-cold;
+            color: $color-tertiary;
             transform: translateX(1.8rem);
         }
     }
@@ -145,7 +144,7 @@
     }
 
     &__checkbox:checked ~ &__button {
-        background: $linear-gradient-dark-1;
+        background: radial-gradient(black, $color-tertiary 70%);
     }
 
     &__checkbox:checked~&__button &__icon {
@@ -154,14 +153,16 @@
 
     &__checkbox:checked~&__button &__icon::before {
         width: 3rem;
-        background-color: $color-tertiary;
-        top: 0;
+        background-color: $background-color-close-menu;
+        top: -1px;
+        left: -1px;
         transform: rotate(-135deg);
     }
     
     &__checkbox:checked~&__button &__icon::after {
-        background-color: $color-tertiary;
-        top: 0;
+        background-color: $background-color-close-menu;
+        top: -1px;
+        left: -1px;
         transform: rotate(135deg);
     }
 }

@@ -1,5 +1,5 @@
 .footer {
-    background-color: #f6feff;
+    background-color: $background-color-footer;
     height: $height-footer;
     position: relative;
 
@@ -51,12 +51,12 @@
         }
     }
     
-    &__information-heading-box {
+    // &__information-heading-box {
         
-    }
+    // }
     
     &__information-heading {
-        color: black;
+        color: $color-tertiary;
         text-align: center;
         font-weight: 600;
         font-size: 2rem;
@@ -81,7 +81,7 @@
             }
 
             display: block;
-            color: rgb(70, 70, 70);
+            color: rgb(58, 58, 58);
             font-size: 1.4rem;
             font-weight: 600;
             text-decoration: none;
@@ -94,7 +94,7 @@
                 content: "";
                 width: 100%;
                 height: 2px;
-                background-color: rgb(80, 80, 80);
+                background-color: rgb(58, 58, 58);
                 position: absolute;
                 border-radius: 999px;
                 bottom: -.15rem;
@@ -106,10 +106,10 @@
 
             &:hover {
                 color: white;
-                background-color: rgb(106, 106, 223);
+                    background-color: #a2c5f3;
 
                 &::after {
-                    background-color: rgb(164, 220, 247);
+                    background-color: white;
                     border-radius: 0;
                     transform: scaleX(1);
                 }
