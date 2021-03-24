@@ -9,6 +9,7 @@
     border-radius: 50%;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.63),
                 inset 0 1rem 2rem rgba(255, 255, 255, .2);
+    z-index: 100;
 
     svg {
         position: absolute;

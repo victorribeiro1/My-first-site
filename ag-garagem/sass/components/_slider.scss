@@ -1,5 +1,5 @@
 .slider {
-    background-color: inherit;
+    background-color: white;
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.37);
     border-top-right-radius: 35px;
     border-bottom-left-radius: 35px;
@@ -97,7 +97,7 @@
     }
 
     &__evaluator-photo {
-        background-color: rgb(255, 199, 199);
+        background-color: lightblue;
     }
 
     &__evaluator-evaluation-box {
@@ -129,7 +129,7 @@
         height: 1.4rem;
         width: 1.4rem;
         border-radius: 50%;
-        border: 2px solid rgb(255, 196, 194);
+        border: 2px solid lightblue;
 
         &--1 {
             
@@ -159,12 +159,12 @@
         height: 1.4rem;
         width: 1.4rem;
         border-radius: 50%;
-        border: 2px solid rgb(255, 196, 194);
+        border: 2px solid lightblue;
         transition: .5s;
 
         &:hover {
             cursor: pointer;
-            background-color: rgb(255, 196, 194);
+            background-color: lightblue;
         }
     }
 

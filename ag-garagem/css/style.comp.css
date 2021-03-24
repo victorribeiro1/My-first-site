@@ -225,7 +225,7 @@
         background-color: #ffcc5d; }
 
 .slider {
-  background-color: inherit;
+  background-color: white;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.37);
   border-top-right-radius: 35px;
   border-bottom-left-radius: 35px;
@@ -269,27 +269,26 @@
   .slider__evaluator-name {
     font-size: 1.8rem;
     margin-right: 1.5rem; }
-  .slider__evaluator-photo-box {
+  .slider__evaluator-photo {
     width: 11rem;
     height: 11rem;
     border-radius: 50%;
     overflow: hidden; }
-    .slider__evaluator-photo-box--tatiane {
+    .slider__evaluator-photo--tatiane {
       background: url("/img/tatiane-d.jpeg");
       background-position: 0 -2rem;
       background-size: cover;
       background-repeat: no-repeat; }
-    .slider__evaluator-photo-box--washington {
+    .slider__evaluator-photo--washington {
       background: url("/img/washington-d.jpeg");
       background-position: -2rem center;
       background-size: cover;
       background-repeat: no-repeat; }
-    .slider__evaluator-photo-box--tatiane {
-      background: url("/img/tatiane-d.jpeg");
+    .slider__evaluator-photo--abdala {
       background-position: 0 -2rem;
       background-size: cover; }
   .slider__evaluator-photo {
-    background-color: #ffc7c7; }
+    background-color: lightblue; }
   .slider__evaluator-evaluation-box {
     width: 70%;
     margin: 3rem auto 0 auto;
@@ -311,7 +310,7 @@
     height: 1.4rem;
     width: 1.4rem;
     border-radius: 50%;
-    border: 2px solid #ffc4c2; }
+    border: 2px solid lightblue; }
   .slider__navigation-manual {
     position: absolute;
     width: 10rem;
@@ -326,11 +325,11 @@
     height: 1.4rem;
     width: 1.4rem;
     border-radius: 50%;
-    border: 2px solid #ffc4c2;
+    border: 2px solid lightblue;
     transition: .5s; }
     .slider__manual-btn:hover {
       cursor: pointer;
-      background-color: #ffc4c2; }
+      background-color: lightblue; }
 
 #radio1:checked ~ .slider__slide--first {
   margin-left: 0%; }
@@ -340,6 +339,15 @@
 
 #radio3:checked ~ .slider__slide--first {
   margin-left: -40%; }
+
+#radio1:checked ~ .slider__navigation-auto .slider__auto-btn--1 {
+  background-color: #40D3DC; }
+
+#radio2:checked ~ .slider__navigation-auto .slider__auto-btn--2 {
+  background-color: #40D3DC; }
+
+#radio3:checked ~ .slider__navigation-auto .slider__auto-btn--3 {
+  background-color: #40D3DC; }
 
 .subheading {
   position: absolute;
@@ -448,6 +456,84 @@ body {
   text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.678);
   text-align: center; }
 
+.about-section {
+  background-color: #d6fffc;
+  height: 75rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .about-section__text-box {
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%); }
+  .about-section__subheading {
+    font-size: 5rem; }
+  .about-section__tertiary-header {
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: center; }
+  .about-section__service-focus {
+    position: absolute;
+    top: 80%; }
+  .about-section__photos-box {
+    background-color: #afcef8;
+    height: 50rem;
+    margin-top: 18rem;
+    display: flex; }
+  .about-section__photo-box {
+    background-color: #6dff6d;
+    height: auto;
+    width: 1250rem;
+    position: relative;
+    transition: all 1s;
+    background-repeat: no-repeat; }
+    .about-section__photo-box:hover {
+      background-size: 130%; }
+    .about-section__photo-box--first {
+      background: white url("/img/truck-medium-d.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 120%;
+      clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%); }
+    .about-section__photo-box--second {
+      background: white url("/img/tractor-d.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 120%;
+      clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0% 100%, 10% 50%, 0% 0%); }
+    .about-section__photo-box--third {
+      background: white url("/img/truck-small-d.jpg");
+      background-position: 0rem 0rem;
+      background-repeat: no-repeat;
+      background-size: 180%;
+      clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 10% 50%, 0% 0%); }
+      .about-section__photo-box--third:hover {
+        background-size: 190%; }
+  .about-section__photo-description {
+    background-color: rgba(255, 255, 255, 0.288);
+    backdrop-filter: blur(10px);
+    border-radius: 3px;
+    height: 6rem;
+    width: 30rem;
+    padding-left: 4rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+    color: black;
+    position: absolute;
+    left: 14rem;
+    bottom: 1rem;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+    .about-section__photo-description--refrigeration-system {
+      width: 47rem;
+      padding-left: 13rem; }
+  .about-section__kind-of-service {
+    background-color: red; }
+
 .benefits-section {
   position: relative;
   height: 75rem;
@@ -507,8 +593,62 @@ body {
     color: #eeeeee;
     font-size: 2.3rem; }
 
+.companies-section {
+  background-color: #f3f3f3;
+  height: 35rem;
+  border-top: 2px solid #d9f3f0;
+  border-bottom: 2px solid #d9f3f0;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.25), 0 -0.2rem 1rem rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .companies-section__text-box {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%); }
+  .companies-section__subheading {
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-weight: lighter; }
+  .companies-section__companies-box {
+    width: 100%;
+    height: 60%;
+    margin-top: 5rem;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+  .companies-section__companie {
+    height: 10rem;
+    width: 20rem;
+    position: absolute;
+    top: 0%; }
+    .companies-section__companie--in-haus {
+      height: 20rem;
+      width: 22rem;
+      margin-top: 1.2rem; }
+    .companies-section__companie--top-lyne {
+      height: 20rem;
+      width: 21rem; }
+    .companies-section__companie--solistica {
+      border-radius: 3px;
+      height: 12rem;
+      width: 13rem;
+      margin-top: 4.6rem; }
+    .companies-section__companie--wecare-auto {
+      height: 15rem;
+      width: 15rem;
+      margin-top: 3rem; }
+
 .contact-section {
-  background: white;
+  background: #c1dbe4;
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -531,7 +671,7 @@ body {
 
 .evaluations-section {
   min-height: 75rem;
-  background: white;
+  background: #c1dbe4;
   position: relative; }
   .evaluations-section__text-box {
     text-align: center;
@@ -850,7 +990,8 @@ body {
   height: 6.5rem;
   width: 6.5rem;
   border-radius: 50%;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.63), inset 0 1rem 2rem rgba(255, 255, 255, 0.2); }
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.63), inset 0 1rem 2rem rgba(255, 255, 255, 0.2);
+  z-index: 100; }
   .whatsapp-call svg {
     position: absolute;
     left: 50%;
