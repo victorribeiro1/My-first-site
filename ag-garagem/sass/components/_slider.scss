@@ -19,7 +19,6 @@
     align-items: center;
 
     &__slides {
-        // background-color: rgb(255, 255, 174);
         width: 500%;
         height: 40rem;
 
@@ -35,7 +34,7 @@
     }
 
     &__slide {
-        background: url("/img/quotation-d.png") no-repeat 2rem 2rem;
+        background: url("/img/quotation.png") no-repeat 2rem 2rem;
         background-color: rgba(255, 255, 255, 0.082);
         background-blend-mode: multiply;
         background-size: 35rem;
@@ -54,7 +53,6 @@
     }
 
     &__evaluator-box {
-        // background-color: rgb(172, 255, 172);
         margin-top: 2rem;
         margin-right: 2rem;
 
@@ -63,51 +61,63 @@
         align-items: center;
     }
 
+    &__evaluator-description {
+        color: $color-text-ease-dark-3;
+        text-align: right;
+        margin-right: 1rem;
+    }
+
     &__evaluator-name {
-        font-size: 1.8rem;
-        margin-right: 1.5rem;
+        font-weight: 500;
+        font-size: 2.5rem;
         
     }
 
+    &__evaluator-employment {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    
     &__evaluator-photo {
         width: 11rem;
         height: 11rem;
         border-radius: 50%;
         overflow: hidden;
         
-        &--tatiane {
+        &--1 {
             background: url("/img/wecare-auto.png");
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }
         
-        &--washington {
-            background: url("/img/Solistica.png");
+        
+        &--2 {
+            background: url("/img/top-lyne.png");
+            background-position: center;
+            background-size: cover;
+        }
+
+        &--3 {
+            background: url("/img/solistica.png");
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
         }
-
-        &--abdala {
-            background: url("/img/Top\ Lyne.png");
-            background-position: center;
-            background-size: cover;
-        }
     }
 
     &__evaluator-photo {
-        background-color: lightblue;
+        background-color: rgb(203, 224, 231);
     }
 
     &__evaluator-evaluation-box {
-        // background-color: rgb(255, 146, 164);
         width: 70%;
         margin: 3rem auto 0 auto;
         text-align: center;
     }
 
     &__evaluator-evaluation {
+        color: $color-text-ease-dark-3;
         font-size: 2.4rem;
         letter-spacing: 1.3px;
     }
@@ -127,21 +137,9 @@
         height: 1.4rem;
         width: 1.4rem;
         border-radius: 50%;
-        border: 2px solid lightblue;
+        border: 2px solid $color-slide-change-indicator;
 
         transition: all .5s;
-
-        // &--1 {
-            
-        // }
-
-        // &--2 {
-
-        // }
-
-        // &--3 {
-
-        // }
     }
 
     &__navigation-manual {
@@ -161,15 +159,14 @@
         height: 1.4rem;
         width: 1.4rem;
         border-radius: 50%;
-        border: 2px solid lightblue;
+        border: 2px solid $color-slide-change-indicator;
         transition: .5s;
 
         &:hover {
             cursor: pointer;
-            background-color: lightblue;
+            background-color: $color-slide-change-indicator;
         }
     }
-
 }
 
 #radio1:checked ~ .slider__slide--first {
@@ -185,13 +182,13 @@
 }
 
 #radio1:checked ~ .slider__navigation-auto .slider__auto-btn--1 {
-    background-color: lightblue !important;
+    background-color: $color-slide-change-indicator !important;
 } 
 
 #radio2:checked ~ .slider__navigation-auto .slider__auto-btn--2 {
-    background-color: lightblue;
+    background-color: $color-slide-change-indicator;
 } 
 
 #radio3:checked ~ .slider__navigation-auto .slider__auto-btn--3 {
-    background-color: lightblue;
+    background-color: $color-slide-change-indicator;
 } 

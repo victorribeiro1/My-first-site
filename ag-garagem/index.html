@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="shortcut icon" type="image/png" href="img/logo-small.png"> <!-- Ajustar logo -->
 
-        <title>AG Garagem</title>
+        <title>light-blue</title>
     </head>
     <body>
         <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -82,14 +82,14 @@
             </defs>
         </svg>
         <div class="container">
-            <div class="navigation" id="navigation">
-                <input type="checkbox" class="navigation__checkbox" id="nav-toggle" />
+            <div class="navigation">
+                <input type="checkbox" class="navigation__checkbox checkbox-js" id="nav-toggle"/>
 
                 <label for="nav-toggle" class="navigation__button">
                     <span class="navigation__icon"></span>
                 </label>
 
-                <div class="navigation__background" id="navigationBackground">&nbsp;</div>
+                <div class="navigation__background">&nbsp;</div>
                 <nav class="navigation__nav">
                     <ul class="navigation__list">
                         <li class="navigation__item">
@@ -154,357 +154,289 @@
                 </div>
             </header> <!-- end of the header -->
 
-
-
-
-
-
-
-
-
-
-
-            <section class="about-section" id="about">
-                <div class="about-section__text-box">
-                    <h2 class="about-section__subheading">Conheça nosso Trabalho</h2>
-                </div>
-
-                <div class="about-section__content-container">
-                    <div class="about-section__information-box">
-                        <div class="about-section__information">
-                            <h4 class="about-section__information-heading">Tipos de serviços</h4>
-                            <div class="about-section__information-text-box">
-                                <p class="about-section__information-text">
-                                    Realização de manutenção preventivas e corretivas em sistemas de ar condicionado e climatização de baús
-                                </p>
+            <main>
+                <section class="about-section" id="about">
+                    <header class="about-section__text-box">
+                        <h2 class="about-section__subheading subheading">Conheça nosso Trabalho</h2>
+                    </header>
+                    <div class="about-section__content-container">
+                        <div class="about-section__information-box">
+                            <div class="about-section__information">
+                                <h4 class="about-section__information-heading">Tipos de serviços</h4>
+                                <div class="about-section__information-text-box">
+                                    <p class="about-section__information-text">
+                                        Realização de manutenção preventivas e corretivas em sistemas de ar condicionado e climatização de baús
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="about-section__information">
+                                <h4 class="about-section__information-heading">Como atendemos</h4>
+                                <div class="about-section__information-text-box">
+                                    <p class="about-section__information-text">
+                                        Realizamos atendimento no local com profissionais treinados, uniformizados e com unidade móvel totalmente equipada
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="about-section__information">
-                            <h4 class="about-section__information-heading">Como atendemos</h4>
-                            <div class="about-section__information-text-box">
-                                <p class="about-section__information-text">
-                                    Realizamos atendimento no local com profissionais treinados, uniformizados e com unidade móvel totalmente equipada
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-section__service-focus">
-                        <div class="about-section__photos-box">
-                            <div class="about-section__photo-box about-section__photo-box--first">
-                                <div class="about-section__photo-description">Linha Pesada</div>
-                            </div>
-                            <div class="about-section__photo-box about-section__photo-box--second">
-                                <div class="about-section__photo-description about-section__photo-description--construction">Maquinário de Construção</div>
-                            </div>
-                            <div class="about-section__photo-box about-section__photo-box--third">
-                                <div class="about-section__photo-description about-section__photo-description--refrigeration-system">Refrigeração de Baú</div>
+                        <div class="about-section__service-focus">
+                            <div class="about-section__photos-box">
+                                <div class="about-section__photo-box about-section__photo-box--first fade">
+                                    <div class="about-section__photo-description">Linha Pesada</div>
+                                </div>
+                                <div class="about-section__photo-box about-section__photo-box--second fade">
+                                    <div class="about-section__photo-description about-section__photo-description--construction">Maquinário de Construção</div>
+                                </div>
+                                <div class="about-section__photo-box about-section__photo-box--third fade">
+                                    <div class="about-section__photo-description about-section__photo-description--refrigeration-system">Refrigeração de Baú</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-            </section> <!-- end of the about section -->
-        
-
-
-
-
-
-            
-
-
-
-
-
-
-            <section class="benefits-section" id="benefits">
-                <h2 class="subheading subheading--benefits-section"> 
-                    Seus 
-                    <span>
-                        Benefícios
-                        <span class="underline fade"></span>
-                    </span>
-                </h2>
-
-                <div class="benefits-section__benefits-box-container">
-                    <div class="benefits-section__benefits-box benefits-section__benefits-box--1">
-                        <div class="benefits-section__benefits benefits-section__benefits--1 fade">
-                            <svg class="icon icon-dollar-sign benefits-section__svg">
-                                <use xlink:href="#icon-dollar-sign"></use>
-                            </svg>
-                            <div class="benefits-section__text-box">
-                                <p class="benefits-section__text">
-                                    Economia de combustível
-                                </p>
+                </section> <!-- end of the about section -->
+                <section class="benefits-section fade" id="benefits">
+                    <header class="benefits-section__header-box">
+                        <h2 class="benefits-section__subheading subheading">Seus Benefícios</h2>
+                    </header>
+                    <div class="benefits-section__benefits-box-container">
+                        <div class="benefits-section__benefits-box benefits-section__benefits-box--1">
+                            <div class="benefits-section__benefits benefits-section__benefits--1">
+                                <svg class="icon icon-dollar-sign benefits-section__svg">
+                                    <use xlink:href="#icon-dollar-sign"></use>
+                                </svg>
+                                <div class="benefits-section__text-box">
+                                    <p class="benefits-section__text">
+                                        Economia de combustível
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="benefits-section__benefits benefits-section__benefits--2">
+                                <svg class="icon icon-shield benefits-section__svg">
+                                    <use xlink:href="#icon-shield"></use>
+                                </svg>
+                                <div class="benefits-section__text-box">
+                                    <p class="benefits-section__text">
+                                        Evitar paradas inesperadas do equipamento
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="benefits-section__benefits benefits-section__benefits--3">
+                                <svg class="icon icon-snowflake-o benefits-section__svg">
+                                    <use xlink:href="#icon-snowflake-o"></use>
+                                </svg>
+                                <div class="benefits-section__text-box">
+                                    <p class="benefits-section__text">
+                                        Garantir a entrega climatizada dos produtos
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="benefits-section__benefits benefits-section__benefits--2 fade">
-                            <svg class="icon icon-shield benefits-section__svg">
-                                <use xlink:href="#icon-shield"></use>
-                            </svg>
-                            <div class="benefits-section__text-box">
-                                <p class="benefits-section__text">
-                                    Evitar paradas inesperadas do equipamento
-                                </p>
+                        <div class="benefits-section__benefits-box benefits-section__benefits-box--2">
+                            <div class="benefits-section__benefits benefits-section__benefits--4">
+                                <svg class="icon icon-bug benefits-section__svg">
+                                    <use xlink:href="#icon-bug"></use>
+                                </svg>
+                                <div class="benefits-section__text-box">
+                                    <p class="benefits-section__text">
+                                        Mais saúde com a eliminação de fungos, bactérias e mofos
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="benefits-section__benefits benefits-section__benefits--3 fade">
-                            <svg class="icon icon-snowflake-o benefits-section__svg">
-                                <use xlink:href="#icon-snowflake-o"></use>
-                            </svg>
-                            <div class="benefits-section__text-box">
-                                <p class="benefits-section__text">
-                                    Garantir a entrega climatizada dos produtos
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="benefits-section__benefits-box benefits-section__benefits-box--2">
-                        <div class="benefits-section__benefits benefits-section__benefits--4 fade">
-                            <svg class="icon icon-bug benefits-section__svg">
-                                <use xlink:href="#icon-bug"></use>
-                            </svg>
-                            <div class="benefits-section__text-box">
-                                <p class="benefits-section__text">
-                                    Mais saúde com a eliminação de fungos, bactérias e mofos
-                                </p>
-                            </div>
-                        </div>
-                        <div class="benefits-section__benefits benefits-section__benefits--5 fade">
-                            <svg class="icon icon-heart benefits-section__svg">
-                                <use xlink:href="#icon-heart"></use>
-                            </svg>
-                            <div class="benefits-section__text-box">
-                                <p class="benefits-section__text">
-                                    Maior vida útil dos equipamentos
-                                </p>
+                            <div class="benefits-section__benefits benefits-section__benefits--5">
+                                <svg class="icon icon-heart benefits-section__svg">
+                                    <use xlink:href="#icon-heart"></use>
+                                </svg>
+                                <div class="benefits-section__text-box">
+                                    <p class="benefits-section__text">
+                                        Maior vida útil dos equipamentos
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section> <!-- end of the benefits section -->
-
-
-
-
-
-            <section class="evaluations-section" id="evaluations">
-                <div class="evaluations-section__text-box">
-                    <h2>Avaliações</h2>
-                    <h3>Veja o que andam falando de nós</h3>
-                </div>
+                </section> <!-- end of the benefits section -->
+                <section class="evaluations-section" id="evaluations">
+                    <header class="evaluations-section__text-box">
+                        <h2 class="evaluations-section__subheading subheading">Avaliações</h2>
+                        <h3 class="evaluations-section__tertiary-header tertiary-header">Veja o que andam falando de nós</h3>
+                    </header>
                 
-                <div class="evaluations-section__shadow"></div>
-
-                <div class="slider">
-                    <div class="slider__slides">
-                        <input class="slider__input" type="radio" name="radio-btn" id="radio1" />
-                        <input class="slider__input" type="radio" name="radio-btn" id="radio2" />
-                        <input class="slider__input" type="radio" name="radio-btn" id="radio3" />
-
-                        
-                        <div class="slider__slide slider__slide--first">
-                            <div class="slider__content-box">
-                                <div class="slider__evaluator-box">
-                                    <div class="slider__evaluator-name">WeCare Auto</div>
-                                    <div class="slider__evaluator-photo slider__evaluator-photo--tatiane"></div>
-                                </div>
-                                <div class="slider__evaluator-evaluation-box">
-                                    <blockquote class="slider__evaluator-evaluation">
-                                        "Resolveram o vazamento de gás e o atendimento foi feito no local onde trabalho. Muito atenciosos"
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider__slide">
-                            <div class="slider__content-box">
-                                <div class="slider__evaluator-box">
-                                    <div class="slider__evaluator-name">Solística <br> Empresa de logística</div>
-                                    <div class="slider__evaluator-photo slider__evaluator-photo--washington"></div>
-                                </div>
-                                <div class="slider__evaluator-evaluation-box">
-                                    <blockquote class="slider__evaluator-evaluation">
-                                        "A equipe que me atendeu é extremamente profissional e resolveram o meu problema e o preço foi justo".
-                                    </blockquote>
+                    <div class="evaluations-section__shadow"></div>
+                    <div class="slider">
+                        <div class="slider__slides">
+                            <input class="slider__input" type="radio" name="radio-btn" id="radio1" />
+                            <input class="slider__input" type="radio" name="radio-btn" id="radio2" />
+                            <input class="slider__input" type="radio" name="radio-btn" id="radio3" />
+                            <div class="slider__slide slider__slide--first">
+                                <div class="slider__content-box">
+                                    <div class="slider__evaluator-box">
+                                        <div class="slider__evaluator-description">
+                                            <div class="slider__evaluator-name">WeCare Auto</div>
+                                            <div class="slider__evaluator-employment">Soluções Automotivas</div>
+                                        </div>
+                                        <div class="slider__evaluator-photo slider__evaluator-photo--1"></div>
+                                    </div>
+                                    <div class="slider__evaluator-evaluation-box">
+                                        <blockquote class="slider__evaluator-evaluation">
+                                            "Muito bom atendimento. Resolvem o problema e com a vantagem de ser no local com unidade móvel"
+                                        </blockquote>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="slider__slide">
-                            <div class="slider__content-box">
-                                <div class="slider__evaluator-box">
-                                    <div class="slider__evaluator-name"></div>
-                                    <div class="slider__evaluator-photo slider__evaluator-photo--abdala"></div>
+                            <div class="slider__slide">
+                                <div class="slider__content-box">
+                                    <div class="slider__evaluator-box">
+                                        <div class="slider__evaluator-description">
+                                            <div class="slider__evaluator-name">Top Lyne</div>
+                                            <div class="slider__evaluator-employment">Serviços Auxiliares de Transporte Aéreo</div>
+                                        </div>
+                                        <div class="slider__evaluator-photo slider__evaluator-photo--2"></div>
+                                    </div>
+                                    <div class="slider__evaluator-evaluation-box">
+                                        <blockquote class="slider__evaluator-evaluation">
+                                            "Ótima empresa no segmento de manutenção em ar condicionado. Nossos veículos são constantemente revisados pela AG Garagem"
+                                        </blockquote>
+                                    </div>
                                 </div>
-                                <div class="slider__evaluator-evaluation-box">
-                                    <blockquote class="slider__evaluator-evaluation">
-                                        "Honestos e mostram exatamente onde estava o problema. Resolveram tudo e não precisei sair da minha casa. Ótimo e Recomendo"
-                                    </blockquote>
+                            </div>
+                
+                            <div class="slider__slide">
+                                <div class="slider__content-box">
+                                    <div class="slider__evaluator-box">
+                                        <div class="slider__evaluator-description">
+                                            <div class="slider__evaluator-name">Solística</div>
+                                            <div class="slider__evaluator-employment">Soluções Logísticas</div>
+                                        </div>
+                                        <div class="slider__evaluator-photo slider__evaluator-photo--3"></div>
+                                    </div>
+                                    <div class="slider__evaluator-evaluation-box">
+                                        <blockquote class="slider__evaluator-evaluation">
+                                            "São nossos parceiros há mais de 10 anos e realizam um excelente trabalho e com total responsabilidade"
+                                        </blockquote>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slider__navigation-auto" id="navigation-auto">
+                                <div class="slider__auto-btn slider__auto-btn--1" id="btn1"></div>
+                                <div class="slider__auto-btn slider__auto-btn--2"></div>
+                                <div class="slider__auto-btn slider__auto-btn--3"></div>
+                            </div>
+                        </div>
+                        <div class="slider__navigation-manual">
+                            <label for="radio1" class="slider__manual-btn slider__manual-btn--1" id="btn1"></label>
+                            <label for="radio2" class="slider__manual-btn slider__manual-btn--2" id="btn2"></label>
+                            <label for="radio3" class="slider__manual-btn slider__manual-btn--3" id="btn3"></label>
+                        </div>
+                    </div>
+                </section> <!-- end of the evaluations section -->
+                <section class="companies-section" id="companies">
+                    <header class="companies-section__text-box">
+                        <h2 class="companies-section__subheading">Empresas que confiam em nosso trabalho</h2>
+                    </header>
+                    <div class="companies-section__companies-box">
+                           <img src="/img/in-haus.png" id="inHaus" alt="Logo empresa In Haus" class="companies-section__companie companies-section__companie--in-haus">
+                           <img src="/img/top-lyne.png" id="topLyne" alt="Logo empresa Top Lyne" class="companies-section__companie companies-section__companie--top-lyne">
+                           <img src="/img/solistica.png" id="solistica" alt="Logo empresa Solística" class="companies-section__companie companies-section__companie--solistica">
+                           <img src="/img/wecare-auto.png" id="wecareAuto" alt="Logo empresa WeCare Auto" class="companies-section__companie companies-section__companie--wecare-auto">
+                    </div>
+                </section> <!-- end of the companies section -->
+                <section class="contact-section" id="contact">
+                    <div class="contact-section__message-box">
+                        <header class="contact-section__text-box">
+                            <h2 class="contact-section__subheading subheading">Contato</h2>
+                            <h3 class="contact-section__tertiary-header tertiary-header">Estamos esperando sua mensagem ;)</h3>
+                        </header>
+                        <div class="message-options-box">
+                            <div class="message-option message-option--facebook">
+                                <div class="message-option__color-on-top message-option__color-on-top--facebook"></div>
+                                <svg class="icon icon-facebook message-option__svg message-option__svg--facebook">
+                                    <use xlink:href="#icon-facebook"></use>
+                                </svg>
+                
+                                <div class="message-option__text-box">
+                                    <p class="message-option__text">
+                                        Contate-nos pelo facebook
+                                    </p>
+                                </div>
+                                <a href="https://www.facebook.com/garagemagar" class="message-option__btn message-option__btn--facebook">
+                                    Mandar mensagem
+                                </a>
+                            </div>
+                            <div class="message-option message-option--email">
+                                <div class="message-option__color-on-top message-option__color-on-top--email"></div>
+                                <svg class="icon icon-email message-option__svg message-option__svg--email">
+                                    <use xlink:href="#icon-mail"></use>
+                                </svg>
+                
+                                <div class="message-option__text-box">
+                                    <p class="message-option__text">
+                                        Se preferir, nos envie um email
+                                    </p>
+                                </div>
+                                <!-- mailto: marcelo@garagemag.com.br -->
+                                <a href="https://mail.google.com/mail/u/1/#inbox?compose=DmwnWsmBHMlqtLwpfXxzPQcKjNqRpvMcTwSsMPqVzCMGmgbSvhPPVtZnLDsNklcKKlHSFbLTDxcl" class="message-option__btn message-option__btn--email">
+                                    Mandar mensagem
+                                </a>
+                            </div>
+                            <div class="message-option message-option--whatsapp">
+                                <div class="message-option__color-on-top message-option__color-on-top--whatsapp"></div>
+                                <svg class="icon icon-whatsapp message-option__svg message-option__svg--whatsapp">
+                                    <use xlink:href="#icon-whatsapp"></use>
+                                </svg>
+                                <div class="message-option__text-box">
+                                    <p class="message-option__text">
+                                        Mande-nos uma mensagem pelo whatsapp
+                                    </p>
+                                </div>
+                                <a href="https://api.whatsapp.com/send?phone=5511953065563" class="message-option__btn message-option__btn--whatsapp">
+                                    Mandar mensagem
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section> <!-- end of the contact-section -->
+                <section class="history-section" id="history">
+                    <header class="history-section__text-box">
+                        <h2 class="history-section__subheading">Sobre nós</h2>
+                        <h3 class="history-section__tertiary-header">Conheça nossa história</h3>
+                    </header>
+                    <div class="history-section__topics-box">
+                        <div class="history-section__topic-box history-section__topic-box--left">
+                            <div class="history-section__topic history-section__topic--left">
+                                <h4 class="history-section__topic-heading topic-heading">Quem somos</h4>
+                                <div class="history-section__topic-information-box">
+                                    <p class="history-section__topic-information">
+                                        Somos uma empresa especializada há mais de 10 anos no seguimento automotivo epecializado em manutenções de sistemas de ar condicionado e refrigeração de baús.
+                                    </p>
                                 </div>
                             </div>
                         </div>
-
-                        <div class="slider__navigation-auto" id="navigation-auto">
-                            <div class="slider__auto-btn slider__auto-btn--1" id="btn1"></div>
-                            <div class="slider__auto-btn slider__auto-btn--2"></div>
-                            <div class="slider__auto-btn slider__auto-btn--3"></div>
-                        </div>
-                    </div>
-
-                    <div class="slider__navigation-manual">
-                        <label for="radio1" class="slider__manual-btn slider__manual-btn--1" id="btn1"></label>
-                        <label for="radio2" class="slider__manual-btn slider__manual-btn--2" id="btn2"></label>
-                        <label for="radio3" class="slider__manual-btn slider__manual-btn--3" id="btn3"></label>
-                    </div>
-                </div>
-            </section> <!-- end of the evaluations section -->
-
-
-            <section class="companies-section" id="companies">
-                <div class="companies-section__text-box">
-                    <h2 class="companies-section__subheading">Empresas que confiam em nosso trabalho</h2>
-                </div>
-                <div class="companies-section__companies-box">
-                    <a href="https://www.linkedin.com/company/inhauslogistica" target="_blank">
-                       <img src="/img/In Haus.png" id="inHaus" alt="" class="companies-section__companie companies-section__companie--in-haus">
-                    </a>
-                       <a href="http://toplyneesata.com/" target="_blank">
-                       <img src="/img/Top Lyne.png" id="topLyne" alt="" class="companies-section__companie companies-section__companie--top-lyne">
-                    </a>
-                       <a href="https://solistica.com/pt-br" target="_blank">
-                       <img src="/img/Solistica.png" id="solistica" alt="" class="companies-section__companie companies-section__companie--solistica">
-                    </a>
-                    <a href="https://www.wecareauto.com.br/" target="_blank">
-                       <img src="/img/wecare-auto.png" id="wecareAuto" alt="" class="companies-section__companie companies-section__companie--wecare-auto">
-                    </a>
-                </div>
-            </section> <!-- end of the companies section -->
-
-
-            <section class="contact-section" id="contact">
-                <div class="contact-section__message-box">
-                    <div class="contact-section__text-box">
-                        <h2>Contato</h2>
-                        <h3>Estamos esperando sua mensagem ;)</h3>
-                    </div>
-
-                    <div class="message-options-box">
-                        <div class="message-option message-option--facebook">
-                            <div class="message-option__color-on-top message-option__color-on-top--facebook"></div>
-
-                            <svg class="icon icon-facebook message-option__svg message-option__svg--facebook">
-                                <use xlink:href="#icon-facebook"></use>
-                            </svg>
-                            
-                            <div class="message-option__text-box">
-                                <p class="message-option__text">
-                                    Contate-nos pelo facebook
-                                </p>
+                        <div class="history-section__topic-box history-section__topic-box--right">
+                            <div class="history-section__topic history-section__topic--right">
+                                <h4 class="history-section__topic-heading topic-heading">O que fazemos</h4>
+                                <div class="history-section__topic-information-box">
+                                    <p class="history-section__topic-information">
+                                         Ajudamos empresas do seguimento de transporte de cargas e também no seguimento construtor a manterem, em perfeitas condições de uso, os sistemas de climatização de cabines automotivas e de baús refrigerados.
+                                    </p>
+                                </div>
                             </div>
-
-                            <a href="https://www.facebook.com/garagemagar" class="message-option__btn message-option__btn--facebook">
-                                Mandar mensagem
-                            </a>      
                         </div>
-
-                        <div class="message-option message-option--email">
-                            <div class="message-option__color-on-top message-option__color-on-top--email"></div>
-
-                            <svg class="icon icon-email message-option__svg message-option__svg--email">
-                                <use xlink:href="#icon-mail"></use>
-                            </svg>
-                            
-                            <div class="message-option__text-box">
-                                <p class="message-option__text">
-                                    Se preferir, nos envie um email
-                                </p>
-                            </div>
-
-                            <!-- mailto: marcelo@garagemag.com.br -->
-
-                            <a href="https://mail.google.com/mail/u/1/#inbox?compose=DmwnWsmBHMlqtLwpfXxzPQcKjNqRpvMcTwSsMPqVzCMGmgbSvhPPVtZnLDsNklcKKlHSFbLTDxcl" class="message-option__btn message-option__btn--email">
-                                Mandar mensagem
-                            </a>
-                        </div>
-
-                        <div class="message-option message-option--whatsapp">
-                            <div class="message-option__color-on-top message-option__color-on-top--whatsapp"></div>
-        
-                            <svg class="icon icon-whatsapp message-option__svg message-option__svg--whatsapp">
-                                <use xlink:href="#icon-whatsapp"></use>
-                            </svg>
-        
-                            <div class="message-option__text-box">
-                                <p class="message-option__text">
-                                    Mande-nos uma mensagem pelo whatsapp 
-                                </p>
-                            </div>
-        
-                            <a href="https://api.whatsapp.com/send?phone=5511953065563" class="message-option__btn message-option__btn--whatsapp">
-                                Mandar mensagem
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section> <!-- end of the contact-section -->
-
-
-
-
-
-
-
-
-            <section class="history-section" id="history">
-                <div class="history-section__text-box">
-                    <h2 class="history-section__subheading">Sobre nós</h2>
-                    <h3 class="history-section__tertiary-header">Conheça nossa história</h3>
-                </div>
-
-                <div class="history-section__topics-box">
-                    <div class="history-section__topic-box history-section__topic-box--left">
-                        <div class="history-section__topic history-section__topic--left">
-                            <h4 class="history-section__topic-heading">Quem somos</h4>
-                            <div class="history-section__topic-information-box">
-                                <p class="history-section__topic-information">
-                                    Somos uma empresa especializada há mais de 10 anos no seguimento automotivo epecializado em manutenções de sistemas de ar condicionado e refrigeração de baús. 
-                                </p>
+                        <div class="history-section__topic-box history-section__topic-box--left">
+                            <div class="history-section__topic history-section__topic--left">
+                                <h4 class="history-section__topic-heading topic-heading">como fazemos</h4>
+                                <div class="history-section__topic-information-box">
+                                    <p class="history-section__topic-information">
+                                        Através de análise técnica, identificamos a real necessidade para manutenção corretiva ou preventiva indo até o local levando comodidade, agilidade e segurança nos serviços realizados.
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="history-section__topic-box history-section__topic-box--right">
-                        <div class="history-section__topic history-section__topic--right">
-                            <h4 class="history-section__topic-heading">O que fazemos</h4>
-                            <div class="history-section__topic-information-box">
-                                <p class="history-section__topic-information">
-                                     Ajudamos empresas do seguimento de transporte de cargas e também no seguimento construtor a manterem, em perfeitas condições de uso, os sistemas de climatização de cabines automotivas e de baús refrigerados.
-                                </p>
-                            </div>
-                        </div>
+                    <div class="history-section__wave-box">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#C2CCE1" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,245.3C480,245,600,203,720,181.3C840,160,960,160,1080,181.3C1200,203,1320,245,1380,266.7L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
                     </div>
-                    <div class="history-section__topic-box history-section__topic-box--left">
-                        <div class="history-section__topic history-section__topic--left">
-                            <h4 class="history-section__topic-heading">como fazemos</h4>
-                            <div class="history-section__topic-information-box">
-                                <p class="history-section__topic-information">
-                                    Através de análise técnica, identificamos a real necessidade para manutenção corretiva ou preventiva indo até o local levando comodidade, agilidade e segurança nos serviços realizados.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </section> <!-- end of the history section -->
+            </main>
 
-                <div class="history-section__wave-box">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#CEDFEA" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,245.3C480,245,600,203,720,181.3C840,160,960,160,1080,181.3C1200,203,1320,245,1380,266.7L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-                </div>
-            </section> <!-- end of the history section -->
-
-
-
-
-
-            
-            
             <footer class="footer">
                 <div class="footer__information-area">
                     <div class="footer__information-box footer__information-box--about">
@@ -526,6 +458,7 @@
                             </a>
                         </div>
                     </div>
+
                     <div class="footer__information-box footer__information-box--legal">
                         <div class="footer__information-heading-box">
                             <h3 class="footer__information-heading">Legal</h3>
@@ -539,6 +472,7 @@
                             </a>
                         </div>
                     </div>
+
                     <div class="footer__information-box footer__information-box--contact">
                         <div class="footer__information-heading-boxt">
                             <h3 class="footer__information-heading">Contato</h3>
@@ -555,6 +489,7 @@
                             </p>
                         </div>
                     </div>
+
                     <div class="footer__information-box footer__information-box--social-medias">    
                         <div class="footer__information-options-box">
                             <a class="footer__information-option footer__information-option--none-animate" href="https://www.facebook.com/garagemagar">
@@ -575,18 +510,19 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="footer__copyright-area">
                     <div class="footer__logo-box">
                         <img class="footer__logo" src="/img/logo-small.png" />
                     </div>
 
                     <div class="footer__copyright-box">
-                        <p class="footer__copyright">&copy;Copyright AG Garagem - 2020</p>
+                        <p class="footer__copyright">&copy;Copyright AG Garagem - <time datetime="2021-04-5">2021</time></p>
                         <p class="footer__cnpj">CNPJ: 24.985.158/0001-26</p>
                     </div>
                     <div class="footer__developer-box">
                         <p class="footer__developer-infos">
-                            Desenvolvido por Victor Ribeiro
+                            ~ Desenvolvido por Victor Ribeiro
                         </p>
                     </div>
                 </div>
@@ -598,6 +534,7 @@
                 </svg>
             </a> <!-- end of the whatsapp-call -->
         </div>
+        
         <script src="js/companies-animation.js"></script>
         <script src="js/magic-scroll.js"></script>
         <script src="js/menu-fix.js"></script>

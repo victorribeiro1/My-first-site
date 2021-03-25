@@ -46,7 +46,7 @@
     // }
     
     &__information-heading {
-        color: $color-tertiary;
+        color: #f5f5f5;
         text-align: center;
         font-weight: 500;
         font-size: 2.3rem;
@@ -71,7 +71,7 @@
             }
 
             display: block;
-            color: rgb(58, 58, 58);
+            color: #000000;
             font-size: 1.6rem;
             font-weight: 600;
             text-decoration: none;
@@ -84,7 +84,7 @@
                 content: "";
                 width: 100%;
                 height: 2px;
-                background-color: rgb(58, 58, 58);
+                background-color: #141414;
                 position: absolute;
                 border-radius: 999px;
                 bottom: -.15rem;
@@ -95,11 +95,11 @@
             }
 
             &:hover {
-                color: white;
-                    background-color: #a2c5f3;
+                color: $color-tertiary;
+                    background-color: white;
 
                 &::after {
-                    background-color: white;
+                    background-color: $color-tertiary;
                     border-radius: 0;
                     transform: scaleX(1);
                 }
@@ -109,7 +109,7 @@
         &--none-animate {
             &:hover {
                 background-color: transparent !important;
-                color: rgb(80, 80, 80);
+                color: currentColor;
             }
 
             &::after {
@@ -122,7 +122,7 @@
     
 
     &__copyright-area {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         width: 85%;
         height: 20rem;
         text-align: center;
@@ -163,20 +163,27 @@
     
     &__copyright {
         font-size: 2rem;
+        font-weight: 500;
     }
     
     &__cnpj {
         font-size: 1.7rem;
+        font-weight: 400;
     }
     
     &__developer-box {
-        width: 25rem;
-        margin-top: -1.5rem;
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
     }
     
     &__developer-infos {
-        font-size: 1.2rem;
-        margin-top: 3px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1.6rem;
+        padding: 0 1rem .2rem 1rem;
+        box-sizing: content-box;
+        font-weight: 500;
+        border-bottom: 1px solid black;
     }
 
     &__svg {

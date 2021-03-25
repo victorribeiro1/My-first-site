@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "..\\dark-red"
+		},
+		{
+			"path": "..\\light-blue"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "light-red"
+	}
+}

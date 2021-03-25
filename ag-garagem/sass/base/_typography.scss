@@ -30,9 +30,16 @@
 }
 
 .subheading {
-    color: $color-text-light;
+    color: $color-subheading;
     font-size: 5rem;
-    font-family: Arial, 'Times New Roman', Times, serif;
-    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.678);
+    font-family: inherit;
+    text-shadow: $text-shadow;
     text-align: center;
+}
+
+.tertiary-header {
+    color: $color-text-light;
+    font-size: 3rem;
+    font-weight: 400;
+    text-shadow: $text-shadow;
 }

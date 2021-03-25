@@ -14,17 +14,17 @@
 
         z-index: 10;
 
-        h2 {
-            color: $color-tertiary;
-            font-size: 5rem;
-            text-transform: capitalize;
-        }
+        // h2 {
+        //     color: $color-tertiary;
+        //     font-size: 5rem;
+        //     text-transform: capitalize;
+        // }
         
-        h3 {
-            color: $color-tertiary;
-            font-weight: 400;
-            font-size: 3rem;
-        }
+        // h3 {
+        //     color: $color-tertiary;
+        //     font-weight: 400;
+        //     font-size: 3rem;
+        // }
     }
 
     &__shadow {
@@ -32,7 +32,6 @@
         width: 70rem;
 
         border-top-right-radius: 35px;
-        // border-bottom-left-radius: 35px;
 
         position: absolute;
 

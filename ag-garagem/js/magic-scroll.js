@@ -2,22 +2,25 @@ function showOrHideOnScroll() {
     const introElements = document.querySelectorAll('.fade')
     introElements.forEach(element => {
         const top = element.getBoundingClientRect().top
-        const bottom = element.getBoundingClientRect().bottom
         const screenPosition = window.innerHeight
 
         if (top < screenPosition / 1.1) {
-            element.classList.add('in')
-            // if (element.classList.contains('alreadyAnimated')) {
-            //     element.style.transitionDelay = '.2s'
-            //     console.log('funciona')
-            // } else {
-                element.classList.add('alreadyAnimated')
-            //}
-        } else {
             if (element.classList.contains('alreadyAnimated')) {
-                element.style.transitionDelay = '0s'
+                
+            } else {
+                if (element.classList.contains('benefits-section')) {
+                    const benefits = document.querySelectorAll('.benefits-section__benefits')
+                    console.log(benefits)
+
+                    benefits.forEach(benefit => {
+                            benefit.classList.add('in')
+                    })
+                }
+
+                element.classList.add('in')
+                element.classList.add('alreadyAnimated')
+
             }
-            element.classList.remove('in')
         }
     })
 
