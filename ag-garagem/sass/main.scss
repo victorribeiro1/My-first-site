@@ -1,27 +1,10 @@
-@import "abstracts/animations";
-@import "abstracts/mixin";
-@import "abstracts/variables";
-
-@import "components/bg-video";
-@import "components/btn-main";
-@import "components/btn-secondary";
-@import "components/heading";
-@import "components/message-options";
-@import "components/slider";
-@import "components/subheading";
-@import "components/svg";
+@import "abstract/variables";
 
 @import "base/base";
-@import "base/utilities";
 @import "base/typography";
 
-@import "layout/about";
-@import "layout/benefits";
-@import "layout/companies";
-@import "layout/contact";
-@import "layout/evaluations";
-@import "layout/footer";
-@import "layout/header";
-@import "layout/history";
-@import "layout/navigation";
-@import "layout/whatsapp-call";
+@import "components/evaluations";
+
+// @import "layout/";
+
+@import "pages/index";

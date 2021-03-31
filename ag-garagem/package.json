@@ -1,17 +1,17 @@
 {
-  "name": "garagem-ag",
-  "version": "1.0.0",
+  "name": "ag-garagem",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm-run-all --parallel build:css watch:sass",
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
     "devserver": "live-server",
-    "start": "npm-run-all --parallel build:css watch:sass",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b `last 10 versions` css/style.comp.css -o css/style.prefix.css",
-    "concat:css": "concat -o css/style.css css/style.prefix.css",
-    "compress:css": "node-sass css/style.css css/style.min.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass prefix:css concat:css compress:css"
+    "concat:css": "concat -o css/style.concat.css css/style.comp.css css/normalize.css",
+    "prefix:css": "postcss --use autoprefixer -b `last 10 versions` css/style.concat.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.min.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
   },
   "keywords": [],
   "author": "",
