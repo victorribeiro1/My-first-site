@@ -21,6 +21,88 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.4; }
 
+.evaluations .swiper-container {
+  height: 48rem;
+  -webkit-box-reflect: below 1px linear-gradient(transparent 70%, #0009); }
+
+.evaluations .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 32rem;
+  height: 90%;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 2.5rem;
+  perspective: 9999px; }
+
+.evaluations .swiper-slide-shadow-left,
+.evaluations .swiper-slide-shadow-right {
+  background-image: none; }
+
+.evaluations .card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background: #333;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 5px; }
+
+.evaluations .layer {
+  position: absolute;
+  top: calc(100% - 2px);
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#cf1212, #3a0606);
+  z-index: 1;
+  transition: .5s; }
+
+.evaluations .card:hover .layer {
+  top: 0; }
+
+.evaluations .content {
+  position: relative;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .evaluations .content p {
+    font-size: 18px;
+    color: white;
+    line-height: 24px;
+    margin: 30px 0 30px 0;
+    padding: .5rem; }
+  .evaluations .content .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    width: 100px;
+    height: 100px; }
+    .evaluations .content .img-box img {
+      background: #87bdd3;
+      width: 100%; }
+      .evaluations .content .img-box img.tom {
+        width: 150%; }
+  .evaluations .content h2 {
+    font-size: 18px;
+    color: white; }
+    .evaluations .content h2 span {
+      color: #03A9F4;
+      font-feature-settings: 14px;
+      transition: .5s; }
+
+.evaluations .card:hover .content h2 span {
+  color: white; }
+
 .evaluations {
   min-height: 100vh;
   max-width: 100%;
@@ -28,77 +110,3 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .evaluations .swiper-container {
-    height: 48rem;
-    -webkit-box-reflect: below 1px linear-gradient(transparent 70%, #0009); }
-  .evaluations .swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 32rem;
-    height: 90%;
-    margin: 0 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 2.5rem;
-    perspective: 9999px; }
-  .evaluations .swiper-slide-shadow-left,
-  .evaluations .swiper-slide-shadow-right {
-    background-image: none; }
-  .evaluations .card {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    background: #333;
-    text-align: center;
-    overflow: hidden;
-    border-radius: 5px; }
-  .evaluations .layer {
-    position: absolute;
-    top: calc(100% - 2px);
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#cf1212, #3a0606);
-    z-index: 1;
-    transition: .5s; }
-  .evaluations .card:hover .layer {
-    top: 0; }
-  .evaluations .content {
-    position: relative;
-    height: 100%;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .evaluations .content p {
-      font-size: 18px;
-      color: white;
-      line-height: 24px;
-      margin: 30px 0 30px 0;
-      padding: .5rem; }
-    .evaluations .content .img-box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      border-radius: 50%;
-      border: 4px solid #fff;
-      width: 100px;
-      height: 100px; }
-      .evaluations .content .img-box img {
-        background: #87bdd3;
-        width: 100%; }
-        .evaluations .content .img-box img.tom {
-          width: 150%; }
-    .evaluations .content h2 {
-      font-size: 18px;
-      color: white; }
-      .evaluations .content h2 span {
-        color: #03A9F4;
-        font-feature-settings: 14px;
-        transition: .5s; }
-  .evaluations .card:hover .content h2 span {
-    color: white; }

@@ -11,6 +11,11 @@
         <title>AG Garagem</title>
     </head>
     <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="toggle" />
+
+            <label for="toggle"></label>
+        </div>
         <section class="evaluations">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
@@ -98,28 +103,11 @@
                         </div>
                     </div>
                 </div>
-                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-        <script>
-            var swiper = new Swiper('.swiper-container', {
-              effect: 'coverflow',
-              grabCursor: true,
-              centeredSlides: true,
-              slidesPerView: 'auto',
-              coverflowEffect: {
-                rotate: 20,
-                stretch: 00,
-                depth: 0,
-                modifier: 1,
-                slideShadows: true,
-              },
-              loop: true
-            });
-          </script>
-
+        <script src="../js/swiper-configs.js"></script>
     </body>
 </html>
