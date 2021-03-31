@@ -1,3 +1,4 @@
+@import "abstract/animations";
 @import "abstract/variables";
 
 @import "base/base";
@@ -5,6 +6,6 @@
 
 @import "components/evaluations";
 
-// @import "layout/";
+@import "layout/navigation";
 
 @import "pages/index";
