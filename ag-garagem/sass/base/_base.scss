@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; // 1rem = 10px
+    scroll-behavior: smooth;
+}
+
+body {
+    background: black;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: rgb(64, 129, 189);
+    color: white;
+}
