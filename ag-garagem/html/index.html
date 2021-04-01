@@ -15,7 +15,7 @@
             <input type="checkbox" class="navigation__checkbox" id="toggle" />
 
             <div class="navigation__button-box">
-                <label class="navigation__button" for="toggle">
+                <label class="navigation__button" for="toggle" id="navigationButton">
                     <div class="navigation__icon-box">
                         <div class="navigation__icon navigation__icon--1"></div>
                         <div class="navigation__icon navigation__icon--2"></div>
@@ -24,17 +24,16 @@
                 </label>
             </div>
 
-            <div class="navigation__button-background-box">    
+            <div class="navigation__background-box navigation__background-box--1">
+                <div class="navigation__background navigation__background--1"></div>
             </div>
-
-            <div class="navigation__background navigation__background--1"></div>
-            <div class="navigation__background navigation__background--2"></div>
-
+            
             <nav class="navigation__nav">
                 <div class="navigation__list-box navigation__list-box--services">
                     <div class="navigation__heading-box">
                        <h3 class="navigation__heading">Serviços</h3>
                     </div>
+
                     <ul class="navigation__list navigation__list--services">
                         <li class="navigation__item">
                             <a href="" class="navigation__link">Alinhamento e Geometria</a>
@@ -60,8 +59,9 @@
 
                 <div class="navigation__list-box navigation__list-box--see-also">
                     <div class="navigation__heading-box">
-                       <h3 class="navigation__heading">Serviços</h3>
+                       <h3 class="navigation__heading">Veja Também</h3>
                     </div>
+
                     <ul class="navigation__list navigation__list--see-also">
                         <li class="navigation__item">
                             <a href="" class="navigation__link">Home</a>
@@ -173,5 +173,6 @@
 
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
         <script src="../js/swiper-configs.js"></script>
+        <script src="../js/blur.js"></script>
     </body>
 </html>
