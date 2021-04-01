@@ -33,31 +33,31 @@ section.blur {
 
 @font-face {
   font-family: "Always Smile";
-  src: url(../fonts/a_always_smile/aAlwaysSmile.otf); }
+  src: url(../../media/fonts/a_always_smile/aAlwaysSmile.otf); }
 
 @font-face {
   font-family: "Imperator";
-  src: url(../fonts/imperator/ImperatorPlaque.ttf); }
+  src: url(../../media/fonts/imperator/ImperatorPlaque.ttf); }
 
 @font-face {
   font-family: "bison";
-  src: url(../fonts/bison_2/Bison-Bold.ttf); }
+  src: url(../../media/fonts/bison_2/Bison-Bold.ttf); }
 
 @font-face {
   font-family: "run";
-  src: url(../fonts/run_2/run-demo.otf); }
+  src: url(../../media/fonts/run_2/run-demo.otf); }
 
 @font-face {
   font-family: "montserrat";
-  src: url(../fonts/Montserrat/Montserrat-Black.ttf); }
+  src: url(../../media/fonts/Montserrat/Montserrat-Black.ttf); }
 
 @font-face {
   font-family: "erosion";
-  src: url(../fonts/erosion/erosion.otf); }
+  src: url(../../media/fonts/erosion/erosion.otf); }
 
 @font-face {
   font-family: "blockt";
-  src: url(../fonts/blockt/Blockt.ttf); }
+  src: url(../../media/fonts/blockt/Blockt.ttf); }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -166,8 +166,7 @@ Single-colored icons can be modified like so:
 .navigation {
   position: absolute;
   height: 100vh;
-  width: 100vw;
-  opacity: hidden; }
+  width: 100vw; }
   .navigation__checkbox {
     display: none; }
     .navigation__checkbox:checked ~ .navigation__button-box .navigation__icon {
@@ -183,6 +182,15 @@ Single-colored icons can be modified like so:
       transform: translate(50%, -50%) scale(1); }
     .navigation__checkbox:checked ~ .navigation__background-box .navigation__background {
       transform: scale(45); }
+    .navigation__checkbox:checked ~ .navigation__nav {
+      display: flex; }
+    .navigation__checkbox:checked ~ .navigation__nav .navigation__list-box,
+    .navigation__checkbox:checked ~ .navigation__nav .navigation__icons-box {
+      opacity: 1;
+      transition: opacity 0.5s 0.3s; }
+    .navigation__checkbox:checked ~ .navigation__nav {
+      left: 0;
+      transition: left 0s 0s; }
   .navigation__button-box {
     position: absolute;
     right: 4rem;
@@ -193,6 +201,7 @@ Single-colored icons can be modified like so:
     border-radius: 50%;
     height: 7.5rem;
     width: 7.5rem;
+    color: lightblue;
     position: fixed;
     display: inline-block;
     overflow: hidden;
@@ -251,7 +260,7 @@ Single-colored icons can be modified like so:
     width: 7rem;
     position: fixed;
     transform: scale(0);
-    transition: all .7s ease;
+    transition: all .8s ease;
     z-index: 2; }
     .navigation__background--2 {
       transition-delay: 1s; }
@@ -262,11 +271,15 @@ Single-colored icons can be modified like so:
     align-items: flex-start;
     width: 90%;
     height: 100%;
-    z-index: 3; }
+    z-index: 3;
+    left: -9999999999px;
+    transition: left 0s .8s; }
   .navigation__list-box {
-    text-align: center; }
+    text-align: center;
+    opacity: 0;
+    transition: opacity .5s .1s; }
   .navigation__heading-box {
-    margin-top: 2rem; }
+    margin-top: 2rem 0 1rem 0; }
   .navigation__heading {
     font-family: 'bison', sans-serif;
     font-weight: 900;
@@ -305,7 +318,9 @@ Single-colored icons can be modified like so:
     justify-content: space-between;
     align-items: center;
     width: 11rem;
-    z-index: 3; }
+    z-index: 3;
+    opacity: 0;
+    transition: opacity 0.5s 0.1s; }
 
 .evaluations {
   min-height: 100vh;

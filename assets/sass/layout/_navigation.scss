@@ -2,8 +2,7 @@
     position: absolute;
     height: 100vh;
     width: 100vw;
-    opacity: hidden;
-
+    
     &__checkbox {
         display: none;
         
@@ -33,11 +32,25 @@
         &:checked ~ .navigation__background-box .navigation__background {
             transform: scale(45);
         } 
+
+        &:checked ~ .navigation__nav {
+            display: flex;
+        }
+        
+        &:checked ~ .navigation__nav .navigation__list-box,
+        &:checked ~ .navigation__nav .navigation__icons-box {
+            opacity: 1;
+            transition: opacity.5s .3s;
+        }
+
+        &:checked ~ .navigation__nav {
+            left: 0;
+            transition: left 0s 0s;
+        }
+        
     }
 
-    &__button-box {
-        // background-color: red;
-        
+    &__button-box {        
         position: absolute;
         right: 4rem;
         top: 3rem;
@@ -50,6 +63,8 @@
         border-radius: 50%;
         height: 7.5rem;
         width: 7.5rem;
+
+        color: hsl(195, 53%, 79%);
 
         position: fixed;
 
@@ -147,11 +162,12 @@
         position: fixed;
         
         transform: scale(0);
-        transition: all .7s ease;
+        transition: all .8s ease;
         z-index: 2;
         
-        &--1 {
-        }
+        // &--1 {
+
+        // }
         
         &--2 {
             transition-delay: 1s;
@@ -159,32 +175,39 @@
     }
 
     &__nav {
-        // background-color: red;
         position: absolute;
-
+        
         display: flex;
         justify-content: space-around;
         align-items: flex-start;
-
+        
         width: 90%;
         height: 100%;
-        z-index: 3;
-    }
+        z-index: 3;   
 
+        left: -9999999999px;
+        transition: left 0s .8s;
+    }
+    
     &__list-box {
         text-align: center;
-        &--services {
 
-        }
+        opacity: 0;
+        
+        transition: opacity .5s .1s;
 
-        &--see-also {
+        // &--services {
+
+        // }
+
+        // &--see-also {
             
-        }
+        // }
     }
     
     
     &__heading-box {
-        margin-top: 2rem;
+        margin-top: 2rem 0 1rem 0;
     }
     
     &__heading {
@@ -258,5 +281,8 @@
 
         width: 11rem;
         z-index: 3;
+
+        opacity: 0;
+        transition: opacity.5s .1s;
     }
 }
