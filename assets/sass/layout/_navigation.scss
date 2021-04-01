@@ -248,16 +248,15 @@
     }
 
     &__icons-box {
-        background-color: wheat;
-        color: white;
-
-        font-size: 2rem;
-
         position: absolute;
-        bottom: 6rem;
-        left: 5rem;
+        bottom: 4rem;
+        left: 9.5rem;
 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
+        width: 11rem;
         z-index: 3;
     }
 }

@@ -145,6 +145,24 @@ body {
 .evaluations .card:hover .content h2 span {
   color: white; }
 
+.icon {
+  display: inline-block;
+  height: 2.5rem;
+  width: 2.5rem;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: #eee; }
+  .icon--youtube {
+    height: 3.1rem;
+    width: 3.1rem; }
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+    font-size: 32px;
+    color: red;
+}
+========================================== */
 .navigation {
   position: absolute;
   height: 100vh;
@@ -280,12 +298,13 @@ body {
     .navigation__link:hover::before, .navigation__link:link:hover::before, .navigation__link:visited:hover::before {
       width: 100%; }
   .navigation__icons-box {
-    background-color: wheat;
-    color: white;
-    font-size: 2rem;
     position: absolute;
-    bottom: 6rem;
-    left: 5rem;
+    bottom: 4rem;
+    left: 9.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 11rem;
     z-index: 3; }
 
 .evaluations {
