@@ -26,6 +26,7 @@ section.blur {
 }
 
 ::selection {
-    background-color: rgb(64, 129, 189);
-    color: white;
+    background-color: rgba(194, 23, 23, 0.445);
+    -webkit-text-fill-color: #eee;
+    color: #eee;
 }
