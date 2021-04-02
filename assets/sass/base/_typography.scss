@@ -2,3 +2,23 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.4;
 }
+
+.subheading {
+    font: 100 15rem "Segoe UI", Arial, sans-serif;
+    letter-spacing: 10px;
+    color: $color-subheading; 
+    text-transform: uppercase;  
+
+    position: relative;
+
+    &::before {
+        content: "";
+        background-color: $background-color-subheading-before;
+        border-radius: 0 999px 999px 0;
+
+        position: absolute;
+        height: 4px;
+        width: 20rem;
+        bottom: 20px;
+    }
+}

@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    background: #eee;
+    background: $background-color-body;
     box-sizing: border-box;
 
     position: relative;
@@ -26,7 +26,7 @@ section.blur {
 }
 
 ::selection {
-    background-color: rgba(194, 23, 23, 0.445);
-    -webkit-text-fill-color: #eee;
-    color: #eee;
+    background-color: $background-color-selection;
+    -webkit-text-fill-color: $color-text-dark-1;
+    color: $color-text-dark-1;
 }

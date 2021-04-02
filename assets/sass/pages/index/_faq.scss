@@ -1,0 +1,53 @@
+.faq {
+    background-color: #eee;
+    padding-top: 4rem;
+    
+    min-height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+
+    &__header-box {
+
+    }
+
+    &__header {
+
+    }
+    
+    &__content {
+        
+    }
+    
+    &__questions-and-answers-box {
+
+    }
+
+    &__question-and-answer-box {
+
+    }
+
+    &__question-box {
+
+    }
+
+    &__arrow {
+
+    }
+
+    &__question {
+
+    }
+
+    &__answer-box {
+
+    }
+
+    &__answer {
+    }
+}

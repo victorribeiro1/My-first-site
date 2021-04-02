@@ -1,8 +1,8 @@
 .evaluations {
+    overflow-y: hidden;
     .swiper-container {
         height: 48rem;
-        // background-color: red;
-        -webkit-box-reflect: below 1px linear-gradient(transparent 70%, #0009);
+        -webkit-box-reflect: below 1px linear-gradient(transparent 85%, $color-evaluation-webkit-box-reflect);
     }
     
     // .swiper-wrapper {
@@ -10,7 +10,6 @@
     // }
 
     .swiper-slide {
-        // background-color: lightblue;
         background-position: center;
         background-size: cover;
         width: 32rem;
@@ -21,7 +20,6 @@
         align-items: center;
         top: 2.5rem;
         perspective: 9999px;
-
     }
 
     .swiper-slide-shadow-left, 
@@ -34,7 +32,7 @@
         width: 100%;
         height: 100%;
         margin: 0 auto;
-        background: #333;
+        background: $background-color-card;
         text-align: center;
         overflow: hidden;
         border-radius: 5px;
@@ -46,7 +44,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(#cf1212, #3a0606);
+        background: linear-gradient($evaluation-layer-first-color, $evaluation-layer-second-color);
         z-index: 1;
         transition: .5s;
     }
@@ -54,20 +52,21 @@
     .card:hover .layer {
         top: 0;
     }
-
+    
     .content {
         position: relative;
-        // background-color: rgb(233, 144, 144);
+        
         height: 100%;
-        z-index: 2;
+        
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        
+        z-index: 2;
         p {
             font-size: 18px;
-            color: white;
+            color: $color-text-light-2;
             line-height: 24px;
             margin: 30px 0 30px 0;
             padding: .5rem;
@@ -79,12 +78,12 @@
             align-items: center;
             overflow: hidden;
             border-radius: 50%;
-            border: 4px solid #fff;
+            border: 3px solid $img-box-border-color;
             width: 100px;
             height: 100px;
 
             img {
-                background: #87bdd3;
+                background: #87BDD3;
                 width: 100%;
     
                 &.tom {
@@ -98,7 +97,7 @@
             color: white;
 
             span {
-               color: #03A9F4;
+               color: $color-text-blue-1;
                font-feature-settings: 14px;
                transition: .5s;
            }
@@ -106,6 +105,6 @@
     }
 
     .card:hover .content h2 span {
-        color: white;
+        color: $color-card-evaluator-name;
     }
 }

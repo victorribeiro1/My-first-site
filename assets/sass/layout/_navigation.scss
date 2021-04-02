@@ -7,7 +7,7 @@
         display: none;
         
         &:checked ~ .navigation__button-box .navigation__icon {
-            background-color: #000;
+            background-color: $background-color-navigation-icon-interaction;
 
             transition: background-color .5s cubic-bezier(0.97, 0.12, 0.7, 1.5),
             width .3s .5s cubic-bezier(0, 0.8, 0.9, 1),
@@ -47,7 +47,6 @@
             left: 0;
             transition: left 0s 0s;
         }
-        
     }
 
     &__button-box {        
@@ -63,8 +62,6 @@
         border-radius: 50%;
         height: 7.5rem;
         width: 7.5rem;
-
-        color: hsl(195, 53%, 79%);
 
         position: fixed;
 
@@ -82,7 +79,7 @@
         }
 
         &:hover .navigation__icon {
-            background-color: #000;
+            background-color: $background-color-navigation-icon-interaction;
 
             &--2 {
                 width: 100%;
@@ -91,7 +88,7 @@
     }
 
     &__button-background {
-        background: #eee;
+        background: $background-color-navigation-button;
         border-radius: 999px;
 
         position: absolute;
@@ -122,7 +119,7 @@
     }
     
     &__icon {
-        background-color: #eee;
+        background-color: $background-color-navigation-icon;
         border-radius: 999px;
         height: 2px;
 
@@ -175,7 +172,7 @@
     }
 
     &__nav {
-        position: absolute;
+        position: fixed;
         
         display: flex;
         justify-content: space-around;
@@ -217,7 +214,7 @@
         letter-spacing: 2px;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 1px;
-        color: #eee; 
+        color: $color-text-light-2; 
         text-transform: uppercase;  
     }
     
@@ -252,7 +249,7 @@
 
             &::before {
                 content: "";
-                background-color: $color-light-2;
+                background-color: $background-color-before-navigation-link;
                 border-radius: 999px;
                 
                 position: absolute;
