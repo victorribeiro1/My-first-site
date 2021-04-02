@@ -1,0 +1,62 @@
+.margin-bottom {
+    height: 10rem;
+}
+.container {
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    padding: 1rem 2rem 2rem 2rem;
+    border-bottom: 2px solid black;
+    
+    float: right;
+    
+    height: 80px;
+    width: 60%;
+    
+    overflow: hidden;
+    transition: all .5s;
+    
+    &:hover {
+        height: calc(2px + 2px + 63px + 302px + 10px + 20px);
+        
+        & ~ .square {
+            transform: rotate(-45deg);
+        }
+    }
+    
+    .heading-box {
+        text-align: center;
+    }
+    
+    h3 {
+        font-size: 38px;
+        padding-bottom: 1rem;
+    }
+    
+    .text-box {
+        text-align: justify;
+        
+    }
+    
+    p {
+        font-size: 22px;
+
+        &:not(:last-of-type) {
+            margin-bottom: 1.6rem;
+        }
+    }
+}
+
+.square {
+    height: 2rem;
+    width: 2rem;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    transform: rotate(-135deg);
+    position: absolute;
+    left: 58rem;
+    top: 12.5rem;
+    transition: all .5s;
+}

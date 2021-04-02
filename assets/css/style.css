@@ -18,7 +18,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  background: black;
+  background: #eee;
   box-sizing: border-box;
   position: relative;
   overflow-x: hidden; }
@@ -323,9 +323,49 @@ Single-colored icons can be modified like so:
     transition: opacity 0.5s 0.1s; }
 
 .evaluations {
+  background-color: #000;
   min-height: 100vh;
   max-width: 100%;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center; }
+
+.margin-bottom {
+  height: 10rem; }
+
+.container {
+  color: black;
+  padding: 1rem 2rem 2rem 2rem;
+  border-bottom: 2px solid black;
+  float: right;
+  height: 80px;
+  width: 60%;
+  overflow: hidden;
+  transition: all .5s; }
+  .container:hover {
+    height: calc(2px + 2px + 63px + 302px + 10px + 20px); }
+    .container:hover ~ .square {
+      transform: rotate(-45deg); }
+  .container .heading-box {
+    text-align: center; }
+  .container h3 {
+    font-size: 38px;
+    padding-bottom: 1rem; }
+  .container .text-box {
+    text-align: justify; }
+  .container p {
+    font-size: 22px; }
+    .container p:not(:last-of-type) {
+      margin-bottom: 1.6rem; }
+
+.square {
+  height: 2rem;
+  width: 2rem;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  transform: rotate(-135deg);
+  position: absolute;
+  left: 58rem;
+  top: 12.5rem;
+  transition: all .5s; }
