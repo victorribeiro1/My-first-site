@@ -71,7 +71,7 @@ body {
   position: relative; }
   .subheading::before {
     content: "";
-    background-color: #eee;
+    background-color: #CF1212;
     border-radius: 999px;
     position: absolute;
     left: 50%;
@@ -90,7 +90,7 @@ body {
   overflow-y: hidden; }
   .evaluations .swiper-container {
     height: 48rem;
-    -webkit-box-reflect: below 1px linear-gradient(transparent 75%, #000000cc); }
+    -webkit-box-reflect: below 1px linear-gradient(transparent 80%, #000000cc); }
   .evaluations .swiper-slide {
     background-color: transparent;
     background-position: center;
@@ -256,7 +256,7 @@ Single-colored icons can be modified like so:
     justify-content: center;
     align-items: flex-end; }
   .navigation__icon {
-    background-color: #000;
+    background-color: #eee;
     border-radius: 999px;
     height: 2px;
     transform: rotate(0);
@@ -351,7 +351,7 @@ Single-colored icons can be modified like so:
   align-items: center; }
 
 .faq {
-  background-color: #000;
+  background-color: #222;
   padding-top: 4rem;
   min-height: 100vh;
   position: relative;
@@ -396,7 +396,7 @@ Single-colored icons can be modified like so:
     .faq__question-and-answer-box::before {
       content: "";
       border-radius: 999px;
-      background-color: black;
+      background-color: #990C0C;
       position: absolute;
       bottom: 0;
       height: 2px;
