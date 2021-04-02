@@ -379,13 +379,13 @@ Single-colored icons can be modified like so:
       .faq__questions-and-answers-box.in .faq__question-and-answer-box, .faq__questions-and-answers-box.already-animated .faq__question-and-answer-box {
         opacity: 1; }
         .faq__questions-and-answers-box.in .faq__question-and-answer-box:nth-of-type(1), .faq__questions-and-answers-box.already-animated .faq__question-and-answer-box:nth-of-type(1) {
-          transition: opacity .7s .8s ease, height .5s; }
+          transition: opacity .9s .8s ease-in, height .5s; }
         .faq__questions-and-answers-box.in .faq__question-and-answer-box:nth-of-type(2), .faq__questions-and-answers-box.already-animated .faq__question-and-answer-box:nth-of-type(2) {
-          transition: opacity .7s .95s ease, height .5s; }
+          transition: opacity .9s 1s ease-in, height .5s; }
         .faq__questions-and-answers-box.in .faq__question-and-answer-box:nth-of-type(3), .faq__questions-and-answers-box.already-animated .faq__question-and-answer-box:nth-of-type(3) {
-          transition: opacity .7s 1.1s ease, height .5s; }
+          transition: opacity .9s 1.2s ease-in, height .5s; }
         .faq__questions-and-answers-box.in .faq__question-and-answer-box:nth-of-type(4), .faq__questions-and-answers-box.already-animated .faq__question-and-answer-box:nth-of-type(4) {
-          transition: opacity .7s 1.25s ease, height .5s; }
+          transition: opacity .9s 1.4s ease-in, height .5s; }
   .faq__question-and-answer-box {
     padding: 2rem 0;
     position: relative;
