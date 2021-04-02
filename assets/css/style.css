@@ -85,7 +85,7 @@ body {
   overflow-y: hidden; }
   .evaluations .swiper-container {
     height: 48rem;
-    -webkit-box-reflect: below 1px linear-gradient(transparent 85%, #000000cc); }
+    -webkit-box-reflect: below 1px linear-gradient(transparent 75%, #000000cc); }
   .evaluations .swiper-slide {
     background-position: center;
     background-size: cover;
@@ -249,7 +249,7 @@ Single-colored icons can be modified like so:
     justify-content: center;
     align-items: flex-end; }
   .navigation__icon {
-    background-color: #eee;
+    background-color: #000;
     border-radius: 999px;
     height: 2px;
     transform: rotate(0);
@@ -385,7 +385,7 @@ Single-colored icons can be modified like so:
     height: 7.9rem;
     overflow: hidden;
     transition: opacity .8s, height .5s; }
-    .faq__question-and-answer-box:nth-of-type(even):hover {
+    .faq__question-and-answer-box.lines-3:hover {
       height: 17.8rem; }
     .faq__question-and-answer-box:hover {
       height: 14.5rem; }

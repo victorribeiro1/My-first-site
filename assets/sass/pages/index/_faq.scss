@@ -81,7 +81,7 @@
         transition: opacity .8s,
                     height .5s;
 
-        &:nth-of-type(even) {
+        &.lines-3 {
             &:hover {
                 height: 17.8rem;
             }
