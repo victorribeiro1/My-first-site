@@ -1,7 +1,7 @@
 .faq {
     background-color: $background-color-faq;
     padding-top: 4rem;
-    
+
     min-height: 100vh;
 
     position: relative;
@@ -9,8 +9,8 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    
+    align-items: center;
+
     // &__header-box {
 
     // }
@@ -18,60 +18,64 @@
     // &__header {
 
     // }
-    
+
     &__content-box {
         margin-top: 6rem;
-        
-        max-width: 82%;
 
-        align-self: flex-end;
+        max-width: 85%;
 
         &:hover .faq__questions-and-answers-box {
             width: 100%;
         }
     }
-    
+
     &__questions-and-answers-box {
         background-color: #333;
+        border-radius: 5px;
         padding: 3rem 5rem 6rem 5rem;
 
-        transform: scaleX(0);
-        transform-origin: right;
+        transform: translateY(30px) scale(.5);
+        transform-origin: center;
+        opacity:0;
 
-        transition: all 1s;
+        transition: opacity .8s,
+                    transform .9s ease;
 
         &.in,
-        &.already-animated  {
-            transform: scaleX(1);
-            transform-origin: right;
+        &.already-animated {
+            transform: translateY(0) scale(1);
+            opacity:1;
+            transform-origin: center;
 
-            &  .faq__question-and-answer-box {
+            & .faq__question-and-answer-box {
                 opacity: 1;
-                
+
                 &:nth-of-type(1) {
                     transition: opacity .7s .8s ease,
-                                height .5s;
+                        height .5s;
                 }
+
                 &:nth-of-type(2) {
                     transition: opacity .7s .95s ease,
-                                height .5s;
+                        height .5s;
                 }
+
                 &:nth-of-type(3) {
                     transition: opacity .7s 1.1s ease,
-                                height .5s;
+                        height .5s;
                 }
+
                 &:nth-of-type(4) {
                     transition: opacity .7s 1.25s ease,
-                                height .5s;
+                        height .5s;
                 }
             }
         }
     }
 
     &__question-and-answer-box {
-        border-bottom: 1px solid white;
         padding: 2rem 0;
-        
+
         position: relative;
 
         opacity: 0;
@@ -79,14 +83,26 @@
         overflow: hidden;
 
         transition: opacity .8s,
-                    height .5s;
+        height .5s;
+
+        &::before {
+            content: "";
+            border-radius: 999px;
+            background-color: black;
+
+            position: absolute;
+            bottom: 0;
+
+            height: 2px;
+            width: 100%;
+        }
 
         &.lines-3 {
             &:hover {
                 height: 17.8rem;
             }
         }
-        
+
         &:hover {
             height: 14.5rem;
 
@@ -104,21 +120,25 @@
     }
 
     &__arrow {
-        margin: 0 3rem 0 0;
+        margin: 0 0 0 2rem;
 
         height: 2rem;
         width: 2rem;
-        
+
         display: inline-block;
-        
-        border-bottom: 1px solid #eee;
-        border-right: 1px solid #eee;
-        
-        transform: rotate(135deg);
-        transform-origin: 2rem 1.4rem;
+
+        position: relative;
+        top: -6px;
+
+        border-bottom: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+
+        transform: rotate(-45deg);
+        // transform-origin: 3rem -1.4rem;
+        transform-origin: right;
         transition: all .5s;
     }
-    
+
     &__question {
         color: #ddd;
         display: inline-block;
@@ -131,24 +151,24 @@
 
     &__answer-box {
         display: flex;
-        justify-content: flex-start;        
+        justify-content: flex-start;
     }
-    
+
     &__answer {
-        color: #ccc;
+        color: #ddd;
         font-size: 2rem;
         letter-spacing: 1px;
 
-        padding-left: 7rem;
 
         width: 100%;
     }
-    
+
     &__link {
+
         &,
         &:link,
         &:visited {
-            color: #ccc;
+            color: #ddd;
             text-decoration: none;
 
             position: relative;
@@ -156,12 +176,12 @@
             &::before {
                 content: "";
 
-                background-color: #ccc;
+                background-color: #ddd;
                 border-radius: 999px;
 
                 position: absolute;
                 bottom: 0px;
-                
+
                 width: 100%;
                 height: 2px;
             }
