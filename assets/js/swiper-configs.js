@@ -9,6 +9,13 @@ var swiper = new Swiper('.swiper-container', {
       depth: 0,
       modifier: 1,
       slideShadows: true,
+      speed: 1000,
+      slidesPerView: 3,
+      freeMode: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
     },
     loop: true
   });
