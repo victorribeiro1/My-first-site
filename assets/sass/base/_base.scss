@@ -5,11 +5,14 @@
     padding: 0;
     box-sizing: inherit;
     outline: none;
+    cursor: none !important;
 }
 
 html {
     font-size: 62.5%; // 1rem = 10px
     scroll-behavior: smooth;
+    position: relative;
+    z-index: -1;
 }
 
 body {
@@ -19,6 +22,10 @@ body {
     position: relative;
 
     overflow-x: hidden;
+
+    *:hover .cursor {
+        transform: scale();
+    }
 }
 
 section.blur {
@@ -29,4 +36,50 @@ section.blur {
     background-color: $background-color-selection;
     -webkit-text-fill-color: $color-text-dark-1;
     color: $color-text-dark-1;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    width: 9px;
+    z-index: -1;
+    
+    &-thumb {
+        background: #eee;
+        border-radius: 999px;
+        height: 10px;
+    }
+    
+    &-track {
+        background-color: #222;
+    }
+}
+
+.cursor {
+    position: fixed;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    // border: 2px white solid;
+    z-index: 80;
+    transform: translate(-80%, -80%);
+    transition: .5s cubic-bezier(.75, -1.27, .3, 2.33) transform, 
+                .2s cubic-bezier(.75, -1.27, .3, 2.33) opacity,
+                left .16s ease-out,
+                top .16s ease-out;
+                transform: scale(1);
+                user-select: none;
+                pointer-events: none;
+                mix-blend-mode: difference;
+    
+    &.encrease {
+        background-color: transparent;
+        border: none;
+        backdrop-filter: invert(150%);
+        transform: scale(3);
+    }
+
+    &--grab {
+        
+    }
 }

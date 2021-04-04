@@ -1,62 +1,68 @@
-.margin-bottom {
-    height: 10rem;
-}
-.container {
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
-    color: rgb(0, 0, 0);
-    padding: 1rem 2rem 2rem 2rem;
-    border-bottom: 2px solid black;
-    
-    float: right;
-    
-    height: 80px;
-    width: 60%;
-    
-    overflow: hidden;
-    transition: all .5s;
-    
-    &:hover {
-        height: calc(2px + 2px + 63px + 302px + 10px + 20px);
-        
-        & ~ .square {
-            transform: rotate(-45deg);
-        }
-    }
-    
-    .heading-box {
-        text-align: center;
-    }
-    
-    h3 {
-        font-size: 38px;
-        padding-bottom: 1rem;
-    }
-    
-    .text-box {
-        text-align: justify;
-        
-    }
-    
-    p {
-        font-size: 22px;
+.test {
+    background-color: #abc354;
+    height: 100vh;
 
-        &:not(:last-of-type) {
-            margin-bottom: 1.6rem;
-        }
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default !important;
 }
 
-.square {
-    height: 2rem;
-    width: 2rem;
-    border-bottom: 1px solid black;
-    border-left: 1px solid black;
-    transform: rotate(-135deg);
-    position: absolute;
-    left: 58rem;
-    top: 12.5rem;
-    transition: all .5s;
+.cursor--grab {
+    font-family: "Segoe UI";
+    font-size: 12px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    cursor: default !important;
+    background-color: #eee;
+    border-radius: 50%;
+
+    position: fixed;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 70px;
+    height: 70px;
+
+    transform: translate(-50%, -110%);
+
+    z-index: 2;
+    &::before, &::after {
+        content: "";
+        // border: 1px solid #eee;
+        width: 38px;
+        height: 38px;
+        background: linear-gradient(to right bottom, transparent 50%, #111 50%);
+
+        position: absolute;
+        // z-index: 100;
+    }
+
+    &::before {
+        left: -6px;
+        transform: rotate(135deg);
+    }
+    
+    &::after {
+        right: -6px;
+        transform: rotate(-45deg);
+    }
+
+    .pseudo-internal-overflox-hidden {
+        position: absolute;
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1000;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
 }

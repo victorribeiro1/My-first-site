@@ -11,17 +11,22 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  outline: none; }
+  outline: none;
+  cursor: none !important; }
 
 html {
   font-size: 62.5%;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  position: relative;
+  z-index: -1; }
 
 body {
   background: #eee;
   box-sizing: border-box;
   position: relative;
   overflow-x: hidden; }
+  body *:hover .cursor {
+    transform: scale(); }
 
 section.blur {
   filter: blur(2px); }
@@ -30,6 +35,36 @@ section.blur {
   background-color: #ee6f6f;
   -webkit-text-fill-color: #000;
   color: #000; }
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 9px;
+  z-index: -1; }
+  ::-webkit-scrollbar-thumb {
+    background: #eee;
+    border-radius: 999px;
+    height: 10px; }
+  ::-webkit-scrollbar-track {
+    background-color: #222; }
+
+.cursor {
+  position: fixed;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  z-index: 80;
+  transform: translate(-80%, -80%);
+  transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, left 0.16s ease-out, top 0.16s ease-out;
+  transform: scale(1);
+  user-select: none;
+  pointer-events: none;
+  mix-blend-mode: difference; }
+  .cursor.encrease {
+    background-color: transparent;
+    border: none;
+    backdrop-filter: invert(150%);
+    transform: scale(3); }
 
 @font-face {
   font-family: "Always Smile";
@@ -365,7 +400,7 @@ Single-colored icons can be modified like so:
     .faq__content-box:hover .faq__questions-and-answers-box {
       width: 100%; }
   .faq__questions-and-answers-box {
-    background-color: #333;
+    background-color: #222;
     border-radius: 5px;
     padding: 3rem 5rem 6rem 5rem;
     transform: translateY(30px) scale(0.5);
@@ -451,41 +486,50 @@ Single-colored icons can be modified like so:
       width: 100%;
       height: 2px; }
 
-.margin-bottom {
-  height: 10rem; }
+.test {
+  background-color: #abc354;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default !important; }
 
-.container {
-  color: black;
-  padding: 1rem 2rem 2rem 2rem;
-  border-bottom: 2px solid black;
-  float: right;
-  height: 80px;
-  width: 60%;
-  overflow: hidden;
-  transition: all .5s; }
-  .container:hover {
-    height: calc(2px + 2px + 63px + 302px + 10px + 20px); }
-    .container:hover ~ .square {
-      transform: rotate(-45deg); }
-  .container .heading-box {
-    text-align: center; }
-  .container h3 {
-    font-size: 38px;
-    padding-bottom: 1rem; }
-  .container .text-box {
-    text-align: justify; }
-  .container p {
-    font-size: 22px; }
-    .container p:not(:last-of-type) {
-      margin-bottom: 1.6rem; }
-
-.square {
-  height: 2rem;
-  width: 2rem;
-  border-bottom: 1px solid black;
-  border-left: 1px solid black;
-  transform: rotate(-135deg);
-  position: absolute;
-  left: 58rem;
-  top: 12.5rem;
-  transition: all .5s; }
+.cursor--grab {
+  font-family: "Segoe UI";
+  font-size: 12px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: default !important;
+  background-color: #eee;
+  border-radius: 50%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  transform: translate(-50%, -110%);
+  z-index: 2; }
+  .cursor--grab::before, .cursor--grab::after {
+    content: "";
+    width: 38px;
+    height: 38px;
+    background: linear-gradient(to right bottom, transparent 50%, #111 50%);
+    position: absolute; }
+  .cursor--grab::before {
+    left: -6px;
+    transform: rotate(135deg); }
+  .cursor--grab::after {
+    right: -6px;
+    transform: rotate(-45deg); }
+  .cursor--grab .pseudo-internal-overflox-hidden {
+    position: absolute;
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
