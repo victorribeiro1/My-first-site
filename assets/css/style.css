@@ -469,7 +469,7 @@ Single-colored icons can be modified like so:
     padding: 2rem 0;
     position: relative;
     opacity: 0;
-    height: 7.2rem;
+    height: 7.1rem;
     overflow: hidden;
     transform: translateY(50px) scale(0.8); }
     .faq__question-and-answer-box::before {
@@ -490,7 +490,7 @@ Single-colored icons can be modified like so:
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-left: 2.5rem; }
+    padding-left: 2.2rem; }
   .faq__question {
     color: #ddd;
     display: inline-block;
