@@ -93,10 +93,15 @@ section.blur {
       right: 12px;
       transform: rotate(-45deg); }
   .cursor.encrease {
-    background-color: black;
-    border: none;
-    backdrop-filter: invert(150%);
-    transform: scale(5); }
+    background-color: black; }
+    .cursor.encrease--1 {
+      border: none;
+      backdrop-filter: invert(150%);
+      transform: scale(2.2); }
+    .cursor.encrease--4 {
+      border: none;
+      backdrop-filter: invert(150%);
+      transform: scale(4.2); }
   .cursor.decrease {
     transform: scale(0.8); }
 
@@ -430,11 +435,10 @@ Single-colored icons can be modified like so:
   align-items: center; }
   .faq__content-box {
     margin-top: 6rem;
-    max-width: 85%; }
+    max-width: 95%; }
     .faq__content-box:hover .faq__questions-and-answers-box {
       width: 100%; }
   .faq__questions-and-answers-box {
-    background-color: #222;
     border-radius: 5px;
     padding: 3rem 5rem 6rem 5rem;
     transform: translateY(30px) scale(0.5);
@@ -448,27 +452,33 @@ Single-colored icons can be modified like so:
       .faq__questions-and-answers-box.in .faq__question-and-answer-box, .faq__questions-and-answers-box.already-animated .faq__question-and-answer-box {
         opacity: 1; }
         .faq__questions-and-answers-box.in .faq__question-and-answer-box:nth-of-type(1), .faq__questions-and-answers-box.already-animated .faq__question-and-answer-box:nth-of-type(1) {
-          transition: opacity .9s .8s ease-in, height .5s; }
+          transition: opacity .5s .1s ease-in, transform .8s .1s ease-out, height .5s;
+          transform: translateY(0) scale(1); }
         .faq__questions-and-answers-box.in .faq__question-and-answer-box:nth-of-type(2), .faq__questions-and-answers-box.already-animated .faq__question-and-answer-box:nth-of-type(2) {
-          transition: opacity .9s 1s ease-in, height .5s; }
+          transition: opacity .5s .4s ease-in, transform .8s .4s ease-out, height .5s;
+          transform: translateY(0) scale(1); }
         .faq__questions-and-answers-box.in .faq__question-and-answer-box:nth-of-type(3), .faq__questions-and-answers-box.already-animated .faq__question-and-answer-box:nth-of-type(3) {
-          transition: opacity .9s 1.2s ease-in, height .5s; }
+          transition: opacity .5s .7s ease-in, transform .8s .7s ease-out, height .5s;
+          transform: translateY(0) scale(1); }
         .faq__questions-and-answers-box.in .faq__question-and-answer-box:nth-of-type(4), .faq__questions-and-answers-box.already-animated .faq__question-and-answer-box:nth-of-type(4) {
-          transition: opacity .9s 1.4s ease-in, height .5s; }
+          transition: opacity .5s 1s ease-in, transform .8s 1s ease-out, height .5s;
+          transform: translateY(0) scale(1); }
   .faq__question-and-answer-box {
+    background-color: #333;
+    margin-bottom: 2rem;
     padding: 2rem 0;
     position: relative;
     opacity: 0;
-    height: 7.9rem;
+    height: 7.2rem;
     overflow: hidden;
-    transition: opacity .8s, height .5s; }
+    transform: translateY(50px) scale(0.8); }
     .faq__question-and-answer-box::before {
       content: "";
       border-radius: 999px;
-      background-color: #990C0C;
+      background-color: #a81212;
       position: absolute;
       bottom: 0;
-      height: 2px;
+      height: 1px;
       width: 100%; }
     .faq__question-and-answer-box.lines-3:hover {
       height: 17.8rem; }
@@ -477,31 +487,32 @@ Single-colored icons can be modified like so:
       .faq__question-and-answer-box:hover .faq__arrow {
         transform: rotate(45deg); }
   .faq__question-box {
-    padding-bottom: 1rem;
     display: flex;
     justify-content: flex-start;
-    align-items: center; }
-  .faq__arrow {
-    margin: 0 0 0 2rem;
-    height: 2rem;
-    width: 2rem;
+    align-items: center;
+    padding-left: 2.5rem; }
+  .faq__question {
+    color: #ddd;
     display: inline-block;
     position: relative;
-    top: -6px;
+    font-size: 2.2rem; }
+  .faq__arrow {
+    margin: 0 0 0 2rem;
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    position: absolute;
+    right: 45px;
     border-bottom: 1px solid #ddd;
     border-right: 1px solid #ddd;
     transform: rotate(-45deg);
     transform-origin: right;
     transition: all .5s; }
-  .faq__question {
-    color: #ddd;
-    display: inline-block;
-    position: relative;
-    top: -2px;
-    font-size: 3rem; }
   .faq__answer-box {
     display: flex;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    padding-top: 1.4rem;
+    padding-left: 2.5rem; }
   .faq__answer {
     color: #ddd;
     font-size: 2rem;

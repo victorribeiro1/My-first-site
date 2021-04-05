@@ -1,5 +1,5 @@
 const cursor = document.querySelector('.cursor')
-const encreaseCursorElements = document.querySelectorAll('.link')
+const links = document.querySelectorAll('.link')
 
 const sliderArea = document.querySelector('.swiper-container')
 
@@ -32,15 +32,29 @@ sliderArea.addEventListener('mouseup', () => {
 })
 
 // LINKS:HOVER
-encreaseCursorElements.forEach(element => {
-    element.addEventListener('mousemove', () => {
-        cursor.classList.add('encrease')
+links.forEach(link => {
+
+    if (link.classList.contains('link--1')) {
+        link.addEventListener('mousemove', () => {
+        cursor.classList.add('encrease--1')
     })
 
-    element.addEventListener('mouseout', () => {
-        cursor.classList.remove('encrease')
+    link.addEventListener('mouseout', () => {
+        cursor.classList.remove('encrease--1')
     })
+    
+    } else if (link.classList.contains('link--4')) {
+        link.addEventListener('mousemove', () => {
+            cursor.classList.add('encrease--4')
+        })
+    
+        link.addEventListener('mouseout', () => {
+            cursor.classList.remove('encrease--4')
+        })
+    }
 })
+
+
 
 // DECREASING CURSOR ONCLICK
 // document.addEventListener('mousedown', () => {

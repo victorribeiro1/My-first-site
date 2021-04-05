@@ -72,10 +72,18 @@
     }
 
    &.encrease {
-        background-color: black;
-        border: none;
-        backdrop-filter: invert(150%);
-        transform: scale(5);
+       background-color: black;
+       
+       &--1 {
+           border: none;
+           backdrop-filter: invert(150%);
+           transform: scale(2.2);
+        }
+        &--4 {
+            border: none;
+           backdrop-filter: invert(150%);
+            transform: scale(4.2);
+       }
     }
     
     &.decrease {
