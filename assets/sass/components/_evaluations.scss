@@ -3,6 +3,8 @@
     .swiper-container {
         height: 48rem;
         -webkit-box-reflect: below 1px linear-gradient(transparent 80%, $color-evaluation-webkit-box-reflect);
+        cursor: none !important;
+
     }
     
     // .swiper-wrapper {

@@ -11,8 +11,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  outline: none;
-  cursor: none !important; }
+  outline: none; }
 
 html {
   font-size: 62.5%;
@@ -49,11 +48,11 @@ section.blur {
 
 .cursor {
   position: fixed;
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
   background-color: transparent;
-  border: 2px white solid;
+  border: .2px #fff solid;
   z-index: 80;
   transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, 0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) width, 0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) height, left 0.16s ease-out, top 0.16s ease-out;
   transform: translate(-50%, -50%) scale(1);
@@ -97,11 +96,12 @@ section.blur {
     .cursor.encrease--1 {
       border: none;
       backdrop-filter: invert(150%);
-      transform: scale(2.2); }
+      transform: scale(2.2) translate(-18%, -20%); }
     .cursor.encrease--4 {
+      cursor: none !important;
       border: none;
       backdrop-filter: invert(150%);
-      transform: scale(4.2); }
+      transform: scale(4.2) translate(-8%, -8%); }
   .cursor.decrease {
     transform: scale(0.8); }
 
@@ -164,7 +164,8 @@ body {
   overflow-y: hidden; }
   .evaluations .swiper-container {
     height: 48rem;
-    -webkit-box-reflect: below 1px linear-gradient(transparent 80%, #000000cc); }
+    -webkit-box-reflect: below 1px linear-gradient(transparent 80%, #000000cc);
+    cursor: none !important; }
   .evaluations .swiper-slide {
     background-color: transparent;
     background-position: center;
@@ -406,11 +407,11 @@ Single-colored icons can be modified like so:
   .navigation__icons-box {
     position: absolute;
     bottom: 4rem;
-    left: 9.5rem;
+    left: 5.8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 11rem;
+    width: 14rem;
     z-index: 3;
     opacity: 0;
     transition: opacity 0.5s 0.1s; }

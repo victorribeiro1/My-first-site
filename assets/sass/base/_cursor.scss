@@ -1,10 +1,10 @@
 .cursor {
     position: fixed;
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     border-radius: 50%;
     background-color: transparent;
-    border: 2px white solid;
+    border: .2px #fff solid;
     z-index: 80;
     transition: .5s cubic-bezier(.75, -1.27, .3, 2.33) transform, 
                 .2s cubic-bezier(.75, -1.27, .3, 2.33) opacity,
@@ -74,15 +74,17 @@
    &.encrease {
        background-color: black;
        
+       
        &--1 {
            border: none;
            backdrop-filter: invert(150%);
-           transform: scale(2.2);
+           transform: scale(2.2) translate(-18%, -20%);
         }
         &--4 {
+            cursor: none !important;
             border: none;
            backdrop-filter: invert(150%);
-            transform: scale(4.2);
+           transform: scale(4.2) translate(-8%, -8%);
        }
     }
     
