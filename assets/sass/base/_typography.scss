@@ -22,7 +22,7 @@ body {
         height: 4px;
         width: 50%;
         bottom: 0;
-        transition: all 1s;
+        transition: all 1s .3s ease-out;
     }
 
     &.in {
