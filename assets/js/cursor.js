@@ -1,22 +1,9 @@
 const cursor = document.querySelector('.cursor')
-const encreaseCursorElements = document.querySelectorAll('.scale-cursor')
+const encreaseCursorElements = document.querySelectorAll('.link')
 
-const faq = document.querySelector('.faq')
-const evaluations = document.querySelector('.evaluations')
 const sliderArea = document.querySelector('.swiper-container')
-const swiperWrapper = document.querySelector('.swiper-wrapper')
-const swiperSlider = document.querySelector('.swiper-slide')
-const card = document.querySelector('.card')
-const content = document.querySelector('.content')
-const layer = document.querySelector('.layer')
-const text = document.querySelector('.evaluation-text')
 
 const grabCursorDot = document.createElement('div')
-
-
-console.log(sliderArea)
-
-console.log(cursor)
 
 document.addEventListener('mousemove', (e) => {
     // console.log('clientX: ' + e.clientX)
@@ -25,6 +12,26 @@ document.addEventListener('mousemove', (e) => {
     cursor.style.top = e.clientY + 'px'
 })
 
+// ENABLE GRAB CURSOR
+sliderArea.addEventListener('mousemove', () => {
+    cursor.classList.add('grab')
+    cursor.appendChild(grabCursorDot).classList.add('dot')
+})
+
+// DISABLE GRAB CURSOR
+sliderArea.addEventListener('mouseout', () => {
+    cursor.classList.remove('grab')
+})
+
+// GRAB CURSOR ARROWS
+sliderArea.addEventListener('mousedown', () => {
+    cursor.classList.add('expands')
+})
+sliderArea.addEventListener('mouseup', () => {
+    cursor.classList.remove('expands')
+})
+
+// LINKS:HOVER
 encreaseCursorElements.forEach(element => {
     element.addEventListener('mousemove', () => {
         cursor.classList.add('encrease')
@@ -35,21 +42,7 @@ encreaseCursorElements.forEach(element => {
     })
 })
 
-sliderArea.addEventListener('mousemove', (e) => {
-    console.log('in')
-    cursor.classList.add('grab')
-    cursor.appendChild(grabCursorDot).classList.add('dot')
-})
-
-sliderArea.addEventListener('mousedown', (e) => {
-    cursor.classList.add('expands')
-})
-sliderArea.addEventListener('mouseup', (e) => {
-    cursor.classList.remove('expands')
-})
-
-faq.addEventListener('mouseenter', () => {
-    console.log('in')
-    cursor.classList.remove('grab')
-    // cursor.removeChild(grabCursorDot)
-})
+// DECREASING CURSOR ONCLICK
+// document.addEventListener('mousedown', () => {
+//     cursor.classList.toggle('decrease')
+// })

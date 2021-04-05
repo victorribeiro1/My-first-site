@@ -55,9 +55,8 @@ section.blur {
   background-color: transparent;
   border: 2px white solid;
   z-index: 80;
-  transform: translate(-50%, -50%) !important;
   transition: 0.5s cubic-bezier(0.75, -1.27, 0.3, 2.33) transform, 0.2s cubic-bezier(0.75, -1.27, 0.3, 2.33) opacity, 0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) width, 0.4s cubic-bezier(0.75, -1.27, 0.3, 2.33) height, left 0.16s ease-out, top 0.16s ease-out;
-  transform: scale(1);
+  transform: translate(-50%, -50%) scale(1);
   user-select: none;
   pointer-events: none;
   mix-blend-mode: difference; }
@@ -94,10 +93,12 @@ section.blur {
       right: 12px;
       transform: rotate(-45deg); }
   .cursor.encrease {
-    background-color: transparent;
+    background-color: black;
     border: none;
     backdrop-filter: invert(150%);
-    transform: scale(3); }
+    transform: scale(5); }
+  .cursor.decrease {
+    transform: scale(0.8); }
 
 @font-face {
   font-family: "Always Smile";
