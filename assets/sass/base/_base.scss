@@ -9,6 +9,7 @@
 }
 
 html {
+    background-color: #222;
     font-size: 62.5%; // 1rem = 10px
     scroll-behavior: smooth;
     position: relative;
@@ -42,6 +43,10 @@ section.blur {
     background-color: transparent;
     width: 9px;
     z-index: -1;
+
+    &.hidden {
+        width: 0 !important;
+    }
     
     &-thumb {
         background: #eee;

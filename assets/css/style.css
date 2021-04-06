@@ -14,6 +14,7 @@
   outline: none; }
 
 html {
+  background-color: #222;
   font-size: 62.5%;
   scroll-behavior: smooth;
   position: relative;
@@ -39,6 +40,8 @@ section.blur {
   background-color: transparent;
   width: 9px;
   z-index: -1; }
+  ::-webkit-scrollbar.hidden {
+    width: 0 !important; }
   ::-webkit-scrollbar-thumb {
     background: #eee;
     border-radius: 999px;
@@ -159,86 +162,6 @@ body {
 
 .display-block {
   display: block; }
-
-.evaluations {
-  overflow-y: hidden; }
-  .evaluations .swiper-container {
-    height: 48rem;
-    -webkit-box-reflect: below 1px linear-gradient(transparent 80%, #000000cc);
-    cursor: none !important; }
-  .evaluations .swiper-slide {
-    background-color: transparent;
-    background-position: center;
-    background-size: cover;
-    width: 32rem;
-    height: 90%;
-    margin: 0 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 2.5rem;
-    perspective: 9999px; }
-  .evaluations .swiper-slide-shadow-left,
-  .evaluations .swiper-slide-shadow-right {
-    background-image: none; }
-  .evaluations .card {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    background: #333;
-    text-align: center;
-    overflow: hidden;
-    border-radius: 5px; }
-  .evaluations .layer {
-    position: absolute;
-    top: calc(100% - 2px);
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(#CF1212, #3A0606);
-    z-index: 1;
-    transition: .5s; }
-  .evaluations .card:hover .layer {
-    top: 0; }
-  .evaluations .content {
-    background-color: transparent;
-    position: relative;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 2; }
-    .evaluations .content p {
-      font-size: 18px;
-      color: #eee;
-      line-height: 24px;
-      margin: 30px 0 30px 0;
-      padding: .5rem; }
-    .evaluations .content .img-box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      border-radius: 50%;
-      border: 3px solid #eee;
-      width: 100px;
-      height: 100px; }
-      .evaluations .content .img-box img {
-        background: #87BDD3;
-        width: 100%; }
-        .evaluations .content .img-box img.tom {
-          width: 150%; }
-    .evaluations .content h2 {
-      font-size: 18px;
-      color: white; }
-      .evaluations .content h2 span {
-        color: #03A9F4;
-        font-feature-settings: 14px;
-        transition: .5s; }
-  .evaluations .card:hover .content h2 span {
-    color: #fff; }
 
 .icon {
   display: inline-block;
@@ -423,7 +346,85 @@ Single-colored icons can be modified like so:
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  overflow-y: hidden; }
+  .evaluations .swiper-container {
+    height: 48rem;
+    -webkit-box-reflect: below 1px linear-gradient(transparent 80%, #000000cc);
+    cursor: none !important; }
+  .evaluations .swiper-slide {
+    background-color: transparent;
+    background-position: center;
+    background-size: cover;
+    width: 32rem;
+    height: 90%;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 2.5rem;
+    perspective: 9999px; }
+  .evaluations .swiper-slide-shadow-left,
+  .evaluations .swiper-slide-shadow-right {
+    background-image: none; }
+  .evaluations .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background: #333;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 5px; }
+  .evaluations .layer {
+    position: absolute;
+    top: calc(100% - 2px);
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#CF1212, #3A0606);
+    z-index: 1;
+    transition: .5s; }
+  .evaluations .card:hover .layer {
+    top: 0; }
+  .evaluations .content {
+    background-color: transparent;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; }
+    .evaluations .content p {
+      font-size: 18px;
+      color: #eee;
+      line-height: 24px;
+      margin: 30px 0 30px 0;
+      padding: .5rem; }
+    .evaluations .content .img-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 50%;
+      border: 3px solid #eee;
+      width: 100px;
+      height: 100px; }
+      .evaluations .content .img-box img {
+        background: #87BDD3;
+        width: 100%; }
+        .evaluations .content .img-box img.tom {
+          width: 150%; }
+    .evaluations .content h2 {
+      font-size: 18px;
+      color: white; }
+      .evaluations .content h2 span {
+        color: #03A9F4;
+        font-feature-settings: 14px;
+        transition: .5s; }
+  .evaluations .card:hover .content h2 span {
+    color: #fff; }
 
 .faq {
   background-color: #222;
