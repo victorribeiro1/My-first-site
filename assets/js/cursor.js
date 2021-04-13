@@ -54,8 +54,6 @@ links.forEach(link => {
     }
 })
 
-
-
 // DECREASING CURSOR ONCLICK
 // document.addEventListener('mousedown', () => {
 //     cursor.classList.toggle('decrease')

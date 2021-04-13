@@ -14,7 +14,7 @@
 
     .swiper-container {
         height: 48rem;
-        -webkit-box-reflect: below 1px linear-gradient(transparent 80%, $color-evaluation-webkit-box-reflect);
+        -webkit-box-reflect: below 1px linear-gradient(transparent 80%, black);
         cursor: none !important;
 
     }
@@ -47,7 +47,7 @@
         width: 100%;
         height: 100%;
         margin: 0 auto;
-        background: $background-color-card;
+        background: #222;
         text-align: center;
         overflow: hidden;
         border-radius: 5px;
@@ -59,7 +59,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient($evaluation-layer-first-color, $evaluation-layer-second-color);
+        background: linear-gradient(lightblue, white);
         z-index: 1;
         transition: .5s;
     }
@@ -82,7 +82,7 @@
         z-index: 2;
         p {
             font-size: 18px;
-            color: $color-text-light-2;
+            color: #eee;
             line-height: 24px;
             margin: 30px 0 30px 0;
             padding: .5rem;
@@ -94,7 +94,7 @@
             align-items: center;
             overflow: hidden;
             border-radius: 50%;
-            border: 3px solid $img-box-border-color;
+            border: 3px solid grey;
             width: 100px;
             height: 100px;
 
@@ -113,7 +113,7 @@
             color: white;
 
             span {
-                color: $color-text-blue-1;
+                color: lightblue;
                 font-feature-settings: 14px;
                 transition: .5s;
             }
@@ -121,6 +121,6 @@
     }
 
     .card:hover .content h2 span {
-        color: $color-card-evaluator-name;
+        color: blue;
     }
 }
