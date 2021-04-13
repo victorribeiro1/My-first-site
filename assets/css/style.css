@@ -130,3 +130,27 @@ Single-colored icons can be modified like so:
         transition: .5s; }
   .evaluations .card:hover .content h2 span {
     color: blue; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.shape {
+  overflow: hidden;
+  width: 21rem;
+  height: 20rem;
+  border: 12px solid #333;
+  border-radius: 63% 37% 30% 70%/50% 45% 55% 50%;
+  box-shadow: 5px 5px 14px #1b1b1b, -5px -5px 14px #4e4d4d8c;
+  background-image: url("../../../media/images/white-car-1-d.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150%; }
