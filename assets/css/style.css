@@ -42,11 +42,10 @@ body {
   pointer-events: none; }
   .cursor--small {
     background-color: #eee;
-    height: 8px;
-    width: 8px;
+    height: 1.2rem;
+    width: 1.2rem;
     transition: transform 50ms, left 50ms, top 50ms, height 0.7s cubic-bezier(0.75, -1.27, 0.3, 2.53), width 0.7s cubic-bezier(0.75, -1.27, 0.3, 2.53); }
     .cursor--small.expand {
-      animation: hoveringEffect 2s infinite;
       height: 6rem;
       width: 6rem;
       background-color: black;
