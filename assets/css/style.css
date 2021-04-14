@@ -1,31 +1,74 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  outline: none; }
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  position: relative; }
+
+body {
+  background: #161515;
+  box-sizing: border-box;
+  position: relative;
+  overflow-x: hidden; }
+
+::selection {
+  background-color: #d35c5c;
+  color: #fff; }
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 9px;
+  z-index: -1; }
+  ::-webkit-scrollbar.hidden {
+    width: 0 !important; }
+  ::-webkit-scrollbar-thumb {
+    background: #eee;
+    border-radius: 999px;
+    height: 10px; }
+  ::-webkit-scrollbar-track {
+    background-color: #222; }
+
 .cursor {
   position: fixed;
   border-radius: 50%;
-  border: 1px solid #eee;
-  pointer-events: none;
   transform: translate(-50%, -50%);
   user-select: none;
-  pointer-events: none;
-  mix-blend-mode: difference; }
+  pointer-events: none; }
   .cursor--small {
-    background-color: #222;
+    background-color: #eee;
     height: 8px;
-    width: 8px; }
+    width: 8px;
+    transition: transform 50ms, left 50ms, top 50ms, height 0.7s cubic-bezier(0.75, -1.27, 0.3, 2.53), width 0.7s cubic-bezier(0.75, -1.27, 0.3, 2.53); }
+    .cursor--small.expand {
+      animation: hoveringEffect 2s infinite;
+      height: 6rem;
+      width: 6rem;
+      background-color: black;
+      mix-blend-mode: difference;
+      backdrop-filter: invert(100%); }
+      .cursor--small.expand + .cursor--big {
+        opacity: 0;
+        transition: transform 50ms, left 50ms, top 50ms, height 0.7s cubic-bezier(0.75, -1.27, 0.3, 2.53), width 0.7s cubic-bezier(0.75, -1.27, 0.3, 2.53), opacity 0.2s 0.5s; }
   .cursor--big {
-    border: 1px solid #666;
-    height: 50px;
-    width: 50px;
-    transition: .1s; }
+    border: 1px solid #eee;
+    height: 5rem;
+    width: 5rem;
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.375); }
+  .cursor.hide--x {
+    opacity: 0; }
+  .cursor.hide--y {
+    opacity: 0; }
 
-/*
-    Encreasing animation:
-    transition: .5s cubic-bezier(.75, -1.27, .3, 2.33) transform, 
-                .2s cubic-bezier(.75, -1.27, .3, 2.53) opacity,
-                .4s cubic-bezier(.75, -1.27, .3, 2.53) width,
-                            .4s cubic-bezier(.75, -1.27, .3, 2.33) height,
-           left .1s ease-out,
-            top .16s ease-out;
-*/
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.4; }
+
 .icon {
   display: inline-block;
   height: 2.5rem;
@@ -130,27 +173,3 @@ Single-colored icons can be modified like so:
         transition: .5s; }
   .evaluations .card:hover .content h2 span {
     color: blue; }
-
-* {
-  box-sizing: border-box; }
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #333;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.shape {
-  overflow: hidden;
-  width: 21rem;
-  height: 20rem;
-  border: 12px solid #333;
-  border-radius: 63% 37% 30% 70%/50% 45% 55% 50%;
-  box-shadow: 5px 5px 14px #1b1b1b, -5px -5px 14px #4e4d4d8c;
-  background-image: url("../../../media/images/white-car-1-d.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 150%; }
