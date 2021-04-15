@@ -1,3 +1,12 @@
+:root {
+  --color-dark-1: #000;
+  --color-dark-2: #111;
+  --color-dark-3: #2E3339;
+  --color-light-1: #fff;
+  --color-light-2: #eee;
+  --color-light-3: #ddd;
+  --bg-color: var(--color-dark-2); }
+
 *,
 *::before,
 *::after {
@@ -12,7 +21,7 @@ html {
   position: relative; }
 
 body {
-  background: #161515;
+  background: var(--bg-color);
   box-sizing: border-box;
   position: relative;
   overflow-x: hidden; }
@@ -111,7 +120,7 @@ Single-colored icons can be modified like so:
   cursor: pointer;
   padding: 2rem;
   padding-left: 5rem;
-  box-shadow: 0px 4px 20px #eeeeee07; }
+  box-shadow: 0px 3px 10px #000000fb; }
   .nav__column {
     display: flex;
     justify-content: space-between;
@@ -233,6 +242,8 @@ Single-colored icons can be modified like so:
     display: flex;
     justify-content: space-around;
     align-items: center; }
+  .header__main-heading {
+    font-size: 8rem; }
   .header__img-box {
     background-color: #eee;
     height: 15rem;

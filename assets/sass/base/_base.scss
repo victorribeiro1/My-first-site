@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    background: #161515;
+    background: var(--bg-color);
     box-sizing: border-box;
 
     position: relative;
