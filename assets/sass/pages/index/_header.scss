@@ -1,31 +1,76 @@
 .header {
+    min-height: 100vh;
 
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
     &__content-box {
+        // background-color: lightgreen;
+        height: 85vh;
+
+        display: flex;
+        flex-direction: column;
+    }
+    
+    &__introduction {
+        height: 50%;
+        // background-color: rgb(211, 58, 58);
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    &__text-box {
         
     }
-
-    &__introduction {
-
-    }
-
-    &__text-box {
-
-    }
-
+    
     &__main-heading {
-
+        
     }
-
+    
     &__img-box {
-
+        background-color: #eee;
+        height: 15rem;
+        width: 15rem;
     }
-
+    
     &__contact-area {
+        height: 50%;
+        // background-color: rgb(58, 168, 211);
 
+        position: relative;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    &__button {
+    &__button-area {
+        width: 50%;
+        height: 100%;
+        position: relative;
+        // background-color: #fff;
 
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    &__button {
+        background-color: #ddd;
+        border: 1px solid black;
+
+        margin-top: 50px;
+        height: 60px;
+        width: 190px;
+
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     &__button-text {
@@ -34,5 +79,25 @@
 
     &__button-arrows-box {
         
+    }
+
+    &__icons-area {
+        // background:#666;
+        width: 50%;
+        height: 100%;
+
+        position: relative;
+    }
+
+    &__icons-box {
+        // background-color: #444;
+        position: absolute;
+        width: 7rem;
+        bottom: 10px;
+        right: 10px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
