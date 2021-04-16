@@ -37,8 +37,9 @@
         &:link,
         &:visited {
             color: #eee;
-            font-size: 1.6rem;
-            font-weight: 100;
+            font-size: 1.4rem;
+            font-weight: 600;
+            letter-spacing: 5px;
             text-transform: uppercase;
             text-decoration: none;
             
@@ -51,9 +52,38 @@
             width: 13rem;
         }
 
-        &--ag {
-            font-size: 3rem !important;
-            font-weight: 600 !important;
+        &--brand {
+            &--text {
+                font-size: 3rem !important;
+                font-family: 'aeonik';
+                font-weight: 9999 !important;
+    
+                position: relative;
+    
+                &::before {
+                    content: "";
+    
+                    background-color: #eee;
+                    border-radius: 50%;
+    
+                    height: .7rem;
+                    width: .7rem;
+    
+                    position: absolute;
+                    bottom: 6px;
+                    right: -6px;
+                }
+            }
+
+            &--img {
+                // background-color: #fff;
+                background: url("/media/images/ag-dark-logo-d.jpeg") no-repeat center;
+                background-size: 84%;
+                
+
+                height: 5rem;
+                width: 13rem;
+            }
         }
     }
 
@@ -63,8 +93,5 @@
 
     &__link-arrow-box {
         
-    }
-
-    &__ag-dot {
     }
 }

@@ -21,7 +21,6 @@ html {
   position: relative; }
 
 body {
-  font-family: 'aeonki';
   background: var(--bg-color);
   background-size: cover;
   box-sizing: border-box;
@@ -76,11 +75,15 @@ body {
     opacity: 0; }
 
 @font-face {
-  src: url("../../../media/fonts/aeonik/Aeonik-Black.otf");
+  src: url("../../../media/fonts/aeonik/Aeonik-Air.otf");
+  font-family: 'aeonik-light'; }
+
+@font-face {
+  src: url("../../../media/fonts/aeonik/Aeonik-Air.otf");
   font-family: 'aeonik'; }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'aeonik-light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.4; }
 
 .arrow-container {
@@ -155,16 +158,33 @@ Single-colored icons can be modified like so:
       width: 32rem; }
   .nav__link, .nav__link:link, .nav__link:visited {
     color: #eee;
-    font-size: 1.6rem;
-    font-weight: 100;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 5px;
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block; }
   .nav__link--services {
     width: 13rem; }
-  .nav__link--ag {
+  .nav__link--brand--text {
     font-size: 3rem !important;
-    font-weight: 600 !important; }
+    font-family: 'aeonik';
+    font-weight: 9999 !important;
+    position: relative; }
+    .nav__link--brand--text::before {
+      content: "";
+      background-color: #eee;
+      border-radius: 50%;
+      height: .7rem;
+      width: .7rem;
+      position: absolute;
+      bottom: 6px;
+      right: -6px; }
+  .nav__link--brand--img {
+    background: url("/media/images/ag-dark-logo-d.jpeg") no-repeat center;
+    background-size: 84%;
+    height: 5rem;
+    width: 13rem; }
 
 .evaluations {
   background-color: #000;
@@ -286,7 +306,7 @@ Single-colored icons can be modified like so:
     position: absolute; }
   .header__img-box {
     display: none; }
-  .header__contact-area {
+  .header__contact-box {
     height: 50%;
     position: relative;
     display: flex;
