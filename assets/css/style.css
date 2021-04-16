@@ -22,7 +22,7 @@ html {
 
 body {
   font-family: 'aeonki';
-  background: var(--bg-color) url("../../../media/images/black-car-4-d.jpg") no-repeat center;
+  background: var(--bg-color);
   background-size: cover;
   box-sizing: border-box;
   position: relative;
@@ -118,12 +118,32 @@ Single-colored icons can be modified like so:
     color: red;
 }
 ========================================== */
+.swipe-button__body {
+  background: linear-gradient(110deg, white, #7575c2 40%, #c01f55, red 100%);
+  border: 5px solid #111;
+  border-radius: 999px;
+  box-shadow: 5px  5px 11px #000000e8, -3px -3px 5px #2b272783, inset 3px  3px 5px #000000e8, inset -3px -3px 5px #2b272783;
+  color: #00000017;
+  height: 4rem;
+  width: 8rem;
+  position: relative; }
+
+.swipe-button__ball {
+  border-radius: 50px;
+  background: linear-gradient(145deg, #413f3f, #030303);
+  box-shadow: 2px  2px 7px #000000e8, -2px -2px 7px #2b272783;
+  width: 3.3rem;
+  height: 3.3rem;
+  position: absolute;
+  top: 50%;
+  left: -1px;
+  transform: translateY(-50%); }
+
 .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
-  cursor: pointer;
   padding: 2rem;
   padding-left: 5rem;
   box-shadow: 0px 2px 7px #000000; }
@@ -132,7 +152,7 @@ Single-colored icons can be modified like so:
     justify-content: space-between;
     align-items: center; }
     .nav__column--left, .nav__column--right {
-      width: 25rem; }
+      width: 32rem; }
   .nav__link, .nav__link:link, .nav__link:visited {
     color: #eee;
     font-size: 1.6rem;
