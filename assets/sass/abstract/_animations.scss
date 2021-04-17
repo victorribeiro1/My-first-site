@@ -4,7 +4,11 @@
         transform: scaleY(0);
     }
     
-    to {
+    50% {
         transform: scaleY(1);
+    }
+
+    to {
+        // transform: scaleY(0);
     }
 }

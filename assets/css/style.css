@@ -2,8 +2,9 @@
   from {
     transform-origin: top;
     transform: scaleY(0); }
-  to {
-    transform: scaleY(1); } }
+  50% {
+    transform: scaleY(1); }
+  to { } }
 
 :root {
   --color-dark-1: #000;
@@ -89,6 +90,22 @@ body {
   src: url("../../../media/fonts/aeonik/Aeonik-Air.otf");
   font-family: 'aeonik'; }
 
+@font-face {
+  src: url("../../../media/fonts/Nunito_Sans/NunitoSans-Light.ttf");
+  font-family: 'nunito-light'; }
+
+@font-face {
+  src: url("../../../media/fonts/Nunito_Sans/NunitoSans-ExtraLight.ttf");
+  font-family: 'nunito-extraLight'; }
+
+@font-face {
+  src: url("../../../media/fonts/Nunito_Sans/NunitoSans-Regular.ttf");
+  font-family: 'nunito-regular'; }
+
+@font-face {
+  src: url("../../../media/fonts/Nunito_Sans/NunitoSans-Black.ttf");
+  font-family: 'nunito-black'; }
+
 body {
   font-family: 'aeonik-light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.4; }
@@ -109,17 +126,27 @@ body {
 .dropdown__menu {
   display: none; }
 
+.icon-box {
+  background-color: #111;
+  border-radius: 999px;
+  box-shadow: 3px 3px 10px #070707, -3px -3px 10px #1b1b1bf6, inset 3px 3px 10px #070707, inset -3px -3px 10px #1b1b1bf6;
+  height: 5.3rem;
+  width: 5.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 .icon {
   display: inline-block;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 2.2rem;
+  width: 2.2rem;
   stroke-width: 0;
   stroke: currentColor;
-  fill: #eee; }
+  fill: #777;
+  transform: translateX(1px); }
   .icon--youtube {
-    height: 3.3rem;
-    width: 3.3rem;
-    transform: translateY(-4px); }
+    height: 2.5rem;
+    width: 2.5rem; }
 
 /* ==========================================
 Single-colored icons can be modified like so:
@@ -300,22 +327,28 @@ Single-colored icons can be modified like so:
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; }
+    align-items: flex-start;
+    position: relative;
+    top: -5rem; }
   .header__main-heading {
     color: #eee;
-    font-size: 5rem;
-    font-family: 'aeonik'; }
+    font-size: 7rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-family: 'nunito-extraLight'; }
   .header__paragraph {
-    font-size: 2rem;
-    color: white;
-    max-width: 38rem; }
+    font-family: 'nunito-light';
+    font-size: 2.2rem;
+    color: #949393;
+    max-width: 48rem;
+    letter-spacing: 1px; }
   .header__img {
     background: #111 url("/media/images/black-car-4-d.jpg") no-repeat center;
     background-size: cover;
     border-radius: 50%;
-    height: 50rem;
-    width: 50rem;
-    transform: rotateY(15deg); }
+    box-shadow: 2px 2px 5px black;
+    height: 43rem;
+    width: 43rem; }
   .header__contact-box {
     position: relative;
     display: flex;
@@ -329,22 +362,39 @@ Single-colored icons can be modified like so:
     left: 3rem; }
     .header__explore::before {
       content: "";
-      animation: explore 5s infinite ease-in forwards;
+      animation: explore 2s infinite ease-in forwards;
       background-color: rgba(243, 240, 240, 0.575);
-      height: 8.2rem;
+      height: 5.2rem;
       width: 1px;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
       top: -55px; }
-  .header__button {
-    background-color: #fff;
-    border-radius: 10px;
-    height: 3rem;
-    width: 10rem;
+  .header__button, .header__button:link, .header__button:visited {
+    background-color: #111;
+    border-radius: 999px;
+    box-shadow: 5px  5px 11px #000000e8, -3px -3px 5px #2b272783, inset 3px  3px 5px #000000e8, inset -3px -3px 5px #2b272783;
+    border: 1px solid #131212;
+    height: 6rem;
+    width: 22rem;
+    position: relative;
+    top: -12rem;
+    left: -9rem;
     display: flex;
-    justify-content: space-between;
-    align-items: center; }
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none; }
+    .header__button:hover, .header__button:link:hover, .header__button:visited:hover {
+      box-shadow: inset  3px  3px 5px #000000e8, inset -3px -3px 5px #2b272783; }
+  .header__button-text {
+    color: #eee;
+    font-size: 1.5rem;
+    letter-spacing: 3px; }
+  .header__button-arrows-box {
+    transform: translateY(3px); }
+  .header__button-arrow {
+    border-top: 1px solid #888;
+    border-right: 1px solid #888; }
   .header__icons-box {
     position: relative;
     bottom: 1.4rem;
@@ -352,4 +402,9 @@ Single-colored icons can be modified like so:
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 6rem; }
+    width: 12rem; }
+  .header__icon {
+    background-color: #111;
+    border-radius: 999px;
+    box-shadow: 5px  5px 11px #000000e8, -3px -3px 5px #2b272783, inset 3px  3px 5px #000000e8, inset -3px -3px 5px #2b272783;
+    border: 1px solid #131212; }
