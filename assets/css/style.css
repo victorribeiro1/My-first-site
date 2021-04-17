@@ -83,27 +83,27 @@ body {
     opacity: 0; }
 
 @font-face {
-  src: url("../../../media/fonts/aeonik/Aeonik-Air.otf");
+  src: url("../../media/fonts/aeonik/Aeonik-Air.otf");
   font-family: 'aeonik-light'; }
 
 @font-face {
-  src: url("../../../media/fonts/aeonik/Aeonik-Air.otf");
+  src: url("../../media/fonts/aeonik/Aeonik-Air.otf");
   font-family: 'aeonik'; }
 
 @font-face {
-  src: url("../../../media/fonts/Nunito_Sans/NunitoSans-Light.ttf");
+  src: url("../../media/fonts/Nunito_Sans/NunitoSans-Light.ttf");
   font-family: 'nunito-light'; }
 
 @font-face {
-  src: url("../../../media/fonts/Nunito_Sans/NunitoSans-ExtraLight.ttf");
+  src: url("../../media/fonts/Nunito_Sans/NunitoSans-ExtraLight.ttf");
   font-family: 'nunito-extraLight'; }
 
 @font-face {
-  src: url("../../../media/fonts/Nunito_Sans/NunitoSans-Regular.ttf");
+  src: url("../../media/fonts/Nunito_Sans/NunitoSans-Regular.ttf");
   font-family: 'nunito-regular'; }
 
 @font-face {
-  src: url("../../../media/fonts/Nunito_Sans/NunitoSans-Black.ttf");
+  src: url("../../media/fonts/Nunito_Sans/NunitoSans-Black.ttf");
   font-family: 'nunito-black'; }
 
 body {
@@ -215,7 +215,7 @@ Single-colored icons can be modified like so:
       bottom: 6px;
       right: -6px; }
   .nav__link--brand--img {
-    background: url("/media/images/ag-dark-logo-d.jpeg") no-repeat center;
+    background: url("../../media/images/ag-dark-logo-d.jpeg") no-repeat center;
     background-size: 84%;
     height: 5rem;
     width: 13rem; }
@@ -345,7 +345,7 @@ Single-colored icons can be modified like so:
   .header__img-box:hover .header__img {
     transform: rotateY(180deg); }
   .header__img {
-    background: #111 url("..media/images/black-car-4-d.jpg") no-repeat center;
+    background: #111 url("../../media/images/black-car-4-d.jpg") no-repeat center;
     background-size: cover;
     border-radius: 50%;
     box-shadow: 2px 2px 5px black;
