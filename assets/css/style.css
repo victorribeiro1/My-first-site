@@ -345,7 +345,7 @@ Single-colored icons can be modified like so:
   .header__img-box:hover .header__img {
     transform: rotateY(180deg); }
   .header__img {
-    background: #111 url("/media/images/black-car-4-d.jpg") no-repeat center;
+    background: #111 url("..media/images/black-car-4-d.jpg") no-repeat center;
     background-size: cover;
     border-radius: 50%;
     box-shadow: 2px 2px 5px black;
