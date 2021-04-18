@@ -107,7 +107,7 @@ body {
   font-family: 'nunito-black'; }
 
 @font-face {
-  src: url("/media/fonts/bison/bison.ttf");
+  src: url("../../media/fonts/bison/bison.ttf");
   font-family: 'bison'; }
 
 body {
