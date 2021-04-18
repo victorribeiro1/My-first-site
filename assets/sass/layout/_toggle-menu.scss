@@ -10,9 +10,9 @@
             background-color: red;
 
             transition: background-color .5s cubic-bezier(0.97, 0.12, 0.7, 1.5),
-            width .3s .5s cubic-bezier(0, 0.8, 0.9, 1),
-            margin-bottom .3s .1s,
-            transform .3s .4s;
+                        width .3s .5s cubic-bezier(0, 0.8, 0.9, 1),
+                        margin-bottom .3s .1s,
+                        transform .3s .4s;
 
             &--1 {
                 margin-bottom: -1px;
@@ -73,7 +73,7 @@
         }
 
         &:hover .toggle-menu__icon {
-            background-color: #eee;
+            background-color: var(--bg-color-icon-interaction);
 
             &--2 {
                 width: 100%;
@@ -113,14 +113,14 @@
     }
     
     &__icon {
-        background-color: #aaa;
+        background-color: var(--bg-color-icon);
         border-radius: 999px;
-        height: 2px;
+        height: 1px;
 
         transform: rotate(0);
         
         transition: background-color .5s cubic-bezier(0.97, 0.12, 0.7, 1.5),
-                    width .3s .7s cubic-bezier(0, 0.8, 0.9, 1),
+                    width .3s .2s cubic-bezier(0, 0.8, 0.9, 1),
                     margin-bottom .3s .4s,
                     transform .3s .1s;
         
@@ -202,8 +202,8 @@
     }
     
     
-    &__heading-box {
-    }
+    // &__heading-box {
+    // }
     
     &__heading {
         font-family: 'bison', sans-serif;

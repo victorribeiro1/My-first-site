@@ -209,13 +209,19 @@ Single-colored icons can be modified like so:
   list-style: none;
   padding: 2rem;
   padding-left: 5rem;
+  position: relative;
   box-shadow: 0px 2px 7px #000; }
   .nav__column {
     display: flex;
     justify-content: space-between;
     align-items: center; }
     .nav__column--left, .nav__column--right {
-      width: 32rem; }
+      width: 32rem;
+      overflow: hidden; }
+    .nav__column--center {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-47%); }
   .nav__link, .nav__link:link, .nav__link:visited {
     color: var(--color-link);
     font-size: 1.4rem;
@@ -234,7 +240,7 @@ Single-colored icons can be modified like so:
     position: relative; }
     .nav__link--brand--text::before {
       content: "";
-      background-color: #eee;
+      background-color: currentColor;
       border-radius: 50%;
       height: .7rem;
       width: .7rem;
@@ -287,7 +293,7 @@ Single-colored icons can be modified like so:
   .toggle-menu__button:hover .toggle-menu__button-background {
     transform: translate(50%, -50%) scale(1); }
   .toggle-menu__button:hover .toggle-menu__icon {
-    background-color: #eee; }
+    background-color: var(--bg-color-icon-interaction); }
     .toggle-menu__button:hover .toggle-menu__icon--2 {
       width: 100%; }
 
@@ -315,11 +321,11 @@ Single-colored icons can be modified like so:
   align-items: flex-start; }
 
 .toggle-menu__icon {
-  background-color: #aaa;
+  background-color: var(--bg-color-icon);
   border-radius: 999px;
-  height: 2px;
+  height: 1px;
   transform: rotate(0);
-  transition: background-color 0.5s cubic-bezier(0.97, 0.12, 0.7, 1.5), width 0.3s 0.7s cubic-bezier(0, 0.8, 0.9, 1), margin-bottom 0.3s 0.4s, transform 0.3s 0.1s; }
+  transition: background-color 0.5s cubic-bezier(0.97, 0.12, 0.7, 1.5), width 0.3s 0.2s cubic-bezier(0, 0.8, 0.9, 1), margin-bottom 0.3s 0.4s, transform 0.3s 0.1s; }
   .toggle-menu__icon--1 {
     margin-bottom: 8px;
     width: 100%; }
@@ -613,6 +619,8 @@ Single-colored icons can be modified like so:
 html[current-theme='dark'] {
   --bg-color-body: var(--color-dark-2);
   --color-link: var(--color-light-2);
+  --bg-color-icon-interaction: var(--color-light-1);
+  --bg-color-icon: var(--color-light-2);
   --bg-color-header: var(--color-dark-2);
   --color-heading: var(--color-light-2);
   --flowing-text: var(--color-light-5); }

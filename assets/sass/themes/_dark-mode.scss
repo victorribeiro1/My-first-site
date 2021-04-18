@@ -5,6 +5,11 @@ html[current-theme='dark'] {
     // HEADER
         //NAVIGATION
             --color-link: var(--color-light-2);
+
+        // MENU
+            --bg-color-icon-interaction: var(--color-light-1);
+            --bg-color-icon: var(--color-light-2);
+
     --bg-color-header: var(--color-dark-2);
     --color-heading: var(--color-light-2);
     --flowing-text: var(--color-light-5);

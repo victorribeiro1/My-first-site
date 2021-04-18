@@ -8,6 +8,8 @@
     padding: 2rem;
     padding-left: 5rem;
 
+    position: relative;
+
     box-shadow: 0px 2px 7px #000;    
 
     &__column {
@@ -18,10 +20,22 @@
         &--left,
         &--right {
             width: 32rem;
+            overflow: hidden;
         }
-        
-    // &--center {
-    // }
+
+        // &--left {
+        //     background-color: #fff;
+        // }
+
+        &--center {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-47%);
+        }
+
+        // &--right {
+        //     background-color: #ff0050;
+        // }
     }
 
     // &__item {
@@ -58,7 +72,7 @@
                 &::before {
                     content: "";
     
-                    background-color: #eee;
+                    background-color: currentColor;
                     border-radius: 50%;
     
                     height: .7rem;
