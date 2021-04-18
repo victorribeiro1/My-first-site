@@ -1,7 +1,7 @@
 .toggle-menu {
-    position: absolute;
-    height: 100vh;
-    width: 100vw;
+    // position: absolute;
+    // height: 100vh;
+    // width: 100vw;
     
     &__checkbox {
         display: none;
@@ -50,24 +50,18 @@
     }
 
     &__button-box {        
-        position: absolute;
-        // left: 0rem;
-        // top: -3.6rem;
-        
-        height: 7.5rem;
-        width: 7.5rem;
+        position: relative;
     }
-    // victor ribeiro cunha
+
     &__button {
-        border-radius: 50%;
-        height: 7.5rem;
+        height: 2.5rem;
         width: 7.5rem;
 
-        // position: fixed;
+        position: relative;
+        bottom: -3px;
 
         display: inline-block;
 
-        overflow: hidden;
         z-index: 4;
 
         &:hover {
@@ -79,7 +73,7 @@
         }
 
         &:hover .toggle-menu__icon {
-            background-color: red;
+            background-color: #eee;
 
             &--2 {
                 width: 100%;
@@ -88,16 +82,16 @@
     }
 
     &__button-background {
-        background: blue;
+        // background: #eee;
         border-radius: 999px;
 
         position: absolute;
         top: -.5rem;
-        right: -.5rem;
+        left: -21rem;
         transform: translate(50%, -50%) scale(0);
 
-        height: 20rem;
-        width: 20rem;
+        height: 21rem;
+        width: 21rem;
 
         z-index: -1;
         transition: all .5s cubic-bezier(0.97, 0.12, 0.7, 1.5);
@@ -115,11 +109,11 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-end;
+        align-items: flex-start;
     }
     
     &__icon {
-        background-color: blue;
+        background-color: #aaa;
         border-radius: 999px;
         height: 2px;
 
@@ -150,7 +144,7 @@
     }
 
     &__background {
-        backdrop-filter: blur(.3px);
+        backdrop-filter: blur(.4px);
         border-radius: 50%;
 
         height: 7rem;
@@ -178,15 +172,20 @@
         justify-content: space-around;
         align-items: flex-start;
         
-        width: 90%;
+        width: 100%;
         height: 100%;
         z-index: 3;   
 
         left: -9999999999px;
         transition: left 0s .8s;
+        // background-color: #aaa;
     }
     
     &__list-box {
+        // background-color: #fff;
+        top: -6rem;
+        position: relative;
+
         text-align: center;
 
         opacity: 0;
@@ -204,13 +203,12 @@
     
     
     &__heading-box {
-        margin-top: 2rem 0 1rem 0;
     }
     
     &__heading {
         font-family: 'bison', sans-serif;
         font-weight: 900;
-        font-size: 10rem;
+        font-size: 11rem;
         letter-spacing: 2px;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 1px;
@@ -219,8 +217,14 @@
     }
     
     &__list {
+        // background-color: #fff;
+        height: 60vh;
         list-style: none;
         text-align: left;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         
         // &--services {
 
@@ -229,6 +233,7 @@
         // &--see-also {
             
         // }
+        // text-align: right;
     }
 
     &__item {
@@ -241,7 +246,7 @@
         &,
         &:link,
         &:visited {
-            font-size: 3.5rem;
+            font-size: 2.4rem;
             color: #eee;
             text-decoration: none;
 
@@ -249,7 +254,7 @@
 
             &::before {
                 content: "";
-                background-color: yellow;
+                background-color: #eee;
                 border-radius: 999px;
                 
                 position: absolute;
@@ -269,7 +274,7 @@
 
     &__icons-box {
         position: absolute;
-        bottom: 4rem;
+        bottom: 9rem;
         left: 5.8rem;
 
         display: flex;
