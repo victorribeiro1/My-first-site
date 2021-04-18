@@ -3,8 +3,14 @@
     transform-origin: top;
     transform: scaleY(0); }
   50% {
+    transform-origin: top;
     transform: scaleY(1); }
-  to { } }
+  51% {
+    transform-origin: bottom;
+    transform: scaleY(1); }
+  100% {
+    transform-origin: bottom;
+    transform: scaleY(0); } }
 
 :root {
   --color-dark-1: #000;
@@ -111,7 +117,7 @@ body {
   font-family: 'bison'; }
 
 body {
-  font-family: 'aeonik-light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "nunito-extraLight", 'aeonik-light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.4; }
 
 .arrow-container {
@@ -159,26 +165,35 @@ Single-colored icons can be modified like so:
     color: red;
 }
 ========================================== */
-.swipe-button__body {
-  background: linear-gradient(110deg, white, #7575c2 40%, #c01f55, red 100%);
-  border: 5px solid #111;
-  border-radius: 999px;
-  box-shadow: 5px  5px 11px #000000e8, -3px -3px 5px #2b272783, inset 3px  3px 5px #000000e8, inset -3px -3px 5px #2b272783;
-  color: #00000017;
-  height: 4rem;
-  width: 8rem;
-  position: relative; }
-
-.swipe-button__ball {
-  border-radius: 50px;
-  background: linear-gradient(145deg, #413f3f, #030303);
-  box-shadow: 2px  2px 7px #000000e8, -2px -2px 7px #2b272783;
-  width: 3.3rem;
-  height: 3.3rem;
-  position: absolute;
-  top: 50%;
-  left: -1px;
-  transform: translateY(-50%); }
+.swipe-button {
+  cursor: pointer; }
+  .swipe-button__body {
+    background: linear-gradient(110deg, #edfbff, #7575c2 40%, #c01f55, red 100%);
+    border: 5px solid #111;
+    border-radius: 999px;
+    box-shadow: 5px  5px 11px #000000e8, -3px -3px 5px #2b272783, inset 3px  3px 5px #000000e8, inset -3px -3px 5px #2b272783;
+    color: #00000017;
+    height: 4rem;
+    width: 8rem;
+    position: relative; }
+  .swipe-button__background {
+    border-radius: 999px;
+    position: absolute;
+    height: 100%;
+    width: 100%; }
+  .swipe-button__ball {
+    border-radius: 50px;
+    background: linear-gradient(145deg, #413f3f, #030303);
+    box-shadow: 2px  2px 7px #000000e8, -2px -2px 7px #2b272783;
+    width: 3.3rem;
+    height: 3.3rem;
+    position: absolute;
+    top: 50%;
+    left: -1px;
+    transform: translateY(-50%);
+    transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+  .swipe-button.active .swipe-button__ball {
+    left: 38px; }
 
 .nav {
   display: flex;
@@ -207,7 +222,7 @@ Single-colored icons can be modified like so:
     width: 13rem; }
   .nav__link--brand--text {
     font-size: 3rem !important;
-    font-family: 'aeonik';
+    font-family: 'nunito-extraLight';
     font-weight: 9999 !important;
     position: relative; }
     .nav__link--brand--text::before {
@@ -217,8 +232,8 @@ Single-colored icons can be modified like so:
       height: .7rem;
       width: .7rem;
       position: absolute;
-      bottom: 6px;
-      right: -6px; }
+      bottom: 11px;
+      right: -7px; }
   .nav__link--brand--img {
     background: url("../../media/images/ag-dark-logo-d.jpeg") no-repeat center;
     background-size: 84%;
@@ -532,13 +547,15 @@ Single-colored icons can be modified like so:
   .header__explore {
     color: #fff;
     font-size: 1.6rem;
+    letter-spacing: 2px;
     position: relative;
     bottom: 1.5rem;
     left: 4rem; }
     .header__explore::before {
       content: "";
-      animation: explore 2s infinite ease-in forwards;
-      background-color: rgba(243, 240, 240, 0.575);
+      background-color: #eee;
+      border-radius: 999px;
+      animation: explore 2.6s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
       height: 5.2rem;
       width: 1px;
       position: absolute;

@@ -1,6 +1,8 @@
 .swipe-button {
+    cursor: pointer;
     &__body {
-        background: linear-gradient(110deg, white, rgb(117, 117, 194) 40%,rgb(192, 31, 85), rgb(255, 0, 0) 100%);
+        background: linear-gradient(110deg, rgb(237, 251, 255), rgb(117, 117, 194) 40%,rgb(192, 31, 85), rgb(255, 0, 0) 100%);
+
         border: 5px solid #111;
         border-radius: 999px;
         box-shadow: 5px  5px 11px #000000e8,
@@ -14,6 +16,19 @@
         width: 8rem;
 
         position: relative;
+
+        // overflow: hidden;
+    }
+
+    &__background {
+        border-radius: 999px;
+
+        position: absolute;
+        height: 100%;
+        width:  100%;
+        // background-color: #fff;
+        // background: linear-gradient(110deg, rgb(237, 251, 255), rgb(117, 117, 194) 40%,rgb(192, 31, 85), rgb(255, 0, 0) 100%);
+
     }
     
     &__ball {
@@ -29,5 +44,10 @@
         top: 50%;
         left: -1px;
         transform: translateY(-50%);
+        transition: .4s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        
+    }
+    &.active .swipe-button__ball {
+        left: 38px;
     }
 }

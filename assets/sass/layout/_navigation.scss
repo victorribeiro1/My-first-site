@@ -28,9 +28,9 @@
     // }
     }
 
-    &__item {
+    // &__item {
     
-    }
+    // }
 
     &__link {
         &,
@@ -57,7 +57,7 @@
         &--brand {
             &--text {
                 font-size: 3rem !important;
-                font-family: 'aeonik';
+                font-family: 'nunito-extraLight';
                 font-weight: 9999 !important;
     
                 position: relative;
@@ -72,28 +72,26 @@
                     width: .7rem;
     
                     position: absolute;
-                    bottom: 6px;
-                    right: -6px;
+                    bottom: 11px;
+                    right: -7px;
                 }
             }
 
             &--img {
-                // background-color: #fff;
                 background: url("../../media/images/ag-dark-logo-d.jpeg") no-repeat center;
                 background-size: 84%;
                 
-
                 height: 5rem;
                 width: 13rem;
             }
         }
     }
 
-    &__link-text {
+    // &__link-text {
 
-    }
+    // }
 
-    &__link-arrow-box {
+    // &__link-arrow-box {
         
-    }
+    // }
 }

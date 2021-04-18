@@ -95,6 +95,7 @@
     &__explore {
         color: #fff;
         font-size: 1.6rem;
+        letter-spacing: 2px;
 
         position: relative;
         bottom: 1.5rem;
@@ -102,12 +103,13 @@
         
         &::before {
             content: "";
+            background-color: #eee;
+            border-radius: 999px;
             
-            animation: explore 2s infinite ease-in forwards;
-            background-color: rgba(243, 240, 240, 0.575);
+            animation: explore 2.6s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
             
             height: 5.2rem;
-            width: 1px;
+            width:  1px;
 
             position: absolute;
             left: 50%;
