@@ -13,9 +13,12 @@
 @import "components/swipe-button";
 
 @import "layout/navigation";
-@import "layout/menu";
+@import "layout/toggle-menu";
 
 @import "pages/index/evaluations";
 @import "pages/index/faq";
 @import "pages/index/header";
 @import "pages/test";
+
+@import "themes/dark-mode";
+@import "themes/light-mode";

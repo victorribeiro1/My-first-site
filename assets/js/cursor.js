@@ -9,12 +9,6 @@ document.addEventListener('mousemove', (e) => {
     // hiding and showing the cursor accordingly the inner size of the device width
     
     // width, left:
-
-    if (e.clientX <= 10) {
-        cursors.forEach(cursor => {
-            cursor.classList.add('hide--x')
-        })
-    } 
     
     if (e.clientX > 10) {
         cursors.forEach(cursor => {

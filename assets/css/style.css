@@ -18,8 +18,8 @@
   --color-dark-3: #2E3339;
   --color-light-1: #fff;
   --color-light-2: #eee;
-  --color-light-3: #ddd;
-  --bg-color: var(--color-dark-2); }
+  --color-light-3: #D6D6D6;
+  --color-light-5: #999; }
 
 *,
 *::before,
@@ -35,7 +35,7 @@ html {
   position: relative; }
 
 body {
-  background: var(--bg-color);
+  background: var(--bg-color-body);
   background-size: cover;
   box-sizing: border-box;
   position: relative; }
@@ -120,6 +120,13 @@ body {
   font-family: "nunito-extraLight", 'aeonik-light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.4; }
 
+.main-heading {
+  color: var(--color-heading);
+  font-size: 7rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-family: 'nunito-extraLight'; }
+
 .arrow-container {
   display: flex !important;
   justify-content: space-evenly;
@@ -202,7 +209,7 @@ Single-colored icons can be modified like so:
   list-style: none;
   padding: 2rem;
   padding-left: 5rem;
-  box-shadow: 0px 2px 7px #000000; }
+  box-shadow: 0px 2px 7px #000; }
   .nav__column {
     display: flex;
     justify-content: space-between;
@@ -210,7 +217,7 @@ Single-colored icons can be modified like so:
     .nav__column--left, .nav__column--right {
       width: 32rem; }
   .nav__link, .nav__link:link, .nav__link:visited {
-    color: #eee;
+    color: var(--color-link);
     font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: 5px;
@@ -516,25 +523,19 @@ Single-colored icons can be modified like so:
     align-items: flex-start;
     position: relative;
     top: -5rem; }
-  .header__main-heading {
-    color: #eee;
-    font-size: 7rem;
-    font-weight: 100;
-    letter-spacing: 1px;
-    font-family: 'nunito-extraLight'; }
   .header__paragraph {
     font-family: 'nunito-light';
     font-size: 2.2rem;
-    color: #949393;
+    color: var(--flowing-text);
     max-width: 48rem;
     letter-spacing: 1px; }
   .header__img-box:hover .header__img {
     transform: rotateY(180deg); }
   .header__img {
-    background: #111 url("../../media/images/black-car-4-d.jpg") no-repeat center;
+    background: url("../../media/images/black-car-4-d.jpg") no-repeat center;
     background-size: cover;
     border-radius: 50%;
-    box-shadow: 2px 2px 5px black;
+    box-shadow: 0px 0px 10px 8px rgba(90, 88, 88, 0.048);
     height: 42rem;
     width: 42rem;
     perspective: 999px;
@@ -608,3 +609,14 @@ Single-colored icons can be modified like so:
     position: absolute;
     right: 33.5rem;
     z-index: -1; }
+
+html[current-theme='dark'] {
+  --bg-color-body: var(--color-dark-2);
+  --color-link: var(--color-light-2);
+  --bg-color-header: var(--color-dark-2);
+  --color-heading: var(--color-light-2);
+  --flowing-text: var(--color-light-5); }
+
+html[current-theme='light'] {
+  --bg-color-body: var(--color-light-2);
+  --bg-color-header: var(--color-light-2); }

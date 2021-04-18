@@ -1,0 +1,11 @@
+html[current-theme='dark'] {
+    // BODY
+    --bg-color-body: var(--color-dark-2);
+
+    // HEADER
+        //NAVIGATION
+            --color-link: var(--color-light-2);
+    --bg-color-header: var(--color-dark-2);
+    --color-heading: var(--color-light-2);
+    --flowing-text: var(--color-light-5);
+}

@@ -2,3 +2,11 @@ body {
     font-family: "nunito-extraLight", 'aeonik-light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.4;
 }
+
+.main-heading {
+    color: var(--color-heading);
+    font-size: 7rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-family: 'nunito-extraLight';
+}

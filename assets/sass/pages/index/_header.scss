@@ -47,18 +47,14 @@
         top: -5rem;
     }
     
-    &__main-heading {
-        color: #eee;
-        font-size: 7rem;
-        font-weight: 100;
-        letter-spacing: 1px;
-        font-family: 'nunito-extraLight';
-    }
+    // &__main-heading {
+        
+    // }
     
     &__paragraph {
         font-family: 'nunito-light';
         font-size: 2.2rem;
-        color: rgb(148, 147, 147);
+        color: var(--flowing-text);
         max-width: 48rem;
         letter-spacing: 1px;
     }
@@ -71,11 +67,11 @@
     } 
     
     &__img {
-        background: #111 url("../../media/images/black-car-4-d.jpg") no-repeat center;
+        background: url("../../media/images/black-car-4-d.jpg") no-repeat center;
         background-size: cover;
         border-radius: 50%;
 
-        box-shadow: 2px 2px 5px black;
+        box-shadow: 0px 0px 10px 8px rgba(90, 88, 88, 0.048);
 
         height: 42rem;
         width:  42rem;
