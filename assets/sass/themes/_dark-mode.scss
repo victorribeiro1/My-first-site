@@ -9,7 +9,7 @@ html[current-theme='dark'] {
                 }
 
 
-
+    // COLORS
     --color-primary: var(--color-dark-1);
     --color-secondary: var(--color-dark-2);
     --color-tertiary: var(--color-dark-3);
@@ -20,63 +20,32 @@ html[current-theme='dark'] {
     --color-tertiary-opposite: var(--color-light-3);
     --color-quaternary-opposite: var(--color-light-4);
     --color-quinary-opposite: var(--color-light-5);
-
-    --font-weight: thin;
-
-    --bg-img-header: url("/media/images/black-car-4-d.jpg");
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // BODY
-    --bg-color-body: var(--color-dark-2);
     --color-main-heading: var(--color-light-2);
     
-    // HEADER
-        
-        --bg-color-contact-button: var(--color-light-2);
-        --bg-color-explore-before: var(--color-light-5);
-        --bg-color-header: var(--color-dark-2);
-        --box-shadow-contact-button: 5px  5px 11px #000000,
-                                    -5px -5px 11px #ffffff10;
-        --box-shadow-contact-button-interaction: 2px  2px 2px #0000009a,
-                                                -2px -2px 5px #ffffff17;
+    --color-border: #080808;
 
-        --box-shadow-icon-box:  3px  3px 6px #000, 
-                               -3px -3px 6px #4d4e551f;
+    // BACKGROUND-IMAGES
+    --bg-img-header: url("/media/images/black-car-4-d.jpg");
+    --bg-img-logo: url("/media/images/logo-small.png");
 
-        --box-shadow-icon-box-interaction:  inset  2px  2px 5px #000, 
-                                            inset -3px -3px 7px #4d4e551f;
+    // BACKGROUND-COLORS
+    --bg-color-body: var(--color-dark-2);
+    --bg-color-contact-button: var(--color-light-2);
+    --bg-color-explore-before: var(--color-light-5);
+    --bg-color-header: var(--color-dark-2);
+    --bg-color-menu-bg: transparent;
+    --bg-color-swipe-button-ball: linear-gradient(145deg, #413f3f, #030303);
+    
+    // BOX-SHADOWS
+    --box-shadow-contact-button: 5px  5px 11px #000000,-5px -5px 11px #ffffff10;
+    --box-shadow-contact-button-interaction: 2px  2px 2px #0000009a,-2px -2px 5px #ffffff17;
+    --box-shadow-icon-box:  3px  3px 6px #000, -3px -3px 6px #4d4e551f;
+    --box-shadow-icon-box-interaction:  inset  2px  2px 5px #000, inset -3px -3px 7px #4d4e551f;
+    --box-shadow-img: 3px  3px 4px #000000,-3px -3px 4px #ffffff0c;
+    --box-shadow-swipe-button:5px  5px 11px #000000e8,-3px -3px 5px #2b272783,inset  3px  3px 5px #000000e8,inset -3px -3px 5px #2b272783;
+    --box-shadow-swipe-button-ball: 2px  2px 7px #000000e8,-2px -2px 7px #2b272783;
 
-        --box-shadow-img: 3px  3px 4px #000000,
-        -3px -3px 4px #ffffff0c;
-        --color-border: #080808;
-        
-
-        // MENU
-            --bg-color-menu-bg: transparent;
-            --menu-background-blur: .9px;
-
-        // SIPE-BUTTON
-            --box-shadow-swipe-button:         5px  5px 11px #000000e8,
-                                              -3px -3px 5px #2b272783,
-                                        inset  3px  3px 5px #000000e8,
-                                        inset -3px -3px 5px #2b272783;
-
-            --box-shadow-swipe-button-ball: 2px  2px 7px #000000e8,
-                                           -2px -2px 7px #2b272783;
-
-            --bg-color-swipe-button-ball: linear-gradient(145deg, #413f3f, #030303);
+    // OTHERS
+    --menu-background-blur: .9px;
+    --font-weight: thin;
 }

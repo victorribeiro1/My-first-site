@@ -5,7 +5,6 @@
 
     position: relative;
 
-    overflow: hidden;
 
     display: flex;
     flex-direction: column;
@@ -65,15 +64,18 @@
         background: var(--bg-img-header) no-repeat center;
         background-size: cover;
         border-radius: 50%;
-        border: 3px solid var(--color-secondary);
+        border: 1px solid var(--color-secondary);
 
         box-shadow: var(--box-shadow-img);
 
-        height: 42rem;
-        width:  42rem;
+        height: 41rem;
+        width:  41rem;
 
         perspective: 999px;
         transition: .5s ease-in !important;
+
+        position: relative;
+        z-index: 1;
     }
     
     &__contact-box {
@@ -191,7 +193,7 @@
         width:  1px;
 
         position: absolute;
-        right: 33.9rem;
-        z-index: -1;
+        right: 32.7rem;
+        z-index: 0;
     }
 }
