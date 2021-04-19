@@ -1,3 +1,100 @@
+html[current-theme='dark'] {
+  --color-primary: var(--color-dark-1);
+  --color-secondary: var(--color-dark-2);
+  --color-tertiary: var(--color-dark-3);
+  --color-quaternary: var(--color-dark-4);
+  --color-primary-opposite: var(--color-light-1);
+  --color-secondary-opposite: var(--color-light-2);
+  --color-tertiary-opposite: var(--color-light-3);
+  --color-quaternary-opposite: var(--color-light-4);
+  --color-quinary-opposite: var(--color-light-5);
+  --font-weight: thin;
+  --bg-img-header: url("/media/images/black-car-4-d.jpg");
+  --bg-color-body: var(--color-dark-2);
+  --color-main-heading: var(--color-light-2);
+  --bg-color-contact-button: var(--color-light-2);
+  --bg-color-explore-before: var(--color-light-5);
+  --bg-color-header: var(--color-dark-2);
+  --box-shadow-contact-button: 5px  5px 11px #000000,
+                                    -5px -5px 11px #ffffff10;
+  --box-shadow-contact-button-interaction: 2px  2px 2px #0000009a,
+                                                -2px -2px 5px #ffffff17;
+  --box-shadow-icon-box:  3px  3px 6px #000, 
+                               -3px -3px 6px #4d4e551f;
+  --box-shadow-icon-box-interaction:  inset  2px  2px 5px #000, 
+                                            inset -3px -3px 7px #4d4e551f;
+  --box-shadow-img: 3px  3px 4px #000000,
+        -3px -3px 4px #ffffff0c;
+  --color-border: #080808;
+  --color-contact-button-text: var(--color-dark-1);
+  --color-explore: var(--color-light-4);
+  --color-flowing-text: var(--color-light-5);
+  --color-icon: var(--color-light-4);
+  --color-link: var(--color-light-2);
+  --bg-color-icon-interaction: var(--color-light-2);
+  --bg-color-icon: var(--color-light-2);
+  --bg-color-menu-bg: transparent;
+  --menu-background-blur: .7px;
+  --color-menu-heading: var(--color-light-2);
+  --color-menu-link: var(--color-light-2);
+  --box-shadow-swipe-button:         5px  5px 11px #000000e8,
+                                              -3px -3px 5px #2b272783,
+                                        inset  3px  3px 5px #000000e8,
+                                        inset -3px -3px 5px #2b272783;
+  --box-shadow-swipe-button-ball: 2px  2px 7px #000000e8,
+                                           -2px -2px 7px #2b272783;
+  --bg-color-swipe-button-ball: linear-gradient(145deg, #413f3f, #030303); }
+  html[current-theme='dark'] * {
+    transition: color .3s ease-in, background-color .3s ease-in, border .3s ease-in, box-shadow .3s ease-in; }
+
+html[current-theme='light'] {
+  --color-primary: var(--color-light-1);
+  --color-secondary: var(--color-light-2);
+  --color-tertiary: var(--color-light-3);
+  --color-quaternary: var(--color-light-4);
+  --color-primary-opposite: var(--color-dark-1);
+  --color-secondary-opposite: var(--color-dark-2);
+  --color-tertiary-opposite: var(--color-dark-3);
+  --color-quaternary-opposite: var(--color-dark-4);
+  --font-weight: bolder;
+  --bg-img-header: url("/media/images/white-car-1-d.jpg");
+  --bg-color-body: var(--color-light-2);
+  --color-main-heading: var(--color-dark-2);
+  --bg-color-contact-button: var(--color-dark-2);
+  --bg-color-explore-before: var(--color-dark-3);
+  --bg-color-header: var(--color-light-3);
+  --box-shadow-contact-button: 5px  5px 11px #000000,
+                                    -5px -5px 11px #ffffff10;
+  --box-shadow-contact-button-interaction: 2px  2px 2px #0000009a,
+                                                -2px -2px 5px #ffffff17;
+  --box-shadow-icon-box:  3px  3px 6px #000, 
+                               -3px -3px 6px #4d4e551f;
+  --box-shadow-icon-box-interaction:  inset  2px  2px 5px #000, 
+                                            inset -3px -3px 7px #4d4e551f;
+  --box-shadow-img: 3px  3px 4px #000000,
+        -3px -3px 4px #ffffff0c;
+  --color-border: #c7d1d4;
+  --color-contact-button-text: var(--color-light-1);
+  --color-explore: var(--color-dark-1);
+  --color-flowing-text: var(--color-dark-5);
+  --color-icon: var(--color-dark-3);
+  --color-link: var(--color-dark-2);
+  --bg-color-icon-interaction: var(--color-dark-2);
+  --bg-color-icon: var(--color-dark-2);
+  --bg-color-menu-bg: #ffffff10;
+  --menu-background-blur: 2.4px;
+  --color-menu-heading: var(--color-dark-1);
+  --color-menu-link: var(--color-dark-1);
+  --box-shadow-swipe-button:         3px  3px 5px #000000,
+                                          -3px -3px 5px #ffffff,
+                                    inset  3px  3px 5px #000000e8,
+                                    inset -3px -3px 5px #2b272783;
+  --box-shadow-swipe-button-ball:  2px  2px 7px #000000e8,
+                                        -2px -2px 7px #2b272783;
+  --bg-color-swipe-button-ball: linear-gradient(145deg, #ffffff, #7e7777); }
+  html[current-theme='light'] * {
+    transition: color .3s ease-in, background-color .3s ease-in, border .3s ease-in, box-shadow .3s ease-in; }
+
 @keyframes explore {
   from {
     transform-origin: top;
@@ -67,24 +164,24 @@ body {
   pointer-events: none;
   z-index: 3; }
   .cursor--small {
-    background-color: #eee;
+    background-color: var(--color-secondary-opposite);
     height: 1.2rem;
     width: 1.2rem;
-    transition: transform 50ms, left 50ms, top 50ms, height 0.7s cubic-bezier(0.75, -1.27, 0.3, 2.53), width 0.7s cubic-bezier(0.75, -1.27, 0.3, 2.53); }
+    transition: transform 50ms, left 50ms, top 50ms, height 0.7s cubic-bezier(0.75, -1.27, 0.3, 2.53), width 0.7s cubic-bezier(0.75, -1.27, 0.3, 2.53) !important; }
     .cursor--small.expand {
       height: 6rem;
       width: 6rem;
-      background-color: black;
+      background-color: var(--color-secondary-opposite);
       mix-blend-mode: difference;
       backdrop-filter: invert(100%); }
       .cursor--small.expand + .cursor--big {
         opacity: 0;
-        transition: transform 50ms, left 50ms, top 50ms, height 0.7s cubic-bezier(0.75, -1.27, 0.3, 2.53), width 0.7s cubic-bezier(0.75, -1.27, 0.3, 2.53), opacity 0.2s 0.5s; }
+        transition: transform 50ms, left 50ms, top 50ms, height 0.7s cubic-bezier(0.75, -1.27, 0.3, 2.53), width 0.7s cubic-bezier(0.75, -1.27, 0.3, 2.53), opacity 0.2s 0.5s !important; }
   .cursor--big {
-    border: 1px solid #eee;
+    border: 1px solid var(--color-secondary-opposite);
     height: 5rem;
     width: 5rem;
-    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.375); }
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.375) !important; }
   .cursor.hide--x {
     opacity: 0; }
   .cursor.hide--y {
@@ -172,29 +269,28 @@ body {
   cursor: pointer; }
   .swipe-button__body {
     background: linear-gradient(110deg, #edfbff, #7575c2 40%, #c01f55, red 100%);
-    border: 5px solid #111;
+    border: 5px solid var(--bg-color-header);
     border-radius: 999px;
-    box-shadow: 5px  5px 11px #000000e8, -3px -3px 5px #2b272783, inset 3px  3px 5px #000000e8, inset -3px -3px 5px #2b272783;
-    color: #00000017;
+    box-shadow: var(--box-shadow-swipe-button);
     height: 4rem;
     width: 8rem;
     position: relative; }
   .swipe-button__background {
     border-radius: 999px;
     position: absolute;
-    height: 100%;
-    width: 100%; }
+    height: 110%;
+    width: 110%; }
   .swipe-button__ball {
     border-radius: 50px;
-    background: linear-gradient(145deg, #413f3f, #030303);
-    box-shadow: 2px  2px 7px #000000e8, -2px -2px 7px #2b272783;
+    background: var(--bg-color-swipe-button-ball);
+    box-shadow: var(--box-shadow-swpie-button-ball);
     width: 3.3rem;
     height: 3.3rem;
     position: absolute;
     top: 50%;
     left: -1px;
     transform: translateY(-50%);
-    transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+    transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) !important; }
   .swipe-button.active .swipe-button__ball {
     left: 38px; }
 
@@ -217,9 +313,10 @@ body {
       position: relative;
       left: -15px; }
   .nav__link, .nav__link:link, .nav__link:visited {
-    color: var(--color-link);
+    color: var(--color-secondary-opposite);
     font-size: 1.4rem;
-    font-weight: 600;
+    font-family: 'nunito-regular';
+    font-weight: var(--font-weight);
     letter-spacing: 5px;
     text-transform: uppercase;
     text-decoration: none;
@@ -242,7 +339,7 @@ body {
       bottom: 11px;
       right: -7px; }
   .nav__link--brand--img {
-    background: url("../../media/images/ag-dark-logo-d.jpeg") no-repeat center;
+    background: var(--background-img-header) no-repeat center;
     background-size: 84%;
     height: 5rem;
     width: 13rem; }
@@ -266,10 +363,10 @@ body {
   .toggle-menu__checkbox:checked ~ .toggle-menu__nav .toggle-menu__list-box,
   .toggle-menu__checkbox:checked ~ .toggle-menu__nav .toggle-menu__icons-box {
     opacity: 1;
-    transition: opacity 0.5s 0.3s; }
+    transition: opacity 0.5s 0.3s !important; }
   .toggle-menu__checkbox:checked ~ .toggle-menu__nav {
     left: 0;
-    transition: left 0s 0s; }
+    transition: left 0s 0s !important; }
 
 .toggle-menu__button-box {
   position: relative; }
@@ -299,7 +396,7 @@ body {
   height: 21rem;
   width: 21rem;
   z-index: -1;
-  transition: all 0.5s cubic-bezier(0.97, 0.12, 0.7, 1.5); }
+  transition: all 0.5s cubic-bezier(0.97, 0.12, 0.7, 1.5) !important; }
 
 .toggle-menu__icon-box {
   width: 60%;
@@ -318,7 +415,7 @@ body {
   border-radius: 999px;
   height: 2px;
   transform: rotate(0);
-  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important; }
   .toggle-menu__icon--1 {
     margin-bottom: 8px;
     width: 100%; }
@@ -340,10 +437,10 @@ body {
   width: 7rem;
   position: relative;
   transform: scale(0);
-  transition: all .8s ease;
+  transition: all .8s ease !important;
   z-index: 2; }
   .toggle-menu__background--2 {
-    transition-delay: 1s; }
+    transition-delay: 1s !important; }
 
 .toggle-menu__nav {
   position: fixed;
@@ -354,14 +451,14 @@ body {
   height: 100%;
   z-index: 3;
   left: -9999999999px;
-  transition: left 0s .8s; }
+  transition: left 0s .8s !important; }
 
 .toggle-menu__list-box {
   top: -6rem;
   position: relative;
   text-align: center;
   opacity: 0;
-  transition: opacity .5s .1s; }
+  transition: opacity .5s .1s !important; }
 
 .toggle-menu__heading {
   font-family: 'bison', sans-serif;
@@ -397,7 +494,7 @@ body {
     bottom: -1rem;
     width: 4rem;
     height: 2px;
-    transition: all .5s; }
+    transition: all .5s !important; }
   .toggle-menu__link:hover::before, .toggle-menu__link:link:hover::before, .toggle-menu__link:visited:hover::before {
     width: 100%; }
 
@@ -411,7 +508,7 @@ body {
   width: 14rem;
   z-index: 3;
   opacity: 0;
-  transition: opacity 0.5s 0.1s; }
+  transition: opacity .5s .1s !important; }
 
 .evaluations {
   background-color: #000;
@@ -526,28 +623,28 @@ body {
   .header__paragraph {
     font-family: 'nunito-light';
     font-size: 2.2rem;
-    color: var(--color-flowing-text);
+    color: var(--color-quinary-opposite);
     max-width: 48rem;
     letter-spacing: 1px; }
   .header__img-box:hover .header__img {
     transform: rotateY(180deg); }
   .header__img {
-    background: url("../../media/images/black-car-4-d.jpg") no-repeat center;
+    background: var(--bg-img-header) no-repeat center;
     background-size: cover;
     border-radius: 50%;
-    border: 3px solid var(--color-border);
+    border: 3px solid var(--color-secondary);
     box-shadow: var(--box-shadow-img);
     height: 42rem;
     width: 42rem;
     perspective: 999px;
-    transition: .5s ease-in; }
+    transition: .5s ease-in !important; }
   .header__contact-box {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center; }
   .header__explore {
-    color: var(--color-explore);
+    color: var(--color-quaternary-opposite);
     font-size: 1.6rem;
     letter-spacing: 2px;
     font-family: 'nunito-regular';
@@ -556,7 +653,7 @@ body {
     left: 4rem; }
     .header__explore::before {
       content: "";
-      background-color: var(--bg-color-explore-before);
+      background-color: var(--color-quinary-opposite);
       border-radius: 999px;
       animation: explore 2.6s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
       height: 5.2rem;
@@ -566,7 +663,7 @@ body {
       transform: translateX(-50%);
       top: -55px; }
   .header__button, .header__button:link, .header__button:visited {
-    background-color: var(--bg-color-contact-button);
+    background-color: var(--color-secondary-opposite);
     border-radius: 0px;
     height: 6rem;
     width: 23rem;
@@ -581,7 +678,7 @@ body {
       transform: translate(2px, 2px);
       box-shadow: var(--box-shadow-contact-button-interaction); }
   .header__button-text {
-    color: var(--color-contact-button-text);
+    color: var(--color-primary);
     font-style: italic;
     font-size: 1.4rem;
     font-family: 'nunito-black';
@@ -591,8 +688,8 @@ body {
   .header__button-arrows-box {
     transform: translateY(2px); }
   .header__button-arrow {
-    border-top: 2px solid var(--color-contact-button-text);
-    border-right: 2px solid var(--color-contact-button-text); }
+    border-top: 2px solid var(--color-primary);
+    border-right: 2px solid var(--color-primary); }
   .header__icons-box {
     position: relative;
     bottom: 1.5rem;
@@ -604,67 +701,9 @@ body {
     position: relative;
     z-index: 100; }
   .header__line {
-    background-color: #555;
+    background-color: #333;
     height: 80rem;
     width: 1px;
     position: absolute;
-    right: 33.5rem;
+    right: 33.9rem;
     z-index: -1; }
-
-html[current-theme='dark'] {
-  --bg-color-body: var(--color-dark-2);
-  --color-main-heading: var(--color-light-2);
-  --bg-color-contact-button: var(--color-light-2);
-  --bg-color-explore-before: var(--color-light-5);
-  --bg-color-header: var(--color-dark-2);
-  --box-shadow-contact-button: 5px  5px 11px #000000,
-                                    -5px -5px 11px #ffffff10;
-  --box-shadow-contact-button-interaction: 2px  2px 2px #0000009a,
-                                                -2px -2px 5px #ffffff17;
-  --box-shadow-icon-box:  3px  3px 6px #000, 
-                               -3px -3px 6px #4d4e551f;
-  --box-shadow-icon-box-interaction:  inset  2px  2px 5px #000, 
-                                            inset -3px -3px 7px #4d4e551f;
-  --box-shadow-img: 3px  3px 4px #000000,
-        -3px -3px 4px #ffffff0c;
-  --color-border: #080808;
-  --color-contact-button-text: var(--color-dark-1);
-  --color-explore: var(--color-light-4);
-  --color-flowing-text: var(--color-light-5);
-  --color-icon: var(--color-light-4);
-  --color-link: var(--color-light-2);
-  --bg-color-icon-interaction: var(--color-light-2);
-  --bg-color-icon: var(--color-light-2);
-  --bg-color-menu-bg: transparent;
-  --menu-background-blur: .7px;
-  --color-menu-heading: var(--color-light-2);
-  --color-menu-link: var(--color-light-2); }
-
-html[current-theme='light'] {
-  --bg-color-body: var(--color-light-2);
-  --color-main-heading: var(--color-dark-2);
-  --bg-color-contact-button: var(--color-dark-2);
-  --bg-color-explore-before: var(--color-dark-3);
-  --bg-color-header: var(--color-light-2);
-  --box-shadow-contact-button: 5px  5px 11px #000000,
-                                    -5px -5px 11px #ffffff10;
-  --box-shadow-contact-button-interaction: 2px  2px 2px #0000009a,
-                                                -2px -2px 5px #ffffff17;
-  --box-shadow-icon-box:  3px  3px 6px #000, 
-                               -3px -3px 6px #4d4e551f;
-  --box-shadow-icon-box-interaction:  inset  2px  2px 5px #000, 
-                                            inset -3px -3px 7px #4d4e551f;
-  --box-shadow-img: 3px  3px 4px #000000,
-        -3px -3px 4px #ffffff0c;
-  --color-border: #c7d1d4;
-  --color-contact-button-text: var(--color-light-1);
-  --color-explore: var(--color-dark-1);
-  --color-flowing-text: var(--color-dark-5);
-  --color-icon: var(--color-dark-3);
-  --color-link: var(--color-dark-2);
-  --bg-color-icon-interaction: var(--color-dark-2);
-  --bg-color-icon: var(--color-dark-2);
-  --bg-color-menu-bg: #ffffff10;
-  --menu-background-blur: 2.4px;
-  --color-menu-heading: var(--color-dark-1);
-  --color-menu-link: var(--color-dark-1); }

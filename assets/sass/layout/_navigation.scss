@@ -43,9 +43,10 @@
         &,
         &:link,
         &:visited {
-            color: var(--color-link);
+            color: var(--color-secondary-opposite);
             font-size: 1.4rem;
-            font-weight: 600;
+            font-family: 'nunito-regular';
+            font-weight: var(--font-weight);
             letter-spacing: 5px;
             text-transform: uppercase;
             text-decoration: none;
@@ -83,7 +84,7 @@
             }
 
             &--img {
-                background: url("../../media/images/ag-dark-logo-d.jpeg") no-repeat center;
+                background: var(--background-img-header) no-repeat center;
                 background-size: 84%;
                 
                 height: 5rem;

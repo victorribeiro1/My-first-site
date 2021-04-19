@@ -47,7 +47,7 @@
         &__paragraph {
             font-family: 'nunito-light';
             font-size: 2.2rem;
-            color: var(--color-flowing-text);
+            color: var(--color-quinary-opposite);
             max-width: 48rem;
             letter-spacing: 1px;
         }
@@ -60,10 +60,10 @@
     } 
     
     &__img {
-        background: url("../../media/images/black-car-4-d.jpg") no-repeat center;
+        background: var(--bg-img-header) no-repeat center;
         background-size: cover;
         border-radius: 50%;
-        border: 3px solid var(--color-border);
+        border: 3px solid var(--color-secondary);
 
         box-shadow: var(--box-shadow-img);
 
@@ -71,7 +71,7 @@
         width:  42rem;
 
         perspective: 999px;
-        transition: .5s ease-in;
+        transition: .5s ease-in !important;
     }
     
     &__contact-box {
@@ -83,7 +83,7 @@
     }
 
     &__explore {
-        color: var(--color-explore);
+        color: var(--color-quaternary-opposite);
         font-size: 1.6rem;
         letter-spacing: 2px;
         font-family: 'nunito-regular';
@@ -94,7 +94,7 @@
         
         &::before {
             content: "";
-            background-color: var(--bg-color-explore-before);
+            background-color: var(--color-quinary-opposite);
             border-radius: 999px;
             
             animation: explore 2.6s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
@@ -106,7 +106,6 @@
             left: 50%;
             transform: translateX(-50%);
             top: -55px;
-            
         }
     }
     
@@ -114,7 +113,7 @@
         &,
         &:link,
         &:visited {
-            background-color: var(--bg-color-contact-button);
+            background-color: var(--color-secondary-opposite);
             border-radius: 0px;
                     
             height: 6rem;
@@ -139,7 +138,7 @@
     }
 
     &__button-text {
-        color: var(--color-contact-button-text);
+        color: var(--color-primary);
         font-style: italic;
         font-size: 1.4rem;
         font-family: 'nunito-black';
@@ -153,8 +152,8 @@
     }
 
     &__button-arrow {
-        border-top: 2px solid var(--color-contact-button-text);
-        border-right: 2px solid var(--color-contact-button-text);
+        border-top: 2px solid var(--color-primary);
+        border-right: 2px solid var(--color-primary);
 
         // &::before,
         // &::after {
@@ -181,13 +180,13 @@
     // }
 
     &__line {
-        background-color: #555;
+        background-color: #333;
 
         height: 80rem;
         width:  1px;
 
         position: absolute;
-        right: 33.5rem;
+        right: 33.9rem;
         z-index: -1;
     }
 }
