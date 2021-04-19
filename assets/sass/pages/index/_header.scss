@@ -172,6 +172,9 @@
         align-items: center;
 
         width: 12rem;
+
+        position: relative;
+        z-index: 100;
     }
 
     // &__icon {
