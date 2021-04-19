@@ -26,14 +26,7 @@
         align-items: center;
     }
     
-    &__text-box,
-    &__img-box {
-        // width: 50%;
-        // height: 100%;
-
-        // position: relative;
-    }
-
+    
     
     &__text-box {
         // background-color: #aaa;
@@ -42,27 +35,27 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-
+        
         position: relative;
         top: -5rem;
     }
     
     // &__main-heading {
         
-    // }
-    
-    &__paragraph {
-        font-family: 'nunito-light';
-        font-size: 2.2rem;
-        color: var(--flowing-text);
-        max-width: 48rem;
-        letter-spacing: 1px;
-    }
-
-    &__img-box {
-
-        &:hover .header__img {
-            transform: rotateY(180deg);
+        // }
+        
+        &__paragraph {
+            font-family: 'nunito-light';
+            font-size: 2.2rem;
+            color: var(--flowing-text);
+            max-width: 48rem;
+            letter-spacing: 1px;
+        }
+        
+        &__img-box {
+            
+            &:hover .header__img {
+                transform: rotateY(180deg);
         }
     } 
     
@@ -70,8 +63,9 @@
         background: url("../../media/images/black-car-4-d.jpg") no-repeat center;
         background-size: cover;
         border-radius: 50%;
+        border: 3px solid var(--color-border);
 
-        box-shadow: 0px 0px 10px 8px rgba(90, 88, 88, 0.048);
+        box-shadow: var(--box-shadow-img);
 
         height: 42rem;
         width:  42rem;
@@ -89,9 +83,10 @@
     }
 
     &__explore {
-        color: #fff;
+        color: var(--color-explore);
         font-size: 1.6rem;
         letter-spacing: 2px;
+        font-family: 'nunito-regular';
 
         position: relative;
         bottom: 1.5rem;
@@ -99,7 +94,7 @@
         
         &::before {
             content: "";
-            background-color: #eee;
+            background-color: var(--bg-color-explore-before);
             border-radius: 999px;
             
             animation: explore 2.6s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
@@ -119,16 +114,14 @@
         &,
         &:link,
         &:visited {
-            background-color: #111;
-            border-radius: 4px;
-            box-shadow: 5px  5px 11px #000000e8,
-            -3px -3px 5px #2b272783,
-                    inset 3px  3px 5px #000000e8,
-                    inset -3px -3px 5px #2b272783;
-            border: 1px solid rgb(19, 18, 18);
+            background-color: #eee;
+            border-radius: 0px;
+            box-shadow:  5px  5px 11px #000000e8,
+                        -3px -3px 5px #38363652;
+            border: 2px solid var(--color-border);
                     
-                    height: 6rem;
-                    width: 23rem;
+            height: 6rem;
+            width: 23rem;
                     
             position: relative;
             top: -12rem;
@@ -149,11 +142,12 @@
     }
 
     &__button-text {
-        color: #eee;
-        font-size: 1.5rem;
-        // font-weight: 900;
-        letter-spacing: 3px;
-        text-transform: capitalize;
+        color: #777;
+        font-size: 1.4rem;
+        font-family: 'nunito-black';
+        font-weight: 100;
+        letter-spacing: 2px;
+        text-transform: uppercase;
     }
 
     &__button-arrows-box {
@@ -161,8 +155,13 @@
     }
 
     &__button-arrow {
-        border-top: 1px solid #888;
-        border-right: 1px solid #888;
+        border-top: 1px solid #111;
+        border-right: 1px solid #111;
+
+        &::before,
+        &::after {
+            
+        }
     }
     
     &__icons-box {
@@ -184,7 +183,7 @@
                         -3px -3px 5px #2b272783,
                     inset 3px  3px 5px #000000e8,
                     inset -3px -3px 5px #2b272783;
-            border: 1px solid rgb(19, 18, 18);
+            border: 1px solid var(--color-border);
     }
 
     &__line {

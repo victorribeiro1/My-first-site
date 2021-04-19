@@ -1,16 +1,26 @@
 html[current-theme='dark'] {
     // BODY
     --bg-color-body: var(--color-dark-2);
-
+    --color-main-heading: var(--color-light-2);
+    
     // HEADER
+        
+        --bg-color-header: var(--color-dark-2);
+        --box-shadow-img: 3px  3px 4px #000000,
+        -3px -3px 4px #ffffff0c;
+        --color-border: var(--color-dark-1);
+        --color-explore: var(--color-light-4);
+        --bg-color-explore-before: var(--color-light-5);
+        --flowing-text: var(--color-light-5);
+        
+
         //NAVIGATION
             --color-link: var(--color-light-2);
 
         // MENU
-            --bg-color-icon-interaction: var(--color-light-1);
+            --bg-color-icon-interaction: var(--color-light-2);
             --bg-color-icon: var(--color-light-2);
+            --color-menu-heading: var(--color-light-2);
+            --color-menu-link: var(--color-light-2);
 
-    --bg-color-header: var(--color-dark-2);
-    --color-heading: var(--color-light-2);
-    --flowing-text: var(--color-light-5);
 }

@@ -54,7 +54,7 @@
     }
 
     &__button {
-        height: 2.5rem;
+        height: 2.8rem;
         width: 7.5rem;
 
         position: relative;
@@ -115,7 +115,8 @@
     &__icon {
         background-color: var(--bg-color-icon);
         border-radius: 999px;
-        height: 1px;
+        
+        height: 2px;
 
         transform: rotate(0);
         
@@ -182,7 +183,6 @@
     }
     
     &__list-box {
-        // background-color: #fff;
         top: -6rem;
         position: relative;
 
@@ -212,12 +212,11 @@
         letter-spacing: 2px;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 1px;
-        color: #eee; 
+        color: var(--color-menu-heading); 
         text-transform: uppercase;  
     }
     
     &__list {
-        // background-color: #fff;
         height: 60vh;
         list-style: none;
         text-align: left;
@@ -247,21 +246,21 @@
         &:link,
         &:visited {
             font-size: 2.4rem;
-            color: #eee;
+            color: var(--color-menu-link);
             text-decoration: none;
 
             position: relative;
 
             &::before {
                 content: "";
-                background-color: #eee;
+                background-color: #ff0000;
                 border-radius: 999px;
                 
                 position: absolute;
                 bottom: -1rem;
                 
                 width: 4rem;
-                height: 3px;
+                height: 2px;
 
                 transition: all .5s;
             }
