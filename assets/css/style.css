@@ -10,8 +10,8 @@ html[current-theme='dark'] {
   --color-quinary-opposite: var(--color-light-5);
   --color-main-heading: var(--color-light-2);
   --color-border: #080808;
-  --bg-img-header: url("/media/images/black-car-4-d.jpg");
-  --bg-img-logo: url("/media/images/logo-small.png");
+  --bg-img-header: url("../../media/images/black-car-4-d.jpg");
+  --bg-img-logo: url("../../media/images/logo-small.png");
   --bg-color-body: var(--color-dark-2);
   --bg-color-contact-button: var(--color-light-2);
   --bg-color-explore-before: var(--color-light-5);
@@ -40,8 +40,8 @@ html[current-theme='light'] {
   --color-tertiary-opposite: var(--color-dark-3);
   --color-quaternary-opposite: var(--color-dark-4);
   --color-border: var(--color-light-3);
-  --bg-img-header: url("/media/images/white-car-1-d.jpg");
-  --bg-img-logo: url("/media/images/logo-small.png");
+  --bg-img-header: url("../../media/images/white-car-1-d.jpg");
+  --bg-img-logo: url("../../media/images/logo-small.png");
   --box-shadow-contact-button: 5px  5px 11px #000000,-5px -5px 11px #ffffff10;
   --box-shadow-contact-button-interaction: 2px  2px 2px #0000009a,-2px -2px 5px #ffffff17;
   --box-shadow-icon-box:  3px  3px 6px #000, -3px -3px 6px #4d4e551f;
@@ -561,6 +561,7 @@ body {
   background-color: var(--color-secondary);
   min-height: 100vh;
   position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
