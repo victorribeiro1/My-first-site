@@ -147,12 +147,15 @@ body {
 .icon-box {
   background-color: #111;
   border-radius: 999px;
-  box-shadow: 3px 3px 10px #070707, -3px -3px 10px #1b1b1bf6, inset 3px 3px 10px #070707, inset -3px -3px 10px #1b1b1bf6;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--box-shadow-icon-box);
   height: 5.3rem;
   width: 5.3rem;
   display: flex;
   justify-content: center;
   align-items: center; }
+  .icon-box:hover {
+    box-shadow: var(--box-shadow-icon-box-interaction); }
 
 .icon {
   display: inline-block;
@@ -160,19 +163,11 @@ body {
   width: 2.2rem;
   stroke-width: 0;
   stroke: currentColor;
-  fill: #777;
-  transform: translateX(1px); }
+  fill: var(--color-icon); }
   .icon--youtube {
     height: 2.5rem;
     width: 2.5rem; }
 
-/* ==========================================
-Single-colored icons can be modified like so:
-.icon-name {
-    font-size: 32px;
-    color: red;
-}
-========================================== */
 .swipe-button {
   cursor: pointer; }
   .swipe-button__body {
@@ -255,14 +250,13 @@ Single-colored icons can be modified like so:
 .toggle-menu__checkbox {
   display: none; }
   .toggle-menu__checkbox:checked ~ .toggle-menu__button-box .toggle-menu__icon {
-    background-color: red;
-    transition: background-color 0.5s cubic-bezier(0.97, 0.12, 0.7, 1.5), width 0.3s 0.5s cubic-bezier(0, 0.8, 0.9, 1), margin-bottom 0.3s 0.1s, transform 0.3s 0.4s; }
+    background-color: red; }
     .toggle-menu__checkbox:checked ~ .toggle-menu__button-box .toggle-menu__icon--1 {
       margin-bottom: -1px;
-      transform: rotate(45deg); }
+      transform: translate(0px, 1px) rotate(135deg); }
     .toggle-menu__checkbox:checked ~ .toggle-menu__button-box .toggle-menu__icon--2 {
       width: 100%;
-      transform: rotate(-45deg); }
+      transform: translate(0px, -1px) rotate(-135deg); }
   .toggle-menu__checkbox:checked ~ .toggle-menu__button-box .toggle-menu__button-background {
     transform: translate(50%, -50%) scale(1); }
   .toggle-menu__checkbox:checked ~ .toggle-menu__background-box .toggle-menu__background {
@@ -324,7 +318,7 @@ Single-colored icons can be modified like so:
   border-radius: 999px;
   height: 2px;
   transform: rotate(0);
-  transition: background-color 0.5s cubic-bezier(0.97, 0.12, 0.7, 1.5), width 0.3s 0.2s cubic-bezier(0, 0.8, 0.9, 1), margin-bottom 0.3s 0.4s, transform 0.3s 0.1s; }
+  transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
   .toggle-menu__icon--1 {
     margin-bottom: 8px;
     width: 100%; }
@@ -531,7 +525,7 @@ Single-colored icons can be modified like so:
   .header__paragraph {
     font-family: 'nunito-light';
     font-size: 2.2rem;
-    color: var(--flowing-text);
+    color: var(--color-flowing-text);
     max-width: 48rem;
     letter-spacing: 1px; }
   .header__img-box:hover .header__img {
@@ -571,10 +565,8 @@ Single-colored icons can be modified like so:
       transform: translateX(-50%);
       top: -55px; }
   .header__button, .header__button:link, .header__button:visited {
-    background-color: #eee;
+    background-color: var(--bg-color-contact-button);
     border-radius: 0px;
-    box-shadow: 5px  5px 11px #000000e8, -3px -3px 5px #38363652;
-    border: 2px solid var(--color-border);
     height: 6rem;
     width: 23rem;
     position: relative;
@@ -585,19 +577,21 @@ Single-colored icons can be modified like so:
     align-items: center;
     text-decoration: none; }
     .header__button:hover, .header__button:link:hover, .header__button:visited:hover {
-      box-shadow: inset  3px  3px 5px #000000e8, inset -3px -3px 5px #2b272783; }
+      transform: translate(2px, 2px);
+      box-shadow: var(--box-shadow-contact-button-interaction); }
   .header__button-text {
-    color: #777;
+    color: var(--color-contact-button-text);
+    font-style: italic;
     font-size: 1.4rem;
     font-family: 'nunito-black';
     font-weight: 100;
     letter-spacing: 2px;
     text-transform: uppercase; }
   .header__button-arrows-box {
-    transform: translateY(3px); }
+    transform: translateY(2px); }
   .header__button-arrow {
-    border-top: 1px solid #111;
-    border-right: 1px solid #111; }
+    border-top: 2px solid var(--color-contact-button-text);
+    border-right: 2px solid var(--color-contact-button-text); }
   .header__icons-box {
     position: relative;
     bottom: 1.5rem;
@@ -606,11 +600,6 @@ Single-colored icons can be modified like so:
     justify-content: space-between;
     align-items: center;
     width: 12rem; }
-  .header__icon {
-    background-color: #111;
-    border-radius: 999px;
-    box-shadow: 5px  5px 11px #000000e8, -3px -3px 5px #2b272783, inset 3px  3px 5px #000000e8, inset -3px -3px 5px #2b272783;
-    border: 1px solid var(--color-border); }
   .header__line {
     background-color: #555;
     height: 80rem;
@@ -622,13 +611,24 @@ Single-colored icons can be modified like so:
 html[current-theme='dark'] {
   --bg-color-body: var(--color-dark-2);
   --color-main-heading: var(--color-light-2);
+  --bg-color-contact-button: var(--color-light-2);
+  --bg-color-explore-before: var(--color-light-5);
   --bg-color-header: var(--color-dark-2);
+  --box-shadow-contact-button: 5px  5px 11px #000000,
+                                    -5px -5px 11px #ffffff10;
+  --box-shadow-contact-button-interaction: 2px  2px 2px #0000009a,
+                                                -2px -2px 5px #ffffff17;
+  --box-shadow-icon-box:  3px  3px 6px #000, 
+                               -3px -3px 6px #4d4e551f;
+  --box-shadow-icon-box-interaction:  inset  2px  2px 5px #000, 
+                                            inset -3px -3px 7px #4d4e551f;
   --box-shadow-img: 3px  3px 4px #000000,
         -3px -3px 4px #ffffff0c;
-  --color-border: var(--color-dark-1);
+  --color-border: #080808;
+  --color-contact-button-text: var(--color-dark-1);
   --color-explore: var(--color-light-4);
-  --bg-color-explore-before: var(--color-light-5);
-  --flowing-text: var(--color-light-5);
+  --color-flowing-text: var(--color-light-5);
+  --color-icon: var(--color-light-4);
   --color-link: var(--color-light-2);
   --bg-color-icon-interaction: var(--color-light-2);
   --bg-color-icon: var(--color-light-2);

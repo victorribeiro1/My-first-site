@@ -1,11 +1,8 @@
 .icon-box {
     background-color: #111;
-            border-radius: 999px;
-            box-shadow:   3px  3px 10px #070707,
-                         -3px -3px 10px #1b1b1bf6,
-                   inset  3px  3px 10px #070707,
-                   inset -3px -3px 10px #1b1b1bf6,;
-            // border: 1px solid rgb(8, 8, 8);
+    border-radius: 999px;
+    border: 1px solid var(--color-border);
+    box-shadow: var(--box-shadow-icon-box);
 
     height: 5.3rem;
     width: 5.3rem;
@@ -13,16 +10,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &:hover {
+        box-shadow: var(--box-shadow-icon-box-interaction)
+    }
 }
+
 .icon {
     display: inline-block;
     height: 2.2rem;
     width: 2.2rem;
     stroke-width: 0;
     stroke: currentColor;
-    fill: #777;
+    fill: var(--color-icon);
 
-    transform: translateX(1px);
+    // transform: translateX(1px);
     
     &--youtube {
         height: 2.5rem;
@@ -30,12 +31,5 @@
 
         // transform: translateY(0px);
     }
-}
 
-/* ==========================================
-Single-colored icons can be modified like so:
-.icon-name {
-    font-size: 32px;
-    color: red;
 }
-========================================== */

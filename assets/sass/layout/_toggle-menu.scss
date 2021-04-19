@@ -5,47 +5,46 @@
     
     &__checkbox {
         display: none;
+
+        &:checked ~ {
         
-        &:checked ~ .toggle-menu__button-box .toggle-menu__icon {
-            background-color: red;
+            & .toggle-menu__button-box .toggle-menu__icon {
+                background-color: red;
 
-            transition: background-color .5s cubic-bezier(0.97, 0.12, 0.7, 1.5),
-                        width .3s .5s cubic-bezier(0, 0.8, 0.9, 1),
-                        margin-bottom .3s .1s,
-                        transform .3s .4s;
+                &--1 {
+                    margin-bottom: -1px;
+                    transform: translate(0px, 1px) rotate(135deg);
 
-            &--1 {
-                margin-bottom: -1px;
-                transform: rotate(45deg);
+                }
+                
+                &--2 {
+                    width: 100%;
+                    transform: translate(-0px, -1px) rotate(-135deg);
+                }
+            }
+
+            & .toggle-menu__button-box .toggle-menu__button-background {
+                transform: translate(50%, -50%) scale(1);
             }
             
-            &--2 {
-                width: 100%;
-                transform: rotate(-45deg);
+            & .toggle-menu__background-box .toggle-menu__background {
+                transform: scale(45);
+            } 
+
+            & .toggle-menu__nav {
+                display: flex;
             }
-        }
+            
+            & .toggle-menu__nav .toggle-menu__list-box,
+            & .toggle-menu__nav .toggle-menu__icons-box {
+                opacity: 1;
+                transition: opacity.5s .3s;
+            }
 
-        &:checked ~ .toggle-menu__button-box .toggle-menu__button-background {
-            transform: translate(50%, -50%) scale(1);
-        }
-        
-        &:checked ~ .toggle-menu__background-box .toggle-menu__background {
-            transform: scale(45);
-        } 
-
-        &:checked ~ .toggle-menu__nav {
-            display: flex;
-        }
-        
-        &:checked ~ .toggle-menu__nav .toggle-menu__list-box,
-        &:checked ~ .toggle-menu__nav .toggle-menu__icons-box {
-            opacity: 1;
-            transition: opacity.5s .3s;
-        }
-
-        &:checked ~ .toggle-menu__nav {
-            left: 0;
-            transition: left 0s 0s;
+            & .toggle-menu__nav {
+                left: 0;
+                transition: left 0s 0s;
+            }
         }
     }
 
@@ -119,11 +118,9 @@
         height: 2px;
 
         transform: rotate(0);
+
         
-        transition: background-color .5s cubic-bezier(0.97, 0.12, 0.7, 1.5),
-                    width .3s .2s cubic-bezier(0, 0.8, 0.9, 1),
-                    margin-bottom .3s .4s,
-                    transform .3s .1s;
+        transition: .5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         
         &--1 {
             margin-bottom: 8px;

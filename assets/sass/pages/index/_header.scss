@@ -47,7 +47,7 @@
         &__paragraph {
             font-family: 'nunito-light';
             font-size: 2.2rem;
-            color: var(--flowing-text);
+            color: var(--color-flowing-text);
             max-width: 48rem;
             letter-spacing: 1px;
         }
@@ -114,11 +114,8 @@
         &,
         &:link,
         &:visited {
-            background-color: #eee;
+            background-color: var(--bg-color-contact-button);
             border-radius: 0px;
-            box-shadow:  5px  5px 11px #000000e8,
-                        -3px -3px 5px #38363652;
-            border: 2px solid var(--color-border);
                     
             height: 6rem;
             width: 23rem;
@@ -134,15 +131,16 @@
             text-decoration: none;
             
             &:hover {
-                box-shadow: inset  3px  3px 5px #000000e8,
-                            inset -3px -3px 5px #2b272783;
+                transform: translate(2px, 2px);
+                box-shadow: var(--box-shadow-contact-button-interaction);
                 
-                        }
+            }
         }
     }
 
     &__button-text {
-        color: #777;
+        color: var(--color-contact-button-text);
+        font-style: italic;
         font-size: 1.4rem;
         font-family: 'nunito-black';
         font-weight: 100;
@@ -151,17 +149,17 @@
     }
 
     &__button-arrows-box {
-        transform: translateY(3px);
+        transform: translateY(2px);
     }
 
     &__button-arrow {
-        border-top: 1px solid #111;
-        border-right: 1px solid #111;
+        border-top: 2px solid var(--color-contact-button-text);
+        border-right: 2px solid var(--color-contact-button-text);
 
-        &::before,
-        &::after {
+        // &::before,
+        // &::after {
             
-        }
+        // }
     }
     
     &__icons-box {
@@ -176,15 +174,8 @@
         width: 12rem;
     }
 
-    &__icon {
-        background-color: #111;
-            border-radius: 999px;
-            box-shadow: 5px  5px 11px #000000e8,
-                        -3px -3px 5px #2b272783,
-                    inset 3px  3px 5px #000000e8,
-                    inset -3px -3px 5px #2b272783;
-            border: 1px solid var(--color-border);
-    }
+    // &__icon {
+    // }
 
     &__line {
         background-color: #555;
