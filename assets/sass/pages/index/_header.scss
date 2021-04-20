@@ -75,14 +75,14 @@
     }
 
     &__line {
-        background-color: #333;
+        background-color: var(--color-quaternary);
 
-        min-height: 102vh;
+        min-height: 105vh;
         width:  1px;
 
         position: absolute;
 
-        top: 50%;
+        top: 48%;
         right: 50%;
         transform: translate(-50%, -50%);
 
