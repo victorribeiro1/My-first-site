@@ -48,7 +48,8 @@
         }
         
         &__img-box {
-            // background-color: #333;
+
+            position: relative;
             
             &:hover .header__img {
                 transform: rotateY(180deg);
@@ -71,6 +72,21 @@
 
         position: relative;
         z-index: 1;
+    }
+
+    &__line {
+        background-color: #333;
+
+        min-height: 102vh;
+        width:  1px;
+
+        position: absolute;
+
+        top: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+
+        z-index: 0;
     }
     
     &__contact-box {
@@ -184,15 +200,4 @@
 
     // &__icon {
     // }
-
-    &__line {
-        background-color: #333;
-
-        height: 100%;
-        width:  1px;
-
-        position: absolute;
-        right: 34.6rem;
-        z-index: 0;
-    }
 }
