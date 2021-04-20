@@ -733,11 +733,10 @@ body {
   .header__img {
     background: var(--bg-img-header) no-repeat center;
     background-size: cover;
-    border-radius: 50%;
-    border: 1px solid var(--color-secondary);
+    border-radius: 999px;
     box-shadow: var(--box-shadow-img);
-    height: 41rem;
-    width: 41rem;
+    height: 45rem;
+    width: 45rem;
     perspective: 999px;
     transition: .5s ease-in !important;
     position: relative;
