@@ -1,0 +1,15 @@
+.button {
+    
+    &__text,
+    &__arrow {
+        transition: transform .5s !important;
+    }
+    &:hover &__text {
+        transform: translateX(-10px);
+        transition: transform .5s !important;
+    }
+    
+    &:hover &__arrow {
+        transform: translateX(23rem);
+    }
+}
