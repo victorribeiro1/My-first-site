@@ -121,9 +121,12 @@ html[current-theme='light'] {
   outline: none; }
 
 html {
-  font-size: 55%;
+  font-size: 62.5%;
   scroll-behavior: smooth;
   position: relative; }
+  @media (min-width: 1350px) {
+    html {
+      font-size: 55%; } }
 
 body {
   background: var(--bg-color-body);
