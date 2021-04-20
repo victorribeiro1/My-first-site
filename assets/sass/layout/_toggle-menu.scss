@@ -212,7 +212,8 @@
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 1px;
         color: var(--color-primary-opposite); 
-        text-transform: uppercase;  
+        text-transform: uppercase;
+        margin-bottom: 1rem;
     }
     
     &__list {

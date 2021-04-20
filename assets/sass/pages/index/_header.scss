@@ -12,27 +12,20 @@
     justify-content: space-between;
     
     &__content-box {
-        // background-color: lightgreen;
-        height: 85vh;
-
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
     }
     
     &__introduction {
-        height: 100%;
-        // background-color: rgb(211, 58, 58);
-
+        // background-color: #333;
+        min-height: 70vh;
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
     }
     
-    
-    
-    &__text-box {
-        // background-color: #aaa;
-        
+    &__text-box {        
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -55,6 +48,7 @@
         }
         
         &__img-box {
+            // background-color: #333;
             
             &:hover .header__img {
                 transform: rotateY(180deg);
@@ -125,8 +119,8 @@
             width: var(--main-button-width);
                     
             position: relative;
-            top: -14rem;
-            left: -14rem;
+            top: -10rem;
+            left: -10rem;
 
             display: flex;
             justify-content: space-evenly;
