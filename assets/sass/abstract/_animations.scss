@@ -29,5 +29,18 @@
         transform-origin: right;
         transform: scaleX(0);
     }
+}
 
+@keyframes link {
+    0% {
+        transform: translateY(0px);
+    }
+
+    12% {
+        transform: translateY(var(--letter-up));
+    }
+
+    40%, 50% {
+        transform: translateY(0px);
+    }
 }

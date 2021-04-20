@@ -1,0 +1,100 @@
+.link {
+    text-decoration: none;
+
+    &:hover .link__letter {
+        &:nth-child(1) {
+            animation: link var(--seconds) 0s ease-in-out infinite;
+        }
+        &:nth-child(2) {
+            animation: link var(--seconds) .1s ease-in-out infinite;
+        }
+        &:nth-child(3) {
+            animation: link var(--seconds) .2s ease-in-out infinite;
+        }
+        &:nth-child(4) {
+            animation: link var(--seconds) .3s ease-in-out infinite;
+        }
+        &:nth-child(5) {
+            animation: link var(--seconds) .4s ease-in-out infinite;
+        }
+        &:nth-child(6) {
+            animation: link var(--seconds) .5s ease-in-out infinite;
+        }
+        &:nth-child(7) {
+            animation: link var(--seconds) .6s ease-in-out infinite;
+        }
+        &:nth-child(8) {
+            animation: link var(--seconds) .7s ease-in-out infinite;
+        }
+        &:nth-child(9) {
+            animation: link var(--seconds) .8s ease-in-out infinite;
+        }
+        &:nth-child(10) {
+            animation: link var(--seconds) .9s ease-in-out infinite;
+        }
+        &:nth-child(11) {
+            animation: link var(--seconds) 1s ease-in-out infinite;
+        }
+        &:nth-child(12) {
+            animation: link var(--seconds) 1.1s ease-in-out infinite;
+        }
+        &:nth-child(13) {
+            animation: link var(--seconds) 1.2s ease-in-out infinite;
+        }
+        &:nth-child(14) {
+            animation: link var(--seconds) 1.3s ease-in-out infinite;
+        }
+        &:nth-child(15) {
+            animation: link var(--seconds) 1.4s ease-in-out infinite;
+        }
+        &:nth-child(16) {
+            animation: link var(--seconds) 1.5s ease-in-out infinite;
+        }
+        &:nth-child(17) {
+            animation: link var(--seconds) 1.6s ease-in-out infinite;
+        }
+        &:nth-child(18) {
+            animation: link var(--seconds) 1.7s ease-in-out infinite;
+        }
+        &:nth-child(19) {
+            animation: link var(--seconds) 1.8s ease-in-out infinite;
+        }
+        &:nth-child(20) {
+            animation: link var(--seconds) 1.9s ease-in-out infinite;
+        }
+        &:nth-child(21) {
+            animation: link var(--seconds) 2s ease-in-out infinite;
+        }
+        &:nth-child(22) {
+            animation: link var(--seconds) 2.1s ease-in-out infinite;
+        }
+        &:nth-child(23) {
+            animation: link var(--seconds) 2.2s ease-in-out infinite;
+        }
+        &:nth-child(24) {
+            animation: link var(--seconds) 2.3s ease-in-out infinite;
+        }
+        &:nth-child(25) {
+            animation: link var(--seconds) 2.4s ease-in-out infinite;
+        }
+    }
+
+    &__letter {
+        display: inline-block;
+        letter-spacing: -4px;
+
+        &--big {
+            --seconds: 1.8s;
+            --letter-up: -20px;
+        }
+        
+        &--small {
+            --seconds: 1.2s;
+            --letter-up: -10px;
+        }
+    }
+
+    &__white-space {
+        display: inline-block;
+    }
+}
