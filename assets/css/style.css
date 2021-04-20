@@ -743,7 +743,7 @@ body {
     z-index: 1; }
   .header__line {
     background-color: var(--color-quaternary);
-    min-height: 105vh;
+    min-height: 205vh;
     width: 1px;
     position: absolute;
     top: 48%;
