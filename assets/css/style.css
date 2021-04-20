@@ -266,7 +266,7 @@ body {
 
 .link--small {
   --seconds: 1.2s;
-  --letter-up: -7px;
+  --letter-up: -8px;
   --button-before-height: 1px; }
 
 .link::before {
