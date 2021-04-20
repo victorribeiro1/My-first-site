@@ -414,7 +414,8 @@ body {
   list-style: none;
   padding: 2rem;
   padding-left: 5rem;
-  position: relative; }
+  position: relative;
+  z-index: 1; }
   .nav__column {
     display: flex;
     justify-content: space-between;
@@ -734,14 +735,15 @@ body {
     .header__img-box:hover .header__img {
       transform: rotateY(180deg); }
   .header__img {
-    background: var(--bg-img-header) no-repeat center;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     border-radius: 999px;
     box-shadow: var(--box-shadow-img);
     height: 45rem;
     width: 45rem;
     perspective: 999px;
-    transition: .5s ease-in !important;
+    transition: background-image .5s ease-in, transform .5s ease !important;
     position: relative;
     z-index: 1; }
   .header__line {

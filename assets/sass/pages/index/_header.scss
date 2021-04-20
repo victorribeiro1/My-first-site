@@ -57,7 +57,8 @@
     } 
     
     &__img {
-        background: var(--bg-img-header) no-repeat center;
+        background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
         border-radius: 999px;
 
@@ -67,7 +68,8 @@
         width:  45rem;
 
         perspective: 999px;
-        transition: .5s ease-in !important;
+        transition: background-image .5s ease-in,
+                    transform .5s ease !important;
 
         position: relative;
         z-index: 1;
