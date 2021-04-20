@@ -1,7 +1,7 @@
 .swipe-button {
     cursor: pointer;
     &__body {
-        background: linear-gradient(110deg, rgb(237, 251, 255), rgb(117, 117, 194) 40%,rgb(192, 31, 85), rgb(255, 0, 0) 100%);
+        background: linear-gradient(110deg, rgb(237, 251, 255), rgb(117, 117, 194) 40%,#c01f55, rgb(255, 0, 0) 100%);
         
         border: 5px solid var(--color-secondary);
         border-radius: 999px;

@@ -29,8 +29,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-    background-color: transparent;
-    width: 9px;
+    width: 7px;
     z-index: -1;
 
     &.hidden {
@@ -38,12 +37,12 @@ body {
     }
     
     &-thumb {
-        background: #eee;
+        background: var(--color-secondary-opposite);
         border-radius: 999px;
         height: 10px;
     }
     
     &-track {
-        background-color: #222;
+        background-color: var(--color-secondary);
     }
 }

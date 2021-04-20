@@ -17,3 +17,17 @@
         transform: scaleY(0);
     }
 }
+
+@keyframes goAway {
+
+    from {
+        transform-origin: right;
+        transform: scaleX(1);
+    }
+    
+    to {
+        transform-origin: right;
+        transform: scaleX(0);
+    }
+
+}
