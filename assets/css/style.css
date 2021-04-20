@@ -95,7 +95,8 @@ html[current-theme='light'] {
   --color-light-2: #eee;
   --color-light-3: #D6D6D6;
   --color-light-4: #aaa;
-  --color-light-5: #999; }
+  --color-light-5: #999;
+  --main-button-width: 23rem; }
 
 *,
 *::before,
@@ -215,14 +216,15 @@ body {
   transform: rotate(45deg) translateY(-1px); }
 
 .button__text, .button__arrow {
-  transition: transform .5s !important; }
+  transition: transform .5s !important;
+  display: block; }
 
 .button:hover .button__text {
-  transform: translateX(-10px);
+  transform: translateX(-30px);
   transition: transform .5s !important; }
 
 .button:hover .button__arrow {
-  transform: translateX(23rem); }
+  transform: translate(calc(var(--main-button-width) - 6rem), 2px); }
 
 .dropdown__menu {
   display: none; }
@@ -741,7 +743,6 @@ body {
     border-radius: 0px;
     height: 6rem;
     width: var(--main-button-width);
-    --main-button-width: 23rem;
     position: relative;
     top: -14rem;
     left: -14rem;

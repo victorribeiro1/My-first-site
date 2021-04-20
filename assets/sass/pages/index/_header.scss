@@ -123,7 +123,6 @@
                     
             height: 6rem;
             width: var(--main-button-width);
-            --main-button-width: 23rem;
                     
             position: relative;
             top: -14rem;
@@ -135,10 +134,10 @@
 
             text-decoration: none;
             
-            &:hover {
+            // &:hover {
                 // transform: translate(2px, 2px);
                 // box-shadow: var(--box-shadow-contact-button-interaction);
-            }
+            // }
         }
     }
 
