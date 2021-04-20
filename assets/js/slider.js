@@ -1,9 +1,9 @@
 const slider = document.getElementById('slider')
 
 images = [
-    image1 = "url('../media/images/black-car-4-d.jpg')",
-    image2 = "url('../media/images/black-car-2-d.jpg')",
-    image3 = "url('../media/images/white-car-1-d.jpg')",
+    image1 = "url('../../media/images/black-car-4-d.jpg')",
+    image2 = "url('../../media/images/black-car-2-d.jpg')",
+    image3 = "url('../../media/images/white-car-1-d.jpg')",
 ]
 
 
