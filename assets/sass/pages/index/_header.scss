@@ -133,6 +133,10 @@
                 // box-shadow: var(--box-shadow-contact-button-interaction);
             // }
         }
+
+        &.animate {
+            animation: contact-reminder 400ms;
+        }
     }
 
     &__button-text {
@@ -160,6 +164,7 @@
         // &::after {
             
         // }
+
     }
     
     &__icons-box {
@@ -183,11 +188,11 @@
     &__line {
         background-color: #333;
 
-        height: 80rem;
+        height: 100%;
         width:  1px;
 
         position: absolute;
-        right: 32.7rem;
+        right: 34.6rem;
         z-index: 0;
     }
 }
