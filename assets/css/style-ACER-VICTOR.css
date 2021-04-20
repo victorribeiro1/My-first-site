@@ -274,14 +274,14 @@ body {
   position: relative; }
 
 .link--big {
-  --seconds: 1.5s;
-  --letter-up: -20px;
+  --seconds: 1.6s;
+  --letter-up: -25mpx;
   --button-before-height: 2px; }
 
 .link--small {
   --seconds: 1.2s;
   --letter-up: -8px;
-  --buttkon-before-height: 1px; }
+  --button-before-height: 1px; }
 
 .link::before {
   content: "";
@@ -339,37 +339,37 @@ body {
   .link:hover .link__letter:nth-child(17) {
     animation-delay: 1000ms; }
   .link:hover .link__letter:nth-child(18) {
-    animation-delay: 1050ms; }
+    animation-delay: 2s; }
   .link:hover .link__letter:nth-child(19) {
-    animation-delay: 1100ms; }
+    animation-delay: 2.1s; }
   .link:hover .link__letter:nth-child(20) {
-    animation-delay: 1150ms; }
+    animation-delay: 2.2s; }
   .link:hover .link__letter:nth-child(21) {
-    animation-delay: 1200ms; }
+    animation-delay: 2.3s; }
   .link:hover .link__letter:nth-child(22) {
-    animation-delay: 1250ms; }
+    animation-delay: 2.4s; }
   .link:hover .link__letter:nth-child(23) {
-    animation-delay: 1300ms; }
+    animation-delay: 2.5s; }
   .link:hover .link__letter:nth-child(24) {
-    animation-delay: 1350ms; }
+    animation-delay: 2.6s; }
   .link:hover .link__letter:nth-child(25) {
-    animation-delay: 1400ms; }
+    animation-delay: 2.7s; }
   .link:hover .link__letter:nth-child(26) {
-    animation-delay: 1450ms; }
+    animation-delay: 2.8s; }
   .link:hover .link__letter:nth-child(27) {
-    animation-delay: 1500ms; }
+    animation-delay: 2.9s; }
   .link:hover .link__letter:nth-child(28) {
-    animation-delay: 1550ms; }
+    animation-delay: 3s; }
   .link:hover .link__letter:nth-child(29) {
-    animation-delay: 1600ms; }
+    animation-delay: 3.1s; }
   .link:hover .link__letter:nth-child(30) {
-    animation-delay: 1650ms; }
+    animation-delay: 3.2s; }
   .link:hover .link__letter:nth-child(31) {
-    animation-delay: 1700ms; }
+    animation-delay: 3.3s; }
   .link:hover .link__letter:nth-child(32) {
-    animation-delay: 1750ms; }
+    animation-delay: 3.4s; }
   .link:hover .link__letter:nth-child(33) {
-    animation-delay: 1800ms; }
+    animation-delay: 3.5s; }
 
 .link__white-space {
   display: inline-block; }
