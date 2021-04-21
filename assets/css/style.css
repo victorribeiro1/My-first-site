@@ -415,7 +415,7 @@ body {
   padding: 2rem;
   padding-left: 5rem;
   position: relative;
-  z-index: 1; }
+  z-index: 2; }
   .nav__column {
     display: flex;
     justify-content: space-between;
@@ -551,7 +551,7 @@ body {
   position: relative;
   transform: scale(0);
   transition: all .8s ease !important;
-  z-index: 2; }
+  z-index: 3; }
   .toggle-menu__background--2 {
     transition-delay: 1s !important; }
 
