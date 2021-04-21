@@ -1,4 +1,4 @@
-const slider = document.getElementById('slider')
+const slider = document.querySelector('.slider')
 
 images = [
     image1 = "url('media/images/black-car-4-d.jpg')",
