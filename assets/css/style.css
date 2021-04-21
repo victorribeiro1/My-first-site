@@ -8,8 +8,10 @@ html[current-theme='dark'] {
   --color-tertiary-opposite: var(--color-light-3);
   --color-quaternary-opposite: var(--color-light-4);
   --color-quinary-opposite: var(--color-light-5);
-  --color-transparent: var(--color-transparent-dark);
-  --color-transparent-opposite: var(--color-transparent-light);
+  --color-transparent-1: var(--color-transparent-dark-1);
+  --color-transparent-2: var(--color-transparent-dark-2);
+  --color-transparent-opposite-1: var(--color-transparent-light-1);
+  --color-transparent-opposite-2: var(--color-transparent-light-2);
   --color-main-heading: var(--color-light-2);
   --color-border: #080808;
   --bg-img-header: url("../../media/images/black-car-4-d.jpg");
@@ -41,8 +43,10 @@ html[current-theme='light'] {
   --color-secondary-opposite: var(--color-dark-2);
   --color-tertiary-opposite: var(--color-dark-3);
   --color-quaternary-opposite: var(--color-dark-4);
-  --color-transparent: var(--color-transparent-light);
-  --color-transparent-opposite: var(--color-transparent-dark);
+  --color-transparent-1: var(--color-transparent-light-1);
+  --color-transparent-2: var(--color-transparent-light-2);
+  --color-transparent-opposite-1: var(--color-transparent-dark-1);
+  --color-transparent-opposite-2: var(--color-transparent-dark-2);
   --color-border: var(--color-light-3);
   --bg-img-header: url("../../media/images/white-car-1-d.jpg");
   --bg-img-logo: url("../../media/images/logo-small.png");
@@ -109,13 +113,15 @@ html[current-theme='light'] {
   --color-dark-2: #111;
   --color-dark-3: #2E3339;
   --color-dark-4: #474d53;
-  --color-transparent-dark: #0000000e;
+  --color-transparent-dark-1: #0000000e;
+  --color-transparent-dark-2: #0000008e;
   --color-light-1: #fff;
   --color-light-2: #eee;
   --color-light-3: #D6D6D6;
   --color-light-4: #aaa;
   --color-light-5: #999;
-  --color-transparent-light: #ffffff0a;
+  --color-transparent-light-1: #ffffff0a;
+  --color-transparent-light-2: #ffffffcc;
   --main-button-width: 23rem; }
 
 *,
@@ -255,7 +261,7 @@ body {
   .dropdown.active .dropdown__menu {
     opacity: 1;
     left: 0;
-    transition: opacity .2s .1s ease-in, left 0s 0s !important; }
+    transition: opacity .2s .1s ease-in, left     0s  0s !important; }
   .dropdown.active .dropdown__arrow-box {
     transform: translateY(-3px); }
   .dropdown.active .dropdown__arrow {
@@ -272,20 +278,19 @@ body {
     transform: rotate(45deg);
     transition: .2s linear !important; }
   .dropdown__menu {
-    backdrop-filter: blur(30px);
-    background-color: var(--color-transparent-opposite);
+    backdrop-filter: blur(20px);
+    background-color: var(--color-transparent-opposite-1);
     border-radius: 10px;
     position: absolute;
     margin-top: 2rem;
-    width: 50rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: flex-start;
     overflow: hidden;
-    opacity: 1;
-    left: -0px;
-    transition: opacity .2s .1s ease-in, left 0s .5s !important; }
+    opacity: 0;
+    left: -9999px;
+    transition: opacity .2s .1s ease-in, left 0s .3s !important; }
     .dropdown__menu::before {
       content: "";
       background-color: #ff0000;
@@ -294,21 +299,31 @@ body {
       position: absolute;
       top: 0; }
   .dropdown__item {
-    width: 100%;
-    height: 100%;
     list-style: none;
-    padding: 2rem 0; }
+    padding: 2rem 0;
+    width: 100%; }
     .dropdown__item:hover {
-      background-color: #fff; }
-  .dropdown__link {
+      background-color: var(--color-transparent-2); }
+    .dropdown__item:hover .dropdown__link::before {
+      width: 95% !important; }
+  .dropdown__content-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 30px 0 10px; }
+  .dropdown__icon {
+    display: block !important;
+    height: 3rem !important;
+    width: 3rem !important; }
+  .dropdown__link, .dropdown__link:link,
+  .dropdown__link *:visited {
     cursor: pointer !important;
     font-size: 2rem;
     font-family: "nunito-regular";
     font-weight: 600;
-    height: 100%;
-    padding: 0 85px 0 2rem; }
-    .dropdown__link:hover::before {
-      width: 95% !important; }
+    white-space: nowrap;
+    padding-left: 2rem; }
 
 .icon-box {
   border-radius: 999px;
@@ -338,7 +353,6 @@ body {
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  display: inline-block;
   position: relative; }
 
 .link--big {
