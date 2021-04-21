@@ -735,6 +735,7 @@ body {
     .header__img-box:hover .header__img {
       transform: rotateY(180deg); }
   .header__img {
+    background-repeat: var(--bg-img-header);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
