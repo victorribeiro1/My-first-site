@@ -19,6 +19,10 @@ html[current-theme='dark'] {
     --color-tertiary-opposite: var(--color-light-3);
     --color-quaternary-opposite: var(--color-light-4);
     --color-quinary-opposite: var(--color-light-5);
+
+    --color-transparent: var(--color-transparent-dark);
+    --color-transparent-opposite: var(--color-transparent-light);
+
     --color-main-heading: var(--color-light-2);
     
     --color-border: #080808;

@@ -10,7 +10,7 @@
 
 html {
     font-size: 62.5%; // 1rem = 10px
-    @media (min-width: 1350px) {
+    @media (max-height: 650px) {
         font-size: 55%;
     }
     scroll-behavior: smooth;

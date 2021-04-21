@@ -2,12 +2,13 @@
     &,
     &:link,
     &:visited { 
-        color: var(--color-secondary--opposite);
+        color: var(--color-secondary-opposite) !important;
         
         position: relative;
 
         text-decoration: none;
-    
+        text-transform: uppercase;
+        
         display: inline-block;
         position: relative;
     }

@@ -8,6 +8,8 @@ html[current-theme='dark'] {
   --color-tertiary-opposite: var(--color-light-3);
   --color-quaternary-opposite: var(--color-light-4);
   --color-quinary-opposite: var(--color-light-5);
+  --color-transparent: var(--color-transparent-dark);
+  --color-transparent-opposite: var(--color-transparent-light);
   --color-main-heading: var(--color-light-2);
   --color-border: #080808;
   --bg-img-header: url("../../media/images/black-car-4-d.jpg");
@@ -28,10 +30,7 @@ html[current-theme='dark'] {
   --menu-background-blur: .9px;
   --font-weight: thin; }
   html[current-theme='dark'] * {
-    transition: color .3s ease-in,
- background-color .3s ease-in,
- border .3s ease-in,
- box-shadow .3s ease-in; }
+    transition: color .3s ease-in, background-color .3s ease-in, border .3s ease-in, box-shadow .3s ease-in; }
 
 html[current-theme='light'] {
   --color-primary: var(--color-light-1);
@@ -42,6 +41,8 @@ html[current-theme='light'] {
   --color-secondary-opposite: var(--color-dark-2);
   --color-tertiary-opposite: var(--color-dark-3);
   --color-quaternary-opposite: var(--color-dark-4);
+  --color-transparent: var(--color-transparent-light);
+  --color-transparent-opposite: var(--color-transparent-dark);
   --color-border: var(--color-light-3);
   --bg-img-header: url("../../media/images/white-car-1-d.jpg");
   --bg-img-logo: url("../../media/images/logo-small.png");
@@ -57,10 +58,7 @@ html[current-theme='light'] {
   --menu-background-blur: 2px;
   --font-weight: bolder; }
   html[current-theme='light'] * {
-    transition: color .3s ease-in,
- background-color .3s ease-in,
- border .3s ease-in,
- box-shadow .3s ease-in; }
+    transition: color .3s ease-in, background-color .3s ease-in, border .3s ease-in, box-shadow .3s ease-in; }
 
 @keyframes explore {
   from {
@@ -111,11 +109,13 @@ html[current-theme='light'] {
   --color-dark-2: #111;
   --color-dark-3: #2E3339;
   --color-dark-4: #474d53;
+  --color-transparent-dark: #0000000e;
   --color-light-1: #fff;
   --color-light-2: #eee;
   --color-light-3: #D6D6D6;
   --color-light-4: #aaa;
   --color-light-5: #999;
+  --color-transparent-light: #ffffff0a;
   --main-button-width: 23rem; }
 
 *,
@@ -130,7 +130,7 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   position: relative; }
-  @media (min-width: 1350px) {
+  @media (max-height: 650px) {
     html {
       font-size: 55%; } }
 
@@ -249,8 +249,43 @@ body {
 .button:hover .button__arrow {
   transform: translate(calc(var(--main-button-width) - 6rem), 2px); }
 
-.dropdown__menu {
-  display: none; }
+.dropdown {
+  position: relative; }
+  .dropdown:hover .dropdown__menu,
+  .dropdown .dropdown__menu:hover {
+    opacity: 1;
+    left: 0px;
+    transition: opacity .6s ease-in, left 0s 0s ease; }
+  .dropdown__menu {
+    backdrop-filter: blur(30px);
+    background-color: var(--color-transparent-opposite);
+    border-radius: 10px;
+    position: absolute;
+    left: -9999px;
+    margin-top: 2rem;
+    width: 90rem;
+    height: 33rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity .6s ease-in, left 0s .6s ease; }
+    .dropdown__menu::before {
+      content: "";
+      background-color: #ff0000;
+      width: 100%;
+      height: 3px;
+      position: absolute;
+      top: 0; }
+  .dropdown__item {
+    height: 30px;
+    margin: 1rem;
+    list-style: none; }
+  .dropdown__link {
+    font-size: 2rem;
+    font-family: "nunito-regular";
+    font-weight: 600; }
 
 .icon-box {
   border-radius: 999px;
@@ -276,9 +311,10 @@ body {
     width: 2.5rem; }
 
 .link, .link:link, .link:visited {
-  color: var(--color-secondary--opposite);
+  color: var(--color-secondary-opposite) !important;
   position: relative;
   text-decoration: none;
+  text-transform: uppercase;
   display: inline-block;
   position: relative; }
 
@@ -393,8 +429,7 @@ body {
   height: 45rem;
   width: 45rem;
   perspective: 999px;
-  transition: background-image .5s ease-in,
- transform .5s ease !important; }
+  transition: background-image .5s ease-in, transform .5s ease !important; }
 
 .swipe-button {
   cursor: pointer; }
