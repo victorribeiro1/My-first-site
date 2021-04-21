@@ -420,6 +420,7 @@ body {
   display: inline-block; }
 
 .slider {
+  backface-visibility: hidden;
   background-repeat: var(--bg-img-header);
   background-repeat: no-repeat;
   background-position: center;
