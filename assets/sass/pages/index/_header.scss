@@ -110,7 +110,7 @@
         
         &::before {
             content: "";
-            background-color: var(--color-quaternary-opposite);
+            background-color: #ff0000;
             border-radius: 999px;
             
             animation: explore 2.6s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
