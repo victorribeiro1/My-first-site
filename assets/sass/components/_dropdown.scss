@@ -1,5 +1,6 @@
 .dropdown {
     position: relative;
+    padding: 10px;
     
     &.active .dropdown{
          &__menu {
@@ -11,12 +12,12 @@
 
          &__arrow-box {
             transform: translateY(-3px);
-         }
-
-         &__arrow {
-             transform: rotate(135deg);
-         }
-    
+        }
+        
+        &__arrow {
+            transform: rotate(135deg);
+        }
+        
     }
     
     & > .nav__link--services {
@@ -26,6 +27,7 @@
     }
 
     &__arrow-box {
+        transform: translateY(-0px) translateX(-5px);
         transition: .3s !important;
     }
 
@@ -44,17 +46,18 @@
 
         margin-top: 2rem;
         
-        width: 70rem;
-        height: 33rem;
+        width: 50rem;
+        // height: 33rem;
         
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        align-items: center;
         
         overflow: hidden;
         
-        opacity: 0;
-        left: -9999px;
+        opacity: 1;
+        left: -0px;
         
         // TRANSFORM: TRANSLATEY(); <- USAR
 
@@ -79,19 +82,28 @@
         height: 100%;
 
         list-style: none;
-    }
 
+        padding: 2rem 0;
+
+        &:hover {
+            background-color: #fff;
+        }
+    }
+    
     &__link {
         cursor: pointer !important;
         font-size: 2rem;
         font-family: "nunito-regular";
         font-weight: 600;
-
-        width: 100%;
+                
+        // width: 100%;
         height: 100%;
 
-        &:hover {
-            background-color: #fff;
+        padding: 0 85px 0 2rem;
+
+        &:hover::before {
+            width: 95% !important;
         }
+        
     }
 }
