@@ -2,12 +2,12 @@
     
     &__text,
     &__arrow {
-        transition: transform .5s !important;
+        transition: transform .4s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
         display: block;
     }
     &:hover &__text {
         transform: translateX(-26px);
-        transition: transform .5s !important;
+        transition: transform .4s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
     }
     
     &:hover &__arrow {
