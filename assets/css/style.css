@@ -552,7 +552,7 @@ body {
   .toggle-menu__checkbox:checked ~ .toggle-menu__nav .toggle-menu__list-box,
   .toggle-menu__checkbox:checked ~ .toggle-menu__nav .toggle-menu__icons-box {
     opacity: 1;
-    transition: opacity 0.5s 0.3s !important; }
+    transition: opacity .5s .3s !important; }
   .toggle-menu__checkbox:checked ~ .toggle-menu__nav {
     left: 0;
     transition: left 0s 0s !important; }
@@ -679,15 +679,15 @@ body {
 
 .toggle-menu__icons-box {
   position: absolute;
-  bottom: 9rem;
-  left: 5.8rem;
+  bottom: 11rem;
+  right: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 14rem;
+  width: 10rem;
   z-index: 3;
   opacity: 0;
-  transition: opacity .5s .1s !important; }
+  transition: opacity 180ms 0s ease-out !important; }
 
 .evaluations {
   background-color: #000;
@@ -881,6 +881,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 12rem;
+    width: 12.5rem;
     position: relative;
-    z-index: 100; }
+    z-index: 1; }
