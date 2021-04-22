@@ -38,20 +38,19 @@
     
     // &__main-heading {
         
-        // }
+    // }
         
-        &__paragraph {
-            font-family: 'nunito-light';
-            font-size: 2.2rem;
-            color: var(--color-quinary-opposite);
-            max-width: 48rem;
-            letter-spacing: 1px;
-        }
-        
-        &__img-box {
-
-            position: relative;
-        }   
+    &__paragraph {
+        font-family: 'nunito-light';
+        font-size: 2.2rem;
+        color: var(--color-quinary-opposite);
+        max-width: 48rem;
+        letter-spacing: 1px;
+    }
+    
+    &__img-box {
+        position: relative;
+    }   
     
     &__img {
         position: relative;
