@@ -51,11 +51,7 @@
         &__img-box {
 
             position: relative;
-            
-            &:hover .header__img {
-                transform: rotateY(180deg);
-        }
-    } 
+        }   
     
     &__img {
         position: relative;

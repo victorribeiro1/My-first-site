@@ -826,8 +826,6 @@ body {
     letter-spacing: 1px; }
   .header__img-box {
     position: relative; }
-    .header__img-box:hover .header__img {
-      transform: rotateY(180deg); }
   .header__img {
     position: relative;
     z-index: 1; }
