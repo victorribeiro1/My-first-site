@@ -124,6 +124,11 @@ html[current-theme='light'] {
   --color-transparent-light-2: #ffffffcc;
   --main-button-width: 23rem; }
 
+.slider {
+  --bg-img-header-1: url("url(../../../../media/images/black-car-4-d.jpg");
+  --bg-img-header-2: url("url(../../../../media/images/black-car-2-d.jpg");
+  --bg-img-header-3: url("url(../../../../media/images/white-car-1-d.jpg"); }
+
 *,
 *::before,
 *::after {
@@ -458,17 +463,26 @@ body {
   display: inline-block; }
 
 .slider {
-  backface-visibility: hidden;
-  background-repeat: var(--bg-img-header);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   border-radius: 999px;
   box-shadow: var(--box-shadow-img);
   height: 45rem;
   width: 45rem;
-  perspective: 999px;
-  transition: background-image .5s ease-in, transform .5s ease !important; }
+  transition: background-image .4s ease-in !important; }
+  .slider.image--1 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: var(--bg-img-header-1); }
+  .slider.image--2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: var(--bg-img-header-2); }
+  .slider.image--3 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: var(--bg-img-header-3); }
 
 .swipe-button {
   cursor: pointer; }

@@ -1,15 +1,11 @@
 const slider = document.querySelector('.slider')
 
-slider.style.backgroundImage = "url('media/images/black-car-4-d.jpg')"
-
-images = [
-    image1 = "url('media/images/black-car-4-d.jpg')",
-    image2 = "url('media/images/black-car-2-d.jpg')",
-    image3 = "url('media/images/white-car-1-d.jpg')",
-]
-
-counter = 0
+let counter = 1
 setInterval(() => {
-    slider.style.backgroundImage = images[counter]
-    counter == 2 ? counter = 0 : counter++
+    slider.classList.remove(`image--${counter}`)
+    slider.classList.remove(`image--3`)
+
+    slider.classList.add(`image--${++counter}`)
+    counter = counter >= 3 ? counter = 0 : counter
+
 }, 3000)
