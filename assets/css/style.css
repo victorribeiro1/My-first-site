@@ -121,7 +121,8 @@ html[current-theme='light'] {
   --color-light-4: #aaa;
   --color-light-5: #999;
   --color-transparent-light-1: #ffffff0a;
-  --color-transparent-light-2: #ffffffcc; }
+  --color-transparent-light-2: #ffffffcc;
+  --navigation-width: 10rem; }
 
 .header__button {
   --main-button-width: 21rem; }
@@ -148,7 +149,8 @@ body {
   background: var(--bg-color-body);
   background-size: cover;
   box-sizing: border-box;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 ::selection {
   background-color: #d35c5c;
@@ -478,14 +480,19 @@ body {
     left: 33px; }
 
 .nav {
+  background-color: var(--color-secondary);
   box-shadow: 0px 2px 7px #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
   padding: 1.4rem 2rem;
-  position: relative;
-  z-index: 2; }
+  position: sticky;
+  top: 0;
+  height: var(--navigation-width);
+  width: 100%;
+  z-index: 2000000;
+  transition: .7s ease-in-out !important; }
   .nav__column {
     display: flex;
     justify-content: space-between;
@@ -683,6 +690,9 @@ body {
   opacity: 0;
   transition: opacity 180ms 0s ease-out !important; }
 
+.about {
+  height: 200vh; }
+
 .evaluations {
   background-color: #000;
   min-height: 100vh;
@@ -772,13 +782,16 @@ body {
 
 .header {
   background-color: var(--color-secondary);
+  margin-top: calc(var(--navigation-width) * -1);
   min-height: 625px;
   height: 100vh;
   position: relative;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+  .header__nav-substitute {
+    width: 100%;
+    height: var(--navigation-width); }
   .header__content-box {
     display: flex;
     flex-direction: column;
@@ -812,13 +825,21 @@ body {
     z-index: 1; }
   .header__line {
     background-color: var(--color-quaternary);
-    min-height: 205vh;
+    min-height: 100vh;
     width: 1px;
     position: absolute;
     top: 50%;
     right: 50%;
     transform: translate(-50%, -50%);
     z-index: 0; }
+    .header__line::before {
+      background-color: var(--color-quaternary);
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 30vw; }
   .header__contact-box {
     position: relative;
     display: flex;

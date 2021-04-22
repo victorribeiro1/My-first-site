@@ -1,4 +1,5 @@
 .nav {
+    background-color: var(--color-secondary);
     box-shadow: 0px 2px 7px #000; 
 
     display: flex;
@@ -11,9 +12,14 @@
 
     // margin-bottom: 2rem;
 
-    position: relative;
+    position: sticky;
+    top: 0;
+    height: var(--navigation-width);
+    width: 100%;    
 
-    z-index: 2;
+    z-index: 2000000;
+
+    transition: .7s ease-in-out !important;
 
     &__column {
         display: flex;
