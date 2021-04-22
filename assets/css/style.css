@@ -26,7 +26,7 @@ html[current-theme='dark'] {
   --box-shadow-contact-button-interaction: 2px  2px 2px #0000009a,-2px -2px 5px #ffffff17;
   --box-shadow-icon-box:  3px  3px 6px #000, -3px -3px 6px #4d4e551f;
   --box-shadow-icon-box-interaction:  inset  2px  2px 5px #000, inset -3px -3px 7px #4d4e551f;
-  --box-shadow-img: 3px  3px 4px #000000,-3px -3px 4px #ffffff0c;
+  --box-shadow-img: 3px  3px 5px #000000,-3px -3px 5px #ffffff0c;
   --box-shadow-swipe-button:5px  5px 11px #000000e8,-3px -3px 5px #2b272783,inset  3px  3px 5px #000000e8,inset -3px -3px 8px #000000cb;
   --box-shadow-swipe-button-ball: 2px  2px 7px #000000e8,-2px -2px 7px #2b272783;
   --menu-background-blur: .9px;
@@ -166,37 +166,6 @@ body {
     height: 10px; }
   ::-webkit-scrollbar-track {
     background-color: var(--color-secondary); }
-
-.cursor {
-  position: fixed;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  user-select: none;
-  pointer-events: none;
-  z-index: 3; }
-  .cursor--small {
-    background-color: var(--color-secondary-opposite);
-    height: 1.7rem;
-    width: 1.7rem;
-    transition: transform 50ms, left 50ms, top 50ms, height 0.7s cubic-bezier(0.75, -1.27, 0.3, 2.53), width 0.7s cubic-bezier(0.75, -1.27, 0.3, 2.53) !important; }
-    .cursor--small.expand {
-      height: 6rem;
-      width: 6rem;
-      background-color: var(--color-secondary-opposite);
-      mix-blend-mode: difference;
-      backdrop-filter: invert(100%); }
-      .cursor--small.expand + .cursor--big {
-        opacity: 0;
-        transition: transform 50ms, left 50ms, top 50ms, height 0.7s cubic-bezier(0.75, -1.27, 0.3, 2.53), width 0.7s cubic-bezier(0.75, -1.27, 0.3, 2.53), opacity 0.2s 0.5s !important; }
-  .cursor--big {
-    border: 1px solid var(--color-secondary-opposite);
-    height: 6rem;
-    width: 6rem;
-    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.375) !important; }
-  .cursor.hide--x {
-    opacity: 0; }
-  .cursor.hide--y {
-    opacity: 0; }
 
 @font-face {
   src: url("../../media/fonts/aeonik/Aeonik-Air.otf");
@@ -561,8 +530,8 @@ body {
   .nav__link--brand--img {
     background: var(--bg-img-logo) no-repeat center;
     background-size: 84%;
-    height: 6.5rem;
-    width: 18rem; }
+    height: 7.6rem;
+    width: 21.2rem; }
 
 .toggle-menu__checkbox {
   display: none; }

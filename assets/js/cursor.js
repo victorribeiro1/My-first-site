@@ -1,57 +1,89 @@
-const cursors = document.querySelectorAll('.cursor')
-const cursorSmall = document.querySelector('.cursor--small')
-const cursorBig = document.querySelector('.cursor--big')
+// const cursors = document.querySelectorAll('.cursor')
+// const cursorSmall = document.querySelector('.cursor--small')
+// const cursorBig = document.querySelector('.cursor--big')
 
-window.onloadstart = cursors.forEach(cursor => cursor.style.opacity = 0)
-setTimeout(() => {
-    cursors.forEach(cursor => cursor.style.opacity = 1)
-}, 700)
+// const headerButton = document.getElementById('button')
 
-document.addEventListener('mousemove', (e) => {
-    cursorBig.style.left = cursorSmall.style.left = e.clientX + "px" 
-    cursorBig.style.top = cursorSmall.style.top = e.clientY + "px" 
+// const icons = document.querySelectorAll('.icon-box')
+
+// document.addEventListener('mousemove', (e) => {
+//     cursorBig.style.left = cursorSmall.style.left = e.clientX + "px" 
+//     cursorBig.style.top = cursorSmall.style.top = e.clientY + "px" 
     
-    // hiding and showing the cursor accordingly the inner size of the device width
+//     // hiding and showing the cursor accordingly the inner size of the device width
     
-    // width, left:
+//     // width, left:
     
-    if (e.clientX > 10) {
-        cursors.forEach(cursor => {
-            cursor.classList.remove('hide--x')
-        })
-    }
+//     if (e.clientX > 10) {
+//         cursors.forEach(cursor => {
+//             cursor.classList.remove('hide--x')
+//         })
+//     }
 
-    if (e.clientX / .98 >= window.innerWidth) {
-        cursors.forEach(cursor => {
-            cursor.classList.add('hide--x')
-        })
-    }
+//     if (e.clientX / .98 >= window.innerWidth) {
+//         cursors.forEach(cursor => {
+//             cursor.classList.add('hide--x')
+//         })
+//     }
     
-    // height, top:
+//     // height, top:
 
-    if (e.clientY <= 10) {
-        cursors.forEach(cursor => {
-            cursor.classList.add('hide--y')
-        })
-    } 
+//     if (e.clientY <= 10) {
+//         cursors.forEach(cursor => {
+//             cursor.classList.add('hide--y')
+//         })
+//     } 
     
-    if (e.clientY > 10) {
-        cursors.forEach(cursor => {
-            cursor.classList.remove('hide--y')
-        })
-    }
+//     if (e.clientY > 10) {
+//         cursors.forEach(cursor => {
+//             cursor.classList.remove('hide--y')
+//         })
+//     }
 
-    if (e.clientY / .95 >= window.innerHeight) {
-        cursors.forEach(cursor => {
-            cursor.classList.add('hide--y')
-        })
-    }
-})
+//     if (e.clientY / .95 >= window.innerHeight) {
+//         cursors.forEach(cursor => {
+//             cursor.classList.add('hide--y')
+//         })
+//     }
+// })
 
-// ENABLE GRAB CURSOR
 
-// DISABLE GRAB CURSOR
 
-// GRAB CURSOR ARROWS
+// const allLinks = document.querySelectorAll('.link')
 
-// LINKS:HOVER
+// allLinks.forEach(link => {
+//     link.addEventListener('mousemove', () => {
+//         cursorSmall.classList.add('expand')
+//     })
+//     link.addEventListener('mouseout', () => {
+//         cursorSmall.classList.remove('expand')
+//     })
+// })
+
+// headerButton.addEventListener('mousemove', () => {
+//     cursorSmall.classList.add('expand')
+    
+// })
+
+// headerButton.addEventListener('mouseout', () => {
+//     cursorSmall.classList.remove('expand')
+// })
+
+// icons.forEach(icon => {
+//     icon.addEventListener('mousemove', () => {
+//         cursorSmall.classList.add('expand')
+        
+//     })
+    
+//     icon.addEventListener('mouseout', () => {
+//         cursorSmall.classList.remove('expand')
+//     })
+// })
+
+// // ENABLE GRAB CURSOR
+
+// // DISABLE GRAB CURSOR
+
+// // GRAB CURSOR ARROWS
+
+// // LINKS:HOVER
