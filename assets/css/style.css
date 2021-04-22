@@ -356,7 +356,7 @@ body {
 
 .link__letter {
   display: inline-block;
-  letter-spacing: px; }
+  letter-spacing: 1px; }
 
 .link:hover .link__letter {
   animation: link var(--seconds) ease-in-out; }
@@ -637,7 +637,7 @@ body {
   transition: left 0s .8s !important; }
 
 .toggle-menu__list-box {
-  top: -7rem;
+  top: -5rem;
   position: relative;
   text-align: center;
   opacity: 0;
