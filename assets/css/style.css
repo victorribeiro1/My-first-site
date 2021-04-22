@@ -304,8 +304,6 @@ body {
     width: 100%; }
     .dropdown__item:hover {
       background-color: var(--color-transparent-2); }
-    .dropdown__item:hover .dropdown__link::before {
-      width: 95% !important; }
   .dropdown__content-box {
     display: flex;
     justify-content: flex-start;
@@ -324,6 +322,8 @@ body {
     font-weight: 600;
     white-space: nowrap;
     padding-left: 2rem; }
+  .dropdown__link:hover::before {
+    width: 95% !important; }
 
 .icon-box {
   border-radius: 999px;
@@ -342,6 +342,7 @@ body {
   height: 2.2rem;
   width: 2.2rem;
   stroke-width: 0;
+  color: --color-tertiary-opposite;
   stroke: currentColor;
   fill: var(--color-tertiary-opposite); }
   .icon--youtube {
@@ -382,7 +383,7 @@ body {
 
 .link__letter {
   display: inline-block;
-  letter-spacing: -4px; }
+  letter-spacing: px; }
 
 .link:hover .link__letter {
   animation: link var(--seconds) ease-in-out; }
