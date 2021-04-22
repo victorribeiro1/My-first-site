@@ -6,11 +6,11 @@
         display: block;
     }
     &:hover &__text {
-        transform: translateX(-30px);
+        transform: translateX(-26px);
         transition: transform .5s !important;
     }
     
     &:hover &__arrow {
-        transform: translate(calc(var(--main-button-width) - 6rem), 2px);
+        transform: translate(calc(var(--main-button-width) - 5.5rem), 2px);
     }
 }

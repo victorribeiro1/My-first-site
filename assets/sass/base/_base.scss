@@ -10,9 +10,6 @@
 
 html {
     font-size: 62.5%; // 1rem = 10px
-    @media (max-height: 670px) {
-        font-size: 55%;
-    }
     scroll-behavior: smooth;
     position: relative;
 }

@@ -115,7 +115,7 @@
         background-color: var(--color-secondary-opposite);
         border-radius: 999px;
         
-        height: 2px;
+        height: 1px;
 
         transform: rotate(0);
 
@@ -182,7 +182,7 @@
     }
     
     &__list-box {
-        top: -6rem;
+        top: -7rem;
         position: relative;
 
         text-align: center;
@@ -207,7 +207,7 @@
     &__heading {
         font-family: 'bison', sans-serif;
         font-weight: 900;
-        font-size: 11rem;
+        font-size: 9rem;
         letter-spacing: 2px;
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 1px;

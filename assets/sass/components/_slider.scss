@@ -1,10 +1,4 @@
-.slider {
-    border-radius: 999px;
-    box-shadow: var(--box-shadow-img);    
-    
-    height: 45rem;
-    width:  45rem;
-    
+.slider {    
     transition: background-image .4s ease-in !important;    
     &.image {
         &--1 {

@@ -33,7 +33,7 @@
         align-items: flex-start;
         
         position: relative;
-        top: -5rem;
+        top: -50px;
     }
     
     // &__main-heading {
@@ -42,9 +42,9 @@
         
     &__paragraph {
         font-family: 'nunito-light';
-        font-size: 2.2rem;
+        font-size: 2rem;
         color: var(--color-quinary-opposite);
-        max-width: 48rem;
+        max-width: 43rem;
         letter-spacing: 1px;
     }
     
@@ -53,6 +53,12 @@
     }   
     
     &__img {
+        border-radius: 999px;
+        box-shadow: var(--box-shadow-img);    
+        
+        height: 39.5rem;
+        width:  39.5rem;
+
         position: relative;
         z-index: 1;
     }
@@ -65,7 +71,7 @@
 
         position: absolute;
 
-        top: 48%;
+        top: 50%;
         right: 50%;
         transform: translate(-50%, -50%);
 
@@ -82,13 +88,13 @@
 
     &__explore {
         color: var(--color-tertiary-opposite);
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         letter-spacing: 2px;
         font-family: 'nunito-regular';
 
         position: relative;
-        bottom: 1.5rem;
-        left: 4rem;
+        bottom: 10px;
+        left: 30px;
         
         &::before {
             content: "";
@@ -97,7 +103,7 @@
             
             animation: explore 2.6s infinite cubic-bezier(0.785, 0.135, 0.15, 0.86) forwards;
             
-            height: 5.2rem;
+            height: 50px;
             width:  1px;
 
             position: absolute;
@@ -114,12 +120,12 @@
             background-color: var(--color-secondary-opposite);
             border-radius: 0px;
                     
-            height: 6rem;
+            height: 5.2rem;
             width: var(--main-button-width);
                     
             position: relative;
             top: -10rem;
-            left: -10rem;
+            left: -7rem;
 
             display: flex;
             justify-content: space-evenly;
@@ -141,7 +147,7 @@
     &__button-text {
         color: var(--color-primary);
         font-style: italic;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         font-family: 'nunito-black';
         font-weight: 100;
         letter-spacing: 2px;
@@ -175,7 +181,7 @@
         justify-content: space-between;
         align-items: center;
 
-        width: 12.5rem;
+        width: 11.8rem;
 
         position: relative;
         z-index: 1;

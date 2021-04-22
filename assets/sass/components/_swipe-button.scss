@@ -7,8 +7,8 @@
         border-radius: 999px;
         box-shadow: var(--box-shadow-swipe-button);
 
-        height: 4rem;
-        width: 8rem;
+        height: 3.5rem;
+        width: 7rem;
 
         position: relative;
 
@@ -31,8 +31,8 @@
         background: var(--bg-color-swipe-button-ball);
         box-shadow:  var(--box-shadow-swpie-button-ball);
 
-        width: 3.3rem;
-        height: 3.3rem;
+        width: 2.8rem;
+        height: 2.8rem;
 
         position: absolute;
         top: 50%;
@@ -42,6 +42,6 @@
         
     }
     &.active .swipe-button__ball {
-        left: 38px;
+        left: 33px;
     }
 }
