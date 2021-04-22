@@ -8,8 +8,10 @@ html[current-theme='dark'] {
   --color-tertiary-opposite: var(--color-light-3);
   --color-quaternary-opposite: var(--color-light-4);
   --color-quinary-opposite: var(--color-light-5);
-  --color-transparent: var(--color-transparent-dark);
-  --color-transparent-opposite: var(--color-transparent-light);
+  --color-transparent-1: var(--color-transparent-dark-1);
+  --color-transparent-2: var(--color-transparent-dark-2);
+  --color-transparent-opposite-1: var(--color-transparent-light-1);
+  --color-transparent-opposite-2: var(--color-transparent-light-2);
   --color-main-heading: var(--color-light-2);
   --color-border: #080808;
   --bg-img-header: url("../../media/images/black-car-4-d.jpg");
@@ -24,7 +26,7 @@ html[current-theme='dark'] {
   --box-shadow-contact-button-interaction: 2px  2px 2px #0000009a,-2px -2px 5px #ffffff17;
   --box-shadow-icon-box:  3px  3px 6px #000, -3px -3px 6px #4d4e551f;
   --box-shadow-icon-box-interaction:  inset  2px  2px 5px #000, inset -3px -3px 7px #4d4e551f;
-  --box-shadow-img: 3px  3px 4px #000000,-3px -3px 4px #ffffff0c;
+  --box-shadow-img: 3px  3px 5px #000000,-3px -3px 5px #ffffff0c;
   --box-shadow-swipe-button:5px  5px 11px #000000e8,-3px -3px 5px #2b272783,inset  3px  3px 5px #000000e8,inset -3px -3px 8px #000000cb;
   --box-shadow-swipe-button-ball: 2px  2px 7px #000000e8,-2px -2px 7px #2b272783;
   --menu-background-blur: .9px;
@@ -41,8 +43,10 @@ html[current-theme='light'] {
   --color-secondary-opposite: var(--color-dark-2);
   --color-tertiary-opposite: var(--color-dark-3);
   --color-quaternary-opposite: var(--color-dark-4);
-  --color-transparent: var(--color-transparent-light);
-  --color-transparent-opposite: var(--color-transparent-dark);
+  --color-transparent-1: var(--color-transparent-light-1);
+  --color-transparent-2: var(--color-transparent-light-2);
+  --color-transparent-opposite-1: var(--color-transparent-dark-1);
+  --color-transparent-opposite-2: var(--color-transparent-dark-2);
   --color-border: var(--color-light-3);
   --bg-img-header: url("../../media/images/white-car-1-d.jpg");
   --bg-img-logo: url("../../media/images/logo-small.png");
@@ -109,14 +113,21 @@ html[current-theme='light'] {
   --color-dark-2: #111;
   --color-dark-3: #2E3339;
   --color-dark-4: #474d53;
-  --color-transparent-dark: #0000000e;
+  --color-transparent-dark-1: #0000000e;
+  --color-transparent-dark-2: #0000008e;
   --color-light-1: #fff;
   --color-light-2: #eee;
   --color-light-3: #D6D6D6;
   --color-light-4: #aaa;
   --color-light-5: #999;
-  --color-transparent-light: #ffffff0a;
+  --color-transparent-light-1: #ffffff0a;
+  --color-transparent-light-2: #ffffffcc;
   --main-button-width: 23rem; }
+
+.slider {
+  --bg-img-header-1: url("url(../../../../media/images/black-car-4-d.jpg");
+  --bg-img-header-2: url("url(../../../../media/images/black-car-2-d.jpg");
+  --bg-img-header-3: url("url(../../../../media/images/white-car-1-d.jpg"); }
 
 *,
 *::before,
@@ -130,7 +141,7 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   position: relative; }
-  @media (max-height: 650px) {
+  @media (max-height: 670px) {
     html {
       font-size: 55%; } }
 
@@ -155,37 +166,6 @@ body {
     height: 10px; }
   ::-webkit-scrollbar-track {
     background-color: var(--color-secondary); }
-
-.cursor {
-  position: fixed;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  user-select: none;
-  pointer-events: none;
-  z-index: 3; }
-  .cursor--small {
-    background-color: var(--color-secondary-opposite);
-    height: 1.7rem;
-    width: 1.7rem;
-    transition: transform 50ms, left 50ms, top 50ms, height 0.7s cubic-bezier(0.75, -1.27, 0.3, 2.53), width 0.7s cubic-bezier(0.75, -1.27, 0.3, 2.53) !important; }
-    .cursor--small.expand {
-      height: 6rem;
-      width: 6rem;
-      background-color: var(--color-secondary-opposite);
-      mix-blend-mode: difference;
-      backdrop-filter: invert(100%); }
-      .cursor--small.expand + .cursor--big {
-        opacity: 0;
-        transition: transform 50ms, left 50ms, top 50ms, height 0.7s cubic-bezier(0.75, -1.27, 0.3, 2.53), width 0.7s cubic-bezier(0.75, -1.27, 0.3, 2.53), opacity 0.2s 0.5s !important; }
-  .cursor--big {
-    border: 1px solid var(--color-secondary-opposite);
-    height: 6rem;
-    width: 6rem;
-    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.375) !important; }
-  .cursor.hide--x {
-    opacity: 0; }
-  .cursor.hide--y {
-    opacity: 0; }
 
 @font-face {
   src: url("../../media/fonts/aeonik/Aeonik-Air.otf");
@@ -250,27 +230,41 @@ body {
   transform: translate(calc(var(--main-button-width) - 6rem), 2px); }
 
 .dropdown {
-  position: relative; }
-  .dropdown:hover .dropdown__menu,
-  .dropdown .dropdown__menu:hover {
+  position: relative;
+  padding: 10px; }
+  .dropdown.active .dropdown__menu {
     opacity: 1;
-    left: 0px;
-    transition: opacity .6s ease-in, left 0s 0s ease; }
+    left: 0;
+    transition: opacity .2s .1s ease-in, left     0s  0s !important; }
+  .dropdown.active .dropdown__arrow-box {
+    transform: translateY(-3px); }
+  .dropdown.active .dropdown__arrow {
+    transform: rotate(135deg); }
+  .dropdown > .nav__link--services {
+    background-color: transparent;
+    outline: none;
+    border: none; }
+  .dropdown__arrow-box {
+    transform: translateY(0px) translateX(-5px);
+    transition: .3s !important; }
+  .dropdown__arrow {
+    margin-left: 10px;
+    transform: rotate(45deg);
+    transition: .2s linear !important; }
   .dropdown__menu {
-    backdrop-filter: blur(30px);
-    background-color: var(--color-transparent-opposite);
+    backdrop-filter: blur(20px);
+    background-color: var(--color-transparent-opposite-1);
     border-radius: 10px;
     position: absolute;
-    left: -9999px;
     margin-top: 2rem;
-    width: 90rem;
-    height: 33rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: flex-start;
     overflow: hidden;
     opacity: 0;
-    transition: opacity .6s ease-in, left 0s .6s ease; }
+    left: -9999px;
+    transition: opacity .2s .1s ease-in, left 0s .3s !important; }
     .dropdown__menu::before {
       content: "";
       background-color: #ff0000;
@@ -279,13 +273,31 @@ body {
       position: absolute;
       top: 0; }
   .dropdown__item {
-    height: 30px;
-    margin: 1rem;
-    list-style: none; }
-  .dropdown__link {
+    list-style: none;
+    padding: 2rem 0;
+    width: 100%; }
+    .dropdown__item:hover {
+      background-color: var(--color-transparent-2); }
+  .dropdown__content-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 30px 0 10px; }
+  .dropdown__icon {
+    display: block !important;
+    height: 3rem !important;
+    width: 3rem !important; }
+  .dropdown__link, .dropdown__link:link,
+  .dropdown__link *:visited {
+    cursor: pointer !important;
     font-size: 2rem;
     font-family: "nunito-regular";
-    font-weight: 600; }
+    font-weight: 600;
+    white-space: nowrap;
+    padding-left: 2rem; }
+  .dropdown__link:hover::before {
+    width: 95% !important; }
 
 .icon-box {
   border-radius: 999px;
@@ -304,6 +316,7 @@ body {
   height: 2.2rem;
   width: 2.2rem;
   stroke-width: 0;
+  color: --color-tertiary-opposite;
   stroke: currentColor;
   fill: var(--color-tertiary-opposite); }
   .icon--youtube {
@@ -315,7 +328,6 @@ body {
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  display: inline-block;
   position: relative; }
 
 .link--big {
@@ -345,7 +357,7 @@ body {
 
 .link__letter {
   display: inline-block;
-  letter-spacing: -4px; }
+  letter-spacing: px; }
 
 .link:hover .link__letter {
   animation: link var(--seconds) ease-in-out; }
@@ -420,17 +432,26 @@ body {
   display: inline-block; }
 
 .slider {
-  backface-visibility: hidden;
-  background-repeat: var(--bg-img-header);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   border-radius: 999px;
   box-shadow: var(--box-shadow-img);
   height: 45rem;
   width: 45rem;
-  perspective: 999px;
-  transition: background-image .5s ease-in, transform .5s ease !important; }
+  transition: background-image .4s ease-in !important; }
+  .slider.image--1 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: var(--bg-img-header-1); }
+  .slider.image--2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: var(--bg-img-header-2); }
+  .slider.image--3 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: var(--bg-img-header-3); }
 
 .swipe-button {
   cursor: pointer; }
@@ -509,8 +530,8 @@ body {
   .nav__link--brand--img {
     background: var(--bg-img-logo) no-repeat center;
     background-size: 84%;
-    height: 6.5rem;
-    width: 18rem; }
+    height: 7.6rem;
+    width: 21.2rem; }
 
 .toggle-menu__checkbox {
   display: none; }
@@ -531,7 +552,7 @@ body {
   .toggle-menu__checkbox:checked ~ .toggle-menu__nav .toggle-menu__list-box,
   .toggle-menu__checkbox:checked ~ .toggle-menu__nav .toggle-menu__icons-box {
     opacity: 1;
-    transition: opacity 0.5s 0.3s !important; }
+    transition: opacity .5s .3s !important; }
   .toggle-menu__checkbox:checked ~ .toggle-menu__nav {
     left: 0;
     transition: left 0s 0s !important; }
@@ -658,15 +679,15 @@ body {
 
 .toggle-menu__icons-box {
   position: absolute;
-  bottom: 9rem;
-  left: 5.8rem;
+  bottom: 11rem;
+  right: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 14rem;
+  width: 10rem;
   z-index: 3;
   opacity: 0;
-  transition: opacity .5s .1s !important; }
+  transition: opacity 180ms 0s ease-out !important; }
 
 .evaluations {
   background-color: #000;
@@ -757,7 +778,8 @@ body {
 
 .header {
   background-color: var(--color-secondary);
-  min-height: 100vh;
+  min-height: 625px;
+  height: 100vh;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -787,8 +809,6 @@ body {
     letter-spacing: 1px; }
   .header__img-box {
     position: relative; }
-    .header__img-box:hover .header__img {
-      transform: rotateY(180deg); }
   .header__img {
     position: relative;
     z-index: 1; }
@@ -861,9 +881,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 12rem;
+    width: 12.5rem;
     position: relative;
-    z-index: 100; }
+    z-index: 1; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
