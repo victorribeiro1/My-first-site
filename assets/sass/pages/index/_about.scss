@@ -1,3 +1,66 @@
 .about {
+    background-color: pink;
     height: 200vh;
+
+    &__header {
+
+    }
+
+    &__heading-box {
+
+    }
+
+    &__text-area {
+
+    }
+
+    &__img-box {
+        &--portrait {
+
+        }
+
+        &--landscape {
+
+        }
+    }
+
+    &__img {
+        width: 400px;
+        &--portrait {
+
+        }
+
+        &--landscape {
+
+        }
+    }
+
+    &__statistics-area {
+
+    }
+
+    &__statistic-box {
+        
+    }
+
+    &__statistic {
+
+    }
+
+    &__symbol {
+
+    }
+
+    &__number {
+
+    }
+
+    &__statistic-title {
+        
+    }
+
+    &__statistic-about {
+
+    }
+
 }

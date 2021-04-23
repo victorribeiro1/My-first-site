@@ -152,6 +152,9 @@ body {
   position: relative;
   overflow-x: hidden; }
 
+section {
+  margin-top: 4rem; }
+
 ::selection {
   background-color: #d35c5c;
   color: #fff; }
@@ -200,9 +203,15 @@ body {
   font-family: "nunito-extraLight", 'aeonik-light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.4; }
 
-.main-heading {
+.heading {
   color: var(--color-secondary-opposite);
   font-size: 6.3rem;
+  letter-spacing: 1px;
+  font-family: 'nunito-light'; }
+
+.subheading {
+  color: var(--color-secondary);
+  font-size: 4.3rem;
   letter-spacing: 1px;
   font-family: 'nunito-light'; }
 
@@ -691,7 +700,10 @@ body {
   transition: opacity 180ms 0s ease-out !important; }
 
 .about {
+  background-color: pink;
   height: 200vh; }
+  .about__img {
+    width: 400px; }
 
 .evaluations {
   background-color: #000;

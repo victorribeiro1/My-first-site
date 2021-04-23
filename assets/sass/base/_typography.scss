@@ -3,9 +3,24 @@ body {
     line-height: 1.4;
 }
 
-.main-heading {
+.heading {
     color: var(--color-secondary-opposite);
     font-size: 6.3rem;
     letter-spacing: 1px;
     font-family: 'nunito-light';
+}
+
+.subheading {
+    color: var(--color-secondary);
+    font-size: 4.3rem;
+    letter-spacing: 1px;
+    font-family: 'nunito-light';
+
+    &__first-line {
+
+    }
+        
+    &__second-line {
+
+    }
 }
