@@ -29,15 +29,14 @@ gsap.to(".about__text-box", {
 })
 
 gsap.to(".header", {
-    scaleX: .98,
+    borderRadius: 10,
+    scaleX: .97,
     duration: 2,
     scrollTrigger: {
         trigger: ".header",
-        start: "bottom 85%",
-        end: "bottom top",
-        markers: true,
-        toggleActions: "play reverse play resume",
-        toggleClass: "active",
+        start: "bottom 100%",
+        end: "bottom 20%",
+        toggleActions: "play play play resume",
         scrub: true
     } 
 })
