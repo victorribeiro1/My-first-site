@@ -7,13 +7,23 @@
     height: 100vh;
 
 
+    box-shadow: 0 1px 5px black;
+
+
+
     position: relative;
 
-    // overflow: hidden;
+    overflow: hidden;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+
+    &.active {
+        // transform: scaleX(.97);
+        border-radius: 10px;
+    }
 
     &__nav-substitute {
         // background-color: #fff;
@@ -94,7 +104,7 @@
             bottom: 0;
             left: 0;
 
-            height: 1px;
+            // height: 1px;
             width: 30vw;
         }
     }

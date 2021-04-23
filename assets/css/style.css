@@ -146,7 +146,7 @@ html {
   position: relative; }
 
 body {
-  background: var(--color-secondary);
+  background: #000;
   background-size: cover;
   box-sizing: border-box;
   position: relative;
@@ -718,7 +718,7 @@ body {
   transition: opacity 180ms 0s ease-out !important; }
 
 .about {
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary);
   min-height: 180vh;
   display: flex;
   flex-direction: column;
@@ -728,7 +728,7 @@ body {
     position: relative; }
   .about__text-area {
     position: relative;
-    top: -150px;
+    top: -70px;
     width: 100%;
     height: 500px;
     display: flex;
@@ -764,7 +764,7 @@ body {
       height: 1px; }
   .about__text {
     text-align: left;
-    font-size: 2rem; }
+    font-size: 2.2rem; }
   .about__statistics-area {
     display: flex;
     justify-content: space-around;
@@ -776,7 +776,18 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    position: relative; }
+    .about__statistic-box:not(:last-of-type)::before {
+      content: "";
+      border-radius: 999px;
+      box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.377), -1px 0px 2px rgba(204, 196, 196, 0.438), inset -1px 0px 2px rgba(255, 255, 255, 0.315), inset -2px 2px 10px black;
+      width: 8px;
+      height: 60px;
+      background-color: var(--color-secondary);
+      position: absolute;
+      top: 28%;
+      right: -63px; }
   .about__statistic {
     font-size: 130px;
     display: flex;
@@ -791,10 +802,10 @@ body {
   width: 100%;
   display: flex;
   position: relative;
-  bottom: -23px; }
+  bottom: -0px; }
   .scroll div {
     padding: 10px 0;
-    background-color: var(--color-primary);
+    box-shadow: 0px 2px 7px #000, 0px -2px 7px #000;
     font-size: 9rem;
     letter-spacing: 2px;
     font-weight: bolder;
@@ -802,7 +813,7 @@ body {
     text-transform: uppercase;
     font-family: 'Bison';
     color: transparent;
-    -webkit-text-stroke: 1px var(--color-primary-opposite); }
+    -webkit-text-stroke: 1px #eee; }
   .scroll :nth-child(1) {
     animation: scroll 900s linear infinite;
     animation-delay: -900s; }
@@ -914,10 +925,14 @@ body {
   margin-top: calc(var(--navigation-width) * -1);
   min-height: 625px;
   height: 100vh;
+  box-shadow: 0 1px 5px black;
   position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
+  .header.active {
+    border-radius: 10px; }
   .header__nav-substitute {
     width: 100%;
     height: var(--navigation-width); }
@@ -967,7 +982,6 @@ body {
       position: absolute;
       bottom: 0;
       left: 0;
-      height: 1px;
       width: 30vw; }
   .header__contact-box {
     position: relative;
