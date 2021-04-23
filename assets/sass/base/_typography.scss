@@ -11,16 +11,41 @@ body {
 }
 
 .subheading {
-    color: var(--color-secondary);
+    color: var(--color-secondary-opposite);
     font-size: 4.3rem;
     letter-spacing: 1px;
     font-family: 'nunito-light';
 
+    margin-left: 20px;
+
     &__first-line {
-
+        display: block;
     }
-        
-    &__second-line {
 
+    &__second-line {
+        display: block;
+    }
+
+    &--left::before,
+    &--left::after {
+        content: "";
+        border-radius: 999px;
+
+        background-color: #ff0000;
+
+        position: absolute;
+        left: 0;
+        
+        height: 2px;
+    }
+    
+    &--left::before {
+        bottom: -10px;
+        width: 320px;
+    }
+    
+    &--left::after {
+        bottom: -20px;    
+        width: 120px;
     }
 }
