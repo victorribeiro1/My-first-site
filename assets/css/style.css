@@ -146,7 +146,7 @@ html {
   position: relative; }
 
 body {
-  background: var(--bg-color-body);
+  background: var(--color-secondary);
   background-size: cover;
   box-sizing: border-box;
   position: relative;
