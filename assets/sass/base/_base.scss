@@ -15,6 +15,7 @@ html {
 }
 
 body {
+    animation: intro 1s ease-in;
     background: var(--color-primary);
     background-size: cover;
     box-sizing: border-box;
@@ -43,12 +44,13 @@ section {
     }
     
     &-thumb {
-        background: var(--color-secondary-opposite);
+        background: var(--color-thumb);
         border-radius: 999px;
         height: 10px;
     }
     
     &-track {
+        display: none;
         background-color: var(--color-secondary);
     }
 }

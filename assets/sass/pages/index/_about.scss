@@ -35,31 +35,15 @@
         // height: 100%;
         display: flex;
         flex-direction: column;
+        justify-content: center;        
         align-items: center;
-        
-        &--landscape {
-            justify-content: center;
-            
-        }
-        
-        // &--portrait {
-        //     justify-content: flex-end;
-        // }
     }
 
     &__img {
         border-radius: 5px;
-        width: 400px;
-        // &--portrait {
-        //     width: 500px;
-        // }
-
+        width: 420px;
         position: relative;
         bottom: -200px;
-
-        &--landscape {
-
-        }
     }
 
     &__text-box {
@@ -104,7 +88,6 @@
 
         position: relative;
 
-
         width: 100%;
     }
 
@@ -131,15 +114,19 @@
 
                 position: absolute;
                 top: 31%;
-                right: -60px;
+                left: calc(100% + 15px);
             }
         }
-
-
+        
+        &:nth-of-type(1) {
+            &::before {
+                left: calc(100% + 27px);
+            }
+        }
     }
     
     &__statistic {
-        font-size: 130px;
+        font-size: 140px;
 
         display: flex;
         justify-content: flex-start;
@@ -147,72 +134,29 @@
     }
 
     &__symbol {
-        font-size: 70px;
+        font-size: 60px;
+
+        &--plus {
+            font-size: 100px;
+        }
+
+        &--porcentage {
+            position: relative;
+            bottom: -17px;
+            font-size: 65px;
+        }
     }
 
     &__number {
     }
 
     &__statistic-title {
-        
+        font-size: 2.5rem;
     }
 
     &__statistic-about {
-        max-width: 50%;
-    }
-
-}
-
-
-
-.scroll {
-    width: 100%;
-    display: flex;
-
-    position: relative;
-    bottom: -0px;
-
-    div {
-        padding: 10px 0;
-        // background-color: #0707077c;
-        box-shadow: 0px 2px 7px #000,
-                    0px -2px 7px #000; 
-        font-size: 9rem;
-        letter-spacing: 2px;
-        font-weight: bolder;
-        white-space: nowrap;
-        text-transform: uppercase;        
-        
-        font-family: 'Bison';
-        color: transparent;
-        -webkit-text-stroke: 1px #eee ;
-    }
-    :nth-child(1) {
-        animation: scroll 900s linear infinite;
-        animation-delay: -900s;
-    }
-    :nth-child(2) {
-        animation: scroll2 900s linear infinite;
-        animation-delay: -450s;
-    }
-}
-
-@keyframes scroll {
-    from {
-        transform: translateX(100%);
-    }
-
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-@keyframes scroll2 {
-    from {
-        transform: translateX(1%);
-    }
-
-    to {
-        transform: translateX(-200%);
+        font-size: 1.3rem;
+        text-align: center;
+        max-width: 70%;
     }
 }

@@ -37,15 +37,25 @@ body {
         left: 0;
         
         height: 2px;
+
+        transition: .6s .5s cubic-bezier(0.785, 0.135, 0.150, 0.860);
     }
     
     &--left::before {
         bottom: -10px;
-        width: 320px;
+        width: 180px;
     }
     
     &--left::after {
-        bottom: -20px;    
-        width: 120px;
+        bottom: -21px;    
+        width: 320px;
+    }
+    
+    &--left.in::before {
+        width: 320px;
+    }
+
+    &--left.in::after {
+        width: 180px;
     }
 }

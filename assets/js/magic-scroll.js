@@ -26,4 +26,4 @@ function showOrHideOnScroll() {
 
 }
 
-// window.addEventListener('scroll', showOrHideOnScroll)
+window.addEventListener('scroll', showOrHideOnScroll)

@@ -3,3 +3,9 @@
     justify-content: space-evenly;
     align-items: center;
 }
+
+.letter-spacing {
+    & > * {
+        margin-right: 3px;
+    }
+}

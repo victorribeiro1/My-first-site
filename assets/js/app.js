@@ -40,3 +40,16 @@ gsap.to(".header", {
         scrub: true
     } 
 })
+
+gsap.to(".header", {
+    borderRadius: 10,
+    scaleX: .97,
+    duration: 2,
+    scrollTrigger: {
+        trigger: ".header",
+        start: "bottom 100%",
+        end: "bottom 20%",
+        toggleActions: "play play play resume",
+        scrub: true
+    } 
+})
