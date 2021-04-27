@@ -1,0 +1,101 @@
+.services {
+    background-color: #111111;
+    height: 100vh;
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &__header {
+        position: relative;
+        // background-color: #333;
+    }
+
+    &__heading-box {
+        text-align: right;
+    }
+
+    &__content-box {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    &__content-box-text {
+        // background-color: #ff0000;
+
+        opacity: 1;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        width: 22%;
+
+        height: 100%;
+
+    }
+    
+    &__numbers-box {
+        pointer-events: none;
+    }
+    
+    &__type-box {
+        pointer-events: none;
+        // background-color: red;
+        position: relative;
+        top: -120px;
+    }
+    
+    &__see-services {
+        // color: red;
+        // background-color: #0000ff;
+
+        cursor: pointer;
+
+        width: 90px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+        left: -110px;
+        top: -40px;
+
+
+        .arrow-box {
+            position: relative;
+            bottom: -2px;
+            transition: transform .4s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
+
+            .arrow {
+                border-top: 1px solid red;
+                border-right: 1px solid red;
+            }
+        }
+
+        &:hover {
+            .arrow-box {
+                transform: translate(82px, 1px);
+            }
+
+            .services__see-services-text {
+                transform: translateX(-10px);
+            }
+        }
+    }
+
+    &__see-services-text {
+        font-size: 1.4rem;
+        color: var(--color-secondary-opposite);
+        transition: transform .4s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
+    }
+
+    &__carousel {
+        // width: 20px;
+    }
+}

@@ -1,0 +1,54 @@
+.vertical-carousel {
+    // background-color: lightgreen;
+    height: 11rem;
+
+    position: relative;
+    // right: -50px;
+    
+    overflow: hidden;
+    
+    right: -80px;
+
+    z-index: 2;
+    
+    &--category {
+        top: -10px;
+        right: -190px;
+    }
+
+    &--number {
+        height: 24rem;
+        z-index: 0;
+
+        top: -120px;
+        right: -80px;
+    }
+
+    
+    &__items {
+        height: 220%;
+
+    }
+    
+    &__item {
+        font-size: 9rem;
+        font-family: 'nunito-black';
+
+        text-align: right;
+
+        letter-spacing: 2px;
+
+        position: relative;
+
+        color: #eee;
+        font-weight: thin;
+
+
+        &--number {
+            font-family: 'bison';
+            font-size: 20rem;
+
+            color: #333;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+.carousel {
+    width: 130rem;
+    height: 35rem;
+
+    // position: absolute;
+    // top: 50%;
+    // right: 0;
+    // transform: translateY(-50%);
+
+    position: relative;
+    // left: -50px;
+
+    // z-index: -1;
+
+    &:hover .carousel__item--car {
+        position: relative;
+        // top: -50px;
+    }
+
+
+    &__items {
+
+        display: flex;
+        overflow: hidden;
+        
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+
+        width: 100%;
+        height: 100%;
+    }
+    
+    &__item {
+        // background-color: #fff;
+        flex: none;
+
+        width: 70%;
+        height: 100%;
+
+        overflow: hidden;
+
+        position: relative;
+
+        pointer-events: none;
+        
+        scroll-snap-align: start;
+
+        transition: z-index 1s 5s !important;
+        transition-delay: 1s;
+
+        &:not(:last-child) {
+            margin-right: 140px;
+        }
+        
+        &.next {
+            // filter: grayscale(100%);
+            opacity: .2;
+            transform-origin: center;
+            transform: scaleY(.7);
+        }
+    }
+
+    &__img {
+        height: 100%;
+        width: 100%;
+
+        object-fit: cover;
+    }
+
+    &__service {
+        background-color: #ff000080;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+
+        &--car {
+            height: 100%;
+            width:  50%;
+    
+            position: absolute;
+            top: 0;
+
+            &--1 {
+                left: 0;
+                // border-style: ;
+                border-right: 2px dashed black;
+            }
+            
+            &--2 {
+                right: 0;
+            }
+        }
+    }
+
+    &__icon-box {
+
+    }
+}

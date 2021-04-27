@@ -1,10 +1,9 @@
 const nav = document.getElementById('nav')
-
 let lastScrollTop = 0
 
-window.addEventListener('scroll', () => {
+function toggleNavVisibility() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
+    
     if (scrollTop > lastScrollTop) {
         nav.style.top = '-10rem'
     } else {
@@ -12,4 +11,6 @@ window.addEventListener('scroll', () => {
     }
 
     lastScrollTop = scrollTop
-})
+}
+
+    window.addEventListener('scroll', () => toggleNavVisibility())

@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: lightblue;
+    height: 200vh;
+
+    position: relative;
+
+    overflow: auto;
+}
+
+.div {
+    background-color: lightgreen;
+
+    width: 80%;
+    height: 350px;
+
+    position: absolute;
+    top: 165px;
+    left: 50%;
+
+    transform: translateX(-50%);
+}

@@ -1,4 +1,9 @@
 .button {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
     &__text,
     &__arrow {
         transition: transform .4s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;

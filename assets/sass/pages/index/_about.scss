@@ -1,6 +1,6 @@
 .about {
     background-color: var(--color-primary);
-    min-height: 180vh;
+    min-height: 150vh;
 
     // margin-top: 58px;
 
@@ -19,7 +19,7 @@
 
     &__text-area {
         position: relative;
-        top: -70px;
+        top: -150px;
 
         width: 100%;
         height: 500px;
@@ -79,84 +79,5 @@
     &__text {
         text-align: left;
         font-size: 2.2rem;
-    }
-
-    &__statistics-area {
-        // background: lightblue;
-        display: flex;
-        justify-content: space-around;
-
-        position: relative;
-
-        width: 100%;
-    }
-
-    &__statistic-box {
-        // background-color: rgb(95, 114, 199);
-        color: var(--color-secondary-opposite);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        position: relative;
-
-        &:not(:last-of-type) {
-            &::before {
-                content: "";
-
-                border-radius: 999px;   
-
-                width: 2px;
-                height: 40px;
-
-                background-color: #ff0000;
-
-                position: absolute;
-                top: 31%;
-                left: calc(100% + 15px);
-            }
-        }
-        
-        &:nth-of-type(1) {
-            &::before {
-                left: calc(100% + 27px);
-            }
-        }
-    }
-    
-    &__statistic {
-        font-size: 140px;
-
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    &__symbol {
-        font-size: 60px;
-
-        &--plus {
-            font-size: 100px;
-        }
-
-        &--porcentage {
-            position: relative;
-            bottom: -17px;
-            font-size: 65px;
-        }
-    }
-
-    &__number {
-    }
-
-    &__statistic-title {
-        font-size: 2.5rem;
-    }
-
-    &__statistic-about {
-        font-size: 1.3rem;
-        text-align: center;
-        max-width: 70%;
     }
 }

@@ -16,7 +16,11 @@ body {
     letter-spacing: 1px;
     font-family: 'nunito-light';
 
-    margin-left: 20px;
+    position: relative;
+
+    display: inline-block;
+
+    padding: 0 20px;
 
     &__first-line {
         display: block;
@@ -27,18 +31,29 @@ body {
     }
 
     &--left::before,
-    &--left::after {
+    &--left::after,
+    &--right::before,
+    &--right::after {
         content: "";
-        border-radius: 999px;
-
+        
         background-color: #ff0000;
-
+        
         position: absolute;
-        left: 0;
         
         height: 2px;
-
-        transition: .6s .5s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+        
+        transition: .6s .7s cubic-bezier(0.785, 0.135, 0.150, 0.860);
+    }
+    
+    &--left::before,
+    &--left::after {
+        border-radius: 0 999px 999px 0;
+        left: 0;
+    }
+    &--right::before,
+    &--right::after {
+        border-radius: 999px 0 0 999px;
+        right: 0;
     }
     
     &--left::before {
@@ -48,7 +63,7 @@ body {
     
     &--left::after {
         bottom: -21px;    
-        width: 320px;
+        width: 120%;
     }
     
     &--left.in::before {
@@ -57,5 +72,33 @@ body {
 
     &--left.in::after {
         width: 180px;
+    }
+
+
+    &--right::before,
+    &--right::after {
+        right: 0;
+    }
+    
+    &--left::before,
+    &--right::before {
+        bottom: -10px;
+        width: 100%;
+    }
+    
+    &--left::after,
+    &--right::after {
+        bottom: -21px;    
+        width: 120%;
+    }
+    
+    &--left.in::before,
+    &--right.in::before {
+        width: 120%;
+    }
+
+    &--left.in::after, 
+    &--right.in::after {
+        width: 100%;
     }
 }
