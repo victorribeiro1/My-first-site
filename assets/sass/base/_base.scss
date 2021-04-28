@@ -34,23 +34,3 @@ section {
     background-color: rgb(211, 92, 92);
     color: #fff;
 }
-
-::-webkit-scrollbar {
-    width: 7px;
-    z-index: -1;
-
-    &.hidden {
-        width: 0 !important;
-    }
-    
-    &-thumb {
-        background: var(--color-thumb);
-        border-radius: 999px;
-        height: 10px;
-    }
-    
-    &-track {
-        display: none;
-        background-color: var(--color-secondary);
-    }
-}
