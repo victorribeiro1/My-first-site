@@ -1,0 +1,45 @@
+.button-secondary {
+    // color: red;
+    // background-color: #0000ff;
+
+    cursor: pointer;
+
+    // width: 90px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+
+
+    .arrow-box {
+        position: absolute;
+        left: -20px;
+        bottom: 1px;
+
+        transition: .4s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
+
+        .arrow {
+            border-top: 1px solid red;
+            border-right: 1px solid red;
+        }
+    }
+
+    &:hover {
+        .arrow-box {
+            left: 93%;
+        }
+
+        .button-secondary__text {
+            transform: translateX(-10px);
+        }
+    }
+
+
+    &__text {
+        font-size: 1.4rem;
+        color: var(--color-secondary-opposite);
+        transition: .4s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
+    }
+}

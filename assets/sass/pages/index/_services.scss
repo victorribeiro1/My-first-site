@@ -49,52 +49,13 @@
         position: relative;
         top: -120px;
     }
-    
-    &__see-services {
-        // color: red;
-        // background-color: #0000ff;
 
-        cursor: pointer;
-
-        width: 90px;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
+    &__see-services-box {
         position: relative;
-        left: -110px;
-        top: -40px;
-
-
-        .arrow-box {
-            position: relative;
-            bottom: -2px;
-            transition: transform .4s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
-
-            .arrow {
-                border-top: 1px solid red;
-                border-right: 1px solid red;
-            }
-        }
-
-        &:hover {
-            .arrow-box {
-                transform: translate(82px, 1px);
-            }
-
-            .services__see-services-text {
-                transform: translateX(-10px);
-            }
-        }
+        top: -70px;
+        left: -90px;
     }
-
-    &__see-services-text {
-        font-size: 1.4rem;
-        color: var(--color-secondary-opposite);
-        transition: transform .4s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
-    }
-
+    
     &__carousel {
         // width: 20px;
     }
