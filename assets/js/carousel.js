@@ -4,9 +4,9 @@ document.querySelector('.carousel__items')
 function slide(e) {
     console.log('scrolled')
     if (e.deltaY > 0) {
-        return e.target.scrollBy(300, 0)
+        return e.target.scrollBy(900, 0)
     }
     else {
-        return e.target.scrollBy(-300, 0)
+        return e.target.scrollBy(-900, 0)
     }
 }
