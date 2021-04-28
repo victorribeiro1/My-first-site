@@ -26,7 +26,8 @@
         }
     }
 
-    &:hover {
+    &:hover,
+    &.active {
         .arrow-box {
             left: 93%;
         }

@@ -213,17 +213,22 @@
     }
 
     &__services-box {
-        backdrop-filter: blur(10px);
-        background-color: #00000094;
-
+        
         height: 100%;
         width:  100%;
-
+        
         position: absolute;
         top: 0;
         left: 0;
-
-        display: none !important;
+        backdrop-filter: blur(0px);
+        
+        transition: .6s .2s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
+        
+        &.active {
+            backdrop-filter: blur(10px);
+            background-color: #00000094;
+            transition: .6s .1s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
+        }
     }
 
     &__service {

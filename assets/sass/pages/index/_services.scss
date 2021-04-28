@@ -36,18 +36,23 @@
         width: 22%;
 
         height: 100%;
-
     }
     
     &__numbers-box {
-        pointer-events: none;
+        // pointer-events: none;
     }
     
     &__type-box {
-        pointer-events: none;
+        // pointer-events: none;    
         // background-color: red;
         position: relative;
         top: -120px;
+
+        opacity: 1;
+
+        transition: .4s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
+
+        z-index: 2;
     }
 
     &__see-services-box {

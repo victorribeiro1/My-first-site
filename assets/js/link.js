@@ -1,5 +1,4 @@
 const links = document.querySelectorAll('.link')
-console.log(links)
 links.forEach(link => {
     link.addEventListener('mouseenter', () => {
         link.classList.remove('go-away')
@@ -23,8 +22,6 @@ links.forEach(link => {
     }
 
     const newText = letters.join('')
-
-    console.log(letters)
 
     link.innerHTML = newText
 })
