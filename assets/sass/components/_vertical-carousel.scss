@@ -69,18 +69,20 @@
     }
     
     &__text {
-        
         color: #eee;
         font-family: 'nunito-black';
         font-size: 9rem;
         letter-spacing: 2px;
 
+        pointer-events: none;
+
         white-space: nowrap;
         
-        transition: .3s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
-
+        transition: .3s .8s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
+        
         &.hide {
             opacity: 0;
+            transition: .3s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
         }
         
     }
