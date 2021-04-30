@@ -17,10 +17,7 @@
         // top: -50px;
     }
 
-
-
     &__items {
-
         display: flex;
         overflow: hidden;
         
@@ -33,7 +30,6 @@
     }
     
     &__item {
-        // background-color: #fff;
         flex: none;
 
         width: 70%;
@@ -64,7 +60,7 @@
         &.slideTo2,
         &.slideTo3, 
         &.slideTo4 {
-            transform: translateX(calc(-100% - 320px));
+            // transform: translateX(calc(-100% - 320px));
             transition: 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
         }
 

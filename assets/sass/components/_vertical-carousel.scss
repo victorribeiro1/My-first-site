@@ -1,16 +1,18 @@
 .vertical-carousel {
     // background-color: lightgreen;
-    height: 11rem;
+    height: 12rem;
 
     position: relative;
     // right: -50px;
     
-    overflow: hidden;
+    // overflow: hidden;
     
     z-index: 2;
         
     &--category {
+
         &--top {
+            // width: 550px;
             right: -80px;
         }
         
@@ -20,36 +22,50 @@
             right: -190px;
         }
     }
+    
 
     &__number {
         // background-color: #fff;
         height: 24rem;
         z-index: 0;
 
-        top: -120px;
-        right: -76px;
+        top: -100px;
+        right: -85px;
         
     }
 
     
     &__items {
-        height: 220%;
+        // background-color: #aaa;
+
+        height: 100%;
+        width: 200rem;
+
+        scroll-snap-type: y mandatory;
+        -webkit-overflow-scrolling: touch;
+        scroll-behavior: smooth;
+
+        position: relative;
+        right: -20rem;
+
+        overflow: hidden;
         
         &:hover {
             .vertical-carousel__item {
-                transform: translateY(calc(-100%));
+                // transform: translateY(calc(-100%));
                 transition: 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
             }
         }
 
-        &--2 {
-            :last-child *{
-                color: red;
-            }
-        }
+        // &--2 {
+            // :last-child *{
+            //     color: red;
+            // }
+        // }
         
         &--1,
         &--2 {
+            // background-color: transparent !important;
             :last-child {
                 transform: translateX(150px);
             }
@@ -61,14 +77,24 @@
     }
     
     &__item {
+        height: 100%;
+
+        // background-color: #fff;
+
         text-align: right;
         position: relative;
         font-weight: thin;
         
+        scroll-snap-align: start;
+
         transition: 1s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
+
+        position: relative;
+        left: -20rem;
     }
     
     &__text {
+        background-color: transparent !important;
         color: #eee;
         font-family: 'nunito-black';
         font-size: 9rem;
@@ -79,6 +105,7 @@
         white-space: nowrap;
         
         transition: .3s .8s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
+        opacity: 1;
         
         &.hide {
             opacity: 0;
