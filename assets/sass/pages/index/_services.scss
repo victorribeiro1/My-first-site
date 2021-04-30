@@ -8,6 +8,12 @@
     flex-direction: column;
     justify-content: space-around;
 
+
+    &.noScroll {
+        pointer-events: none;
+    }
+
+
     &__header {
         position: relative;
         // background-color: #333;
