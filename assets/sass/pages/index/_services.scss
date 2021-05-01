@@ -70,4 +70,74 @@
     &__carousel {
         // width: 20px;
     }
+
+    &__carousel-manager {
+        // background-color: lightblue;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        position: absolute;
+        margin-right: 80px;
+        
+        height: 150px;
+        width: 150px;
+
+        .arrow-box {
+            cursor: pointer;
+
+            height: 100%;
+            width: 50%;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            position: relative !important;
+
+            &:hover {
+                background-color: #00000054;
+            }
+
+            span {
+                animation: clickShadow 1s linear infinite;
+
+                background-color: white;
+                border-radius: 999px;
+
+                position: relative;
+
+                display: block;
+
+                pointer-events: none;
+
+                transform: translate(-50%, -50%);
+
+                flex: none;
+
+                // height: 100px;
+                // width: 100px;
+            }
+        }
+
+        .arrow {
+            pointer-events: none;
+
+            width:  4rem;
+            height: 4rem;
+
+            position: relative;
+            right: -22%;
+
+            &--left {
+                margin-left: 10px;
+                transform: rotate(-135deg) translateY(1px);
+            }
+            
+            &--right {
+                margin-left: -10px;
+            }
+        }
+    }
 }

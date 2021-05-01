@@ -116,6 +116,14 @@ html[current-theme='light'] {
   100% {
     transform: rotate(0); } }
 
+@keyframes clickShadow {
+  from {
+    width: 0px;
+    height: 0px; }
+  to {
+    width: 50px;
+    height: 50px; } }
+
 :root {
   --color-dark-1: #000;
   --color-dark-2: #111;
@@ -492,9 +500,6 @@ body {
     .carousel__service:hover .button-secondary .arrow-box {
       left: 93%;
       bottom: 0px; }
-      .carousel__service:hover .button-secondary .arrow-box .arrow {
-        border-top: 1px solid #000;
-        border-right: 1px solid #000; }
     .carousel__service:hover .button-secondary .button-secondary__text {
       transform: translateX(-10px); }
     .carousel__service .button-secondary {
@@ -1352,3 +1357,41 @@ body {
     position: relative;
     top: -70px;
     left: -90px; }
+  .services__carousel-manager {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    margin-right: 80px;
+    height: 150px;
+    width: 150px; }
+    .services__carousel-manager .arrow-box {
+      cursor: pointer;
+      height: 100%;
+      width: 50%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      position: relative !important; }
+      .services__carousel-manager .arrow-box:hover {
+        background-color: #00000054; }
+      .services__carousel-manager .arrow-box span {
+        animation: clickShadow 1s linear infinite;
+        background-color: white;
+        border-radius: 999px;
+        position: relative;
+        display: block;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        flex: none; }
+    .services__carousel-manager .arrow {
+      pointer-events: none;
+      width: 4rem;
+      height: 4rem;
+      position: relative;
+      right: -22%; }
+      .services__carousel-manager .arrow--left {
+        margin-left: 10px;
+        transform: rotate(-135deg) translateY(1px); }
+      .services__carousel-manager .arrow--right {
+        margin-left: -10px; }
