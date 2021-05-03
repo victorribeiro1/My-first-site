@@ -1,7 +1,7 @@
 .services {
     background-color: #111111;
-    min-height: 800px;
-    max-height: 100vh;
+    height: 100vh;
+    min-height: 650px;
 
     position: relative;
 
@@ -81,63 +81,65 @@
         position: absolute;
         margin-right: 80px;
         
-        height: 150px;
-        width: 150px;
-
         .arrow-box {
-            cursor: pointer;
+            height: 13rem;
+            width: 6rem;
 
-            height: 100%;
-            width: 50%;
+            cursor: pointer;
+            
+            position: relative;
 
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
 
-            position: relative !important;
+            text-decoration: none;
+            text-transform: uppercase;
+
+            overflow: hidden;
+
+            outline: none;
+            border: none;
 
             &:hover {
                 background-color: #00000054;
             }
 
             span {
-                animation: clickShadow 1s linear infinite;
-
-                background-color: white;
+                animation: animate 10000s linear;
+    
+                background: #ffffff50;
                 border-radius: 999px;
-
-                position: relative;
-
-                display: block;
+    
+                position: absolute;
 
                 pointer-events: none;
-
+    
                 transform: translate(-50%, -50%);
-
-                flex: none;
-
-                // height: 100px;
-                // width: 100px;
-            }
-        }
-
-        .arrow {
-            pointer-events: none;
-
-            width:  4rem;
-            height: 4rem;
-
-            position: relative;
-            right: -22%;
-
-            &--left {
-                margin-left: 10px;
-                transform: rotate(-135deg) translateY(1px);
             }
             
-            &--right {
-                margin-left: -10px;
+            & .arrow {
+                pointer-events: none;
+    
+                width:  4rem;
+                height: 4rem;
+    
+                // position: absolute;
+    
+                // top: 50%;
+                // transform: translateY(-50%);
+    
+                &--left {
+                    margin-left: 35%;
+                    transform: rotate(-135deg) translateY(1px);
+                }
+                
+                &--right {
+                    margin-left: -35%;
+                    // transform: rotate(545deg) translateY(1px);
+                }
             }
         }
+
     }
 }

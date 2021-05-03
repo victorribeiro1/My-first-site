@@ -1,52 +1,24 @@
-const allItems = document.querySelectorAll('.carousel__item')
-const allServices = document.querySelectorAll('.carousel__service')
-const servicesSection = document.querySelector('.services')
-const items = document.querySelector('.carousel__items')
+const allItems = document.querySelectorAll('.carousel-item')
+const buttons = document.querySelectorAll('.carousel-button')
 
-// lembre-se de usar o magic scroll para usar 
-// a funcionalidade do slide apenas quando a section estiver no meio da tela
+let counter2 = 1
 
-function slide(e) {
-    if (e.deltaY > 0) {
-        items.scrollBy(900, 0)
-    }
-    else {
-        items.scrollBy(-900, 0)
+function toggleSlideClasses(event) {
+    if (event.target.classList.contains('right')) {
+        counter2 < 3 ? counter2++ : counter2
+        document.querySelectorAll(`.s${counter2}`).forEach(item => item.classList.add('current'))
+        document.querySelectorAll(`.s${counter2 - 1}`).forEach(item => item.classList.remove('current'))
+        allItems.forEach(item => item.classList.add(`slide${counter2}`))
+        allItems.forEach(item => item.classList.remove(`slide${counter2 - 1}`))
+    } else {
+        counter2 > 1 ? counter2-- : counter2
+        document.querySelectorAll(`.s${counter2}`).forEach(item => item.classList.add('current'))
+        document.querySelectorAll(`.s${counter2 + 1}`).forEach(item => item.classList.remove('current'))
+        allItems.forEach(item => item.classList.add(`slide${counter2}`))
+        allItems.forEach(item => item.classList.remove(`slide${counter2 + 1}`))
     }
 }
 
-servicesSection.addEventListener('wheel', (e) => slide(e))
-
-// CAROUSEL MANAGER ->
-
-const carouselButton = document.querySelectorAll('.carousel-button')
-
-function clickShadow(event) {
-    const target = event.target
-
-    let x = event.clientX - event.target.offsetLeft
-    let y = event.clientY - event.target.offsetTop
-    console.log(event.target.offsetTop)
-
-    let ripples = document.createElement('span')
-    ripples.style.left = `${x}px`
-    ripples.style.top = `${y}px`
-
-    target.appendChild(ripples)
-}
-
-carouselButton.forEach(button => {
-    button.addEventListener('click', function(event) {
-        const target = event.target
-
-        let x = event.clientX - event.target.offsetLeft
-        let y = event.clientY - event.target.offsetTop
-        console.log(event.target)
-
-        let ripples = document.createElement('span')
-        ripples.style.left = `${x}px`
-        ripples.style.top = `${y}px`
-
-        this.appendChild(ripples)
-    })
+buttons.forEach(button => {
+    button.addEventListener('click', (event) => toggleSlideClasses(event))
 })

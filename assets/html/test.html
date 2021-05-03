@@ -7,9 +7,106 @@
         <link rel="stylesheet" href="../css/style.css">
         <link rel="stylesheet" href="../css/style.min.css">
         <title>Document</title>
+
+        <style>
+            body {
+                height: 100vh;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                background-color: #040D15;
+            }
+
+            div {
+                width: 50px;
+                height: 150px;
+                border-radius: 999px;
+                color: #fff;
+
+                cursor: pointer;
+                
+                font-size: 7rem;
+                letter-spacing: 5px;
+                
+                position: relative;
+                
+                display: inline-block;
+
+                padding: 30px 70px;
+                margin: 10px 0;
+                
+                text-decoration: none;
+                text-transform: uppercase;
+
+                overflow: hidden;
+
+                outline: none;
+                border: none;
+
+                width: auto;
+            }
+            
+            div:nth-child(1) {
+                background: linear-gradient(to right, #0162C8, #55E7FC);
+
+            }
+            div:nth-child(2) {
+                background: linear-gradient(to right, #755BEA, #FF72C0);
+            }
+
+            span {
+                animation: animate 1s linear;
+
+                background: #ffffff50;
+                border-radius: 999px;
+
+                position: absolute;
+                pointer-events: none;
+
+                transform: translate(-50%, -50%);
+            }
+
+            @keyframes animate {
+                from {
+                    height: 0px;
+                    width:  0px;
+                    opacity: 1;
+                }
+                
+                to {
+                    
+                    height: 500px;
+                    width:  500px;
+                    opacity: 0;
+                }
+            }
+        </style>
+
     </head>
     <body>
-        <div class="shape">
-        </div>
+        <div>Button</div>
+        <div>Button</div>
+        
+        <script>
+            const buttons = document.querySelectorAll('div')
+            buttons.forEach(button => {
+                button.addEventListener('click', function(event) {
+                    let x = event.clientX - event.target.offsetLeft
+                    let y = event.clientY - event.target.offsetTop
+
+                    console.log(x)
+
+                    let ripples = document.createElement('span')
+
+                    ripples.style.left = x + 'px'
+                    ripples.style.top = y + 'px'
+
+                    this.appendChild(ripples)
+                })
+            })
+        </script>
     </body>
 </html>

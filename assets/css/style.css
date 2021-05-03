@@ -333,11 +333,12 @@ body {
   .carousel:hover .carousel__item--car {
     position: relative; }
   .carousel__items {
-    display: flex;
     overflow: hidden;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 100%; }
   .carousel__item {
@@ -347,17 +348,21 @@ body {
     overflow: hidden;
     position: relative;
     scroll-snap-align: start;
-    transition: 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) !important; }
+    transition: 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) !important;
+    opacity: .2;
+    height: 70%;
+    pointer-events: none; }
     .carousel__item:not(:last-child) {
-      margin-right: 320px; }
-    .carousel__item.slideTo1, .carousel__item.slideTo2, .carousel__item.slideTo3, .carousel__item.slideTo4 {
-      transition: 1s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
-    .carousel__item.slideTo5, .carousel__item.slideTo6, .carousel__item.slideTo7, .carousel__item.slideTo8 {
-      transform: translateX(calc(-200% - 640px));
-      transition: 1s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
-    .carousel__item.slideTo9, .carousel__item.slideTo10, .carousel__item.slideTo11, .carousel__item.slideTo12 {
-      transform: translateX(calc(-300% - 960px));
-      transition: 1s cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+      --margin-right: 250px;
+      margin-right: var(--margin-right); }
+    .carousel__item.current {
+      pointer-events: initial;
+      opacity: 1;
+      height: 100%; }
+    .carousel__item.slide2 {
+      transform: translateX(calc(-100% - var(--margin-right))) scale(1); }
+    .carousel__item.slide3 {
+      transform: translateX(calc(-200% - (var(--margin-right) * 2))) scale(1); }
     .carousel__item--car .carousel__services-box {
       position: absolute;
       top: 0;
@@ -828,7 +833,22 @@ body {
     scroll-snap-align: start;
     transition: 1s cubic-bezier(0.785, 0.135, 0.15, 0.86) !important;
     position: relative;
-    left: -20rem; }
+    left: -20rem;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(1); }
+    .vertical-carousel__item.current {
+      pointer-events: initial;
+      opacity: 1;
+      transform: scale(1); }
+    .vertical-carousel__item.construction {
+      transform: translateX(150px) !important; }
+    .vertical-carousel__item.slide2 {
+      transform: translateY(-100%); }
+    .vertical-carousel__item.slide3 {
+      transform: translateY(-200%); }
+      .vertical-carousel__item.slide3.construction {
+        transform: translateY(-200%) translateX(150px) !important; }
   .vertical-carousel__text {
     background-color: transparent !important;
     color: #eee;
@@ -842,6 +862,9 @@ body {
     .vertical-carousel__text.hide {
       opacity: 0;
       transition: 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86) !important; }
+    .vertical-carousel__text--2--leve {
+      position: relative;
+      left: -60px; }
   .vertical-carousel__number {
     font-family: 'bison';
     font-size: 20rem;
@@ -1322,8 +1345,8 @@ body {
 
 .services {
   background-color: #111111;
-  min-height: 800px;
-  max-height: 100vh;
+  height: 100vh;
+  min-height: 650px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1362,36 +1385,35 @@ body {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    margin-right: 80px;
-    height: 150px;
-    width: 150px; }
+    margin-right: 80px; }
     .services__carousel-manager .arrow-box {
+      height: 13rem;
+      width: 6rem;
       cursor: pointer;
-      height: 100%;
-      width: 50%;
+      position: relative;
       display: flex;
-      justify-content: flex-start;
+      justify-content: center;
       align-items: center;
-      position: relative !important; }
+      text-decoration: none;
+      text-transform: uppercase;
+      overflow: hidden;
+      outline: none;
+      border: none; }
       .services__carousel-manager .arrow-box:hover {
         background-color: #00000054; }
       .services__carousel-manager .arrow-box span {
-        animation: clickShadow 1s linear infinite;
-        background-color: white;
+        animation: animate 10000s linear;
+        background: #ffffff50;
         border-radius: 999px;
-        position: relative;
-        display: block;
+        position: absolute;
         pointer-events: none;
-        transform: translate(-50%, -50%);
-        flex: none; }
-    .services__carousel-manager .arrow {
-      pointer-events: none;
-      width: 4rem;
-      height: 4rem;
-      position: relative;
-      right: -22%; }
-      .services__carousel-manager .arrow--left {
-        margin-left: 10px;
-        transform: rotate(-135deg) translateY(1px); }
-      .services__carousel-manager .arrow--right {
-        margin-left: -10px; }
+        transform: translate(-50%, -50%); }
+      .services__carousel-manager .arrow-box .arrow {
+        pointer-events: none;
+        width: 4rem;
+        height: 4rem; }
+        .services__carousel-manager .arrow-box .arrow--left {
+          margin-left: 35%;
+          transform: rotate(-135deg) translateY(1px); }
+        .services__carousel-manager .arrow-box .arrow--right {
+          margin-left: -35%; }

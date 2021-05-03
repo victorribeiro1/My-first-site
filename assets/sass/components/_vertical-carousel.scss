@@ -57,11 +57,9 @@
             }
         }
 
-        // &--2 {
-            // :last-child *{
-            //     color: red;
-            // }
-        // }
+        &--2 {
+            
+        }
         
         &--1,
         &--2 {
@@ -91,6 +89,31 @@
 
         position: relative;
         left: -20rem;
+
+        opacity: 0;
+        pointer-events: none;
+        transform: scale(1);
+        
+        &.current {
+            pointer-events: initial;
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        &.construction {
+            transform: translateX(150px) !important;
+        }
+
+        &.slide2 {
+            transform: translateY(-100%);
+        }
+
+        &.slide3 {
+            transform: translateY(-200%);
+            &.construction {
+                transform: translateY(-200%) translateX(150px) !important;
+            }
+        }
     }
     
     &__text {
@@ -110,6 +133,13 @@
         &.hide {
             opacity: 0;
             transition: .3s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
+        }
+
+        &--2 {
+            &--leve {
+                position: relative;
+                left: -60px;
+            }
         }
         
     }
