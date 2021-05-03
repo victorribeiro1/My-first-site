@@ -72,14 +72,12 @@
     }
 
     &__carousel-manager {
-        // background-color: lightblue;
-
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         position: absolute;
-        margin-right: 80px;
+        margin-right: 90px;
         
         .arrow-box {
             height: 13rem;

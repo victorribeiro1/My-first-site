@@ -1109,7 +1109,7 @@ body {
     align-items: center; }
   .about__img {
     border-radius: 5px;
-    width: 420px;
+    width: 450px;
     position: relative;
     bottom: -200px; }
   .about__text-box {
@@ -1388,7 +1388,7 @@ body {
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    margin-right: 80px; }
+    margin-right: 90px; }
     .services__carousel-manager .arrow-box {
       height: 13rem;
       width: 6rem;
