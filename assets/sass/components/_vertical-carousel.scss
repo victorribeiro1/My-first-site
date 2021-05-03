@@ -20,6 +20,7 @@
             text-transform: lowercase;
             top: -20px;
             right: -190px;
+            transition: 3s 5s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
         }
     }
     
@@ -52,15 +53,10 @@
         
         &:hover {
             .vertical-carousel__item {
-                // transform: translateY(calc(-100%));
                 transition: 1s cubic-bezier(0.785, 0.135, 0.150, 0.860);
             }
         }
 
-        &--2 {
-            
-        }
-        
         &--1,
         &--2 {
             // background-color: transparent !important;
@@ -86,13 +82,17 @@
         scroll-snap-align: start;
 
         transition: 1s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
-
+        
         position: relative;
         left: -20rem;
-
+        
         opacity: 0;
         pointer-events: none;
         transform: scale(1);
+        
+        &--bottom {
+            transition: 1s 50ms cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
+        }
         
         &.current {
             pointer-events: initial;
@@ -114,6 +114,7 @@
                 transform: translateY(-200%) translateX(150px) !important;
             }
         }
+
     }
     
     &__text {
