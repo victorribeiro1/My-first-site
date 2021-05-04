@@ -302,7 +302,7 @@
 
             opacity: 0;
             
-            bottom: 1px !important;
+            bottom: 3px !important;
 
             transition: .4s cubic-bezier(0.785, 0.135, 0.150, 0.860);
         }
@@ -312,7 +312,7 @@
 
             opacity: 0;
 
-            bottom: 0;
+            bottom: -5px;
             
             transition: .4s cubic-bezier(0.785, 0.135, 0.150, 0.860);
         }
@@ -322,7 +322,7 @@
 
             opacity: 1;
             
-            bottom: 12px;
+            bottom: 9px;
 
             transition: .4s cubic-bezier(0.785, 0.135, 0.150, 0.860);
         }

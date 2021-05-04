@@ -1,0 +1,151 @@
+.contact {
+    background: #111;
+    height: 100vh;
+    // min-height: 65rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    &__header {
+        margin: 4rem 0 4rem 0;
+    }
+
+    &__heading-box {
+
+    }
+
+    &__content-box {
+        // background-color: lightgreen;
+        display: flex;
+
+        height: 100%;
+    }
+
+    &__form-box {
+        // background-color: #ff0500;
+        
+        height: 100%;
+        width:   55%;
+
+        order: 2;
+    }
+    
+    &__form {
+        background-color: #333;
+        border-top-left-radius: 10px;
+
+        overflow: hidden;
+
+        height: 100%;
+        width:  100%;
+
+        display: flex;
+        flex-direction: column;
+
+    }
+    
+    &__form-header {
+        // background-color: #D6D6D6;
+        border-bottom: 1px solid black;
+
+        padding: 20px;
+
+        width: 100%;
+
+    }
+    
+    &__form-heading {
+        color: var(--color-secondary-opposite);
+        font-size: 2.6rem;
+    }
+    
+    &__form-content-box {
+        // background-color: wheat;
+
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__form-content {
+        // background-color: pink;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        height: 85%;
+        width:  85%;
+    }
+
+    &__services,
+    &__medias,
+    &__send-button {
+        background-color: #111;
+
+        height: 8rem;
+        width: 100%;
+    }
+
+    &__services {
+        border-top-left-radius: 10px;
+
+        overflow: hidden;
+    }
+    
+    &__medias {
+        
+    }
+    
+    &__send-button {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__button {
+        // background-color: brown;
+
+        --main-button-width: 20rem;
+
+        height: 80%;
+        width: 38%;
+
+        justify-content: space-around;
+    }
+
+    &__arrow {
+        height: 1.2rem;
+        width:  1.2rem;
+    }
+
+    &__text {
+        color: var(--color-secondary);
+        font-size: 2.2rem;
+        font-weight: 999;
+    }
+
+    &__img-box {
+        // background-color: #000550;
+    
+        height: 100%;
+        width:  45%;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__img {
+        font-size: 1px;
+        height: 48rem;
+        width:  48rem;
+
+        fill: black;
+    }
+}

@@ -13,100 +13,49 @@
                 height: 100vh;
 
                 display: flex;
-                flex-direction: column;
                 justify-content: center;
                 align-items: center;
 
-                background-color: #040D15;
+                background: #03091d;
             }
 
-            div {
-                width: 50px;
-                height: 150px;
-                border-radius: 999px;
-                color: #fff;
+            select {
+                border: 0;
+                border-radius: 0;
 
-                cursor: pointer;
-                
-                font-size: 7rem;
-                letter-spacing: 5px;
-                
-                position: relative;
-                
-                display: inline-block;
+                height: 5rem;
+                width: 50rem;
 
-                padding: 30px 70px;
-                margin: 10px 0;
-                
-                text-decoration: none;
-                text-transform: uppercase;
-
-                overflow: hidden;
+                font-size: 2rem;
 
                 outline: none;
-                border: none;
 
-                width: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                transition: 1s ease;
+            }
+
+            option {
+                color: #eee;
+                background-color: rgb(29, 29, 58);
             }
             
-            div:nth-child(1) {
-                background: linear-gradient(to right, #0162C8, #55E7FC);
-
-            }
-            div:nth-child(2) {
-                background: linear-gradient(to right, #755BEA, #FF72C0);
-            }
-
-            span {
-                animation: animate 1s linear;
-
-                background: #ffffff50;
-                border-radius: 999px;
-
-                position: absolute;
-                pointer-events: none;
-
-                transform: translate(-50%, -50%);
-            }
-
-            @keyframes animate {
-                from {
-                    height: 0px;
-                    width:  0px;
-                    opacity: 1;
-                }
-                
-                to {
-                    
-                    height: 500px;
-                    width:  500px;
-                    opacity: 0;
-                }
+            option:focus {
+                display: none;
+                color: red;
+                background-color: rgb(29, 29, 58) !important;
             }
         </style>
-
     </head>
+
     <body>
-        <div>Button</div>
-        <div>Button</div>
-        
-        <script>
-            const buttons = document.querySelectorAll('div')
-            buttons.forEach(button => {
-                button.addEventListener('click', function(event) {
-                    let x = event.clientX - event.target.offsetLeft
-                    let y = event.clientY - event.target.offsetTop
-
-                    console.log(x)
-
-                    let ripples = document.createElement('span')
-
-                    ripples.style.left = x + 'px'
-                    ripples.style.top = y + 'px'
-
-                    this.appendChild(ripples)
-                })
-            })
-        </script>
+        <select name="#" id="">
+            <option value="1">Victor</option>
+            <option value="2">Rafa</option>
+            <option value="3">Isazinha</option>
+            <option value="4">Fernandinho</option>
+        </select>
     </body>
 </html>
