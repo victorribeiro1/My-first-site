@@ -127,18 +127,18 @@ html[current-theme='light'] {
 :root {
   --color-dark-1: #000;
   --color-dark-2: #111;
-  --color-dark-3: #2E3339;
+  --color-dark-3: #333;
   --color-dark-4: #333;
   --color-transparent-dark-1: #0000000e;
-  --color-transparent-dark-2: #0000008e;
+  --color-transparent-dark-2: #00000054;
   --color-transparent-dark-3: #111111cc;
-  --color-light-1: #fff;
-  --color-light-2: #eee;
-  --color-light-3: #D6D6D6;
+  --color-light-1: #EEE;
+  --color-light-2: #D6D6D6;
+  --color-light-3: #999;
   --color-light-4: #aaa;
   --color-light-5: #999;
   --color-transparent-light-1: #ffffff0a;
-  --color-transparent-light-2: #ffffffcc;
+  --color-transparent-light-2: #ffffff84;
   --color-transparent-light-3: #eeeeee50;
   --navigation-width: 10rem; }
 
@@ -207,7 +207,7 @@ section {
   font-family: 'bison'; }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 4px;
   z-index: -1; }
   ::-webkit-scrollbar.hidden {
     width: 0 !important; }
@@ -330,8 +330,6 @@ body {
   width: 130rem;
   height: 35rem;
   position: relative; }
-  .carousel:hover .carousel__item--car {
-    position: relative; }
   .carousel__items {
     overflow: hidden;
     scroll-snap-type: x mandatory;
@@ -517,7 +515,7 @@ body {
   .carousel__service-icon {
     height: 4rem !important;
     width: 4rem !important;
-    fill: #e1edf1 !important;
+    fill: #D6D6D6 !important;
     position: absolute;
     left: 50%;
     transform: translateX(-50%); }
@@ -533,7 +531,7 @@ body {
     letter-spacing: 8px;
     font-family: 'nunito-regular';
     font-weight: 100;
-    color: #eee;
+    color: #D6D6D6;
     display: block; }
   .carousel__explore-box {
     width: 100%;
@@ -542,6 +540,8 @@ body {
       position: absolute;
       right: 30px;
       top: -20px; }
+      .carousel__explore-box .button-secondary__text {
+        color: #D6D6D6; }
       .carousel__explore-box .button-secondary .arrow {
         border-top: 1px solid red;
         border-right: 1px solid red; }
@@ -841,7 +841,7 @@ body {
     .vertical-carousel__item--bottom {
       transition: 1s 50ms cubic-bezier(0.785, 0.135, 0.15, 0.86) !important; }
     .vertical-carousel__item.current {
-      pointer-events: initial;
+      pointer-events: none;
       opacity: 1;
       transform: scale(1); }
     .vertical-carousel__item.construction {
@@ -854,7 +854,7 @@ body {
         transform: translateY(-200%) translateX(150px) !important; }
   .vertical-carousel__text {
     background-color: transparent !important;
-    color: #eee;
+    color: var(--color-primary-opposite);
     font-family: 'nunito-black';
     font-size: 9rem;
     letter-spacing: 2px;
@@ -871,7 +871,7 @@ body {
   .vertical-carousel__number {
     font-family: 'bison';
     font-size: 20rem;
-    color: #333; }
+    color: var(--color-tertiary); }
 
 .nav {
   background-color: var(--color-secondary);
@@ -1347,7 +1347,7 @@ body {
     z-index: 1; }
 
 .services {
-  background-color: #111111;
+  background-color: var(--color-secondary);
   height: 100vh;
   min-height: 650px;
   position: relative;
@@ -1383,6 +1383,9 @@ body {
     position: relative;
     top: -70px;
     left: -90px; }
+    .services__see-services-box * {
+      font-weight: 1000;
+      letter-spacing: 2px; }
   .services__carousel-manager {
     display: flex;
     justify-content: space-between;
@@ -1403,14 +1406,7 @@ body {
       outline: none;
       border: none; }
       .services__carousel-manager .arrow-box:hover {
-        background-color: #00000054; }
-      .services__carousel-manager .arrow-box span {
-        animation: animate 10000s linear;
-        background: #ffffff50;
-        border-radius: 999px;
-        position: absolute;
-        pointer-events: none;
-        transform: translate(-50%, -50%); }
+        background-color: var(--color-transparent-2); }
       .services__carousel-manager .arrow-box .arrow {
         pointer-events: none;
         width: 4rem;

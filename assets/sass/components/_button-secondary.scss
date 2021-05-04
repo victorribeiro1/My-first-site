@@ -1,17 +1,11 @@
 .button-secondary {
-    // color: red;
-    // background-color: #0000ff;
-
     cursor: pointer;
-
-    // width: 90px;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     position: relative;
-
 
     .arrow-box {
         position: absolute;
@@ -36,7 +30,6 @@
             transform: translateX(-10px);
         }
     }
-
 
     &__text {
         font-size: 1.4rem;

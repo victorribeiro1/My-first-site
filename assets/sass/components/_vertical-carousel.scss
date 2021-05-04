@@ -1,18 +1,12 @@
 .vertical-carousel {
-    // background-color: lightgreen;
     height: 12rem;
 
     position: relative;
-    // right: -50px;
-    
-    // overflow: hidden;
     
     z-index: 2;
         
     &--category {
-
         &--top {
-            // width: 550px;
             right: -80px;
         }
         
@@ -23,22 +17,16 @@
             transition: 3s 5s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
         }
     }
-    
 
     &__number {
-        // background-color: #fff;
         height: 24rem;
         z-index: 0;
 
         top: -100px;
         right: -85px;
-        
     }
-
     
     &__items {
-        // background-color: #aaa;
-
         height: 100%;
         width: 200rem;
 
@@ -59,7 +47,6 @@
 
         &--1,
         &--2 {
-            // background-color: transparent !important;
             :last-child {
                 transform: translateX(150px);
             }
@@ -72,8 +59,6 @@
     
     &__item {
         height: 100%;
-
-        // background-color: #fff;
 
         text-align: right;
         position: relative;
@@ -95,7 +80,7 @@
         }
         
         &.current {
-            pointer-events: initial;
+            pointer-events: none;
             opacity: 1;
             transform: scale(1);
         }
@@ -114,12 +99,11 @@
                 transform: translateY(-200%) translateX(150px) !important;
             }
         }
-
     }
     
     &__text {
         background-color: transparent !important;
-        color: #eee;
+        color: var(--color-primary-opposite);
         font-family: 'nunito-black';
         font-size: 9rem;
         letter-spacing: 2px;
@@ -142,14 +126,12 @@
                 left: -60px;
             }
         }
-        
     }
     
     &__number {
         font-family: 'bison';
         font-size: 20rem;
 
-        color: #333;
+        color: var(--color-tertiary);
     }
-    
 }

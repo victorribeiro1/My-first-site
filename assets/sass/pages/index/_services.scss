@@ -1,5 +1,5 @@
 .services {
-    background-color: #111111;
+    background-color: var(--color-secondary);
     height: 100vh;
     min-height: 650px;
 
@@ -9,15 +9,12 @@
     flex-direction: column;
     justify-content: space-around;
 
-
     &.noScroll {
         pointer-events: none;
     }
 
-
     &__header {
         position: relative;
-        // background-color: #333;
     }
 
     &__heading-box {
@@ -31,8 +28,6 @@
     }
     
     &__content-box-text {
-        // background-color: #ff0000;
-
         opacity: 1;
 
         display: flex;
@@ -41,12 +36,7 @@
         align-items: flex-end;
 
         width: 22%;
-
         height: 100%;
-    }
-    
-    &__numbers-box {
-        // pointer-events: none;
     }
     
     &__type-box {
@@ -65,11 +55,14 @@
         position: relative;
         top: -70px;
         left: -90px;
+        * {
+            font-weight: 1000;
+            letter-spacing: 2px;
+        }
     }
     
-    &__carousel {
-        // width: 20px;
-    }
+    // &__carousel {
+    // }
 
     &__carousel-manager {
         display: flex;
@@ -100,32 +93,27 @@
             border: none;
 
             &:hover {
-                background-color: #00000054;
+                background-color: var(--color-transparent-2);
             }
 
-            span {
-                animation: animate 10000s linear;
+            // span {
+            //     animation: animate 10000s linear;
     
-                background: #ffffff50;
-                border-radius: 999px;
+            //     background: #ffffff50;
+            //     border-radius: 999px;
     
-                position: absolute;
+            //     position: absolute;
 
-                pointer-events: none;
+            //     pointer-events: none;
     
-                transform: translate(-50%, -50%);
-            }
+            //     transform: translate(-50%, -50%);
+            // }
             
             & .arrow {
                 pointer-events: none;
     
                 width:  4rem;
                 height: 4rem;
-    
-                // position: absolute;
-    
-                // top: 50%;
-                // transform: translateY(-50%);
     
                 &--left {
                     margin-left: 35%;
@@ -134,10 +122,8 @@
                 
                 &--right {
                     margin-left: -35%;
-                    // transform: rotate(545deg) translateY(1px);
                 }
             }
         }
-
     }
 }

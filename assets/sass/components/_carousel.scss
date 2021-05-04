@@ -2,20 +2,7 @@
     width: 130rem;
     height: 35rem;
 
-    // position: absolute;
-    // top: 50%;
-    // right: 0;
-    // transform: translateY(-50%);
-
     position: relative;
-    // left: -50px;
-
-    // z-index: -1;
-
-    &:hover .carousel__item--car {
-        position: relative;
-        // top: -50px;
-    }
 
     &__items {
         overflow: hidden;
@@ -40,8 +27,6 @@
         overflow: hidden;
 
         position: relative;
-
-        // pointer-events: none;
         
         scroll-snap-align: start;
 
@@ -71,7 +56,6 @@
         }
 
         &--car {
-            
             .carousel__services-box {
                 position: absolute;
                 top: 0;
@@ -89,7 +73,6 @@
         }
         
         &--truck {
-            
             .carousel__services-box {    
                 position: absolute;
                 top: 0;
@@ -106,7 +89,6 @@
 
                     .carousel__icon-box {
                         top: 0;
-
                     }
                     
                     &--1 {
@@ -362,18 +344,16 @@
     }
 
     &__icon-box {
-        // background-color: #fff;
         width: 100%;
         height: 4rem;
         position: relative;
         top: -25px;
-        // left: -5px;
     }
 
     &__service-icon {
         height: 4rem !important;
         width: 4rem !important;
-        fill: #e1edf1 !important;
+        fill: #D6D6D6 !important;
     
         position: absolute;
         left: 50%;
@@ -381,7 +361,6 @@
     }
     
     &__service-box {
-        // background-color: #fff;
         width: 100%;
 
         padding-left: 10px;
@@ -399,13 +378,11 @@
         letter-spacing: 8px;
         font-family: 'nunito-regular';
         font-weight: 100;
-        color: #eee;
+        color: #D6D6D6;
         display: block;
-
     }
 
     &__explore-box {
-        // background-color: #fff;
         width: 100%;
 
         position: relative;
@@ -414,6 +391,10 @@
             position: absolute;
             right: 30px;
             top: -20px;
+
+            &__text {
+                color: #D6D6D6;
+            }
 
             .arrow {
                 border-top: 1px solid red;
