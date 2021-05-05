@@ -1,4 +1,5 @@
 const links = document.querySelectorAll('.link')
+
 links.forEach(link => {
     link.addEventListener('mouseenter', () => {
         link.classList.remove('go-away')

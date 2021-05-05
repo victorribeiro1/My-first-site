@@ -20,5 +20,5 @@ function toggleSlideClasses(event) {
 }
 
 buttons.forEach(button => {
-    button.addEventListener('click', (event) => toggleSlideClasses(event))
+    button.addEventListener('click', toggleSlideClasses)
 })

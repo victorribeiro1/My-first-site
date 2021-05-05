@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/style.css">
         <link href="//db.onlinewebfonts.com/c/36e469f4478980088468fc30605f4b4c?family=Plain+Medium" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="assets/css/swiper.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
         <title>AG Garagem</title>
     </head>
@@ -547,48 +549,154 @@
                 </div>
             </section>
 
-            <section class="contact">
-                <header class="contact__header">
-                    <div class="contact__heading-box">
-                        <h2 class="subheading subheading--right fade"> Contato </h2>
-                    </div>
+            <section class="faq">
+                <header class="faq__header-box">
+                    <h2 class="faq__heading subheading subheading--left fade">FAQ</h2>
                 </header>
-                <div class="contact__content-box">
-                    <div class="contact__form-box">
-                        <div class="contact__form">
-                            <div class="contact__form-header">
-                                <h4 class="contact__form-heading"># Mande sua mensagem e tire dúvidas conosco &#9997; &#128075;</h4>
+                <div class="faq__content-box">
+                    <div class="faq__questions-and-answers-box fade">
+                        <div class="faq__question-and-answer-box fade">
+                            <div class="faq__question-box">
+                                <h3 class="faq__question">Como são realizados os serviços que a AG Garagem oferece?</h3>
+                                <div class="faq__arrow"></div>
                             </div>
-                            <div class="contact__form-content-box">
-                                <div class="contact__form-content">
-                                    <div class="contact__services">
-                                        <select name="" id="" class="services-select">
-                                            <option value="">Alinhamento e geometria</option>
-                                            <option value="">Ar condicionado e climatização</option>
-                                            <option value="">Higienização</option>
-                                            <option value="">Manutenção de freio para carretas</option>
-                                        </select>
+                            <div class="faq__answer-box">
+                                <p class="faq__answer">
+                                    Todos os serviços são realizados no endereço comercial ou residencial do contratante, pois temos unidades móveis equipadas para resolver qualquer tipo de problema.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq__question-and-answer-box fade">
+                            <div class="faq__question-box">
+                                <h3 class="faq__question">Também são fornecidas as peças que podem vir a ser substituídas?</h3>
+                                <div class="faq__arrow"></div>
+                            </div>
+                            <div class="faq__answer-box">
+                                <p class="faq__answer">
+                                    Uma vez identificado o problema e havendo a necessidade de substituição de peças, a aquisição pode se dar pelo ciente em local de sua preferência. Mas, caso prefira, podemos fornecer as peças também.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq__question-and-answer-box faq__question-and-answer-box--lines-3 fade">
+                            <div class="faq__question-box">
+                                <h3 class="faq__question">Como faço para solicitar a manutenção com a AG Garagem?</h3>
+                                <div class="faq__arrow"></div>
+                            </div>
+                            <div class="faq__answer-box">
+                                <p class="faq__answer">
+                                    <a class="faq__link link link--small" href="">Clique aqui</a> para área de para a contato, lá você poderá contactár-nos através do canal de sua preferência: whatsApp, email, facebook ou instagram e, após isso, retornaremos o mais rápido possível. Se preferir, também pode nos telefonar, utilizando o número: 12345679.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq__question-and-answer-box fade">
+                            <div class="faq__question-box">
+                                <h3 class="faq__question">Existe garantia dos serviços realizados?</h3>
+                                <div class="faq__arrow"></div>
+                            </div>
+                            <div class="faq__answer-box">
+                                <p class="faq__answer">
+                                    Sim. Respeitamos o código de defesa do consumidor que estabelece o prazo de 30 dias para o consumidor reclamar por problemas aparentes em serviços e produtos não duráveis, e 90 dias para duráveis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="evaluations">
+                <header class="evaluation__header-box">
+                    <h2 class="evaluation__heading subheading subheading--right fade">Avaliações</h2>
+                </header>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="layer"></div>
+                                <div class="content">
+                                    <div class="img-box">
+                                        <img src="media/images/me.jpeg" alt="">
                                     </div>
-                                    <div class="contact__medias"></div>
-                                    <div class="contact__send-button">
-                                        <div class="contact__button button">
-                                            <span class="contact__arrow button__arrow arrow"></span>
-                                            <span class="contact__text button__text">mensagem</span>
-                                        </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, minus commodi. Excepturi cumque nesciunt ea nostrum doloremque eius ipsam deleniti animi soluta illum, numquam, error sit atque suscipit aliquam nulla?</p>
+                                    <div class="details">
+                                        <h2>Victor Ribeiro Cunha <br> <span>Desenvolvedor</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="layer"></div>
+                                <div class="content">
+                                    <div class="img-box">
+                                        <img src="media/images/top-lyne.png" alt="">
+                                    </div>
+                                    <p class="evaluation-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, minus commodi. Excepturi cumque nesciunt ea nostrum doloremque eius ipsam deleniti animi soluta illum, numquam, error sit atque suscipit aliquam nulla?</p>
+                                    <div class="details">
+                                        <h2>TOP Lyne <br> <span>Soluções Áereas</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="layer"></div>
+                                <div class="content">
+                                    <div class="img-box">
+                                        <img src="media/images/wecare-auto.png" alt="">
+                                    </div>
+                                    <p class="evaluation-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, minus commodi. Excepturi cumque nesciunt ea nostrum doloremque eius ipsam deleniti animi soluta illum, numquam, error sit atque suscipit aliquam nulla?</p>
+                                    <div class="details">
+                                        <h2>WeCare AUTO<br> <span>Empresa de Logística</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="layer"></div>
+                                <div class="content">
+                                    <div class="img-box">
+                                        <img src="media/images/tatiane-d.jpeg" alt="">
+                                    </div>
+                                    <p class="evaluation-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, minus commodi. Excepturi cumque nesciunt ea nostrum doloremque eius ipsam deleniti animi soluta illum, numquam, error sit atque suscipit aliquam nulla?</p>
+                                    <div class="details">
+                                        <h2>WeCare AUTO<br> <span>Empresa de Logística</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="layer"></div>
+                                <div class="content">
+                                    <div class="img-box">
+                                        <img class="tom" src="media/images/washington-d.jpeg" alt="">
+                                    </div>
+                                    <p class="evaluation-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, minus commodi. Excepturi cumque nesciunt ea nostrum doloremque eius ipsam deleniti animi soluta illum, numquam, error sit atque suscipit aliquam nulla?</p>
+                                    <div class="details">
+                                        <h2>Washington Luis<br> <span>Marketero</span></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card">
+                                <div class="layer"></div>
+                                <div class="content">
+                                    <div class="img-box">
+                                        <img src="media/images/solistica.png" alt="">
+                                    </div>
+                                    <p class="evaluation-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, minus commodi. Excepturi cumque nesciunt ea nostrum doloremque eius ipsam deleniti animi soluta illum, numquam, error sit atque suscipit aliquam nulla?</p>
+                                    <div class="details">
+                                        <h2>Solística<br> <span>Empresa de Logística</span></h2>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                        <div class="contact__img-box">
-                            <img class="contact__img" src="media/svgs/contact-girl.svg" alt="Ilustração de uma caixa de mensagens" />
-                                <!-- <svg class="contact__img"> -->
-                                    <!-- <use xlink:href="media/svgs/contact-girl.svg#girl"></use> -->
-                                <!-- </svg> -->
-                        </div>
-                    </div>
                 </div>
             </section>
+            
 
         <div style="height: 100vh"></div>
 
@@ -597,21 +705,21 @@
             <div class="cursor cursor--big"></div>
         </div> 
 
-        <script src="assets/js/contact-reminder.js"></script>
         <script src="assets/js/carousel.js"></script>
+        <script src="assets/js/contact-reminder.js"></script>
         <script src="assets/js/cursor.js"></script>
-        <script src="assets/js/contact.js"></script>
         <script src="assets/js/dropdown.js"></script>
         <script src="assets/js/link.js"></script>
         <script src="assets/js/magic-scroll.js"></script>
         <script src="assets/js/see-services.js"></script>
         <script src="assets/js/slider.js"></script>
         <script src="assets/js/sticky-nav.js"></script>
+        <script src="assets/js/swiper.js"></script>
+        <script src="assets/js/swiper-configs.js"></script>
         <script src="assets/js/theme.js"></script>
-        <script src="assets/js/vertical-carousel.js"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
-        <script src="assets/js/gsap.js"></script>
+
+        <script src="assets/js/gsap.min.js"></script>
+        <script src="assets/js/scrollTrigger.min.js"></script>        
+        <script src="assets/js/gsap-config.js"></script>
     </body>
 </html>

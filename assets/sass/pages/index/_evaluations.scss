@@ -1,5 +1,5 @@
 .evaluations {
-    background-color: #000;
+    background-color:  #111;
 
     min-height: 100vh;
     max-width: 100%;
@@ -7,16 +7,23 @@
     position: relative;
 
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     overflow-y: hidden;
 
-    .swiper-container {
-        height: 48rem;
-        -webkit-box-reflect: below 1px linear-gradient(transparent 80%, black);
-        cursor: none !important;
+    &__header-box {
+        width: 100%;
+    }
 
+    .swiper-container {
+        background-color: #fff;
+        height: 48rem;
+        -webkit-box-reflect: below 1px linear-gradient(transparent 80%, #00000050);
+        cursor: grab;
+        
+        flex: none
     }
     
     // .swiper-wrapper {
@@ -24,7 +31,7 @@
     // }
 
     .swiper-slide {
-        background-color: transparent;
+        // background-color: transparent;
         background-position: center;
         background-size: cover;
         width: 32rem;
@@ -47,9 +54,9 @@
         width: 100%;
         height: 100%;
         margin: 0 auto;
-        background: #222;
+        background: #333;
         text-align: center;
-        overflow: hidden;
+        overflow: hidden !important;
         border-radius: 5px;
     }
 
@@ -59,7 +66,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: linear-gradient(lightblue, white);
+        background: linear-gradient(#ff0000, #860606);
         z-index: 1;
         transition: .5s;
     }
@@ -82,7 +89,7 @@
         z-index: 2;
         p {
             font-size: 18px;
-            color: #eee;
+            color: var(--color-secondary-opposite);
             line-height: 24px;
             margin: 30px 0 30px 0;
             padding: .5rem;
@@ -94,7 +101,7 @@
             align-items: center;
             overflow: hidden;
             border-radius: 50%;
-            border: 3px solid grey;
+            border: 3px solid white;
             width: 100px;
             height: 100px;
 
@@ -121,6 +128,6 @@
     }
 
     .card:hover .content h2 span {
-        color: blue;
+        // color: blue;
     }
 }

@@ -1,5 +1,6 @@
+const introElements = document.querySelectorAll('.fade')
+
 function showOrHideOnScroll() {
-    const introElements = document.querySelectorAll('.fade')
     introElements.forEach(element => {
         const top = element.getBoundingClientRect().top
         const screenPosition = window.innerHeight
@@ -19,11 +20,8 @@ function showOrHideOnScroll() {
 
                 element.classList.add('in')
                 element.classList.add('alreadyAnimated')
-
             }
         }
     })
-
 }
-
 window.addEventListener('scroll', showOrHideOnScroll)

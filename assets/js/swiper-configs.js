@@ -1,4 +1,4 @@
-var swiper = new Swiper('.swiper-container', {
+const swiper = new Swiper('.swiper-container', {
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
@@ -6,14 +6,14 @@ var swiper = new Swiper('.swiper-container', {
   coverflowEffect: {
     rotate: 20,
     stretch: 0,
-    depth: 150,
+    depth: 50,
     modifier: 1,
     slideShadows: true,
     freeMode: true,
   },
   loop: true,
   autoplay: {
-    delay: 3000,
+    delay: 2000,
     disableOnInteraction: false,
   },
 });

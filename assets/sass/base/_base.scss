@@ -23,8 +23,17 @@ body {
     position: relative;
 
     overflow-x: hidden;
-
+    
+    a {
+        &,
+        &:link,
+        &:visited {
+            color: green;
+            text-decoration: none !important;
+        }
+    }
 }
+
 
 section {
     margin-top: 0rem;
