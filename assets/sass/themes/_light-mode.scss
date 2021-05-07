@@ -1,9 +1,9 @@
 html[current-theme='light'] {
-    & * {
-        transition: color .3s ease-in,
-                    background-color .3s ease-in,
-                    border .3s ease-in,
-                    box-shadow .3s ease-in;
+    
+    * {
+        transition-timing-function: ease-out;
+        transition-duration: .2s;
+        transition-property: color, background-color, border, transform;
     }
 
     // COLORS
@@ -25,6 +25,8 @@ html[current-theme='light'] {
     --color-thumb: var(--color-transparent-dark-3);
 
     --color-border: var(--color-light-3);
+
+    --color-swiper-card: var(--color-primary);
 
     // BACKGROUND-IMAGE
     --bg-img-header: url("../../media/images/white-car-1-d.jpg");

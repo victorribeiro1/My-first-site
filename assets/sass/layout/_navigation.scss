@@ -19,7 +19,8 @@
 
     z-index: 2000000;
 
-    transition: .7s ease-in-out !important;
+    transition: top .3s linear,
+                background-color .2s ease-out !important;
 
     &__column {
         display: flex;

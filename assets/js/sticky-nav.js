@@ -13,4 +13,4 @@ function toggleNavVisibility() {
     lastScrollTop = scrollTop
 }
 
-    window.addEventListener('scroll', () => toggleNavVisibility())
+window.addEventListener('scroll', toggleNavVisibility)

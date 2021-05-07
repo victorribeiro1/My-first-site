@@ -14,14 +14,14 @@
     &.noScroll {
         pointer-events: none;
     }
-
+    
     // &__header {
-    // }
-
-    &__heading-box {
-        text-align: right;
-    }
-
+        // }
+        
+        &__heading-box {
+            text-align: right;
+        }
+        
     &__content-box {
         display: flex;
         justify-content: flex-end;

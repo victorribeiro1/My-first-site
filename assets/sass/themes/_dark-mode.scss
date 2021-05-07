@@ -1,11 +1,9 @@
 html[current-theme='dark'] {
 
-    // * {
-    //     transition: color .3s ease-in,
-    //                 background-color .3s ease-in,
-    //                 border .3s ease-in,
-    //                 box-shadow .3s ease-in;
-    // }
+    * {
+        transition-timing-function: ease-out;
+        transition-duration: .2s;
+    }
 
 
     // COLORS
@@ -30,6 +28,8 @@ html[current-theme='dark'] {
     --color-main-heading: var(--color-light-2);
     
     --color-border: #080808;
+
+    --color-swiper-card: var(--color-tertiary);
 
     // BACKGROUND-IMAGES
     --bg-img-header: url("../../media/images/black-car-4-d.jpg");

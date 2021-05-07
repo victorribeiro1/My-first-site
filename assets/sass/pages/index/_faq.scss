@@ -2,7 +2,8 @@
     background-color: var(--color-primary);
     padding-top: 4rem;
 
-    min-height: 100vh;
+    // min-height: 100vh;
+    height: auto;
 
     position: relative;
 
@@ -58,8 +59,8 @@
                 &:nth-of-type(1) {
                     transform: translateY(0) scale(1);
 
-                    transition: opacity .5s .2s ease-in,
-                                transform .8s .2s ease-out,
+                    transition: opacity .5s .0s ease-in,
+                                transform .8s .0s ease-out,
                                 height .5s,
                                 background-color .3s ease-in !important;
                                 ;
@@ -68,15 +69,15 @@
                 &:nth-of-type(2) {
                     transform: translateY(0) scale(1);
                     
-                    transition: opacity .5s .5s ease-in,
-                                transform .8s .5s ease-out,
+                    transition: opacity .5s .3s ease-in,
+                                transform .8s .3s ease-out,
                                 height .5s,
                                 background-color .3s ease-in !important;
                 }
                 
                 &:nth-of-type(3) {
-                    transition: opacity .5s .8s ease-in,
-                                transform .8s .8s ease-out,
+                    transition: opacity .5s .6s ease-in,
+                                transform .8s .6s ease-out,
                                 height .5s,
                                 background-color .3s ease-in !important;
 
@@ -84,24 +85,24 @@
                 }
                 
                 &:nth-of-type(4) {
-                    transition: opacity .5s 1.1s ease-in,
-                                transform .8s 1.1s ease-out,
+                    transition: opacity .5s .9s ease-in,
+                                transform .8s .9s ease-out,
                                 height .5s,
                                 background-color .3s ease-in !important;
 
                     transform: translateY(0) scale(1);
                 }
                 &:nth-of-type(5) {
-                    transition: opacity .5s 1.4s ease-in,
-                                transform .8s 1.4s ease-out,
+                    transition: opacity .5s 1.2s ease-in,
+                                transform .8s 1.2s ease-out,
                                 height .5s,
                                 background-color .3s ease-in !important;
 
                     transform: translateY(0) scale(1);
                 }
                 &:nth-of-type(6) {
-                    transition: opacity .5s 1.7s ease-in,
-                                transform .8s 1.7s ease-out,
+                    transition: opacity .5s 1.5s ease-in,
+                                transform .8s 1.5s ease-out,
                                 height .5s,
                                 background-color .3s ease-in !important;
 
