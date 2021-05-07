@@ -43,11 +43,10 @@
             width: 34rem;
             height: 39rem;
 
-          &:not(:last-child) {
-            //   margin-right: 20px;
-          }
-
-      }
+            &:not(:last-child) {
+              //   margin-right: 20px;
+            }
+        }
     }
 
     &__card {
@@ -79,7 +78,7 @@
         height: 100%;
 
         background: rgb(255,0,0);
-background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgb(236, 60, 60) 24%, rgb(226, 72, 72) 73%);
+        background: linear-gradient(180deg, rgba(255,0,0,1) 0%, rgb(236, 60, 60) 24%, rgb(226, 72, 72) 73%);
         // z-index: 0;
 
         transition: .4s !important;
