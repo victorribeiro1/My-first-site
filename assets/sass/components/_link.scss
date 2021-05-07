@@ -50,9 +50,11 @@
         display: inline-block;
         letter-spacing: 1px;
     }
-
+    
     &:hover .link__letter {
         animation: link var(--seconds) ease-in-out;
+        animation-play-state: running;
+
 
         &:nth-child(1) {
             animation-delay: 200ms;

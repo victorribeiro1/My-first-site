@@ -32,8 +32,6 @@ html[current-theme='dark'] {
   --box-shadow-swipe-button-ball: 2px  2px 7px #000000e8,-2px -2px 7px #2b272783;
   --menu-background-blur: .9px;
   --font-weight: thin; }
-  html[current-theme='dark'] * {
-    transition: color .3s ease-in, background-color .3s ease-in, border .3s ease-in, box-shadow .3s ease-in; }
 
 html[current-theme='light'] {
   --color-primary: var(--color-light-1);
@@ -680,7 +678,8 @@ body {
   letter-spacing: 1px; }
 
 .link:hover .link__letter {
-  animation: link var(--seconds) ease-in-out; }
+  animation: link var(--seconds) ease-in-out;
+  animation-play-state: running; }
   .link:hover .link__letter:nth-child(1) {
     animation-delay: 200ms; }
   .link:hover .link__letter:nth-child(2) {
@@ -1231,92 +1230,90 @@ body {
 
 .evaluations {
   background-color: #111;
-  min-height: 100vh;
-  max-width: 100%;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  overflow-y: hidden; }
-  .evaluations__header-box {
-    width: 100%; }
+  height: 100vh;
+  max-width: 100%; }
   .evaluations .swiper-container {
-    background-color: #fff;
-    height: 48rem;
-    -webkit-box-reflect: below 1px linear-gradient(transparent 80%, #00000050);
-    cursor: grab;
-    flex: none; }
+    -webkit-box-reflect: below 1px linear-gradient(transparent 80%, #0009); }
+    .evaluations .swiper-container-3d .swiper-slide-shadow {
+      height: 48rem; }
+      .evaluations .swiper-container-3d .swiper-slide-shadow-left, .evaluations .swiper-container-3d .swiper-slide-shadow-right {
+        background: none; }
   .evaluations .swiper-slide {
+    background: #ff0000;
     background-position: center;
     background-size: cover;
-    width: 32rem;
-    height: 90%;
-    margin: 0 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 2.5rem;
-    perspective: 9999px; }
-  .evaluations .swiper-slide-shadow-left,
-  .evaluations .swiper-slide-shadow-right {
-    background-image: none; }
-  .evaluations .card {
+    width: 350px;
+    min-height: 400px; }
+  .evaluations__card {
     position: relative;
     width: 100%;
-    height: 100%;
-    margin: 0 auto;
+    height: 400px;
     background: #333;
     text-align: center;
-    overflow: hidden !important;
-    border-radius: 5px; }
-  .evaluations .layer {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2; }
+  .evaluations__layer {
     position: absolute;
     top: calc(100% - 2px);
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(#ff0000, #860606);
-    z-index: 1;
-    transition: .5s; }
-  .evaluations .card:hover .layer {
+    background: linear-gradient(to bottom, #03a9f4, #e31ee3);
+    transition: .4s !important; }
+  .evaluations__card:hover .evaluations__layer {
     top: 0; }
-  .evaluations .content {
-    background-color: transparent;
+  .evaluations__content-box {
     position: relative;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 2; }
-    .evaluations .content p {
-      font-size: 18px;
-      color: var(--color-secondary-opposite);
-      line-height: 24px;
-      margin: 30px 0 30px 0;
-      padding: .5rem; }
-    .evaluations .content .img-box {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      border-radius: 50%;
-      border: 3px solid white;
-      width: 100px;
-      height: 100px; }
-      .evaluations .content .img-box img {
-        background: #87BDD3;
-        width: 100%; }
-        .evaluations .content .img-box img.tom {
-          width: 150%; }
-    .evaluations .content h2 {
-      font-size: 18px;
-      color: white; }
-      .evaluations .content h2 span {
-        color: lightblue;
-        font-feature-settings: 14px;
-        transition: .5s; }
+    justify-content: space-between; }
+  .evaluations__evaluator-img-box {
+    position: relative;
+    width: 100%;
+    height: 28%;
+    margin: 0 auto; }
+  .evaluations__evaluator-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    border: 4px solid #eee;
+    width: 100px;
+    height: 100px;
+    object-fit: cover; }
+  .evaluations__evaluation-text-box {
+    width: 100%;
+    height: 28%;
+    z-index: 2;
+    display: flex;
+    align-items: center; }
+  .evaluations__evaluation-text-box {
+    width: 90%; }
+  .evaluations__evaluation-text {
+    font-size: 1.8rem;
+    line-height: 24px;
+    font-weight: 500;
+    color: #eee; }
+  .evaluations__evaluator-details-box {
+    width: 100%;
+    height: 13%;
+    z-index: 1; }
+  .evaluations__evaluator-name {
+    color: #eee;
+    font-weight: 1000;
+    font-size: 1.8rem;
+    line-height: 28px; }
+  .evaluations__evaluator-profession {
+    color: #03a9f4;
+    font-weight: 1000;
+    font-size: 1.7rem; }
 
 .faq {
   background-color: var(--color-primary);
