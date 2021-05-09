@@ -3,8 +3,8 @@ const slider = document.querySelector('.slider')
 const imagesPosition = ['first', 'second', 'tertiary']
 
 let imageIndex = 0
-
-function setNextIndex() {
+                        
+function setNextIndex()  {
     imageIndex++
     imageIndex = imageIndex > imagesPosition.length - 1 ? imageIndex = 0 : imageIndex
 }
