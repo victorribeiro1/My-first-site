@@ -147,7 +147,7 @@
             height: 14.5rem;
 
             & .faq__arrow {
-                transform: rotate(45deg);
+                transform: rotate(225deg);
             }
         }
     }
@@ -184,9 +184,9 @@
         border-bottom: 1px solid var(--color-primary-opposite);
         border-right: 1px solid var(--color-primary-opposite);
         
-        transform: rotate(-45deg);
+        transform: rotate(45deg);
         // transform-origin: 3rem -1.4rem;
-        transform-origin: right;
+        transform-origin: center;
 
         transition: transform .5s,
                     opacity .5s !important;

@@ -1316,6 +1316,8 @@ body {
     line-height: 24px;
     font-weight: 1000;
     color: var(--color-secondary-opposite); }
+  .evaluations__card:hover .evaluations__evaluation-text {
+    color: var(--color-primary); }
   .evaluations__evaluator-details-box {
     width: 100%;
     height: 13%;
@@ -1325,6 +1327,8 @@ body {
     font-weight: 1000;
     font-size: 1.9rem;
     line-height: 28px; }
+  .evaluations__card:hover .evaluations__evaluator-name {
+    color: var(--color-primary); }
   .evaluations__evaluator-profession {
     color: #03a9f4;
     font-weight: 1000;
@@ -1400,7 +1404,7 @@ body {
     .faq__question-and-answer-box:hover {
       height: 14.5rem; }
       .faq__question-and-answer-box:hover .faq__arrow {
-        transform: rotate(45deg); }
+        transform: rotate(225deg); }
   .faq__question-box {
     display: flex;
     justify-content: flex-start;
@@ -1421,8 +1425,8 @@ body {
     right: 45px;
     border-bottom: 1px solid var(--color-primary-opposite);
     border-right: 1px solid var(--color-primary-opposite);
-    transform: rotate(-45deg);
-    transform-origin: right;
+    transform: rotate(45deg);
+    transform-origin: center;
     transition: transform .5s, opacity .5s !important; }
   .faq__answer-box {
     display: flex;
