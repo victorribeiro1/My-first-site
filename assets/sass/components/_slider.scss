@@ -1,23 +1,23 @@
 .slider {    
     transition: background-image .4s ease-in !important;    
-    &.image {
-        &--1 {
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-image: var(--bg-img-header-1);
-        }
-        &--2 {
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-image: var(--bg-img-header-2);
-        }
-        &--3 {
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-image: var(--bg-img-header-3);
-        }
+
+    &[data-slide = first] {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: var(--bg-img-header-1);
+    }
+
+    &[data-slide = second] {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: var(--bg-img-header-2);
+    }
+    &[data-slide = tertiary] {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-image: var(--bg-img-header-3);
     }
 }

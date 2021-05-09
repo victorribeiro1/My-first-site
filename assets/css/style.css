@@ -151,9 +151,9 @@ html[current-theme='light'] {
   --main-button-width: 21rem; }
 
 .slider {
-  --bg-img-header-1: url("url(../../../../media/images/black-car-4-d.jpg");
-  --bg-img-header-2: url("url(../../../../media/images/black-car-2-d.jpg");
-  --bg-img-header-3: url("url(../../../../media/images/white-car-1-d.jpg"); }
+  --bg-img-header-1: url("url(../../../../media/images/car-slider.jpg");
+  --bg-img-header-2: url("url(../../../../media/images/truck-slider.jpg");
+  --bg-img-header-3: url("url(../../../../media/images/bulldozer-slider.jpg"); }
 
 *,
 *::before,
@@ -759,17 +759,17 @@ body {
 
 .slider {
   transition: background-image .4s ease-in !important; }
-  .slider.image--1 {
+  .slider[data-slide=first] {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: var(--bg-img-header-1); }
-  .slider.image--2 {
+  .slider[data-slide=second] {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: var(--bg-img-header-2); }
-  .slider.image--3 {
+  .slider[data-slide=tertiary] {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
