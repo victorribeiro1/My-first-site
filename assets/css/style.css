@@ -1391,7 +1391,7 @@ body {
     line-height: 10px;
     display: inline-block; }
   .footer__link.link::before {
-    bottom: 21px; }
+    bottom: 20px; }
   .footer__not-link {
     text-transform: uppercase; }
     .footer__not-link--1 {
