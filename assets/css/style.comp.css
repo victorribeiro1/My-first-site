@@ -1576,7 +1576,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  box-shadow: 10px 0px 7px black;
   z-index: 0; }
   .services.noScroll {
     pointer-events: none; }
