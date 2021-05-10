@@ -11,6 +11,8 @@
 
     box-shadow: 10px 0px 7px black;
 
+    z-index: 0;
+
     &.noScroll {
         pointer-events: none;
     }

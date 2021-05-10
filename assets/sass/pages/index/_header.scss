@@ -9,8 +9,6 @@
 
     box-shadow: 0 2px 7px black;
 
-
-
     position: relative;
 
     overflow: hidden;
@@ -18,6 +16,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    z-index: 7;
 
     &.active {
         // transform: scaleX(.97);
