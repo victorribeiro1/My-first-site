@@ -1083,13 +1083,12 @@ body {
     position: relative; }
   .toggle-menu__icons-box {
     position: absolute;
-    bottom: 11rem;
-    right: 5rem;
+    bottom: 9rem;
+    right: 8rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 10rem;
-    z-index: 3;
+    width: 13rem;
     opacity: 0;
     transition: opacity 180ms 0s ease-out !important; }
 
