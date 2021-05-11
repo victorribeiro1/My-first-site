@@ -245,10 +245,14 @@ body {
   position: relative;
   display: inline-block;
   padding: 0 20px; }
-  .subheading__first-line {
-    display: block; }
-  .subheading__second-line {
-    display: block; }
+  .subheading--opposite {
+    color: #EEE; }
+  .subheading--left {
+    margin-right: 100%;
+    transform: translateX(0%); }
+  .subheading--right {
+    margin-left: 100%;
+    transform: translateX(-100%); }
   .subheading--left::before, .subheading--left::after, .subheading--right::before, .subheading--right::after {
     content: "";
     background-color: #ff0000;
@@ -1153,7 +1157,6 @@ body {
   align-items: right;
   z-index: 0; }
   .evaluations__header {
-    text-align: right;
     margin: 4rem 0 9rem 0; }
   .evaluations__swipe-container-box {
     margin-bottom: 80px; }
@@ -1571,6 +1574,64 @@ body {
     width: 11.8rem;
     position: relative;
     z-index: 1; }
+
+.performance {
+  height: 90vh;
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.377), black), url(../../media/images/portrait-car.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .performance__header-box {
+    margin-top: 4rem;
+    height: 30%; }
+  .performance__informations-box {
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3rem; }
+  .performance__information-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .performance__icon-box {
+    border: 1px solid #fff9;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    height: 13rem;
+    width: 13rem; }
+  .performance__icon {
+    fill: #EEE;
+    height: 6rem;
+    width: 6rem;
+    padding: 04px; }
+  .performance__numbers-box {
+    font-size: 6rem;
+    font-family: nunito-regular;
+    font-weight: 1000;
+    color: #EEE;
+    display: flex;
+    justify-self: center;
+    align-items: center; }
+  .performance__signal--plus {
+    font-size: 5rem; }
+  .performance__signal--percentage {
+    font-size: 4rem;
+    transform: translateY(15%); }
+  .performance__text {
+    text-transform: uppercase;
+    font-family: nunito-regular;
+    font-weight: 1000;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    color: #EEE; }
 
 .services {
   background-color: var(--color-secondary);

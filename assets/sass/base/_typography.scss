@@ -17,17 +17,23 @@ body {
     font-family: 'nunito-light';
 
     position: relative;
-
+    
     display: inline-block;
-
+    
     padding: 0 20px;
-
-    &__first-line {
-        display: block;
+    
+    &--opposite {
+        color: #EEE;
     }
 
-    &__second-line {
-        display: block;
+    &--left {
+        margin-right: 100%;
+        transform: translateX(0%);
+    }
+
+    &--right {
+        margin-left: 100%;
+        transform: translateX(-100%);
     }
 
     &--left::before,

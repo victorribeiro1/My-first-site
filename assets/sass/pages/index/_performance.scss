@@ -1,0 +1,97 @@
+.performance {
+
+    height: 90vh;
+
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.377), rgb(0, 0, 0)), url(../../media/images/portrait-car.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__header-box {
+        // background-color: lightblue;
+        margin-top: 4rem;
+        
+        height: 30%;
+    }
+
+    // &__header {
+    // }
+    
+    &__informations-box {
+        // background-color: lightgreen;
+
+        height: 70%;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        margin-bottom: 3rem;
+    }
+
+    &__information-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon-box {
+        border: 1px solid #fff9;
+        border-radius: 999px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 4rem;
+
+        height: 13rem;
+        width:  13rem;
+    }
+    &__icon {
+        fill: #EEE;
+
+        height: 6rem;
+        width:  6rem;
+
+        padding: 04px;
+    }
+
+    &__numbers-box {
+        font-size: 6rem;
+        font-family: nunito-regular;
+        font-weight: 1000;
+        // color: var(--color-primary);
+        color: #EEE;
+
+        display: flex;
+        justify-self: center;
+        align-items: center;
+    }
+
+    &__signal {
+
+        &--plus {
+            font-size: 5rem;
+        }
+
+        &--percentage {
+            font-size: 4rem;
+            transform: translateY(15%);
+        }
+    }
+    
+    &__text {
+        text-transform: uppercase;
+        font-family: nunito-regular;
+        font-weight: 1000;
+        letter-spacing: 3px;
+        font-size: 2rem;
+        color: #EEE;
+    }
+}

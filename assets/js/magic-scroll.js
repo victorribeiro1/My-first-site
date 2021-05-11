@@ -9,15 +9,17 @@ function showOrHideOnScroll() {
             if (element.classList.contains('alreadyAnimated')) {
                 
             } else {
-                if (element.classList.contains('benefits-section')) {
-                    const benefits = document.querySelectorAll('.benefits-section__benefits')
-                    console.log(benefits)
+                
+                
+                if (element.classList.contains('performance__counter')) {
+                    console.log('true')
+                    if (element.classList.contains('alreadyAnimated')) {
+                        console.log('has')
+                    } else {
+                        animateCounter()
+                    }
 
-                    benefits.forEach(benefit => {
-                            benefit.classList.add('in')
-                    })
                 }
-
                 element.classList.add('in')
                 element.classList.add('alreadyAnimated')
             }
