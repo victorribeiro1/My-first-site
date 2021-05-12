@@ -25,10 +25,14 @@ body {
     &--opposite {
         color: #EEE;
     }
-
+    
     &--left {
         margin-right: 100%;
         transform: translateX(0%);
+        
+            &.subheading--less-space {
+                margin-right: 80%;
+            }
     }
 
     &--right {

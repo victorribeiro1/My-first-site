@@ -1,39 +1,64 @@
 .contact {
-    min-height: 100vh;
+    // height: 100vh;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 
+    overflow: hidden;
+
     &__header {
-        background-color: lightblue;
+        // background-color: lightblue;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        margin-top: 4rem;
     }
 
     &__subheading {
+        font-family: 'nunito-extraLight';
         text-transform: uppercase;
+        color: var(--color-primary-opposite);
+        letter-spacing: 2px;
+        font-weight: 100;
     }
-
+    
     &__heading {
-
+        font-weight: 1000;
+        color: var(--color-primary-opposite);
+        font-size: 3.7rem;
+        
+        letter-spacing: 3px;
+        
+        margin: .5rem 0 1.5rem 0;
     }
     
     &__instruction-text {
-        color: blue;
+        color: var(--color-secondary-opposite);
+        color: #fff;
+        letter-spacing: 2px;
+        font-size: 1.5rem;
+        text-align: center;
+
+        max-width: 40rem;
     }
 
     &__content-box {
-        background-color: lightgreen;
+        background-color: red;
         
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-end;
 
+        overflow: hidden;
+
+        margin-top: 10rem;
+
+        min-height: 20rem;
         width: 100%;
     }
     
@@ -43,6 +68,8 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        height: 100%;
         width: 100%;
     }
     
@@ -79,7 +106,7 @@
     }
 
     &__img-box {
-        background-color: pink;
+        // background-color: pink;
     }
 
     &__img {
@@ -88,7 +115,7 @@
     }
 
     &__additional-informations-box {
-        background-color: wheat;
+        // background-color: wheat;
 
         height: 20vh;
         width: 100%;
@@ -99,7 +126,7 @@
     }
 
     &__additional-information {
-        background-color: #222;
+        // background-color: #222;
         height: 10rem;
         width:  10rem;
         &__img-box {
@@ -121,5 +148,18 @@
         &__text {
 
         }
+    }
+
+    &__gradient-background {
+
+        position: absolute;
+
+        background-color: lightblue;
+        height: 75rem;
+        width: 100%;
+
+        z-index: -1;
+
+        clip-path: polygon(0% 20%, 100% 40%, 100% 100%, 0% 100%);
     }
 }
