@@ -22,14 +22,16 @@
 @import "components/swipe-button";
 @import "components/vertical-carousel";
 
+@import "layout/footer";
 @import "layout/navigation";
 @import "layout/toggle-menu";
 
 @import "pages/index/about";
 @import "pages/index/evaluations";
 @import "pages/index/faq";
-@import "pages/index/footer";
 @import "pages/index/header";
 @import "pages/index/performance";
 @import "pages/index/services";
 @import "pages/test";
+
+@import "pages/contact";

@@ -1,179 +1,125 @@
 .contact {
-    background: #111;
-    height: 100vh;
-    // min-height: 65rem;
+    min-height: 100vh;
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
 
     &__header {
-        margin: 4rem 0 8rem 0;
+        background-color: lightblue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    &__heading-box {
+    &__subheading {
+        text-transform: uppercase;
+    }
 
+    &__heading {
+
+    }
+    
+    &__instruction-text {
+        color: blue;
     }
 
     &__content-box {
-        // background-color: lightgreen;
+        background-color: lightgreen;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 100%;
+    }
+    
+    &__form-box {
+        background-color: #fff;
+
         display: flex;
         justify-content: space-around;
         align-items: center;
-
-        height: 90%;
-    }
-
-    &__form-box {
-        // background-color: #ff0500;
-        
-        height: 100%;
-        width:   40%;
-
-        // order: 2;
+        width: 100%;
     }
     
     &__form {
-        background-color: var(--color-secondary);
-        border-radius: 10px 10px 0 0;
+        background-color: orangered;
 
-        overflow: hidden;
+        &__img-box {
 
-        height: 100%;
-        width:  100%;
-
-        display: flex;
-        flex-direction: column;
-
-    }
-    
-    &__form-header {
-        // background-color: #D6D6D6;
-        border-bottom: 1px solid black;
-
-        padding: 15px;
-
-        width: 100%;
-
-    }
-    
-    &__form-heading {
-        color: var(--color-secondary-opposite);
-        font-size: 2rem;
-    }
-    
-    &__form-content-box {
-        // background-color: wheat;
-
-        height: 100%;
-        width: 100%;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &__form-content {
-        // background-color: pink;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-
-        height: 85%;
-        width:  85%;
-    }
-
-    &__services,
-    &__medias,
-    &__send-button {
-        // background-color: #111;
-
-        height: 6rem;
-        width: 100%;
-    }
-
-    &__services {
-        // border-top-left-radius: 10px;
-
-        overflow: hidden;
-    }
-
-    &__services-select {
-        background: #222;
-        border-radius: 999px;
-        border: 2px solid var(--color-tertiary-opposite);
-
-        cursor: pointer;
-
-        color: var(--color-secondary-opposite);
-        font-size: 2rem;
-
-        padding-left: 2rem;
-
-        height: 100%;
-        width: 100%;
-        
-        option {
-            background-color: var(--color-secondary);
-            border-radius: 20px;
-            border: 0;
-            outline: none;
         }
-    }
-    
-    &__medias {
         
-    }
-    
-    &__send-button {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-    }
+        &__img {
 
-    &__button {
-        // background-color: brown;
+        }
+        
+        &__row {
 
-        --main-button-width: 20rem;
+        }
+        
+        &__hint {
 
-        height: 80%;
-        width: 38%;
+        }
+        
+        &__select {
 
-        justify-content: space-around;
-    }
+        }
+        
+        &__option {
 
-    &__arrow {
-        height: 1.2rem;
-        width:  1.2rem;
-    }
+        }
+        
+        &__button {
 
-    &__text {
-        color: var(--color-secondary);
-        font-size: 2.2rem;
-        font-weight: 999;
+        }
     }
 
     &__img-box {
-        // background-color: #000550;
-    
-        height: 100%;
-        width:  40%;
-    
+        background-color: pink;
+    }
+
+    &__img {
+        height: auto;
+        width:  30rem;
+    }
+
+    &__additional-informations-box {
+        background-color: wheat;
+
+        height: 20vh;
+        width: 100%;
+
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
     }
-    
-    &__img {
-        font-size: 1px;
-        height: 60rem;
-        width:  60rem;
 
-        position: relative;
-        left: -35px;
+    &__additional-information {
+        background-color: #222;
+        height: 10rem;
+        width:  10rem;
+        &__img-box {
 
-        fill: black;
+        } 
+
+        &__img {
+
+        }
+        
+        &__text-box {
+
+        } 
+
+        &__heading {
+
+        }
+
+        &__text {
+
+        }
     }
 }
