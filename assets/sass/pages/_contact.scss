@@ -252,7 +252,6 @@
         box-shadow: -2px -5px 10px 20px white;
 
         background-color: red;
-        // background: linear-gradient(to right, rgb(248, 60, 60) 24%, rgb(151, 34, 342) 94%);
         background: linear-gradient(to right, rgb(248, 60, 60) 24%, rgb(189, 12, 130) 94%);
 
         height: 100rem;
@@ -261,23 +260,5 @@
         z-index: -1;
 
         clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 0% 100%);
-
-        // &::before {
-        //     content: '';
-
-        //     position: absolute;
-        //     top: 25%;
-
-        //     filter: blur(10px);
-
-        //     display: block;
-
-        //     background-color: #fff;
-
-        //     height: 2px;
-        //     width:  110%;
-
-        //     transform: rotate(-8.75deg) translateX(-10px);
-        // }
     }
 }
