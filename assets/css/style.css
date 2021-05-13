@@ -1754,47 +1754,105 @@ body {
     width: 100%; }
   .contact__form {
     background-color: #FFF;
+    border-radius: 2px;
     box-shadow: 0px 0px 8px 10px rgba(0, 0, 0, 0.178);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 40rem;
-    width: 40rem; }
-    .contact__form__img-box {
-      background-color: lightblue; }
+    min-height: 48rem;
+    width: 56rem; }
     .contact__form__img {
       fill: linear-gradient(to right, #f83c3c 24%, #bd0c82 94%) !important;
       color: transparent;
-      height: 7rem;
-      width: 7rem; }
+      height: 10rem;
+      width: 10rem;
+      fill: #3F3D56; }
     .contact__form__row {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: lightblue;
       height: 5rem;
       width: 90%; }
+      .contact__form__row:last-child {
+        margin-top: 3rem;
+        margin-bottom: 1rem; }
+    .contact__form__hint {
+      color: var(--color-primary);
+      color: #51557B;
+      font-size: 2rem;
+      font-weight: 1000;
+      width: 30%; }
+    .contact__form__select {
+      background-color: #e4ecf5;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+      height: 100%;
+      width: 60%;
+      color: #8fa0b3;
+      font-size: 1.8rem; }
+    .contact__form__option {
+      background-color: #ffffff;
+      color: #51557B;
+      border-radius: 5px;
+      cursor: pointer; }
     .contact__form__button {
-      background: linear-gradient(to right, #f83c3c 24%, #bd0c82 94%); }
+      background: linear-gradient(240deg, #f83c3c 24%, #bd0c82 94%);
+      border-radius: 5px;
+      border: 0;
+      cursor: pointer;
+      margin: 0 auto;
+      height: 100%;
+      width: 60%;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #ffffff;
+      letter-spacing: 1px; }
   .contact__img {
     height: auto;
-    width: 30rem; }
+    width: 57rem; }
   .contact__additional-informations-box {
-    height: 20vh;
     width: 100%;
+    padding: 10rem 0;
     display: flex;
     justify-content: space-around;
     align-items: center; }
   .contact__additional-information {
-    height: 10rem;
-    width: 10rem; }
+    min-height: 10rem;
+    min-width: 10rem;
+    max-width: 50rem;
+    display: flex; }
+    .contact__additional-information__img-box {
+      margin-right: 3rem; }
+    .contact__additional-information__img {
+      transform: translateY(-10px); }
+      .contact__additional-information__img--bolt {
+        fill: yellow;
+        height: 5rem;
+        width: 5rem;
+        transform: translateY(-16px) rotate(20deg) translateX(20px); }
+      .contact__additional-information__img--chat {
+        height: 5rem;
+        width: 5rem;
+        fill: #4a8bd6; }
+    .contact__additional-information__heading {
+      color: #FFF;
+      font-weight: 1000;
+      font-size: 2.4rem;
+      margin-bottom: .7rem; }
+    .contact__additional-information__text {
+      color: #FFF;
+      font-weight: 500;
+      font-size: 1.9rem; }
   .contact__gradient-background {
     position: absolute;
     box-shadow: -2px -5px 10px 20px white;
     background-color: red;
     background: linear-gradient(to right, #f83c3c 24%, #bd0c82 94%);
-    height: 75rem;
+    height: 100rem;
     width: 100%;
     z-index: -1;
-    clip-path: polygon(0% 40%, 100% 12%, 100% 100%, 0% 100%); }
+    clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 0% 100%); }

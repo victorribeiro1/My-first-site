@@ -75,6 +75,7 @@
     
     &__form {
         background-color: #FFF;
+        border-radius: 2px;
 
         box-shadow: 0px 0px 8px 10px rgba(0, 0, 0, 0.178);
 
@@ -83,18 +84,20 @@
         justify-content: space-around;
         align-items: center;
 
-        height: 40rem;
-        width:  40rem;
+        min-height: 48rem;
+        width:  56rem;
+        
 
         &__img-box {
-            background-color: lightblue;
+            // background-color: rgb(230, 173, 173);
         }
         
         &__img {
             fill: linear-gradient(to right, rgb(248, 60, 60) 24%, rgb(189, 12, 130) 94%) !important;
             color: transparent;
-            height: 7rem;
-            width:  7rem;
+            height: 10rem;
+            width:  10rem;
+            fill: #3F3D56;
         }
         
         &__row {
@@ -102,26 +105,68 @@
             justify-content: space-between;
             align-items: center;
 
-            background-color: lightblue;
+            // background-color: lightblue;
 
             height: 5rem;
             width:  90%;
+
+            &:last-child {
+                margin-top: 3rem;
+                margin-bottom: 1rem;
+            }
         }
         
         &__hint {
+            color: var(--color-primary);
+            color: #51557B;
+            font-size: 2rem;
+            font-weight: 1000;
 
+            width: 30%;
         }
         
         &__select {
+            background-color: #e4ecf5;
+            border-radius: 5px;
+            border: none;
 
+            cursor: pointer;
+
+            padding: 10px;
+            
+            height: 100%;
+            width: 60%;
+            
+            color: #8fa0b3;
+            font-size: 1.8rem;
         }
         
         &__option {
+            background-color: #ffffff;
+            color: #51557B;
+            border-radius: 5px;
 
+            cursor: pointer;
         }
         
         &__button {
-            background: linear-gradient(to right, rgb(248, 60, 60) 24%, rgb(189, 12, 130) 94%);
+            background: linear-gradient(240deg, #f83c3c 24%, #bd0c82 94%);
+            // background-color: #f83c3c;
+            border-radius: 5px;
+            border: 0;
+
+            cursor: pointer;
+
+            margin: 0 auto;
+
+            height: 100%;
+            width:   60%;
+
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 1px;
         }
     }
 
@@ -131,14 +176,16 @@
 
     &__img {
         height: auto;
-        width:  30rem;
+        width:  57rem;
     }
 
     &__additional-informations-box {
         // background-color: wheat;
 
-        height: 20vh;
+        // min-height: 20vh;
         width: 100%;
+
+        padding: 10rem 0;
 
         display: flex;
         justify-content: space-around;
@@ -146,28 +193,55 @@
     }
 
     &__additional-information {
-        // background-color: #222;
-        height: 10rem;
-        width:  10rem;
+        // background-color: lightblue;
+        min-height: 10rem;
+        min-width:  10rem;
+        max-width: 50rem;
+
+        display: flex;
 
         &__img-box {
-            
+            // background-color: lightgreen;
+            margin-right: 3rem;
         } 
-
+        
         &__img {
+            
+            &--bolt {
+                fill: yellow;
+                
+                height: 5rem;
+                width:  5rem;
 
+                transform: translateY(-16px) rotate(20deg) translateX(20px);
+            }
+            
+            &--chat {
+                height: 5rem;
+                width:  5rem;
+
+                fill: #4a8bd6;
+            }
+
+            transform: translateY(-10px);
         }
         
         &__text-box {
-
+            // background-color: rgb(246, 93, 195);
         } 
-
+        
         &__heading {
+            color: #FFF;
+            font-weight: 1000;
+            font-size: 2.4rem;
 
+            margin-bottom: .7rem;
         }
-
+        
         &__text {
-
+            color: #FFF;
+            font-weight: 500;
+            font-size: 1.9rem;
         }
     }
 
@@ -181,12 +255,12 @@
         // background: linear-gradient(to right, rgb(248, 60, 60) 24%, rgb(151, 34, 342) 94%);
         background: linear-gradient(to right, rgb(248, 60, 60) 24%, rgb(189, 12, 130) 94%);
 
-        height: 75rem;
+        height: 100rem;
         width: 100%;
 
         z-index: -1;
 
-        clip-path: polygon(0% 40%, 100% 12%, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 0% 100%);
 
         // &::before {
         //     content: '';
