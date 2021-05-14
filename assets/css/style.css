@@ -176,7 +176,6 @@ body {
   background-size: cover;
   box-sizing: border-box;
   position: relative;
-  overflow-x: hidden;
   width: 100%; }
   body.menu-is-active {
     overflow: hidden; }
@@ -1085,7 +1084,7 @@ body {
     .toggle-menu__checkbox:checked ~ .toggle-menu__button-box .toggle-menu__button-background {
       transform: translate(50%, -50%) scale(1); }
     .toggle-menu__checkbox:checked ~ .toggle-menu__background-box .toggle-menu__background {
-      transform: scale(45); }
+      transform: scale(48); }
     .toggle-menu__checkbox:checked ~ .toggle-menu__nav {
       display: flex; }
     .toggle-menu__checkbox:checked ~ .toggle-menu__nav .toggle-menu__list-box,
