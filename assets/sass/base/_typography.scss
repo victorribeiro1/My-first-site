@@ -1,3 +1,15 @@
+html {
+    font-size: 62.5%; // 1rem = 10px
+    
+    @media only screen and (max-width: $second-breakpoint) {
+        font-size: 56.25%; // 1rem = 9px
+    }
+
+    @media only screen and (max-width: $third-breakpoint) {
+        font-size: 10%; // 1rem = 8px
+    }
+}
+
 body {
     font-family: "nunito-extraLight", 'aeonik-light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.4;
@@ -31,7 +43,11 @@ body {
         transform: translateX(0%);
         
             &.subheading--less-space {
-                margin-right: 80%;
+                margin-right: 78%;
+                
+                @media only screen and (max-width: $first-breakpoint) {
+                    margin-right: 76%;
+                }
             }
     }
 

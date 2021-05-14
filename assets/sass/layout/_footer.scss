@@ -8,6 +8,10 @@
     justify-content: space-between;
 
     padding: 6rem 8rem 3rem 6rem;
+    
+    @media only screen and (max-width: $second-breakpoint) {
+        padding: 6rem 3rem 3rem 3rem;
+    }
 
     &__links-area {
         // background-color: #fff;
@@ -15,7 +19,7 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-
+        
         width: 100%;
     }
 
@@ -24,6 +28,14 @@
 
     &__logo {
         width: 18rem;
+        
+        @media only screen and (max-width: $first-breakpoint) {
+            width: 16rem;
+        }
+
+        @media only screen and (max-width: $second-breakpoint) {
+            width: 19rem;
+        }
     }
 
     &__enterprise-about {
@@ -35,6 +47,16 @@
         margin-top: 2rem;
 
         max-width: 35rem;
+        
+        @media only screen and (max-width: $first-breakpoint) {
+            max-width: 33rem;
+            font-size: 1.3rem;
+        }
+
+        @media only screen and (max-width: $second-breakpoint) {
+            max-width: 33rem;
+            font-size: 1.3rem;
+        }
     }
 
     // &__row {
@@ -48,15 +70,19 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
-
+        
         // width: 12%;
         
         // &:first-child {
-        //     background-color: aliceblue;
-        //     width: 15%;
-        // }
-        // &:nth-child(5) {
-        //     width: 10%;
+            //     background-color: aliceblue;
+            //     width: 15%;
+            // }
+            // &:nth-child(5) {
+                //     width: 10%;
+                // }
+                
+        // &--about {
+            // align-items: center;
         // }
     }
 
@@ -66,6 +92,14 @@
         text-transform: uppercase;
 
         margin-bottom: 3rem;
+
+        @media only screen and (max-width: $first-breakpoint) {
+            font-size: 1.5rem;
+        }
+
+        @media only screen and (max-width: $second-breakpoint) {
+            font-size: 1.8rem;
+        }
     }
     
     &__list {
@@ -90,8 +124,16 @@
             color: #ccc !important;
             font-size: 1.3rem;
             line-height: 10px;
-
+            
             display: inline-block;
+            
+            @media only screen and (max-width: $first-breakpoint) {
+                font-size: 1.1rem;
+            }
+
+            @media only screen and (max-width: $second-breakpoint) {
+                font-size: 1.3rem;
+            }
         }
 
         &.link {

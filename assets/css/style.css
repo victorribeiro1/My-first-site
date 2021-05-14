@@ -161,13 +161,12 @@ html[current-theme='light'] {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
-  outline: none; }
+  outline: none !important; }
 
 html {
-  background-color: #fff;
-  font-size: 62.5%;
   scroll-behavior: smooth;
   position: relative;
+  width: 100%;
   overflow-x: hidden; }
 
 body {
@@ -176,6 +175,7 @@ body {
   background-size: cover;
   box-sizing: border-box;
   position: relative;
+  overflow-x: hidden;
   width: 100%; }
   body.menu-is-active {
     overflow: hidden; }
@@ -183,12 +183,9 @@ body {
     color: green;
     text-decoration: none !important; }
 
-section {
-  margin-top: 0rem; }
-
 ::selection {
-  background-color: #d35c5c;
-  color: #fff; }
+  background-color: transparent;
+  color: #ff0000; }
 
 @font-face {
   src: url("../../media/fonts/aeonik/Aeonik-Air.otf");
@@ -229,6 +226,15 @@ section {
   ::-webkit-scrollbar-track {
     background-color: var(--color-quaternary); }
 
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 71.875em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 65em) {
+    html {
+      font-size: 10%; } }
+
 body {
   font-family: "nunito-extraLight", 'aeonik-light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.4; }
@@ -253,7 +259,10 @@ body {
     margin-right: 100%;
     transform: translateX(0%); }
     .subheading--left.subheading--less-space {
-      margin-right: 80%; }
+      margin-right: 78%; }
+      @media only screen and (max-width: 77.5em) {
+        .subheading--left.subheading--less-space {
+          margin-right: 76%; } }
   .subheading--right {
     margin-left: 100%;
     transform: translateX(-100%); }
@@ -914,6 +923,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   padding: 6rem 8rem 3rem 6rem; }
+  @media only screen and (max-width: 71.875em) {
+    .footer {
+      padding: 6rem 3rem 3rem 3rem; } }
   .footer__links-area {
     display: flex;
     justify-content: space-between;
@@ -921,6 +933,12 @@ body {
     width: 100%; }
   .footer__logo {
     width: 18rem; }
+    @media only screen and (max-width: 77.5em) {
+      .footer__logo {
+        width: 16rem; } }
+    @media only screen and (max-width: 71.875em) {
+      .footer__logo {
+        width: 19rem; } }
   .footer__enterprise-about {
     color: #ccc;
     font-weight: 100;
@@ -928,6 +946,14 @@ body {
     letter-spacing: 2px;
     margin-top: 2rem;
     max-width: 35rem; }
+    @media only screen and (max-width: 77.5em) {
+      .footer__enterprise-about {
+        max-width: 33rem;
+        font-size: 1.3rem; } }
+    @media only screen and (max-width: 71.875em) {
+      .footer__enterprise-about {
+        max-width: 33rem;
+        font-size: 1.3rem; } }
   .footer__list-box {
     display: flex;
     flex-direction: column;
@@ -938,6 +964,12 @@ body {
     font-size: 1.6rem;
     text-transform: uppercase;
     margin-bottom: 3rem; }
+    @media only screen and (max-width: 77.5em) {
+      .footer__list-heading {
+        font-size: 1.5rem; } }
+    @media only screen and (max-width: 71.875em) {
+      .footer__list-heading {
+        font-size: 1.8rem; } }
   .footer__list {
     display: flex;
     flex-direction: column;
@@ -951,6 +983,12 @@ body {
     font-size: 1.3rem;
     line-height: 10px;
     display: inline-block; }
+    @media only screen and (max-width: 77.5em) {
+      .footer__link, .footer__link:link, .footer__link:visited {
+        font-size: 1.1rem; } }
+    @media only screen and (max-width: 71.875em) {
+      .footer__link, .footer__link:link, .footer__link:visited {
+        font-size: 1.3rem; } }
   .footer__link.link::before {
     bottom: 20px; }
   .footer__not-link {
@@ -1013,12 +1051,15 @@ body {
   align-items: center;
   list-style: none;
   padding: 1.4rem 2rem;
-  position: sticky;
+  position: fixed;
   top: 0;
   height: var(--navigation-width);
   width: 100%;
   z-index: 8;
   transition: top .3s linear, background-color .2s ease-out !important; }
+  .nav__substitute {
+    background-color: var(--color-secondary);
+    height: var(--navigation-width); }
   .nav__column {
     display: flex;
     justify-content: space-between;
@@ -1471,7 +1512,7 @@ body {
 .header {
   background-color: var(--color-secondary);
   margin-top: calc(var(--navigation-width) * -1);
-  min-height: 625px;
+  min-height: 61rem;
   height: 100vh;
   box-shadow: 0 2px 7px black;
   position: relative;

@@ -1,18 +1,18 @@
 .nav {
     background-color: var(--color-secondary);
     box-shadow: 0px 2px 7px #000; 
-
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     
     list-style: none;
-  
+    
     padding: 1.4rem 2rem;
-
+    
     // margin-bottom: 2rem;
 
-    position: sticky;
+    position: fixed;
     top: 0;
     height: var(--navigation-width);
     width: 100%;    
@@ -23,8 +23,12 @@
     background-color .2s ease-out !important;
     
     // display: none;
-
-
+    
+    &__substitute {
+        background-color: var(--color-secondary);
+        height: var(--navigation-width);
+    }
+    
     &__column {
         display: flex;
         justify-content: space-between;
