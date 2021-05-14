@@ -231,9 +231,12 @@ html {
   @media only screen and (max-width: 71.875em) {
     html {
       font-size: 56.25%; } }
-  @media only screen and (max-width: 65em) {
+  @media only screen and (max-width: 59.375em) {
     html {
-      font-size: 10%; } }
+      font-size: 48%; } }
+  @media only screen and (max-width: 51.25em) {
+    html {
+      font-size: 44%; } }
 
 body {
   font-family: "nunito-extraLight", 'aeonik-light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
