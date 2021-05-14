@@ -9,9 +9,12 @@
 }
 
 html {
+    background-color: #fff;
     font-size: 62.5%; // 1rem = 10px
     scroll-behavior: smooth;
     position: relative;
+
+    overflow-x: hidden;
 }
 
 body {
@@ -23,6 +26,8 @@ body {
     position: relative;
 
     overflow-x: hidden;
+
+    width: 100%;
 
     &.menu-is-active {
         overflow: hidden;

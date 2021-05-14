@@ -24,6 +24,28 @@
         // background-color: #fff;
         // background: linear-gradient(110deg, rgb(237, 251, 255), rgb(117, 117, 194) 40%,rgb(192, 31, 85), rgb(255, 0, 0) 100%);
 
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    
+        .icon {            
+            height: 1.1rem;
+            width:  1.1rem;
+            
+            &--moon {
+                transform: translate(-2px, -1px);
+                fill: #000000;
+                fill: #D6D6D6;
+            }
+            
+            &--sun {
+                fill: #ebc47d;
+
+                height: 1.7rem;
+                width:  1.7rem;
+                transform: translate(-4px, -1px);
+            }
+        }
     }
     
     &__ball {
@@ -39,8 +61,9 @@
         left: -1px;
         transform: translateY(-50%);
         transition: .4s cubic-bezier(0.455, 0.03, 0.515, 0.955) !important;
-        
+
     }
+
     &.active .swipe-button__ball {
         left: 33px;
     }

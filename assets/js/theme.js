@@ -9,4 +9,6 @@ swipeButton.addEventListener('click', () => {
     html.getAttribute('current-theme') === 'dark' ? 
     html.setAttribute('current-theme', 'light') : 
     html.setAttribute('current-theme', 'dark')
+
+    
 })

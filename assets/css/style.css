@@ -164,9 +164,11 @@ html[current-theme='light'] {
   outline: none; }
 
 html {
+  background-color: #fff;
   font-size: 62.5%;
   scroll-behavior: smooth;
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
 
 body {
   animation: intro 1s ease-in;
@@ -174,7 +176,8 @@ body {
   background-size: cover;
   box-sizing: border-box;
   position: relative;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  width: 100%; }
   body.menu-is-active {
     overflow: hidden; }
   body a, body a:link, body a:visited {
@@ -797,7 +800,22 @@ body {
     border-radius: 999px;
     position: absolute;
     height: 110%;
-    width: 110%; }
+    width: 110%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; }
+    .swipe-button__background .icon {
+      height: 1.1rem;
+      width: 1.1rem; }
+      .swipe-button__background .icon--moon {
+        transform: translate(-2px, -1px);
+        fill: #000000;
+        fill: #D6D6D6; }
+      .swipe-button__background .icon--sun {
+        fill: #ebc47d;
+        height: 1.7rem;
+        width: 1.7rem;
+        transform: translate(-4px, -1px); }
   .swipe-button__ball {
     border-radius: 50px;
     background: var(--bg-color-swipe-button-ball);
