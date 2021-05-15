@@ -1,11 +1,11 @@
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".about__img", {
-    y: -180,
+    y: -300,
     duration: 20,
     scrollTrigger: {
         trigger: ".about__text-area",
-        start: "top 50%",
+        start: "10% 50%",
         end: "bottom top",
         markers: false,
         toggleActions: "play reverse play resume",
@@ -19,7 +19,7 @@ gsap.to(".about__text-box", {
     duration: 9,
     scrollTrigger: {
         trigger: ".about__text-area",
-        start: "top 70%",
+        start: "10% 50%",
         end: "bottom top",
         markers: false,
         // end: "bottom 50%",

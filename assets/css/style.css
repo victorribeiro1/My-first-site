@@ -168,6 +168,8 @@ html {
   position: relative;
   width: 100%;
   overflow-x: hidden; }
+  html.menu-is-active {
+    overflow: hidden !important; }
 
 body {
   animation: intro 1s ease-in;
@@ -177,8 +179,6 @@ body {
   position: relative;
   overflow-x: hidden;
   width: 100%; }
-  body.menu-is-active {
-    overflow: hidden; }
   body a, body a:link, body a:visited {
     color: green;
     text-decoration: none !important; }
@@ -1259,7 +1259,7 @@ body {
 
 .about {
   background-color: var(--color-primary);
-  min-height: 150vh;
+  min-height: 130vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1270,9 +1270,8 @@ body {
     position: relative; }
   .about__text-area {
     position: relative;
-    top: -150px;
+    top: -50px;
     width: 100%;
-    height: 500px;
     display: flex;
     justify-content: space-around;
     align-items: center; }
@@ -1283,8 +1282,8 @@ body {
     justify-content: center;
     align-items: center; }
   .about__img {
-    border-radius: 5px;
-    width: 450px;
+    border-radius: 4px;
+    width: 43rem;
     position: relative;
     bottom: -200px; }
   .about__text-box {

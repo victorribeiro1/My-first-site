@@ -1,6 +1,6 @@
 .about {
     background-color: var(--color-primary);
-    min-height: 150vh;
+    min-height: 130vh;
 
     // margin-top: 58px;
 
@@ -19,10 +19,10 @@
 
     &__text-area {
         position: relative;
-        top: -150px;
+        top: -50px;
 
         width: 100%;
-        height: 500px;
+        // height: 500px;
 
         display: flex;
         justify-content: space-around;
@@ -40,8 +40,8 @@
     }
 
     &__img {
-        border-radius: 5px;
-        width: 450px;
+        border-radius: 4px;
+        width: 43rem;
         position: relative;
         bottom: -200px;
     }
