@@ -237,6 +237,24 @@ html {
   @media only screen and (max-width: 51.25em) {
     html {
       font-size: 44%; } }
+  @media only screen and (max-width: 46.875em) {
+    html {
+      font-size: 40%; } }
+  @media only screen and (max-width: 42.5em) {
+    html {
+      font-size: 37%; } }
+  @media only screen and (max-width: 39.375em) {
+    html {
+      font-size: 30%; } }
+  @media only screen and (max-width: 32.1875em) {
+    html {
+      font-size: 25%; } }
+  @media only screen and (max-width: 26.875em) {
+    html {
+      font-size: 20%; } }
+  @media only screen and (max-width: 21.25em) {
+    html {
+      font-size: 17%; } }
 
 body {
   font-family: "nunito-extraLight", 'aeonik-light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -313,11 +331,11 @@ body {
   margin-right: 3px; }
 
 .arrow {
-  border-top: 1px solid var(--color-secondary-opposite);
-  border-right: 1px solid var(--color-secondary-opposite);
+  border-top: 0.1rem solid var(--color-secondary-opposite);
+  border-right: 0.1rem solid var(--color-secondary-opposite);
   display: inline-block;
-  height: 8px;
-  width: 8px;
+  height: .8rem;
+  width: .8rem;
   transform: rotate(45deg) translateY(-1px); }
 
 .button {
@@ -1626,8 +1644,8 @@ body {
   .header__button-arrow {
     border-top: 2px solid var(--color-primary);
     border-right: 2px solid var(--color-primary);
-    height: 10px;
-    width: 10px; }
+    height: 1rem;
+    width: 1rem; }
   .header__icons-box {
     position: relative;
     bottom: 1.5rem;

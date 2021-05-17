@@ -10,7 +10,31 @@ html {
     }
 
     @media only screen and (max-width: $fourth-breakpoint) {
-        font-size: 44%; // 1rem = 7.68px
+        font-size: 44%; // 1rem = 7.08px
+    }
+
+    @media only screen and (max-width: $fifth-breakpoint) {
+        font-size: 40%; // 1rem = 7.68px
+    }
+
+    @media only screen and (max-width: $sixth-breakpoint) {
+        font-size: 37%; // 1rem = 7.68px
+    }
+
+    @media only screen and (max-width: $seventh-breakpoint) {
+        font-size: 30%; // 1rem = 7.68px
+    }
+
+    @media only screen and (max-width: $eighth-breakpoint) {
+        font-size: 25%; // 1rem = 7.68px
+    }
+
+    @media only screen and (max-width: $ninth-breakpoint) {
+        font-size: 20%; // 1rem = 7.68px
+    }
+
+    @media only screen and (max-width: $tenth-breakpoint) {
+        font-size: 17%; // 1rem = 7.68px
     }
 }
 
