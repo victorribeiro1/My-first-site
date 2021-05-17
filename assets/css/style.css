@@ -1639,6 +1639,76 @@ body {
     position: relative;
     z-index: 1; }
 
+.lines {
+  background-color: var(--color-secondary);
+  height: 100vh;
+  min-height: 650px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 0; }
+  .lines.noScroll {
+    pointer-events: none; }
+  .lines__heading-box {
+    text-align: right; }
+  .lines__content-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+  .lines__content-box-text {
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 22%;
+    height: 100%; }
+  .lines__type-box {
+    pointer-events: none;
+    position: relative;
+    top: -120px;
+    opacity: 1;
+    transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86) !important;
+    z-index: 2; }
+  .lines__see-services-box {
+    position: relative;
+    top: -70px;
+    left: -90px; }
+    .lines__see-services-box * {
+      font-weight: 1000;
+      letter-spacing: 2px; }
+  .lines__carousel-manager {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    margin-right: 90px; }
+    .lines__carousel-manager .arrow-box {
+      height: 13rem;
+      width: 6rem;
+      cursor: pointer;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      overflow: hidden;
+      outline: none;
+      border: none; }
+      .lines__carousel-manager .arrow-box:hover {
+        background-color: var(--color-transparent-2); }
+      .lines__carousel-manager .arrow-box .arrow {
+        pointer-events: none;
+        width: 4rem;
+        height: 4rem; }
+        .lines__carousel-manager .arrow-box .arrow--left {
+          margin-left: 35%;
+          transform: rotate(-135deg) translateY(1px); }
+        .lines__carousel-manager .arrow-box .arrow--right {
+          margin-left: -35%; }
+
 .performance {
   height: 90vh;
   background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.377), black), url(../../media/images/portrait-car.jpg);
@@ -1698,74 +1768,108 @@ body {
     color: #EEE; }
 
 .services {
+  height: auto;
   background-color: var(--color-secondary);
-  height: 100vh;
-  min-height: 650px;
-  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  z-index: 0; }
-  .services.noScroll {
-    pointer-events: none; }
-  .services__heading-box {
-    text-align: right; }
+  justify-content: flex-start;
+  align-items: center;
+  position: relative; }
+  .services::before, .services::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%; }
+  .services::before {
+    background: linear-gradient(to right bottom, #f00, #eb4848);
+    clip-path: circle(26% at center 54%);
+    top: 0;
+    left: 0; }
+  .services__header {
+    margin-top: 3.5rem;
+    width: 100%;
+    position: relative;
+    z-index: 1; }
   .services__content-box {
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: flex-end;
-    align-items: center; }
-  .services__content-box-text {
-    opacity: 1;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1; }
+  .services__cards-box {
+    padding: 8rem 0rem 5rem 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-end;
-    width: 22%;
-    height: 100%; }
-  .services__type-box {
-    pointer-events: none;
-    position: relative;
-    top: -120px;
-    opacity: 1;
-    transition: 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86) !important;
-    z-index: 2; }
-  .services__see-services-box {
-    position: relative;
-    top: -70px;
-    left: -90px; }
-    .services__see-services-box * {
-      font-weight: 1000;
-      letter-spacing: 2px; }
-  .services__carousel-manager {
+    justify-content: center;
+    align-items: center; }
+  .services__cards-row {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    margin-right: 90px; }
-    .services__carousel-manager .arrow-box {
-      height: 13rem;
-      width: 6rem;
-      cursor: pointer;
-      position: relative;
+    flex-wrap: wrap; }
+    .services__cards-row--1 {
+      justify-content: space-around; }
+    .services__cards-row--2 {
+      justify-content: center; }
+  .services__card {
+    background: linear-gradient(to right, #00000060, #00000060), url(../../../media/images/gay-working.jpg);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border-top: 1px solid #fff3;
+    border-bottom: 1px solid #fff3;
+    overflow: hidden;
+    --margin: 6rem;
+    margin: 0 var(--margin) var(--margin) var(--margin);
+    width: calc(33.3% - var(--margin) * 2);
+    min-width: 250px;
+    height: 25rem;
+    transform-style: preserve-3d;
+    transform: perspective(1000px); }
+    .services__card__content {
+      height: 100%;
+      padding: 0 2rem;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      justify-content: space-around;
       align-items: center;
-      text-decoration: none;
-      text-transform: uppercase;
-      overflow: hidden;
-      outline: none;
-      border: none; }
-      .services__carousel-manager .arrow-box:hover {
-        background-color: var(--color-transparent-2); }
-      .services__carousel-manager .arrow-box .arrow {
-        pointer-events: none;
-        width: 4rem;
-        height: 4rem; }
-        .services__carousel-manager .arrow-box .arrow--left {
-          margin-left: 35%;
-          transform: rotate(-135deg) translateY(1px); }
-        .services__carousel-manager .arrow-box .arrow--right {
-          margin-left: -35%; }
+      -webkit-transform: perspective(1000px);
+      transform: perspective(1000px);
+      transform-style: preserve-3d; }
+    .services__card__title {
+      color: white;
+      font-size: 3rem;
+      font-weight: 700;
+      transform: translateZ(10px);
+      transform-style: preserve-3d; }
+    .services__card__text {
+      color: white;
+      font-size: 1.6rem;
+      font-weight: 800;
+      opacity: 0;
+      transform: translateY(25px) translateZ(10px);
+      transform-style: preserve-3d;
+      transition: .5s; }
+    .services__card__link, .services__card__link:link, .services__card__link:visited {
+      background-color: #fff;
+      border-radius: 999px;
+      color: black;
+      font-weight: 1000;
+      font-size: 1.6rem;
+      padding: .6rem 3rem;
+      opacity: 0;
+      transform: translateY(20px) translateZ(10px);
+      transform-style: preserve-3d;
+      transition: .5s; }
+      .services__card__link:hover, .services__card__link:link:hover, .services__card__link:visited:hover {
+        background-color: #ff0000;
+        color: white; }
+    .services__card:hover .services__card__link,
+    .services__card:hover .services__card__text {
+      opacity: 1;
+      transform: translateY(0px) translateZ(10px);
+      transform-style: preserve-3d; }
 
 .contact {
   display: flex;

@@ -34,5 +34,5 @@ function animateCounter() {
 
         counters[2].innerText = tertiaryCounter++
 
-    }, 22)
+    }, 17)
 }
