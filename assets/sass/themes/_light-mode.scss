@@ -7,11 +7,13 @@ html[current-theme='light'] {
     }
 
     // COLORS
+    --color-zero: var(--color-light-0);
     --color-primary: var(--color-light-1);
     --color-secondary: var(--color-light-2);
     --color-tertiary: var(--color-light-3);
     --color-quaternary: var(--color-light-4);
 
+    --color-zero-opposite: var(--color-dark-0);
     --color-primary-opposite: var(--color-dark-1);
     --color-secondary-opposite: var(--color-dark-2);
     --color-tertiary-opposite: var(--color-dark-3);
