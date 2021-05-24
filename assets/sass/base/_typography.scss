@@ -10,6 +10,7 @@ html {
     }
 
     @media only screen and (max-width: $fourth-breakpoint) {
+<<<<<<< HEAD
         font-size: 44%; // 1rem = 7.08px
     }
 
@@ -36,6 +37,10 @@ html {
     // @media only screen and (max-width: $tenth-breakpoint) {
     //     font-size: 17%; // 1rem = 7.68px
     // }
+=======
+        font-size: 44%; // 1rem = 7.68px
+    }
+>>>>>>> parent of 1956502 (Update media queries)
 }
 
 body {
