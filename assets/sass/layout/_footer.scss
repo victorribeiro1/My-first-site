@@ -1,16 +1,18 @@
 .footer {
-    background: #000;
+    background: var(--color-zero);
 
-    min-height: 61rem;
+    // min-height: 61rem;
+    height: auto;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
 
-    padding: 6rem 8rem 3rem 6rem;
+    padding: 6rem 8rem 2rem 6rem;
     
     @media only screen and (max-width: $second-breakpoint) {
-        padding: 6rem 3rem 3rem 3rem;
+        padding: 6rem 3rem 2rem 3rem;
     }
 
     &__links-area {
@@ -39,30 +41,30 @@
     }
 
     &__enterprise-about {
-        color: #ccc;
-        font-weight: 100;
+        color: var(--color-secondary-opposite);
+        font-weight: var(--font-weight);
         font-size: 1.5rem;
         letter-spacing: 2px;
-
+        
         margin-top: 2rem;
-
+        
         max-width: 35rem;
         
         @media only screen and (max-width: $first-breakpoint) {
             max-width: 33rem;
             font-size: 1.3rem;
         }
-
+        
         @media only screen and (max-width: $second-breakpoint) {
             max-width: 33rem;
             font-size: 1.3rem;
         }
     }
-
+    
     // &__row {
         
-    // }
-    
+        // }
+        
     &__list-box {
         // background-color: lightgreen;
         
@@ -74,29 +76,31 @@
         // width: 12%;
         
         // &:first-child {
-            //     background-color: aliceblue;
-            //     width: 15%;
-            // }
-            // &:nth-child(5) {
-                //     width: 10%;
-                // }
+        //     background-color: aliceblue;
+        //     width: 15%;
+        // }
+
+        // &:nth-child(5) {
+            //     width: 10%;
+        // }
                 
         // &--about {
             // align-items: center;
         // }
-    }
 
+        }
+                    
     &__list-heading {
-        color: #fff;
+        color: var(--color-zero-opposite);
         font-size: 1.6rem;
         text-transform: uppercase;
-
+        
         margin-bottom: 3rem;
-
+        
         @media only screen and (max-width: $first-breakpoint) {
             font-size: 1.5rem;
         }
-
+        
         @media only screen and (max-width: $second-breakpoint) {
             font-size: 1.8rem;
         }
@@ -108,7 +112,7 @@
 
         list-style-type: none;
     }
-
+    
     &__list-item {
         :not(:last-child) {
             margin-bottom: 3rem;
@@ -121,9 +125,10 @@
         &,
         &:link,
         &:visited {
-            color: #ccc !important;
+            color: var(--color-secondary-opposite);
             font-size: 1.3rem;
             line-height: 10px;
+            font-weight: var(--font-weight);
             
             display: inline-block;
             
@@ -142,40 +147,59 @@
             }
         }
     }
-
+    
     &__not-link {
         text-transform: uppercase;
         
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        svg {
+            fill: red;
+            
+            height: 1.3rem;
+            width:  1.3rem;
+            
+            margin-right: .7rem;
+        }
+        
         &--1 {
-            margin-top: -.2rem;
+            margin-top: -.1rem;
         }
         &--2 {
-            margin-top: 3.2rem;
+            margin-top: 2.7rem;
         }
     }
-
+    
     &__copyright-area {
         // background-color: #0005;
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        margin-top: 5rem;
-        padding-top: 40px;
+        
+        margin-top: 3rem;
+        padding-top: 2rem;
         padding-bottom: 1rem;
-
+        
         position: relative;
-
+        
         width: 100%;
-
+        
         &::before {
             content: '';
             background-color: #222;
             border-radius: 999px;
-
-            height: 1px;
+            
+            height: .1rem;
             width:  100%;
-
+            
             position: absolute;
             top: 0;
             left: 50%;
@@ -184,10 +208,12 @@
     }
 
     &__copyright-box {
-        color: #EEE;
+        color: var(--color-secondary-opposite);
+
         font-size: 1.5rem;
         margin-top: 1.1rem;
         text-align: left;
+        font-weight: var(--font-weight);
     }
     
     &__social-medias-box {
@@ -200,13 +226,13 @@
         transform: translateY(4px);
 
         :not(:last-child) {
-            margin-right: 2rem;
+            margin-right: 0rem;
         }
     }
 
     &__social-media {
-        background-color: #2225;
-        border-radius: 3px;
+        background-color: transparent;
+        border-radius: 0px;
         
         height: 5.5rem;
         width:  5.5rem;
@@ -218,11 +244,12 @@
         .icon {
             height: 2.3rem !important;
             width:  2.3rem !important;
-            fill: #fff;
+            fill: var(--color-zero-opposite);
+
         }
         
         &:hover {
-            background-color: rgba(53, 51, 51, 0.467);
+            background-color: var(--color-transparent-opposite-1);
         }
     }
 }

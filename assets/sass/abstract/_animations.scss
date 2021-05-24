@@ -110,17 +110,17 @@
     }
 }
 
-// @keyframes animate {
-//     from {
-//         height: 0px;
-//         width:  0px;
-//         opacity: 1;
-//     }
+@keyframes ripple-effect {
+    from {
+        height: 0px;
+        width:  0px;
+        opacity: 1;
+    }
     
-//     to {
+    to {
         
-//         height: 5000000000px;
-//         width:  5000000000px;
-//         opacity: 0;
-//     }
-// }
+        height: 500px;
+        width:  500px;
+        opacity: 0;
+    }
+}
