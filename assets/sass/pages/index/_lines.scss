@@ -98,13 +98,18 @@
                 background-color: var(--color-transparent-2);
             }
 
-            span {
-                position: fixed;
-                background-color: #fff;
-                transform: translate(-50%, -50%);
-                border-radius: 50%;
-                animation: ripple-effect 1s linear;
-            }
+            // span {
+            //     animation: animate 10000s linear;
+    
+            //     background: #ffffff50;
+            //     border-radius: 999px;
+    
+            //     position: absolute;
+
+            //     pointer-events: none;
+    
+            //     transform: translate(-50%, -50%);
+            // }
             
             & .arrow {
                 pointer-events: none;

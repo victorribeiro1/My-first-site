@@ -1,10 +1,8 @@
 html[current-theme='dark'] {
-  --color-zero: var(--color-dark-0);
   --color-primary: var(--color-dark-1);
   --color-secondary: var(--color-dark-2);
   --color-tertiary: var(--color-dark-3);
   --color-quaternary: var(--color-dark-4);
-  --color-zero-opposite: var(--color-light-0);
   --color-primary-opposite: var(--color-light-1);
   --color-secondary-opposite: var(--color-light-2);
   --color-tertiary-opposite: var(--color-light-3);
@@ -40,12 +38,10 @@ html[current-theme='dark'] {
     transition-duration: .2s; }
 
 html[current-theme='light'] {
-  --color-zero: var(--color-light-0);
   --color-primary: var(--color-light-1);
   --color-secondary: var(--color-light-2);
   --color-tertiary: var(--color-light-3);
   --color-quaternary: var(--color-light-4);
-  --color-zero-opposite: var(--color-dark-0);
   --color-primary-opposite: var(--color-dark-1);
   --color-secondary-opposite: var(--color-dark-2);
   --color-tertiary-opposite: var(--color-dark-3);
@@ -133,18 +129,7 @@ html[current-theme='light'] {
     width: 50px;
     height: 50px; } }
 
-@keyframes ripple-effect {
-  from {
-    height: 0px;
-    width: 0px;
-    opacity: 1; }
-  to {
-    height: 500px;
-    width: 500px;
-    opacity: 0; } }
-
 :root {
-  --color-dark-0: #000;
   --color-dark-1: #111;
   --color-dark-2: #222;
   --color-dark-3: #333;
@@ -152,7 +137,6 @@ html[current-theme='light'] {
   --color-transparent-dark-1: #0000000e;
   --color-transparent-dark-2: #00000054;
   --color-transparent-dark-3: #111111cc;
-  --color-light-0: #FFF;
   --color-light-1: #EEE;
   --color-light-2: #D6D6D6;
   --color-light-3: #999;
@@ -270,10 +254,16 @@ html {
   @media only screen and (max-width: 26.875em) {
     html {
       font-size: 20%; } }
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 1956502 (Update media queries)
 =======
 >>>>>>> parent of 1956502 (Update media queries)
+=======
+  @media only screen and (max-width: 21.25em) {
+    html {
+      font-size: 17%; } }
+>>>>>>> parent of 095bc51 (update)
 
 body {
   font-family: "nunito-extraLight", 'aeonik-light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -636,9 +626,8 @@ body {
     transform: rotate(45deg);
     transition: .2s linear !important; }
   .dropdown__menu {
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(20px);
     background-color: var(--color-transparent-opposite-1);
-    border-bottom: 2px solid #fff1;
     border-radius: 10px;
     position: absolute;
     margin-top: 2rem;
@@ -958,16 +947,15 @@ body {
     color: var(--color-tertiary); }
 
 .footer {
-  background: var(--color-zero);
-  height: auto;
+  background: #000;
+  min-height: 61rem;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 6rem 8rem 2rem 6rem; }
+  justify-content: space-between;
+  padding: 6rem 8rem 3rem 6rem; }
   @media only screen and (max-width: 71.875em) {
     .footer {
-      padding: 6rem 3rem 2rem 3rem; } }
+      padding: 6rem 3rem 3rem 3rem; } }
   .footer__links-area {
     display: flex;
     justify-content: space-between;
@@ -982,8 +970,8 @@ body {
       .footer__logo {
         width: 19rem; } }
   .footer__enterprise-about {
-    color: var(--color-secondary-opposite);
-    font-weight: var(--font-weight);
+    color: #ccc;
+    font-weight: 100;
     font-size: 1.5rem;
     letter-spacing: 2px;
     margin-top: 2rem;
@@ -1002,7 +990,7 @@ body {
     justify-content: center;
     align-items: flex-start; }
   .footer__list-heading {
-    color: var(--color-zero-opposite);
+    color: #fff;
     font-size: 1.6rem;
     text-transform: uppercase;
     margin-bottom: 3rem; }
@@ -1021,10 +1009,9 @@ body {
     .footer__list-item :not(:last-child) {
       margin-bottom: 3rem; }
   .footer__link, .footer__link:link, .footer__link:visited {
-    color: var(--color-secondary-opposite);
+    color: #ccc !important;
     font-size: 1.3rem;
     line-height: 10px;
-    font-weight: var(--font-weight);
     display: inline-block; }
     @media only screen and (max-width: 77.5em) {
       .footer__link, .footer__link:link, .footer__link:visited {
@@ -1035,29 +1022,17 @@ body {
   .footer__link.link::before {
     bottom: 20px; }
   .footer__not-link {
-    text-transform: uppercase;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .footer__not-link p {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .footer__not-link svg {
-      fill: red;
-      height: 1.3rem;
-      width: 1.3rem;
-      margin-right: .7rem; }
+    text-transform: uppercase; }
     .footer__not-link--1 {
-      margin-top: -.1rem; }
+      margin-top: -.2rem; }
     .footer__not-link--2 {
-      margin-top: 2.7rem; }
+      margin-top: 3.2rem; }
   .footer__copyright-area {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 3rem;
-    padding-top: 2rem;
+    margin-top: 5rem;
+    padding-top: 40px;
     padding-bottom: 1rem;
     position: relative;
     width: 100%; }
@@ -1065,28 +1040,27 @@ body {
       content: '';
       background-color: #222;
       border-radius: 999px;
-      height: .1rem;
+      height: 1px;
       width: 100%;
       position: absolute;
       top: 0;
       left: 50%;
       transform: translateX(-50%); }
   .footer__copyright-box {
-    color: var(--color-secondary-opposite);
+    color: #EEE;
     font-size: 1.5rem;
     margin-top: 1.1rem;
-    text-align: left;
-    font-weight: var(--font-weight); }
+    text-align: left; }
   .footer__social-medias-box {
     display: flex;
     justify-content: space-between;
     align-items: center;
     transform: translateY(4px); }
     .footer__social-medias-box :not(:last-child) {
-      margin-right: 0rem; }
+      margin-right: 2rem; }
   .footer__social-media {
-    background-color: transparent;
-    border-radius: 0px;
+    background-color: #2225;
+    border-radius: 3px;
     height: 5.5rem;
     width: 5.5rem;
     display: flex;
@@ -1095,9 +1069,9 @@ body {
     .footer__social-media .icon {
       height: 2.3rem !important;
       width: 2.3rem !important;
-      fill: var(--color-zero-opposite); }
+      fill: #fff; }
     .footer__social-media:hover {
-      background-color: var(--color-transparent-opposite-1); }
+      background-color: rgba(53, 51, 51, 0.467); }
 
 .nav {
   background-color: var(--color-secondary);
@@ -1752,12 +1726,6 @@ body {
       border: none; }
       .lines__carousel-manager .arrow-box:hover {
         background-color: var(--color-transparent-2); }
-      .lines__carousel-manager .arrow-box span {
-        position: fixed;
-        background-color: #fff;
-        transform: translate(-50%, -50%);
-        border-radius: 50%;
-        animation: ripple-effect 1s linear; }
       .lines__carousel-manager .arrow-box .arrow {
         pointer-events: none;
         width: 4rem;

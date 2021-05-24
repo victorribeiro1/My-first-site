@@ -35,6 +35,7 @@ html {
         font-size: 20%; // 1rem = 7.68px
     }
 
+<<<<<<< HEAD
     // @media only screen and (max-width: $tenth-breakpoint) {
     //     font-size: 17%; // 1rem = 7.68px
     // }
@@ -44,6 +45,11 @@ html {
         font-size: 44%; // 1rem = 7.68px
     }
 >>>>>>> parent of 1956502 (Update media queries)
+=======
+    @media only screen and (max-width: $tenth-breakpoint) {
+        font-size: 17%; // 1rem = 7.68px
+    }
+>>>>>>> parent of 095bc51 (update)
 }
 
 body {
