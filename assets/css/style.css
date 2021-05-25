@@ -297,7 +297,7 @@ body {
       @media only screen and (max-width: 77.5em) {
         .subheading--left.subheading--less-space {
           margin-right: 76%; } }
-  .subheading--right {
+  .subheading--lines {
     margin-left: 100%;
     transform: translateX(-100%); }
   .subheading--left::before, .subheading--left::after, .subheading--right::before, .subheading--right::after {
@@ -342,6 +342,9 @@ body {
 
 .letter-spacing > * {
   margin-right: 3px; }
+
+.white-space--no-wrap {
+  white-space: nowrap; }
 
 .arrow {
   border-top: 0.1rem solid var(--color-secondary-opposite);
@@ -1157,11 +1160,10 @@ body {
     width: 17rem; }
 
 .toggle-menu {
-  position: relative;
+  position: absolute;
+  top: 3.2rem;
   transform: translateY(-2px);
-  z-index: 0; }
-  .toggle-menu.active {
-    z-index: 2; }
+  z-index: 8; }
   .toggle-menu__checkbox {
     display: none; }
     .toggle-menu__checkbox:checked ~ .toggle-menu__button-box .toggle-menu__icon {
@@ -1186,7 +1188,10 @@ body {
       left: 0;
       transition: left 0s 0s !important; }
   .toggle-menu__button-box {
-    position: relative; }
+    position: relative;
+    bottom: -85px;
+    right: -25px;
+    transition: top .4s linear !important; }
   .toggle-menu__button {
     height: 2.8rem;
     width: 7.5rem;
@@ -1194,14 +1199,8 @@ body {
     bottom: -3px;
     display: inline-block;
     z-index: 4; }
-    .toggle-menu__button:hover {
-      cursor: pointer; }
     .toggle-menu__button:hover .toggle-menu__button-background {
       transform: translate(50%, -50%) scale(1); }
-    .toggle-menu__button:hover .toggle-menu__icon {
-      background-color: var(--color-secondary-opposite); }
-      .toggle-menu__button:hover .toggle-menu__icon--2 {
-        width: 100%; }
   .toggle-menu__button-background {
     border-radius: 999px;
     position: absolute;
@@ -1213,6 +1212,7 @@ body {
     z-index: -1;
     transition: all 0.5s cubic-bezier(0.97, 0.12, 0.7, 1.5) !important; }
   .toggle-menu__icon-box {
+    cursor: pointer;
     width: 60%;
     height: 50%;
     position: absolute;
@@ -1223,6 +1223,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; }
+    .toggle-menu__icon-box:hover .toggle-menu__icon--2 {
+      width: 100%; }
   .toggle-menu__icon {
     background-color: var(--color-secondary-opposite);
     border-radius: 999px;
@@ -1698,6 +1700,7 @@ body {
   .lines.noScroll {
     pointer-events: none; }
   .lines__heading-box {
+    margin-top: 4rem;
     text-align: right; }
   .lines__content-box {
     display: flex;
