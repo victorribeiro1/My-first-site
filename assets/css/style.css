@@ -1110,6 +1110,9 @@ body {
   width: 100%;
   z-index: 8;
   transition: top .3s linear, background-color .2s ease-out !important; }
+  @media screen and (max-width: 400px) {
+    .nav {
+      display: none; } }
   .nav__substitute {
     background-color: var(--color-secondary);
     height: var(--navigation-width); }
@@ -1160,10 +1163,12 @@ body {
     width: 17rem; }
 
 .toggle-menu {
-  position: absolute;
-  top: 3.2rem;
-  transform: translateY(-2px);
-  z-index: 8; }
+  position: fixed;
+  top: 0rem;
+  height: 10rem;
+  width: 10rem;
+  z-index: 8;
+  transition: top .3s linear !important; }
   .toggle-menu__checkbox {
     display: none; }
     .toggle-menu__checkbox:checked ~ .toggle-menu__button-box .toggle-menu__icon {
@@ -1188,10 +1193,11 @@ body {
       left: 0;
       transition: left 0s 0s !important; }
   .toggle-menu__button-box {
-    position: relative;
-    bottom: -85px;
-    right: -25px;
-    transition: top .4s linear !important; }
+    position: absolute;
+    top: 50% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: top .3s linear !important; }
   .toggle-menu__button {
     height: 2.8rem;
     width: 7.5rem;
@@ -1233,7 +1239,7 @@ body {
     transition: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important; }
     .toggle-menu__icon--1 {
       margin-bottom: 8px;
-      width: 100%; }
+      width: 5rem; }
     .toggle-menu__icon--2 {
       width: 80%; }
   .toggle-menu__background-box {
@@ -1464,7 +1470,7 @@ body {
   justify-content: flex-start;
   align-items: center; }
   .faq__header-box {
-    align-items: left;
+    text-align: right;
     width: 100%; }
   .faq__content-box {
     margin-top: 6rem;

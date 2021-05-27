@@ -1,5 +1,5 @@
 const nav = document.getElementById('nav')
-const toggleMenuButton2 = document.querySelector('.toggle-menu__button-box')
+const toggleMenuButton2 = document.querySelector('.toggle-menu')
 let lastScrollTop = 0
 
 function toggleNavVisibility() {
