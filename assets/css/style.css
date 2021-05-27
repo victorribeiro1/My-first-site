@@ -247,9 +247,6 @@ html {
   @media only screen and (max-width: 71.875em) {
     html {
       font-size: 56.25%; } }
-  @media only screen and (max-width: 59.375em) {
-    html {
-      font-size: 48%; } }
   @media only screen and (max-width: 51.25em) {
     html {
       font-size: 44%; } }
@@ -259,15 +256,6 @@ html {
   @media only screen and (max-width: 42.5em) {
     html {
       font-size: 37%; } }
-  @media only screen and (max-width: 39.375em) {
-    html {
-      font-size: 30%; } }
-  @media only screen and (max-width: 32.1875em) {
-    html {
-      font-size: 25%; } }
-  @media only screen and (max-width: 26.875em) {
-    html {
-      font-size: 20%; } }
 
 body {
   font-family: "nunito-extraLight", 'aeonik-light', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -1110,7 +1098,7 @@ body {
   width: 100%;
   z-index: 8;
   transition: top .3s linear, background-color .2s ease-out !important; }
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 34em) {
     .nav {
       display: none; } }
   .nav__substitute {
