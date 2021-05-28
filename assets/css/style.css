@@ -1152,7 +1152,7 @@ body {
 
 .toggle-menu {
   position: fixed;
-  top: 0rem;
+  top: 6rem;
   height: 10rem;
   width: 10rem;
   z-index: 8;
@@ -1182,9 +1182,11 @@ body {
       transition: left 0s 0s !important; }
   .toggle-menu__button-box {
     position: absolute;
-    top: 50% !important;
+    top: -1.2rem;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 3;
+    cursor: pointer;
     transition: top .3s linear !important; }
   .toggle-menu__button {
     height: 2.8rem;
@@ -1195,6 +1197,8 @@ body {
     z-index: 4; }
     .toggle-menu__button:hover .toggle-menu__button-background {
       transform: translate(50%, -50%) scale(1); }
+  .toggle-menu__background-box {
+    pointer-events: none; }
   .toggle-menu__button-background {
     border-radius: 999px;
     position: absolute;

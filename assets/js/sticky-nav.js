@@ -1,5 +1,5 @@
 const nav = document.getElementById('nav')
-const toggleMenuButton2 = document.querySelector('.toggle-menu')
+const toggleMenuButton2 = document.querySelector('.toggle-menu__button-box')
 let lastScrollTop = 0
 
 function toggleNavVisibility() {
@@ -10,7 +10,7 @@ function toggleNavVisibility() {
         toggleMenuButton2.style.top = '-10rem'
     } else {
         nav.style.top = '0'
-        toggleMenuButton2.style.top = '0'
+        toggleMenuButton2.style.top = '-1.2rem'
     }
 
     lastScrollTop = scrollTop

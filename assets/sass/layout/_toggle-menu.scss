@@ -1,6 +1,6 @@
 .toggle-menu {
     position: fixed;
-    top: 0rem;
+    top: 6rem;
 
     height: 10rem;
     width: 10rem;
@@ -58,11 +58,15 @@
 
     &__button-box {        
         position: absolute;
-        top: 50% !important;
+        top: -1.2rem;
         left: 50%;
         transform: translate(-50%, -50%);
+        z-index: 3;
+
+        cursor: pointer;
 
         transition: top .3s linear !important;
+
     }
 
     &__button {
@@ -77,8 +81,12 @@
         z-index: 4;
 
         &:hover .toggle-menu__button-background {
-        transform: translate(50%, -50%) scale(1);
+            transform: translate(50%, -50%) scale(1);
         }
+    }
+
+    &__background-box {
+        pointer-events: none;
     }
 
     &__button-background {
@@ -91,7 +99,7 @@
 
         height: 21rem;
         width: 21rem;
-
+        
         z-index: -1;
         transition: all .5s cubic-bezier(0.97, 0.12, 0.7, 1.5) !important;
     }

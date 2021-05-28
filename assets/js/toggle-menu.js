@@ -1,5 +1,5 @@
 const toggleMenu = document.querySelector('.toggle-menu')
-const toggleMenuButton = document.querySelector('.toggle-menu__button')
+const toggleMenuButton = document.querySelector('.toggle-menu__icon-box')
 const htmlTag = document.querySelector('html')
 
 // block scroll when toggle-menu is oppened
