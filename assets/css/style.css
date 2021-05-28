@@ -1185,7 +1185,7 @@ body {
     top: -1.2rem;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 3;
+    z-index: 4;
     cursor: pointer;
     transition: top .3s linear !important; }
   .toggle-menu__button {
