@@ -1102,7 +1102,7 @@ body {
     .nav {
       display: none; } }
   .nav__substitute {
-    background-color: var(--color-secondary);
+    background-color: var(--color-primary);
     height: var(--navigation-width); }
   .nav__column {
     display: flex;
@@ -1165,8 +1165,8 @@ body {
         margin-bottom: -1px;
         transform: translate(0px, 1px) rotate(135deg); }
       .toggle-menu__checkbox:checked ~ .toggle-menu__button-box .toggle-menu__icon--2 {
-        width: 100%;
-        transform: translate(0px, -1px) rotate(-135deg); }
+        width: 112%;
+        transform: translate(0px, 0px) rotate(-135deg); }
     .toggle-menu__checkbox:checked ~ .toggle-menu__button-box .toggle-menu__button-background {
       transform: translate(50%, -50%) scale(1); }
     .toggle-menu__checkbox:checked ~ .toggle-menu__background-box .toggle-menu__background {
@@ -1222,7 +1222,7 @@ body {
     justify-content: center;
     align-items: flex-start; }
     .toggle-menu__icon-box:hover .toggle-menu__icon--2 {
-      width: 100%; }
+      width: 112%; }
   .toggle-menu__icon {
     background-color: var(--color-secondary-opposite);
     border-radius: 999px;
@@ -1925,6 +1925,13 @@ body {
       opacity: 1;
       transform: translateY(0px) translateZ(10px);
       transform-style: preserve-3d; }
+
+.service__header {
+  background: linear-gradient(to right bottom, #0009, #0009), url("../../../../media/images/milan-degraeve-xRn3h_jVT0E-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh; }
 
 .contact {
   display: flex;
