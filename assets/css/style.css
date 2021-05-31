@@ -181,9 +181,9 @@ html[current-theme='light'] {
 
 html {
   scroll-behavior: smooth;
-  position: relative;
-  width: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  outline: none; }
   html.menu-is-active {
     overflow: hidden !important; }
 
@@ -195,9 +195,6 @@ body {
   position: relative;
   overflow-x: hidden;
   width: 100%; }
-  body a, body a:link, body a:visited {
-    color: green;
-    text-decoration: none !important; }
 
 ::selection {
   background-color: transparent;

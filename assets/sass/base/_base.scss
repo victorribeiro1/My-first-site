@@ -10,22 +10,15 @@
 
 html {
     scroll-behavior: smooth;
-    position: relative;
-
-    width: 100%;
 
     overflow-x: hidden;
 
-    a {
-        -webkit-tap-highlight-color: transparent;
-        outline: none;
-    }
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
 
     &.menu-is-active {
         overflow: hidden !important;
     }
-
-
 }
 
 body {
