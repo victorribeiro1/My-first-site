@@ -1,9 +1,104 @@
 .service {
     &__header {
-        background: linear-gradient(to right bottom, #0009, #0009), url("../../../../media/images/milan-degraeve-xRn3h_jVT0E-unsplash.jpg");
+        background: linear-gradient(to right bottom, #000C, #000C), url("../../../../media/images/car-example.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 70vh;
+        height: 65vh;
+
+        position: relative;
+
+        display: flex;
+    
+        &__heading-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            
+            padding-top: 4rem;
+
+            width: 50%;
+        }
+
+        &__heading-box-box {
+            position: relative;
+            top: -5rem;
+            right: -5rem;
+
+            :not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
+
+        &__heading {
+            color: var(--color-primary-opposite);
+            font-size: 4.2rem;
+            letter-spacing: 7px;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+        
+        &__alert {
+            color: var(--color-primary-opposite);
+            font-size: 2rem;
+            letter-spacing: 8px;
+            padding-left: 4px;
+            display: block;
+
+            margin-bottom: 3.3rem !important;
+        }
+
+        &__lines-box {
+            // background-color: #fff;
+            flex: none;
+        }
+        
+        &__line {
+            border-radius: 2px;
+            background-color: var(--color-primary-opposite);
+            
+            width: 25%;
+
+            // width: 100%;
+
+            flex: none;
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+            &__icon {
+                fill: var(--color-primary);
+                position: relative;
+                bottom: -9px;
+
+                // font-size: 4rem;
+
+                height: 1.9rem;
+                width:  1.9rem;
+            }
+            
+            &__text {
+                color: var(--color-primary);
+                text-transform: uppercase;
+                font-size: 1.4rem;
+                font-weight: 1000;
+                font-family: 'nunito-black';
+            }
+        }
+        
+        &__contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            width: 50%;
+        }
+
+        &__button {
+            // position: absolute !important;
+            top: -85px !important;
+            left: 180px !important;
+        }
     }
 }
