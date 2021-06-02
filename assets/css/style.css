@@ -170,7 +170,7 @@ html[current-theme='light'] {
 
 .slider {
   --bg-img-header-1: url("url(../../../../media/images/car-official-2.jpeg");
-  --bg-img-header-2: url("url(../../../../media/images/truck-official.jpeg");
+  --bg-img-header-2: url("url(../../../../media/images/truck-official-2.jpeg");
   --bg-img-header-3: url("url(../../../../media/images/bulldozer-official.jpeg"); }
 
 *,
@@ -491,8 +491,6 @@ body {
     width: 100%;
     opacity: .8;
     object-fit: cover; }
-    .carousel__img--bulldozer {
-      opacity: .6; }
   .carousel__services-box {
     height: 100%;
     width: 100%;
