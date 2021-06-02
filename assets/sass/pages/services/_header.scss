@@ -1,6 +1,6 @@
 .service {
     &__header {
-        background: linear-gradient(to right bottom, #000B, #000B), url("../../media/images/car-example.jpg");
+        background: var(--bg-service-header), url("../../media/images/car-example.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -69,7 +69,7 @@
             align-items: center;
 
             &__icon {
-                fill: var(--color-primary);
+                fill: var(--color-primary) !important;
                 position: relative;
                 bottom: -9px;
 
@@ -97,7 +97,12 @@
 
         &__button {
             // position: absolute !important;
-            top: -85px !important;
+
+            // width: 18rem !important;
+
+            // display: none !important;
+
+            top: -50px !important;
             left: 180px !important;
         }
     }
