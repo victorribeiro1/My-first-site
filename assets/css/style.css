@@ -958,7 +958,7 @@ body {
     align-items: flex-start;
     width: 100%; }
   .footer__logo {
-    width: 18rem; }
+    width: 21rem; }
     @media only screen and (max-width: 77.5em) {
       .footer__logo {
         width: 16rem; } }
@@ -985,6 +985,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start; }
+    .footer__list-box--about {
+      height: 28rem; }
   .footer__list-heading {
     color: var(--color-zero-opposite);
     font-size: 1.6rem;
@@ -1592,9 +1594,9 @@ body {
     top: -50px; }
   .header__paragraph {
     font-family: 'nunito-light';
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: var(--color-quinary-opposite);
-    max-width: 43rem;
+    max-width: 60rem;
     letter-spacing: 1px; }
   .header__img-box {
     position: relative; }

@@ -29,8 +29,8 @@
     // }
 
     &__logo {
-        width: 18rem;
-        
+        width: 21rem;
+
         @media only screen and (max-width: $first-breakpoint) {
             width: 16rem;
         }
@@ -72,6 +72,11 @@
         flex-direction: column;
         justify-content: center;
         align-items: flex-start;
+
+        
+        &--about {
+            height: 28rem;
+        }
         
         // width: 12%;
         
