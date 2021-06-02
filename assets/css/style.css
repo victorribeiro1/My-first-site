@@ -169,9 +169,9 @@ html[current-theme='light'] {
   --main-button-width: 21rem; }
 
 .slider {
-  --bg-img-header-1: url("url(../../../../media/images/car-slider.jpg");
-  --bg-img-header-2: url("url(../../../../media/images/truck-slider.jpg");
-  --bg-img-header-3: url("url(../../../../media/images/bulldozer-slider.jpg"); }
+  --bg-img-header-1: url("url(../../../../media/images/car-official.jpeg");
+  --bg-img-header-2: url("url(../../../../media/images/truck-official.jpeg");
+  --bg-img-header-3: url("url(../../../../media/images/agricultural-official.jpeg"); }
 
 *,
 *::before,
@@ -345,11 +345,11 @@ body {
   justify-content: space-between;
   align-items: center; }
   .button__text, .button__arrow {
-    transition: transform 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86) !important;
+    transition: transform 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86), color 0.2s ease-out !important;
     display: block; }
   .button:hover .button__text {
     transform: translateX(-26px);
-    transition: transform 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86) !important; }
+    transition: transform 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86), color 0.2s ease-out !important; }
   .button:hover .button__arrow {
     transform: translate(calc(var(--main-button-width) - 5.5rem), 2px); }
 
@@ -489,7 +489,10 @@ body {
   .carousel__img {
     height: 100%;
     width: 100%;
+    opacity: .8;
     object-fit: cover; }
+    .carousel__img--bulldozer {
+      opacity: .6; }
   .carousel__services-box {
     height: 100%;
     width: 100%;
