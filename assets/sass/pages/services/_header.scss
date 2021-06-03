@@ -4,7 +4,7 @@
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 65vh;
+        height: 62vh;
 
         position: relative;
 
@@ -25,10 +25,6 @@
             position: relative;
             top: -5rem;
             right: -5rem;
-
-            :not(:last-child) {
-                margin-bottom: 2rem;
-            }
         }
 
         &__heading {
@@ -50,19 +46,27 @@
         }
 
         &__lines-box {
-            // background-color: #fff;
-            flex: none;
+            width: 45rem;
+            height: 3.7rem;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            white-space: nowrap;
+
+            :not(:last-child) {
+                margin-right: 1rem;
+            }
+
         }
         
         &__line {
             border-radius: 2px;
             background-color: var(--color-primary-opposite);
             
-            width: 25%;
-
-            // width: 100%;
-
-            flex: none;
+            width: 35%;
+            height: 100%;
 
             display: flex;
             justify-content: space-evenly;
@@ -70,10 +74,6 @@
 
             &__icon {
                 fill: var(--color-primary) !important;
-                position: relative;
-                bottom: -9px;
-
-                // font-size: 4rem;
 
                 height: 1.9rem;
                 width:  1.9rem;

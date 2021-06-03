@@ -1,0 +1,111 @@
+.service {
+    &__about {
+        background-color: var(--bg-color-service-about);
+        padding: 7rem 0;
+
+        height: 85vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        &__content-box {
+            width: 60%;
+            height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            // padding-top: 5rem;
+        }
+        
+        &__heading {
+            font-size: 3.7rem;
+            color: var(--color-primary-opposite);
+            margin-top: -2.2rem;
+        }
+        
+        &__text {
+            font-size: 1.8rem;
+            color: var(--color-tertiary-opposite);
+            // margin-top: -4rem;
+
+            max-width: 98%;
+
+            line-height: 25px;
+        }
+
+        &__benefits-list {
+            list-style: none;
+
+            margin-top: 2rem;
+        }
+        
+        &__benefit {
+            display: flex;
+            align-items: center;
+
+            :not(:last-child) {
+                margin-bottom: .6rem;
+            }
+        }
+        
+        &__benefit-item {
+            color: var(--color-tertiary-opposite) !important;
+            font-size: 1.8rem;
+        }
+        
+        &__benefit-icon {
+            border-radius: 999px;
+            margin-right: 1rem;
+            fill: red;
+        }
+        
+        &__button {
+            &,
+            &:visited,
+            &:link {
+                text-decoration: none;
+                transform: translateX(9%);
+                width: 24.5rem;
+                margin-top: 2rem;
+
+                .arrow-box {
+                    transform: translateY(-2px);
+                }
+                
+                .arrow {
+                    border-top: .1rem solid red;
+                    border-right: .1rem solid red;
+
+                    width: 1rem;
+                    height: 1rem;
+                }
+
+                .button-secondary__text {
+                    font-weight: 1000;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    font-size: 1.7rem;
+                }
+            }
+
+        }
+
+        &__img-box {
+            // background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: column;
+
+            width: 20%;
+        }
+
+        &__img {
+            border-radius: 8px;
+            // width: 28rem;
+            height: 45rem;
+        }
+    }
+}

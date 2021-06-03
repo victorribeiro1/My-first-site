@@ -27,6 +27,7 @@ html[current-theme='dark'] {
   --bg-color-menu-bg: transparent;
   --bg-color-swipe-button-ball: linear-gradient(145deg, #413f3f, #030303);
   --bg-service-header: linear-gradient(to right bottom, #000B, #000B);
+  --bg-color-service-about: #111;
   --box-shadow-contact-button: 5px  5px 11px #000000,-5px -5px 11px #ffffff10;
   --box-shadow-contact-button-interaction: 2px  2px 2px #0000009a,-2px -2px 5px #ffffff17;
   --box-shadow-icon-box:  3px  3px 6px #000, -3px -3px 6px #4d4e551f;
@@ -67,6 +68,7 @@ html[current-theme='light'] {
   --box-shadow-img: 3px  3px 4px #000000c5,-3px -3px 4px #ffffff0c;
   --bg-color-menu-bg: #ffffff10;
   --bg-service-header: linear-gradient(to right bottom, #D6D6D699, #D6D6D699);
+  --bg-color-service-about: #D6D6D6;
   --box-shadow-swipe-button:3px  3px 5px #00000078,-3px -3px 5px #ffffff,inset  3px  3px 5px #000000e8,inset -3px -3px 5px #2b272783;
   --box-shadow-swipe-button-ball:  2px  2px 7px #000000e8,-2px -2px 7px #2b272783;
   --bg-color-swipe-button-ball: linear-gradient(145deg, #ffffff, #7e7777);
@@ -1927,12 +1929,76 @@ body {
       transform: translateY(0px) translateZ(10px);
       transform-style: preserve-3d; }
 
+.service__about {
+  background-color: var(--bg-color-service-about);
+  padding: 7rem 0;
+  height: 85vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .service__about__content-box {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .service__about__heading {
+    font-size: 3.7rem;
+    color: var(--color-primary-opposite);
+    margin-top: -2.2rem; }
+  .service__about__text {
+    font-size: 1.8rem;
+    color: var(--color-tertiary-opposite);
+    max-width: 98%;
+    line-height: 25px; }
+  .service__about__benefits-list {
+    list-style: none;
+    margin-top: 2rem; }
+  .service__about__benefit {
+    display: flex;
+    align-items: center; }
+    .service__about__benefit :not(:last-child) {
+      margin-bottom: .6rem; }
+  .service__about__benefit-item {
+    color: var(--color-tertiary-opposite) !important;
+    font-size: 1.8rem; }
+  .service__about__benefit-icon {
+    border-radius: 999px;
+    margin-right: 1rem;
+    fill: red; }
+  .service__about__button, .service__about__button:visited, .service__about__button:link {
+    text-decoration: none;
+    transform: translateX(9%);
+    width: 24.5rem;
+    margin-top: 2rem; }
+    .service__about__button .arrow-box, .service__about__button:visited .arrow-box, .service__about__button:link .arrow-box {
+      transform: translateY(-2px); }
+    .service__about__button .arrow, .service__about__button:visited .arrow, .service__about__button:link .arrow {
+      border-top: .1rem solid red;
+      border-right: .1rem solid red;
+      width: 1rem;
+      height: 1rem; }
+    .service__about__button .button-secondary__text, .service__about__button:visited .button-secondary__text, .service__about__button:link .button-secondary__text {
+      font-weight: 1000;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 1.7rem; }
+  .service__about__img-box {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    width: 20%; }
+  .service__about__img {
+    border-radius: 8px;
+    height: 45rem; }
+
 .service__header {
   background: var(--bg-service-header), url("../../media/images/car-example.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 65vh;
+  height: 62vh;
   position: relative;
   display: flex; }
   .service__header__heading-box {
@@ -1946,8 +2012,6 @@ body {
     position: relative;
     top: -5rem;
     right: -5rem; }
-    .service__header__heading-box-box :not(:last-child) {
-      margin-bottom: 2rem; }
   .service__header__heading {
     color: var(--color-primary-opposite);
     font-size: 4.2rem;
@@ -1962,19 +2026,24 @@ body {
     display: block;
     margin-bottom: 3.3rem !important; }
   .service__header__lines-box {
-    flex: none; }
+    width: 45rem;
+    height: 3.7rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    white-space: nowrap; }
+    .service__header__lines-box :not(:last-child) {
+      margin-right: 1rem; }
   .service__header__line {
     border-radius: 2px;
     background-color: var(--color-primary-opposite);
-    width: 25%;
-    flex: none;
+    width: 35%;
+    height: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center; }
     .service__header__line__icon {
       fill: var(--color-primary) !important;
-      position: relative;
-      bottom: -9px;
       height: 1.9rem;
       width: 1.9rem; }
     .service__header__line__text {
