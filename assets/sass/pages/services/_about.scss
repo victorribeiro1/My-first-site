@@ -1,22 +1,39 @@
 .service {
     &__about {
-        background-color: var(--bg-color-service-about);
+        background-color: var(--color-zero);
         padding: 7rem 0;
-
+        min-height: 500px;
         height: 85vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
 
+        position: relative;
+
+        &::before {
+            content: '';
+            background-color: #222;
+            border-radius: 999px;
+            
+            height: .1rem;
+            width:  90%;
+            
+            position: absolute;
+            bottom: -1rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
         &__content-box {
+            // background-color: #fff;
             width: 60%;
-            height: 100%;
+            height: 48rem;
 
             display: flex;
             flex-direction: column;
             justify-content: space-around;
 
-            // padding-top: 5rem;
+            padding-top: 4.5rem;
         }
         
         &__heading {
@@ -27,18 +44,20 @@
         
         &__text {
             font-size: 1.8rem;
-            color: var(--color-tertiary-opposite);
-            // margin-top: -4rem;
-
+            color: var(--color-secondary-opposite);
+            font-weight: var(--font-weight);
+            letter-spacing: 1px;
+            // margin-top: 1.2rem;
+            
             max-width: 98%;
-
-            line-height: 25px;
+            
+            line-height: 26px;
         }
 
         &__benefits-list {
             list-style: none;
 
-            margin-top: 2rem;
+            margin-top: 4rem;
         }
         
         &__benefit {
@@ -46,13 +65,15 @@
             align-items: center;
 
             :not(:last-child) {
-                margin-bottom: .6rem;
+                margin-bottom: .7rem;
             }
         }
         
         &__benefit-item {
-            color: var(--color-tertiary-opposite) !important;
+            color: var(--color-secondary-opposite) !important;
+            font-weight: var(--font-weight);
             font-size: 1.8rem;
+            letter-spacing: 1px;
         }
         
         &__benefit-icon {
@@ -66,9 +87,9 @@
             &:visited,
             &:link {
                 text-decoration: none;
-                transform: translateX(9%);
+                transform: translateX(9%) translateY(10px);
                 width: 24.5rem;
-                margin-top: 2rem;
+                margin-top: 4rem;
 
                 .arrow-box {
                     transform: translateY(-2px);
@@ -96,16 +117,24 @@
             // background-color: #fff;
             display: flex;
             justify-content: center;
-            align-items: flex-end;
+            align-items: center;
             flex-direction: column;
 
             width: 20%;
+            height: 48rem;
+            padding-top: 6rem;
         }
 
         &__img {
-            border-radius: 8px;
-            // width: 28rem;
-            height: 45rem;
+            border-radius: 1px;
+            opacity: 1;
+            width: 100%;
+            width: 30rem;
+            
+            position: relative;
+            // left: -10rem;
+            // top: -1rem;
+            inset: -1rem 0 0 -1.8rem;
         }
     }
 }

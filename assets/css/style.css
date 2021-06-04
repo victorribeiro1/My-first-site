@@ -1930,47 +1930,64 @@ body {
       transform-style: preserve-3d; }
 
 .service__about {
-  background-color: var(--bg-color-service-about);
+  background-color: var(--color-zero);
   padding: 7rem 0;
+  min-height: 500px;
   height: 85vh;
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
+  .service__about::before {
+    content: '';
+    background-color: #222;
+    border-radius: 999px;
+    height: .1rem;
+    width: 90%;
+    position: absolute;
+    bottom: -1rem;
+    left: 50%;
+    transform: translateX(-50%); }
   .service__about__content-box {
     width: 60%;
-    height: 100%;
+    height: 48rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around; }
+    justify-content: space-around;
+    padding-top: 4.5rem; }
   .service__about__heading {
     font-size: 3.7rem;
     color: var(--color-primary-opposite);
     margin-top: -2.2rem; }
   .service__about__text {
     font-size: 1.8rem;
-    color: var(--color-tertiary-opposite);
+    color: var(--color-secondary-opposite);
+    font-weight: var(--font-weight);
+    letter-spacing: 1px;
     max-width: 98%;
-    line-height: 25px; }
+    line-height: 26px; }
   .service__about__benefits-list {
     list-style: none;
-    margin-top: 2rem; }
+    margin-top: 4rem; }
   .service__about__benefit {
     display: flex;
     align-items: center; }
     .service__about__benefit :not(:last-child) {
-      margin-bottom: .6rem; }
+      margin-bottom: .7rem; }
   .service__about__benefit-item {
-    color: var(--color-tertiary-opposite) !important;
-    font-size: 1.8rem; }
+    color: var(--color-secondary-opposite) !important;
+    font-weight: var(--font-weight);
+    font-size: 1.8rem;
+    letter-spacing: 1px; }
   .service__about__benefit-icon {
     border-radius: 999px;
     margin-right: 1rem;
     fill: red; }
   .service__about__button, .service__about__button:visited, .service__about__button:link {
     text-decoration: none;
-    transform: translateX(9%);
+    transform: translateX(9%) translateY(10px);
     width: 24.5rem;
-    margin-top: 2rem; }
+    margin-top: 4rem; }
     .service__about__button .arrow-box, .service__about__button:visited .arrow-box, .service__about__button:link .arrow-box {
       transform: translateY(-2px); }
     .service__about__button .arrow, .service__about__button:visited .arrow, .service__about__button:link .arrow {
@@ -1986,18 +2003,25 @@ body {
   .service__about__img-box {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     flex-direction: column;
-    width: 20%; }
+    width: 20%;
+    height: 48rem;
+    padding-top: 6rem; }
   .service__about__img {
-    border-radius: 8px;
-    height: 45rem; }
+    border-radius: 1px;
+    opacity: 1;
+    width: 100%;
+    width: 30rem;
+    position: relative;
+    inset: -1rem 0 0 -1.8rem; }
 
 .service__header {
   background: var(--bg-service-header), url("../../media/images/car-example.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 350px;
   height: 62vh;
   position: relative;
   display: flex; }
