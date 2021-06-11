@@ -4,8 +4,8 @@ let lastScrollTop = 0
 
 function toggleNavVisibility() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
-    if ((scrollTop > lastScrollTop) && (document.documentElement.scrollTop > 60)) {
+
+    if ((scrollTop > lastScrollTop) && (document.documentElement.scrollTop > 95)) {
         nav.style.top = '-10rem'
         toggleMenuButton2.style.top = '-10rem'
     } else {

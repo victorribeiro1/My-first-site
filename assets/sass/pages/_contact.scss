@@ -54,7 +54,7 @@
         justify-content: center;
         align-items: flex-end;
 
-        // ov;erflow: hidden;
+        // overflow: hidden;
 
         margin-top: 10rem;
 
@@ -88,12 +88,12 @@
         width:  56rem;
         
 
-        &__img-box {
+        // &__img-box {
             // background-color: rgb(230, 173, 173);
-        }
+        // }
         
         &__img {
-            fill: linear-gradient(to right, rgb(248, 60, 60) 24%, rgb(189, 12, 130) 94%) !important;
+            fill: linear-gradient(to right, rgb(248, 60, 60) 24%, rgb(189, 12, 100) 94%) !important;
             color: transparent;
             height: 10rem;
             width:  10rem;
@@ -150,7 +150,8 @@
         }
         
         &__button {
-            background: linear-gradient(240deg, #f83c3c 24%, #bd0c82 94%);
+            background: linear-gradient(to left, #ce1d1d 24%, #760086 94%);
+
             // background-color: #f83c3c;
             border-radius: 5px;
             border: 0;
@@ -170,9 +171,9 @@
         }
     }
 
-    &__img-box {
+    // &__img-box {
         // background-color: pink;
-    }
+    // }
 
     &__img {
         height: auto;
@@ -206,7 +207,6 @@
         } 
         
         &__img {
-            
             &--bolt {
                 fill: yellow;
                 
@@ -226,14 +226,15 @@
             transform: translateY(-10px);
         }
         
-        &__text-box {
+        // &__text-box {
             // background-color: rgb(246, 93, 195);
-        } 
+        // } 
         
         &__heading {
             color: #FFF;
             font-weight: 1000;
             font-size: 2.4rem;
+            letter-spacing: 2px;
 
             margin-bottom: .7rem;
         }
@@ -246,19 +247,18 @@
     }
 
     &__gradient-background {
-
         position: absolute;
 
         box-shadow: -2px -5px 10px 20px white;
 
-        background-color: red;
-        background: linear-gradient(to right, rgb(248, 60, 60) 24%, rgb(189, 12, 130) 94%);
+        background-color: rgb(207, 32, 32);
+        background: linear-gradient(to right, #ce1d1d 24%, #760086 94%);
 
         height: 100rem;
         width: 100%;
 
         z-index: -1;
 
-        clip-path: polygon(0% 35%, 100% 0%, 100% 100%, 0% 100%);
+        clip-path: polygon(0% 28%, 100% 0%, 100% 100%, 0% 100%);
     }
 }
