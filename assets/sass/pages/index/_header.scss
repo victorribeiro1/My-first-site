@@ -54,9 +54,9 @@
         top: -50px;
     }
     
-    // &__main-heading {
-        
-    // }
+    &__main-heading {
+        letter-spacing: 3px;
+    }
         
     &__paragraph {
         font-family: 'nunito-light';
@@ -64,6 +64,8 @@
         color: var(--color-quinary-opposite);
         max-width: 60rem;
         letter-spacing: 1px;
+        word-spacing: 1px;
+        // font-weight: var(--font-weight);
     }
     
     &__img-box {

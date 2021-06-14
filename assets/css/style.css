@@ -201,6 +201,9 @@ body {
   background-color: transparent;
   color: #ff0000; }
 
+a {
+  cursor: pointer; }
+
 @font-face {
   src: url("../../media/fonts/aeonik/Aeonik-Air.otf");
   font-family: 'aeonik-light'; }
@@ -1352,7 +1355,8 @@ body {
       height: 1px; }
   .about__text {
     text-align: left;
-    font-size: 2.2rem; }
+    font-size: 2.2rem;
+    font-weight: var(--font-weight); }
 
 .evaluations {
   background-color: var(--color-secondary);
@@ -1592,12 +1596,15 @@ body {
     align-items: flex-start;
     position: relative;
     top: -50px; }
+  .header__main-heading {
+    letter-spacing: 3px; }
   .header__paragraph {
     font-family: 'nunito-light';
     font-size: 1.7rem;
     color: var(--color-quinary-opposite);
     max-width: 60rem;
-    letter-spacing: 1px; }
+    letter-spacing: 1px;
+    word-spacing: 1px; }
   .header__img-box {
     position: relative; }
   .header__img {
