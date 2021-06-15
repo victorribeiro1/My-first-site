@@ -1,0 +1,44 @@
+.terms {
+    color: var(--color-secondary-opposite);
+
+    padding: 5.5rem 0 5.5rem 2rem;
+
+    font-weight: var(--font-weight);
+
+    h2 {
+        font-size: 3rem;
+        margin-bottom: .8rem;
+
+        &:not(:first-of-type) {
+            margin-top: 4rem;
+        }
+    }
+
+    h3 {
+        margin-top: 4rem;
+        margin-bottom: .8rem;
+
+        font-size: 2.5rem;
+    }
+
+    ol {
+        li {
+            // text-indent: 20px;
+            list-style-type: circle;
+            margin-left: 5rem;
+        }
+    }
+
+    p, li {
+        color: var(--color-tertiary-opposite);
+        font-size: 2rem;
+        list-style-type: none;
+
+        letter-spacing: 1px;
+        line-height: 28px;
+
+        text-align: justify;
+
+        max-width: 90%;
+    }
+}

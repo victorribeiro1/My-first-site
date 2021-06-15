@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br" current-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" type="image/png" href="../../media/images/logo-light.png"> <!-- Ajustar logo -->
+    <!-- <link rel="stylesheet" href="style.min.css"> -->
+    <title>AG Garagem</title>
+</head>
+
+<body>
+    <nav class="nav" id="nav">
+        <!-- START OF NAV -->
+        <div class="nav__column nav__column--left">
+            <li class="nav__item nav__item--toggle-menu">
+                <div class="nav__link toggle-menu">
+                    <!-- START OF TOGGLE-MENU -->
+                    <input type="checkbox" class="toggle-menu__checkbox" id="toggle" />
+
+                    <div class="toggle-menu__button-box">
+                        <label class="toggle-menu__button" for="toggle" id="navigationButton">
+                            <div class="toggle-menu__icon-box">
+                                <div class="toggle-menu__icon toggle-menu__icon--1"></div>
+                                <div class="toggle-menu__icon toggle-menu__icon--2"></div>
+                            </div>
+                            <div class="toggle-menu__button-background"></div>
+                        </label>
+                    </div>
+
+                    <div class="toggle-menu__background-box toggle-menu__background-box--1">
+                        <div class="toggle-menu__background toggle-menu__background--1"></div>
+                    </div>
+
+                    <nav class="toggle-menu__nav">
+                        <div class="toggle-menu__list-box toggle-menu__list-box--services">
+                            <div class="toggle-menu__heading-box">
+                                <h3 class="toggle-menu__heading">Serviços</h3>
+                            </div>
+
+                            <ul class="toggle-menu__list toggle-menu__list--services">
+                                <li class="toggle-menu__item">
+                                    <a href="" class="toggle-menu__link link--big">Alinhamento e Balanceamento</a>
+                                </li>
+
+                                <li class="toggle-menu__item">
+                                    <a href="" class="toggle-menu__link link link--big">Ar condicionado e Climatização</a>
+                                </li>
+
+                                <li class="toggle-menu__item">
+                                    <a href="" class="toggle-menu__link link link--big">Borracharia Móvel</a>
+                                </li>
+
+                                <li class="toggle-menu__item">
+                                    <a href="" class="toggle-menu__link link link--big">Higienização Interna</a>
+                                </li>
+
+                                <li class="toggle-menu__item">
+                                    <a href="" class="toggle-menu__link link--big">Manutenção de Freios Para Carreta</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="toggle-menu__list-box toggle-menu__list-box--see-also">
+                            <div class="toggle-menu__heading-box">
+                                <h3 class="toggle-menu__heading">Veja Também</h3>
+                            </div>
+
+                            <ul class="toggle-menu__list toggle-menu__list--see-also">
+                                <li class="toggle-menu__item">
+                                    <a href="../../index.html" class="toggle-menu__link link link--big">Home</a>
+                                </li>
+                                <li class="toggle-menu__item">
+                                    <a href="" class="toggle-menu__link link link--big">Quem somos</a>
+                                </li>
+                                <li class="toggle-menu__item">
+                                    <a href="" class="toggle-menu__link link link--big">O que falam de nós</a>
+                                </li>
+                                <li class="toggle-menu__item">
+                                    <a href="" class="toggle-menu__link link link--big">Área de Contato</a>
+                                </li>
+                                <li class="toggle-menu__item">
+                                    <a href="" class="toggle-menu__link link link--big">Perguntas frequentes</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="toggle-menu__icons-box">
+                            <a href="" class="">
+                                <svg class="icon icon--instagram">
+                                    <use xlink:href="../../media/svgs/symbol-defs.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+
+                            <a href="" class="">
+                                <svg class="icon icon--facebook">
+                                    <use xlink:href="../../media/svgs/symbol-defs.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+
+                            <a href="" class="">
+                                <svg class="icon icon--youtube">
+                                    <use xlink:href="../../media/svgs/symbol-defs.svg#icon-youtube"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </nav>
+                </div> <!-- END OF TOGGLE-MENU -->
+            </li>
+
+            <li class="nav__item dropdown">
+                <button class="nav__link nav__link--services arrow-container" href="">
+                    <span class="nav__link-text">Serviços</span>
+                    <span class="nav__link-arrow-box dropdown__arrow-box">
+                        <span class="arrow dropdown__arrow"></span>
+                    </span>
+                </button>
+
+                <ul class="dropdown__menu">
+                    <li class="dropdown__item">
+                        <a href="" class="dropdown__content-box">
+                            <svg class="icon icon--instagram dropdown__icon">
+                                <use xlink:href="../../media/svgs/symbol-defs.svg#wheel"></use>
+                            </svg>
+                            <div class="dropdown__link link link--small">Alinhamento e Balanceamento</div>
+                        </a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a href="" class="dropdown__content-box">
+                            <svg class="icon icon--instagram dropdown__icon">
+                                <use xlink:href="../../media/svgs/symbol-defs.svg#icon-snowflake-o"></use>
+                            </svg>
+                            <div class="dropdown__link link link--small">Ar condicionado e climatização</div>
+                        </a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a href="" class="dropdown__content-box">
+                            <svg class="icon icon--instagram dropdown__icon">
+                                <use xlink:href="../../media/svgs/symbol-defs.svg#wrench-in-circle"></use>
+                            </svg>
+                            <div class="dropdown__link link link--small">Borracharia Móvel</div>
+                        </a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a href="" class="dropdown__content-box">
+                            <svg class="icon icon--instagram dropdown__icon">
+                                <use xlink:href="../../media/svgs/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                            <div class="dropdown__link link link--small">Higienização</div>
+                        </a>
+                    </li>
+                    <li class="dropdown__item">
+                        <a href="" class="dropdown__content-box">
+                            <svg class="icon icon--instagram dropdown__icon">
+                                <use xlink:href="../../media/svgs/brake.svg#Capa_1"></use>
+                            </svg>
+                            <div class="dropdown__link link link--small">Manutenção de freios para carreta</div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </div>
+
+        <div class="nav__column nav__column--center">
+            <li class="nav__item">
+                <!-- <a class="nav__link nav__link--brand--text" href="">AG</a> -->
+                <a href="../../index.html" class="nav__link nav__link--brand--img"></a>
+            </li>
+        </div>
+
+        <div class="nav__column nav__column--right">
+            <li class="nav__item">
+                <a class="nav__link letter-spacing link link--small" href="">contato</a>
+            </li>
+            <li class="nav__item">
+                <div class="nav__link swipe-button" id="swipeButton">
+                    <div class="swipe-button__body">
+                        <div class="swipe-button__background"></div>
+                        <div class="swipe-button__ball"></div>
+                    </div>
+                </div>
+
+            </li>
+        </div>
+    </nav> <!-- END OF NAV -->
+
+    <div class="nav__substitute"></div>
+
+    <div class="terms">
+        <h2>1. Termos</h2>
+        <p>Ao acessar ao site <a href='https://garagemag.com.br/' class="link link--small">AG GARAGEM</a>, concorda em cumprir estes termos de
+            serviço, todas as leis e regulamentos aplicáveis e concorda que é responsável pelo cumprimento de todas as leis
+            locais aplicáveis. Se você não concordar com algum desses termos, está proibido de usar ou acessar este site. Os
+            materiais contidos neste site são protegidos pelas leis de direitos autorais e marcas comerciais aplicáveis.</p>
+        <h2>2. Uso de Licença</h2>
+        <p>É concedida permissão para baixar temporariamente uma cópia dos materiais (informações ou software) no site AG
+            GARAGEM , apenas para visualização transitória pessoal e não comercial. Esta é a concessão de uma licença, não
+            uma transferência de título e, sob esta licença, você não pode: </p>
+        <ol>
+            <li>modificar ou copiar os materiais; </li>
+            <li>usar os materiais para qualquer finalidade comercial ou para exibição pública (comercial ou não comercial);
+            </li>
+            <li>tentar descompilar ou fazer engenharia reversa de qualquer software contido no site AG GARAGEM; </li>
+            <li>remover quaisquer direitos autorais ou outras notações de propriedade dos materiais; ou </li>
+            <li>transferir os materiais para outra pessoa ou 'espelhe' os materiais em qualquer outro servidor.</li>
+        </ol>
+        <p>Esta licença será automaticamente rescindida se você violar alguma dessas restrições e poderá ser rescindida por
+            AG GARAGEM a qualquer momento. Ao encerrar a visualização desses materiais ou após o término desta licença, você
+            deve apagar todos os materiais baixados em sua posse, seja em formato eletrónico ou impresso.</p>
+        <h2>3. Isenção de responsabilidade</h2>
+            <p  >Os materiais no site da AG GARAGEM são fornecidos 'como estão'. AG GARAGEM não oferece garantias, expressas
+                ou implícitas, e, por este meio, isenta e nega todas as outras garantias, incluindo, sem limitação,
+                garantias implícitas ou condições de comercialização, adequação a um fim específico ou não violação de
+                propriedade intelectual ou outra violação de direitos. </p  >
+            <p  >Além disso, o AG GARAGEM não garante ou faz qualquer representação relativa à precisão, aos resultados
+                prováveis ou à confiabilidade do uso dos materiais em seu site ou de outra forma relacionado a esses
+                materiais ou em sites vinculados a este site.</p    >
+        <h2>4. Limitações</h2>
+        <p>Em nenhum caso o AG GARAGEM ou seus fornecedores serão responsáveis por quaisquer danos (incluindo, sem
+            limitação, danos por perda de dados ou lucro ou devido a interrupção dos negócios) decorrentes do uso ou da
+            incapacidade de usar os materiais em AG GARAGEM, mesmo que AG GARAGEM ou um representante autorizado da AG
+            GARAGEM tenha sido notificado oralmente ou por escrito da possibilidade de tais danos. Como algumas jurisdições
+            não permitem limitações em garantias implícitas, ou limitações de responsabilidade por danos conseqüentes ou
+            incidentais, essas limitações podem não se aplicar a você.</p>
+        <h2>5. Precisão dos materiais</h2>
+        <p>Os materiais exibidos no site da AG GARAGEM podem incluir erros técnicos, tipográficos ou fotográficos. AG
+            GARAGEM não garante que qualquer material em seu site seja preciso, completo ou atual. AG GARAGEM pode fazer
+            alterações nos materiais contidos em seu site a qualquer momento, sem aviso prévio. No entanto, AG GARAGEM não
+            se compromete a atualizar os materiais.</p>
+        <h2>6. Links</h2>
+        <p>O AG GARAGEM não analisou todos os sites vinculados ao seu site e não é responsável pelo conteúdo de nenhum site
+            vinculado. A inclusão de qualquer link não implica endosso por AG GARAGEM do site. O uso de qualquer site
+            vinculado é por conta e risco do usuário.</p>
+        </p>
+        <h3>Modificações</h3>
+        <p>O AG GARAGEM pode revisar estes termos de serviço do site a qualquer momento, sem aviso prévio. Ao usar este
+            site, você concorda em ficar vinculado à versão atual desses termos de serviço.</p>
+        <h3>Lei aplicável</h3>
+        <p>Estes termos e condições são regidos e interpretados de acordo com as leis do AG GARAGEM e você se submete
+            irrevogavelmente à jurisdição exclusiva dos tribunais naquele estado ou localidade.</p>
+    </div>
+
+        <footer class="footer"> <!-- START OF FOOTER -->
+            <div class="footer__links-area">
+                <div class="footer__list-box footer__list-box--about">
+                    <a href="" class="footer__logo-box">
+                        <img class="footer__logo" src="../../media/images/logo-light.png" alt="AG Garagem">
+                    </a>
+                </div>
+                <div class="footer__list-box">
+                    <h4 class="footer__list-heading">Serviços</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="alinhamento-e-geometria.html" class="footer__link link link--small">Alinhamento e Geometria</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="ar-condicionado-e-climatizacao.html" class="footer__link link link--small">Ar condicionado e climatização</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="borracharia-movel.html" class="footer__link link link--small">Borracharia móvel</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="higienizacao-interna.html" class="footer__link link link--small">Higienização Interna</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="freios-para-carreta.html" class="footer__link link link--small">Freios para carreta</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__list-box">
+                    <h4 class="footer__list-heading">Explore</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a class="footer__link link link--small link--home">Home</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link link link--small link--about">Sobre</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link link link--small link--lines">Serviços</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link link link--small link--faq">FAQ</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a class="footer__link link link--small link--evaluations">Avaliações</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__list-box">
+                    <h4 class="footer__list-heading">Contato</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="contact.html" class="footer__link link link--small">Contato rápido</a>
+                        </li>
+                        <li class="footer__list-item footer__not-link footer__not-link--1">
+                            <p class="footer__link">
+                                <svg class="icon footer__link-icon">
+                                    <use xlink:href="../../media/svgs/symbol-defs.svg#icon-phone"></use>
+                                </svg>
+
+                                +55 11 123456879
+                            </p>
+                        </li>
+                        <li class="footer__list-item footer__not-link footer__not-link--2">
+                            <p class="footer__link">
+                                <svg class="icon footer__link-icon">
+                                    <use xlink:href="../../media/svgs/symbol-defs.svg#icon-mail-1"></use>
+                                </svg>
+
+                                AG Garagem.com
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__list-box">
+                    <h4 class="footer__list-heading">Legal</h4>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="termos-de-uso.html" target="_blank" class="footer__link link link--small">Termos de uso</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="https://arcondicionado.garagemag.com.br/politica-privacidade" target="_blank" class="footer__link link link--small">Política de privacidade</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__copyright-area">
+                <div class="footer__copyright-box">
+                    <p class="footer__copyright-text">&copy; 2021 AG Garagarem. Todos os direitos reservados.</p>
+                    <p class="footer__cnpj-text">CNPJ: 24.985.158/0001-26</p>
+                </div>
+                <div class="footer__social-medias-box">
+                    <a class="footer__social-media" href="">
+                        <svg class="icon">
+                            <use xlink:href="../../media/svgs/symbol-defs.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                    <a class="footer__social-media" href="">
+                        <svg class="icon">
+                            <use xlink:href="../../media/svgs/symbol-defs.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                    <a class="footer__social-media" href="">
+                        <svg class="icon icon--youtube">
+                            <use xlink:href="../../media/svgs/symbol-defs.svg#icon-youtube"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </footer> <!-- END OF FOOTER -->
+
+    <!-- SCRIPTS -->
+    <script src="../js/dropdown.js"></script>
+    <script src="../js/link.js"></script>
+    <script src="../js/magic-scroll.js"></script>
+    <script src="../js/sticky-nav.js"></script>
+    <script src="../js/theme.js"></script>
+    <script src="../js/toggle-menu.js"></script>
+    <!-- END OF THE SCRIPTS -->
+</body>
+
+</html>

@@ -26,7 +26,7 @@ html[current-theme='dark'] {
   --bg-color-header: var(--color-dark-2);
   --bg-color-menu-bg: transparent;
   --bg-color-swipe-button-ball: linear-gradient(145deg, #413f3f, #030303);
-  --bg-service-header: linear-gradient(to right bottom, #2222, #000);
+  --bg-service-header: linear-gradient(to right bottom, #000B, #000B);
   --bg-color-service-about: #111;
   --box-shadow-contact-button: 5px  5px 11px #000000,-5px -5px 11px #ffffff10;
   --box-shadow-contact-button-interaction: 2px  2px 2px #0000009a,-2px -2px 5px #ffffff17;
@@ -175,8 +175,8 @@ html[current-theme='light'] {
   --main-button-width: 21rem; }
 
 .slider {
-  --bg-img-header-1: url("url(../../../../media/images/car.jpeg");
-  --bg-img-header-2: url("url(../../../../media/images/truck.jpeg");
+  --bg-img-header-1: url("url(../../../../media/images/truck.jpeg");
+  --bg-img-header-2: url("url(../../../../media/images/car.jpeg");
   --bg-img-header-3: url("url(../../../../media/images/bulldozer.jpeg"); }
 
 *,
@@ -1172,25 +1172,25 @@ body {
   transition: top .3s linear !important; }
   .toggle-menu__checkbox {
     display: none; }
-    .toggle-menu__checkbox:checked ~ .toggle-menu__button-box .toggle-menu__icon {
+    .toggle-menu__checkbox.checked ~ .toggle-menu__button-box .toggle-menu__icon {
       background-color: red; }
-      .toggle-menu__checkbox:checked ~ .toggle-menu__button-box .toggle-menu__icon--1 {
+      .toggle-menu__checkbox.checked ~ .toggle-menu__button-box .toggle-menu__icon--1 {
         margin-bottom: -1px;
         transform: translate(0px, 1px) rotate(135deg); }
-      .toggle-menu__checkbox:checked ~ .toggle-menu__button-box .toggle-menu__icon--2 {
+      .toggle-menu__checkbox.checked ~ .toggle-menu__button-box .toggle-menu__icon--2 {
         width: 100%;
         transform: translate(0px, 0px) rotate(-135deg); }
-    .toggle-menu__checkbox:checked ~ .toggle-menu__button-box .toggle-menu__button-background {
+    .toggle-menu__checkbox.checked ~ .toggle-menu__button-box .toggle-menu__button-background {
       transform: translate(50%, -50%) scale(1); }
-    .toggle-menu__checkbox:checked ~ .toggle-menu__background-box .toggle-menu__background {
+    .toggle-menu__checkbox.checked ~ .toggle-menu__background-box .toggle-menu__background {
       transform: scale(48); }
-    .toggle-menu__checkbox:checked ~ .toggle-menu__nav {
+    .toggle-menu__checkbox.checked ~ .toggle-menu__nav {
       display: flex; }
-    .toggle-menu__checkbox:checked ~ .toggle-menu__nav .toggle-menu__list-box,
-    .toggle-menu__checkbox:checked ~ .toggle-menu__nav .toggle-menu__icons-box {
+    .toggle-menu__checkbox.checked ~ .toggle-menu__nav .toggle-menu__list-box,
+    .toggle-menu__checkbox.checked ~ .toggle-menu__nav .toggle-menu__icons-box {
       opacity: 1;
       transition: opacity .5s .3s !important; }
-    .toggle-menu__checkbox:checked ~ .toggle-menu__nav {
+    .toggle-menu__checkbox.checked ~ .toggle-menu__nav {
       left: 0;
       transition: left 0s 0s !important; }
   .toggle-menu__button-box {
@@ -1321,7 +1321,7 @@ body {
   background-color: var(--color-primary);
   max-height: 1000px;
   height: 130vh;
-  min-height: 900px;
+  min-height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1955,6 +1955,31 @@ body {
       opacity: 1;
       transform: translateY(0px) translateZ(10px);
       transform-style: preserve-3d; }
+
+.terms {
+  color: var(--color-secondary-opposite);
+  padding: 5.5rem 0 5.5rem 2rem;
+  font-weight: var(--font-weight); }
+  .terms h2 {
+    font-size: 3rem;
+    margin-bottom: .8rem; }
+    .terms h2:not(:first-of-type) {
+      margin-top: 4rem; }
+  .terms h3 {
+    margin-top: 4rem;
+    margin-bottom: .8rem;
+    font-size: 2.5rem; }
+  .terms ol li {
+    list-style-type: circle;
+    margin-left: 5rem; }
+  .terms p, .terms li {
+    color: var(--color-tertiary-opposite);
+    font-size: 2rem;
+    list-style-type: none;
+    letter-spacing: 1px;
+    line-height: 28px;
+    text-align: justify;
+    max-width: 90%; }
 
 .service__about {
   background-color: var(--color-zero);
