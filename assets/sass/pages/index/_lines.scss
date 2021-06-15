@@ -1,8 +1,9 @@
 .lines {
     background-color: var(--color-secondary);
     
-    height: 100vh;
     min-height: 650px;
+    height: 100vh;
+    max-height: 650px;
 
     position: relative;
 

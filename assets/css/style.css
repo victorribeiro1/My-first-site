@@ -26,7 +26,7 @@ html[current-theme='dark'] {
   --bg-color-header: var(--color-dark-2);
   --bg-color-menu-bg: transparent;
   --bg-color-swipe-button-ball: linear-gradient(145deg, #413f3f, #030303);
-  --bg-service-header: linear-gradient(to right bottom, #000B, #000B);
+  --bg-service-header: linear-gradient(to right bottom, #2222, #000);
   --bg-color-service-about: #111;
   --box-shadow-contact-button: 5px  5px 11px #000000,-5px -5px 11px #ffffff10;
   --box-shadow-contact-button-interaction: 2px  2px 2px #0000009a,-2px -2px 5px #ffffff17;
@@ -69,7 +69,7 @@ html[current-theme='light'] {
   --box-shadow-icon-box-interaction:  inset  2px  2px 5px #000, inset -3px -3px 7px #4d4e551f;
   --box-shadow-img: 3px  3px 4px #000000c5,-3px -3px 4px #ffffff0c;
   --bg-color-menu-bg: #ffffff10;
-  --bg-service-header: linear-gradient(to right bottom, #D6D6D699, #D6D6D699);
+  --bg-service-header: linear-gradient(340deg, #FFF0, #FFFA);
   --bg-color-service-about: #D6D6D6;
   --box-shadow-swipe-button:3px  3px 5px #00000078,-3px -3px 5px #ffffff,inset  3px  3px 5px #000000e8,inset -3px -3px 5px #2b272783;
   --box-shadow-swipe-button-ball:  2px  2px 7px #000000e8,-2px -2px 7px #2b272783;
@@ -1319,7 +1319,9 @@ body {
 
 .about {
   background-color: var(--color-primary);
-  min-height: 130vh;
+  max-height: 1000px;
+  height: 130vh;
+  min-height: 900px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1575,6 +1577,9 @@ body {
   margin-top: calc(var(--navigation-width) * -1);
   min-height: 61rem;
   height: 100vh;
+  max-height: 650px;
+  height: 100vh;
+  min-height: 600px;
   box-shadow: 0 2px 7px black;
   position: relative;
   overflow: hidden;
@@ -1705,8 +1710,9 @@ body {
 
 .lines {
   background-color: var(--color-secondary);
-  height: 100vh;
   min-height: 650px;
+  height: 100vh;
+  max-height: 650px;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -1781,10 +1787,9 @@ body {
           margin-left: -35%; }
 
 .performance {
+  max-height: 650px;
   height: 90vh;
-  max-height: 170rem;
-  height: 90vh;
-  min-height: 26rem;
+  min-height: 580px;
   background-image: linear-gradient(var(--gradient-performance-image)), url(../../media/images/car-portrait.jpg);
   background-attachment: fixed;
   background-position: center;
@@ -1818,8 +1823,8 @@ body {
     transition: border ease-out .2s; }
   .performance__icon {
     fill: var(--color-primary-opposite);
-    height: 4rem;
-    width: 4rem;
+    height: 5rem;
+    width: 5rem;
     padding: 04px; }
   .performance__numbers-box {
     font-size: 6rem;
