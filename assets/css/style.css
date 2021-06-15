@@ -14,6 +14,7 @@ html[current-theme='dark'] {
   --color-transparent-2: var(--color-transparent-dark-2);
   --color-transparent-opposite-1: var(--color-transparent-light-1);
   --color-transparent-opposite-2: var(--color-transparent-light-2);
+  --color-transparent-opposite-3: var(--color-transparent-light-3);
   --color-thumb: var(--color-transparent-light-3);
   --color-main-heading: var(--color-light-2);
   --color-border: #080808;
@@ -55,6 +56,7 @@ html[current-theme='light'] {
   --color-transparent-2: var(--color-transparent-light-2);
   --color-transparent-opposite-1: var(--color-transparent-dark-1);
   --color-transparent-opposite-2: var(--color-transparent-dark-2);
+  --color-transparent-opposite-3: var(--color-transparent-dark-3);
   --color-thumb: var(--color-transparent-dark-3);
   --color-border: var(--color-light-3);
   --color-swiper-card: var(--color-primary);
@@ -153,7 +155,7 @@ html[current-theme='light'] {
   --color-dark-4: #333;
   --color-transparent-dark-1: #0000000e;
   --color-transparent-dark-2: #00000054;
-  --color-transparent-dark-3: #111111cc;
+  --color-transparent-dark-3: #0002;
   --color-light-0: #FFF;
   --color-light-1: #EEE;
   --color-light-2: #D6D6D6;
@@ -162,7 +164,7 @@ html[current-theme='light'] {
   --color-light-5: #999;
   --color-transparent-light-1: #ffffff0a;
   --color-transparent-light-2: #ffffff84;
-  --color-transparent-light-3: #eeeeee50;
+  --color-transparent-light-3: #FFF2;
   --navigation-width: 10rem; }
 
 .header__button {
@@ -623,9 +625,12 @@ body {
     transform: rotate(45deg);
     transition: .2s linear !important; }
   .dropdown__menu {
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(5px);
     background-color: var(--color-transparent-opposite-1);
-    border-bottom: 2px solid #fff1;
+    background-color: transparent;
+    border-bottom: 3px solid var(--color-transparent-opposite-3);
+    border-left: 1px solid var(--color-transparent-opposite-3);
+    border-right: 1px solid var(--color-transparent-opposite-3);
     border-radius: 10px;
     position: absolute;
     margin-top: 2rem;
