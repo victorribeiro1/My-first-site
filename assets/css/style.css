@@ -36,7 +36,9 @@ html[current-theme='dark'] {
   --box-shadow-swipe-button:5px  5px 11px #000000e8,-3px -3px 5px #2b272783,inset  3px  3px 5px #000000e8,inset -3px -3px 8px #000000cb;
   --box-shadow-swipe-button-ball: 2px  2px 7px #000000e8,-2px -2px 7px #2b272783;
   --menu-background-blur: .8px;
-  --font-weight: thin; }
+  --font-weight: thin;
+  --gradient-performance-image: to right bottom, #2222, #000
+; }
   html[current-theme='dark'] * {
     transition-timing-function: ease-out;
     transition-duration: .2s; }
@@ -73,7 +75,9 @@ html[current-theme='light'] {
   --box-shadow-swipe-button-ball:  2px  2px 7px #000000e8,-2px -2px 7px #2b272783;
   --bg-color-swipe-button-ball: linear-gradient(145deg, #ffffff, #7e7777);
   --menu-background-blur: 3px;
-  --font-weight: bolder; }
+  --font-weight: bolder;
+  --gradient-performance-image: to left bottom, #FFF6, #FFFA
+; }
   html[current-theme='light'] * {
     transition-timing-function: ease-out;
     transition-duration: .2s;
@@ -280,8 +284,6 @@ body {
   position: relative;
   display: inline-block;
   padding: 0 20px; }
-  .subheading--opposite {
-    color: #EEE; }
   .subheading--left {
     margin-right: 100%;
     transform: translateX(0%); }
@@ -1368,9 +1370,7 @@ body {
 .evaluations {
   background-color: var(--color-secondary);
   position: relative;
-  max-height: 70rem;
-  height: 115vh;
-  min-height: 66rem;
+  height: auto;
   max-width: 100%;
   display: flex;
   flex-direction: column;
@@ -1782,7 +1782,10 @@ body {
 
 .performance {
   height: 90vh;
-  background-image: linear-gradient(to right bottom, #ffffff60, #000), url(../../media/images/car-portrait.jpg);
+  max-height: 170rem;
+  height: 90vh;
+  min-height: 26rem;
+  background-image: linear-gradient(var(--gradient-performance-image)), url(../../media/images/car-portrait.jpg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -1804,39 +1807,44 @@ body {
     justify-content: center;
     align-items: center; }
   .performance__icon-box {
-    border: 1px solid #fff9;
+    border: 1px solid var(--color-transparent-opposite-2);
     border-radius: 999px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 4rem;
-    height: 13rem;
-    width: 13rem; }
+    height: 12rem;
+    width: 12rem;
+    transition: border ease-out .2s; }
   .performance__icon {
-    fill: #EEE;
-    height: 6rem;
-    width: 6rem;
+    fill: var(--color-primary-opposite);
+    height: 4rem;
+    width: 4rem;
     padding: 04px; }
   .performance__numbers-box {
     font-size: 6rem;
-    font-family: nunito-regular;
+    font-family: 'nunito-regular';
     font-weight: 1000;
-    color: #EEE;
+    color: var(--color-primary-opposite);
     display: flex;
     justify-self: center;
     align-items: center; }
-  .performance__signal--plus {
-    font-size: 5rem; }
-  .performance__signal--percentage {
-    font-size: 4rem;
-    transform: translateY(15%); }
+  .performance__counter {
+    transition: color ease-out 0ms !important; }
+  .performance__signal {
+    color: var(--color-primary-opposite); }
+    .performance__signal--plus {
+      font-size: 5rem; }
+    .performance__signal--percentage {
+      font-size: 4rem;
+      transform: translateY(15%); }
   .performance__text {
     text-transform: uppercase;
-    font-family: nunito-regular;
+    font-family: 'nunito-regular';
     font-weight: 1000;
     letter-spacing: 3px;
     font-size: 2rem;
-    color: #EEE; }
+    color: var(--color-primary-opposite); }
 
 .services {
   height: auto;

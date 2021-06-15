@@ -2,7 +2,11 @@
 
     height: 90vh;
 
-    background-image: linear-gradient(to right bottom, #ffffff60, #000), url(../../media/images/car-portrait.jpg);
+    max-height: 170rem;
+    height: 90vh;
+    min-height: 26rem;
+
+    background-image: linear-gradient(var(--gradient-performance-image)), url(../../media/images/car-portrait.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -41,7 +45,7 @@
     }
 
     &__icon-box {
-        border: 1px solid #fff9;
+        border: 1px solid var(--color-transparent-opposite-2);
         border-radius: 999px;
 
         display: flex;
@@ -50,32 +54,42 @@
 
         margin-bottom: 4rem;
 
-        height: 13rem;
-        width:  13rem;
-    }
-    &__icon {
-        fill: #EEE;
+        height: 12rem;
+        width:  12rem;
 
-        height: 6rem;
-        width:  6rem;
+        transition: border ease-out .2s;
+    }
+
+    &__icon {
+        fill: var(--color-primary-opposite);
+        
+
+        height: 4rem;
+        width:  4rem;
 
         padding: 04px;
     }
 
     &__numbers-box {
         font-size: 6rem;
-        font-family: nunito-regular;
+        font-family: 'nunito-regular';
         font-weight: 1000;
-        // color: var(--color-primary);
-        color: #EEE;
+
+        color: var(--color-primary-opposite);
 
         display: flex;
         justify-self: center;
         align-items: center;
+
+    }
+
+    &__counter {
+        transition: color ease-out 0ms !important;
     }
 
     &__signal {
-
+        color: var(--color-primary-opposite);
+        
         &--plus {
             font-size: 5rem;
         }
@@ -88,10 +102,10 @@
     
     &__text {
         text-transform: uppercase;
-        font-family: nunito-regular;
+        font-family: 'nunito-regular';
         font-weight: 1000;
         letter-spacing: 3px;
         font-size: 2rem;
-        color: #EEE;
+        color: var(--color-primary-opposite);
     }
 }
