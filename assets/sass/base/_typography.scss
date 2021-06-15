@@ -45,8 +45,10 @@ body {
 
 .heading {
     color: var(--color-secondary-opposite);
-    font-size: 6.3rem;
-    letter-spacing: 1px;
+    font-size: 5rem;
+    max-width: 150%;
+    letter-spacing: 2px;
+    text-align: left;
     font-family: 'nunito-light';
 }
 

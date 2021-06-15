@@ -45,13 +45,16 @@
     }
     
     &__text-box {        
+        // background-color: #fff;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
+        max-width: 40%;
         
         position: relative;
         top: -50px;
+        left: -20px;
     }
     
     &__main-heading {
@@ -60,8 +63,8 @@
         
     &__paragraph {
         font-family: 'nunito-light';
-        font-size: 1.7rem;
-        color: var(--color-quinary-opposite);
+        font-size: 3rem;
+        color: var(--color-secondary-opposite);
         max-width: 60rem;
         letter-spacing: 1px;
         word-spacing: 1px;
@@ -156,8 +159,8 @@
             width: var(--main-button-width);
                     
             position: relative;
-            top: -10rem;
-            left: -7rem;
+            top: -11rem;
+            left: -4.5rem;
 
             display: flex;
             justify-content: space-evenly;

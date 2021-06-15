@@ -35,7 +35,7 @@ html[current-theme='dark'] {
   --box-shadow-img: 3px  3px 5px #000000,-3px -3px 5px #ffffff0c;
   --box-shadow-swipe-button:5px  5px 11px #000000e8,-3px -3px 5px #2b272783,inset  3px  3px 5px #000000e8,inset -3px -3px 8px #000000cb;
   --box-shadow-swipe-button-ball: 2px  2px 7px #000000e8,-2px -2px 7px #2b272783;
-  --menu-background-blur: .9px;
+  --menu-background-blur: .8px;
   --font-weight: thin; }
   html[current-theme='dark'] * {
     transition-timing-function: ease-out;
@@ -72,7 +72,7 @@ html[current-theme='light'] {
   --box-shadow-swipe-button:3px  3px 5px #00000078,-3px -3px 5px #ffffff,inset  3px  3px 5px #000000e8,inset -3px -3px 5px #2b272783;
   --box-shadow-swipe-button-ball:  2px  2px 7px #000000e8,-2px -2px 7px #2b272783;
   --bg-color-swipe-button-ball: linear-gradient(145deg, #ffffff, #7e7777);
-  --menu-background-blur: 2px;
+  --menu-background-blur: 3px;
   --font-weight: bolder; }
   html[current-theme='light'] * {
     transition-timing-function: ease-out;
@@ -266,8 +266,10 @@ body {
 
 .heading {
   color: var(--color-secondary-opposite);
-  font-size: 6.3rem;
-  letter-spacing: 1px;
+  font-size: 5rem;
+  max-width: 150%;
+  letter-spacing: 2px;
+  text-align: left;
   font-family: 'nunito-light'; }
 
 .subheading {
@@ -1598,15 +1600,17 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    max-width: 40%;
     position: relative;
-    top: -50px; }
+    top: -50px;
+    left: -20px; }
   .header__main-heading {
     letter-spacing: 3px; }
   .header__paragraph {
     font-family: 'nunito-light';
-    font-size: 1.7rem;
-    color: var(--color-quinary-opposite);
+    font-size: 3rem;
+    color: var(--color-secondary-opposite);
     max-width: 60rem;
     letter-spacing: 1px;
     word-spacing: 1px; }
@@ -1665,8 +1669,8 @@ body {
     height: 5.2rem;
     width: var(--main-button-width);
     position: relative;
-    top: -10rem;
-    left: -7rem;
+    top: -11rem;
+    left: -4.5rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
