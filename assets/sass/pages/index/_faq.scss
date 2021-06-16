@@ -2,7 +2,7 @@
     background-color: var(--color-primary);
     padding-top: 4rem;
 
-    height: auto;
+    // height: 500px;
 
     position: relative;
 
@@ -11,6 +11,15 @@
     justify-content: flex-start;
     align-items: center;
 
+    @media (max-width: 760px) {
+        &__question {
+            font-size: 2.6rem !important;
+        }
+
+        &__answer {
+            font-size: 2.3rem !important;
+        }
+    }
 
     &__header-box {
         text-align: right;
@@ -140,7 +149,7 @@
                 height: 17.5rem !important;
             }
         }
-
+        
         &:hover {
             height: 14.5rem;
 
@@ -148,9 +157,61 @@
                 transform: rotate(225deg);
             }
         }
+
+        @media (max-width: 567px) {
+            &:nth-of-type(1) {
+                height: 11rem;
+                &:hover {
+                    height: 22.6rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+        }
+
+        @media (max-width: 613px) {
+            &:nth-of-type(2) {
+                height: 11rem;
+                &:hover {
+                    height: 26rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+        }
+
+        @media (max-width: 557px) {
+            &:nth-of-type(3) {
+                height: 11rem;
+                &:hover {
+                    height: 29.4rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+        }
+
+        @media (max-width: 620px) {
+            &:nth-of-type(4) {
+                &:hover {
+                    height: 22rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+        }
     }
 
     &__question-box {
+        // background-color: #fff;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -166,17 +227,20 @@
         
         font-size: 2.4rem;
         font-weight: 1000;
+        max-width: 83%;
     }
 
     &__arrow {
+        // background-color: #fff;
         margin: 0 0 0 2rem;
         
-        height: 12px;
-        width: 12px;
+        height: 1.4rem;
+        width: 1.4rem;
         
         display: inline-block;
 
         position: absolute;
+        top: 18px;
         right: 45px;
 
         border-bottom: 1px solid var(--color-primary-opposite);
@@ -203,6 +267,8 @@
         letter-spacing: 1px;
 
         width: 100%;
+        max-width: 90%;
+        text-align: justify;
     }
 
     &__link {
