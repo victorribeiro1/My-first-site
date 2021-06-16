@@ -1787,7 +1787,7 @@ body {
           margin-left: -35%; }
 
 .performance {
-  height: 830px;
+  height: auto;
   background-image: linear-gradient(var(--gradient-performance-image)), url(../../media/images/car-portrait.jpg);
   background-attachment: fixed;
   background-position: center;
@@ -1798,19 +1798,18 @@ body {
   @media (max-width: 680px) {
     .performance__informations-box {
       flex-direction: column;
-      position: relative;
-      bottom: 16rem; }
+      margin-top: 14rem;
+      margin-bottom: 10rem; }
     .performance__information-box:not(:last-of-type) {
       margin-bottom: 8rem; } }
   .performance__header-box {
-    margin-top: 4rem;
+    margin-top: 5rem;
     height: 30%; }
   .performance__informations-box {
     height: 70%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin-bottom: 3rem; }
+    align-items: center; }
   .performance__information-box {
     display: flex;
     flex-direction: column;
