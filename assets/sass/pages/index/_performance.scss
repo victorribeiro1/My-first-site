@@ -13,7 +13,7 @@
     flex-direction: column;
     justify-content: center;
 
-    @media (max-width: 680px) {
+    @media (max-width: 760px) {
 
         &__informations-box {
             flex-direction: column;
@@ -32,7 +32,7 @@
 
     &__header-box {
         // background-color: lightblue;
-        margin-top: 5rem;
+        margin-top: 3rem;
         
         height: 30%;
     }
@@ -46,6 +46,9 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        margin-top: 14rem;
+        margin-bottom: 10rem;
 
         // margin-bottom: 3rem;
     }
