@@ -1107,7 +1107,6 @@ body {
   height: 80rem;
   padding-top: 2rem; }
   .footer-mobile__links-box {
-    background-color: #FFF;
     color: blue; }
     .footer-mobile__links-box__header {
       display: flex;
@@ -1425,7 +1424,7 @@ body {
     @media (max-width: 700px) {
       .evaluations .swiper-slide {
         height: 70rem;
-        width: 45rem; } }
+        width: 52rem; } }
   .evaluations__card {
     position: relative;
     width: 100%;
