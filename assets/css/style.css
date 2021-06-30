@@ -1408,9 +1408,6 @@ body {
   justify-content: flex-start;
   align-items: right;
   z-index: 0; }
-  @media (max-width: 700px) {
-    .evaluations {
-      height: 101vh; } }
   .evaluations__header {
     margin: 4rem 0 9rem 0; }
   .evaluations__swipe-container-box {
@@ -1427,6 +1424,10 @@ body {
     @media (max-width: 700px) {
       .evaluations .swiper-slide {
         height: 70rem;
+        width: 52rem; } }
+    @media (max-width: 400px) {
+      .evaluations .swiper-slide {
+        height: 75rem;
         width: 52rem; } }
   .evaluations__card {
     position: relative;
