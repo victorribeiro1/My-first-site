@@ -1427,7 +1427,7 @@ body {
         width: 52rem; } }
     @media (max-width: 400px) {
       .evaluations .swiper-slide {
-        height: 75rem;
+        height: 82rem;
         width: 52rem; } }
   .evaluations__card {
     position: relative;
