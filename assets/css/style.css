@@ -200,8 +200,11 @@ body {
   background-size: cover;
   box-sizing: border-box;
   position: relative;
+  margin: 0;
   overflow-x: hidden;
-  width: 100%; }
+  width: 100%;
+  margin-right: 20rem;
+  border: none; }
 
 ::selection {
   background-color: transparent;
@@ -960,7 +963,8 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 6rem 8rem 2rem 6rem; }
+  padding: 6rem 8rem 2rem 6rem;
+  display: none; }
   @media only screen and (max-width: 71.875em) {
     .footer {
       padding: 6rem 3rem 2rem 3rem; } }
@@ -1004,12 +1008,6 @@ body {
     font-size: 1.6rem;
     text-transform: uppercase;
     margin-bottom: 3rem; }
-    @media only screen and (max-width: 77.5em) {
-      .footer__list-heading {
-        font-size: 1.5rem; } }
-    @media only screen and (max-width: 71.875em) {
-      .footer__list-heading {
-        font-size: 1.8rem; } }
   .footer__list {
     display: flex;
     flex-direction: column;
@@ -1024,10 +1022,16 @@ body {
     line-height: 10px;
     font-weight: var(--font-weight);
     display: inline-block; }
-    @media only screen and (max-width: 77.5em) {
+    @media only screen and (max-width: 1045px) {
+      .footer__link, .footer__link:link, .footer__link:visited {
+        font-size: 1.4rem; } }
+    @media only screen and (max-width: 950px) {
+      .footer__link, .footer__link:link, .footer__link:visited {
+        font-size: 1.2rem; } }
+    @media only screen and (max-width: 865px) {
       .footer__link, .footer__link:link, .footer__link:visited {
         font-size: 1.1rem; } }
-    @media only screen and (max-width: 71.875em) {
+    @media only screen and (max-width: 825px) {
       .footer__link, .footer__link:link, .footer__link:visited {
         font-size: 1.3rem; } }
   .footer__link.link::before {
@@ -1096,6 +1100,31 @@ body {
       fill: var(--color-zero-opposite); }
     .footer__social-media:hover {
       background-color: var(--color-transparent-opposite-1); }
+
+.footer-mobile {
+  background: var(--color-zero);
+  height: auto;
+  padding-top: 2rem; }
+  .footer-mobile__links-box {
+    background-color: #FFF;
+    color: blue; }
+    .footer-mobile__links-box__header {
+      display: flex;
+      justify-content: space-around; }
+    .footer-mobile__links-box__heading {
+      font-size: 2rem; }
+    .footer-mobile__links-box__arrow-box {
+      height: 20px;
+      width: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: rotateZ(135deg) translateY(0px); }
+    .footer-mobile__links-box__arrow {
+      border-top: 0.2px solid black;
+      border-right: 0.2px solid black;
+      height: 15px;
+      width: 15px; }
 
 .nav {
   background-color: var(--color-secondary);

@@ -17,6 +17,7 @@ html {
     &.menu-is-active {
         overflow: hidden !important;
     }
+
 }
 
 body {
@@ -24,12 +25,16 @@ body {
     background: var(--color-primary);
     background-size: cover;
     box-sizing: border-box;
-
+    
     position: relative;
-
+    margin: 0;
     overflow-x: hidden;
-
+    
     width: 100%;
+
+    margin-right: 20rem;
+
+    border: none;
 }
 
 ::selection {
