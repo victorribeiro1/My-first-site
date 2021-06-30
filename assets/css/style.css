@@ -1104,6 +1104,7 @@ body {
 .footer-mobile {
   background: var(--color-zero);
   height: auto;
+  height: 80rem;
   padding-top: 2rem; }
   .footer-mobile__links-box {
     background-color: #FFF;
@@ -1419,7 +1420,12 @@ body {
     background-position: center;
     background-size: cover;
     width: 34rem;
-    height: 39rem; }
+    height: 39rem;
+    --first-bp: 655px; }
+    @media (max-width: 700px) {
+      .evaluations .swiper-slide {
+        height: 70rem;
+        width: 45rem; } }
   .evaluations__card {
     position: relative;
     width: 100%;
@@ -1461,9 +1467,13 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     border-radius: 50%;
     border: 4px solid #eee;
+    object-fit: cover;
     width: 8.9rem;
-    height: 8.9rem;
-    object-fit: cover; }
+    height: 8.9rem; }
+    @media (max-width: 700px) {
+      .evaluations__evaluator-img {
+        height: 13rem;
+        width: 13rem; } }
   .evaluations__evaluation-text-box {
     width: 100%;
     height: 28%;
@@ -1476,24 +1486,37 @@ body {
     font-size: 1.8rem;
     line-height: 24px;
     font-weight: 1000;
+    text-align: center;
     color: var(--color-secondary-opposite); }
+    @media (max-width: 700px) {
+      .evaluations__evaluation-text {
+        font-size: 2.5rem; } }
   .evaluations__card:hover .evaluations__evaluation-text {
     color: var(--color-primary); }
   .evaluations__evaluator-details-box {
     width: 100%;
     height: 13%;
     z-index: 1; }
+    @media (max-width: 700px) {
+      .evaluations__evaluator-details-box {
+        transform: translateY(10px); } }
   .evaluations__evaluator-name {
     color: var(--color-secondary-opposite);
     font-weight: 1000;
     font-size: 1.9rem;
     line-height: 28px; }
+    @media (max-width: 700px) {
+      .evaluations__evaluator-name {
+        font-size: 2.4rem; } }
   .evaluations__card:hover .evaluations__evaluator-name {
     color: var(--color-primary); }
   .evaluations__evaluator-profession {
     color: #03a9f4;
     font-weight: 1000;
     font-size: 1.7rem; }
+    @media (max-width: 700px) {
+      .evaluations__evaluator-profession {
+        font-size: 2.4rem; } }
 
 .faq {
   background-color: var(--color-primary);
