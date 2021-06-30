@@ -136,6 +136,8 @@
         height: 8.9rem;
         
         @media (max-width: 700px) {
+            border: 3px solid #eee;
+
             height: 15rem;
             width:  15rem;
         }
