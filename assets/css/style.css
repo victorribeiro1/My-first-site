@@ -1408,6 +1408,9 @@ body {
   justify-content: flex-start;
   align-items: right;
   z-index: 0; }
+  @media (max-width: 700px) {
+    .evaluations {
+      height: 100vh; } }
   .evaluations__header {
     margin: 4rem 0 9rem 0; }
   .evaluations__swipe-container-box {
