@@ -1824,7 +1824,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center; }
-  @media (max-width: 680px) {
+  @media (max-width: 760px) {
     .performance__informations-box {
       flex-direction: column;
       margin-top: 14rem;
@@ -1832,13 +1832,15 @@ body {
     .performance__information-box:not(:last-of-type) {
       margin-bottom: 8rem; } }
   .performance__header-box {
-    margin-top: 5rem;
+    margin-top: 3rem;
     height: 30%; }
   .performance__informations-box {
     height: 70%;
     display: flex;
     justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    margin-top: 14rem;
+    margin-bottom: 10rem; }
   .performance__information-box {
     display: flex;
     flex-direction: column;
