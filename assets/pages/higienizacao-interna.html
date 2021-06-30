@@ -13,7 +13,97 @@
         <nav class="nav" id="nav"> <!-- START OF NAV -->
             <div class="nav__column nav__column--left">
                 <li class="nav__item nav__item--toggle-menu">
-                    
+                    <div class="nav__link toggle-menu"> <!-- START OF TOGGLE-MENU -->
+                        <input type="checkbox" class="toggle-menu__checkbox" id="toggle" />
+
+                        <div class="toggle-menu__button-box">
+                            <label class="toggle-menu__button" for="toggle" id="navigationButton">
+                                <div class="toggle-menu__icon-box">
+                                    <div class="toggle-menu__icon toggle-menu__icon--1"></div>
+                                    <div class="toggle-menu__icon toggle-menu__icon--2"></div>
+                                </div>
+                                <div class="toggle-menu__button-background"></div>
+                            </label>
+                        </div>
+
+                        <div class="toggle-menu__background-box toggle-menu__background-box--1">
+                            <div class="toggle-menu__background toggle-menu__background--1"></div>
+                        </div>
+
+                        <nav class="toggle-menu__nav">
+                            <div class="toggle-menu__list-box toggle-menu__list-box--services">
+                                <div class="toggle-menu__heading-box">
+                                    <h3 class="toggle-menu__heading">Serviços</h3>
+                                </div>
+
+                                <ul class="toggle-menu__list toggle-menu__list--services">
+                                    <li class="toggle-menu__item">
+                                        <a href="" class="toggle-menu__link link link--big">Alinhamento e Balanceamento</a>
+                                    </li>
+
+                                    <li class="toggle-menu__item">
+                                        <a href="" class="toggle-menu__link link link--big">Ar condicionado e Climatização</a>
+                                    </li>
+
+                                    <li class="toggle-menu__item">
+                                        <a href="" class="toggle-menu__link link link--big">Borracharia Móvel</a>
+                                    </li>
+
+                                    <li class="toggle-menu__item">
+                                        <a href="" class="toggle-menu__link link link--big">Higienização Interna</a>
+                                    </li>
+
+                                    <li class="toggle-menu__item">
+                                        <a href="" class="toggle-menu__link link link--big">Manutenção de Freios Para Carreta</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="toggle-menu__list-box toggle-menu__list-box--see-also">
+                                <div class="toggle-menu__heading-box">
+                                    <h3 class="toggle-menu__heading">Veja Também</h3>
+                                </div>
+
+                                <ul class="toggle-menu__list toggle-menu__list--see-also">
+                                    <li class="toggle-menu__item">
+                                        <a href="../../index.html" class="toggle-menu__link link link--big">Home</a>
+                                    </li>
+                                    <li class="toggle-menu__item">
+                                        <a href="" class="toggle-menu__link link link--big">Quem somos</a>
+                                    </li>
+                                    <li class="toggle-menu__item">
+                                        <a href="" class="toggle-menu__link link link--big">O que falam de nós</a>
+                                    </li>
+                                    <li class="toggle-menu__item">
+                                        <a href="" class="toggle-menu__link link link--big">Área de Contato</a>
+                                    </li>
+                                    <li class="toggle-menu__item">
+                                        <a href="" class="toggle-menu__link link link--big">Perguntas frequentes</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="toggle-menu__icons-box">
+                                <a href="" class="">
+                                    <svg class="icon icon--instagram">
+                                        <use xlink:href="../../media/svgs/symbol-defs.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+
+                                <a href="" class="">
+                                    <svg class="icon icon--facebook">
+                                        <use xlink:href="../../media/svgs/symbol-defs.svg#icon-facebook"></use>
+                                    </svg>
+                                </a>
+
+                                <a href="" class="">
+                                    <svg class="icon icon--youtube">
+                                        <use xlink:href="../../media/svgs/symbol-defs.svg#icon-youtube"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </nav>
+                    </div> <!-- END OF TOGGLE-MENU -->
                 </li>
 
                 <li class="nav__item dropdown">
@@ -61,9 +151,9 @@
                             <a href="" class="dropdown__content-box">
                                 <svg class="icon icon--instagram dropdown__icon">
                                     <use xlink:href="../../media/svgs/brake.svg#Capa_1"></use>
-                                </svg>
+                              </svg>
                                 <div class="dropdown__link link link--small">Manutenção de freios para carreta</div>
-                            </a>
+                         </a>
                         </li>
                     </ul>
                 </li>
@@ -72,123 +162,25 @@
             <div class="nav__column nav__column--center">
                 <li class="nav__item">
                     <!-- <a class="nav__link nav__link--brand--text" href="">AG</a> -->
-                    <a href="" class="nav__link nav__link--brand--img"></a>
+                    <a href="../../index.html" class="nav__link nav__link--brand--img"></a>
                 </li>
             </div>
 
             <div class="nav__column nav__column--right">
                 <li class="nav__item">
-                    <a class="nav__link letter-spacing link link--small" href="../pages/contact.html">contato</a>
+                    <a class="nav__link letter-spacing link link--small" href="">contato</a>
                 </li>
                 <li class="nav__item">
                     <div class="nav__link swipe-button" id="swipeButton">
                         <div class="swipe-button__body">
-                            <div class="swipe-button__background">
-                                <svg class="icon icon--sun">
-                                    <use xlink:href="../../media/svgs/symbol-defs.svg#icon-sun-3"></use>
-                                </svg>
-                                <svg class="icon icon--moon">
-                                    <use xlink:href="../../media/svgs/symbol-defs.svg#icon-moon-1"></use>
-                                </svg>
-                            </div>
+                            <div class="swipe-button__background"></div>
                             <div class="swipe-button__ball"></div>
                         </div>
                     </div>
+
                 </li>
             </div>
         </nav> <!-- END OF NAV -->
-
-        <div class="nav__link toggle-menu"> <!-- START OF TOGGLE-MENU -->
-            <input type="checkbox" class="toggle-menu__checkbox" id="toggle" />
-
-            <div class="toggle-menu__button-box">
-                <label class="toggle-menu__button" for="toggle" id="navigationButton">
-                    <div class="toggle-menu__icon-box">
-                        <div class="toggle-menu__icon toggle-menu__icon--1"></div>
-                        <div class="toggle-menu__icon toggle-menu__icon--2"></div>
-                    </div>
-                    <div class="toggle-menu__button-background"></div>
-                </label>
-            </div>
-
-            <div class="toggle-menu__background-box toggle-menu__background-box--1">
-                <div class="toggle-menu__background toggle-menu__background--1"></div>
-            </div>
-
-            <nav class="toggle-menu__nav">
-                <div class="toggle-menu__list-box toggle-menu__list-box--services">
-                    <div class="toggle-menu__heading-box">
-                        <h3 class="toggle-menu__heading">Serviços</h3>
-                    </div>
-
-                    <ul class="toggle-menu__list toggle-menu__list--services">
-                        <li class="toggle-menu__item">
-                            <a href="" class="toggle-menu__link link link--big">Alinhamento e Balanceamento</a>
-                        </li>
-
-                        <li class="toggle-menu__item">
-                            <a href="" class="toggle-menu__link link link--big">Ar condicionado e Climatização</a>
-                        </li>
-
-                        <li class="toggle-menu__item">
-                            <a href="" class="toggle-menu__link link link--big">Borracharia Móvel</a>
-                        </li>
-
-                        <li class="toggle-menu__item">
-                            <a href="" class="toggle-menu__link link link--big">Higienização Interna</a>
-                        </li>
-
-                        <li class="toggle-menu__item">
-                            <a href="" class="toggle-menu__link link link--big">Manutenção de Freios Para Carreta</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="toggle-menu__list-box toggle-menu__list-box--see-also">
-                    <div class="toggle-menu__heading-box">
-                        <h3 class="toggle-menu__heading">Veja Também</h3>
-                    </div>
-
-                    <ul class="toggle-menu__list toggle-menu__list--see-also">
-                        <li class="toggle-menu__item">
-                            <a href="../../" class="toggle-menu__link link link--big">Home</a>
-                        </li>
-                        <li class="toggle-menu__item">
-                            <a href="../../#about" class="toggle-menu__link link link--big">Quem somos</a>
-                        </li>
-                        <li class="toggle-menu__item">
-                            <a href="../../#evaluations" class="toggle-menu__link link link--big">O que falam de nós</a>
-                        </li>
-                        <li class="toggle-menu__item">
-                            <a href="contact.html" class="toggle-menu__link link link--big">Área de Contato</a>
-                        </li>
-                        <li class="toggle-menu__item">
-                            <a href="../../#faq" class="toggle-menu__link  link link--big">Perguntas frequentes</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="toggle-menu__icons-box">
-                    <a href="" class="">
-                        <svg class="icon icon--instagram">
-                            <use xlink:href="../../media/svgs/symbol-defs.svg#icon-instagram"></use>
-                        </svg>
-                    </a>
-
-                    <a href="" class="">
-                        <svg class="icon icon--facebook">
-                            <use xlink:href="../../media/svgs/symbol-defs.svg#icon-facebook"></use>
-                        </svg>
-                    </a>
-
-                    <a href="" class="">
-                        <svg class="icon icon--youtube">
-                            <use xlink:href="../../media/svgs/symbol-defs.svg#icon-youtube"></use>
-                        </svg>
-                    </a>
-                </div>
-            </nav>
-        </div> <!-- END OF TOGGLE-MENU -->
 
         <div class="nav__substitute"></div>
 

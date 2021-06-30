@@ -112,12 +112,14 @@
 
         white-space: nowrap;
         
-        transition: .3s .8s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
+        transition-property: color, opacity !important;
+        transition-timing-function: cubic-bezier(0.77, 0, 0.175, 1), cubic-bezier(0.785, 0.135, 0.150, 0.860);
+        transition-delay: 0s, .8s !important;
         opacity: 1;
         
         &.hide {
+            transition-delay: 0s, 0s !important;
             opacity: 0;
-            transition: .3s cubic-bezier(0.785, 0.135, 0.150, 0.860) !important;
         }
 
         &--2 {

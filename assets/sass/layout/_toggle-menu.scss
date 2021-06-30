@@ -9,8 +9,6 @@
 
     z-index: 8;
 
-    transition: top .3s linear !important;
-
     &__checkbox {
         display: none;
 
@@ -45,14 +43,10 @@
             
             & .toggle-menu__nav .toggle-menu__list-box,
             & .toggle-menu__nav .toggle-menu__icons-box {
-                opacity: 1;
-                transition: opacity .5s .3s !important;
-            }
+                opacity: 1;            }
             
             & .toggle-menu__nav {
-                left: 0;
-                transition: left 0s 0s !important;
-            }
+                left: 0;            }
         }
     }
 
@@ -64,8 +58,6 @@
         z-index: 4;
 
         cursor: pointer;
-
-        transition: top .3s linear !important;
     }
 
     &__button {
@@ -99,9 +91,7 @@
         height: 21rem;
         width: 21rem;
         
-        z-index: -1;
-        transition: all .5s cubic-bezier(0.97, 0.12, 0.7, 1.5) !important;
-    }
+        z-index: -1;    }
 
     &__icon-box {
         cursor: pointer;
@@ -134,9 +124,7 @@
 
         transform: rotate(0);
 
-        
-        transition: .5s cubic-bezier(0.68, -0.55, 0.265, 1.55) !important;
-        
+                
         &--1 {
             margin-bottom: 8px;
             width: 100%;
@@ -167,17 +155,13 @@
         
         position: relative;
         
-        transform: scale(0);
-        transition: all .8s ease !important;
-        z-index: 2;
+        transform: scale(0);        z-index: 2;
         
         // &--1 {
 
         // }
         
-        &--2 {
-            transition-delay: 1s !important;
-        }
+        &--2 {        }
     }
 
     &__nav {
@@ -191,9 +175,7 @@
         height: 100vh;
         z-index: 3;   
 
-        left: -9999px;
-        transition: left 0s .8s !important;
-        // background-color: #aaa;
+        left: -9999px;        // background-color: #aaa;
     }
     
     &__list-box {
@@ -205,8 +187,6 @@
 
         opacity: 0;
         
-        transition: opacity .5s .1s !important;
-
         // &--services {
 
         // }
@@ -282,7 +262,5 @@
 
         width: 13rem;
 
-        opacity: 0;
-        transition: opacity 180ms 0s ease-out !important;
-    }
+        opacity: 0;    }
 }
