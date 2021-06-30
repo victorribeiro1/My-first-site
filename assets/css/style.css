@@ -1504,6 +1504,11 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center; }
+  @media (max-width: 760px) {
+    .faq__question {
+      font-size: 2.6rem !important; }
+    .faq__answer {
+      font-size: 2.3rem !important; } }
   .faq__header-box {
     text-align: right;
     width: 100%; }
@@ -1566,6 +1571,32 @@ body {
       height: 14.5rem; }
       .faq__question-and-answer-box:hover .faq__arrow {
         transform: rotate(225deg); }
+    @media (max-width: 567px) {
+      .faq__question-and-answer-box:nth-of-type(1) {
+        height: 11rem; }
+        .faq__question-and-answer-box:nth-of-type(1):hover {
+          height: 22.6rem !important; }
+        .faq__question-and-answer-box:nth-of-type(1) .faq__arrow {
+          top: 26px; } }
+    @media (max-width: 613px) {
+      .faq__question-and-answer-box:nth-of-type(2) {
+        height: 11rem; }
+        .faq__question-and-answer-box:nth-of-type(2):hover {
+          height: 26rem !important; }
+        .faq__question-and-answer-box:nth-of-type(2) .faq__arrow {
+          top: 26px; } }
+    @media (max-width: 557px) {
+      .faq__question-and-answer-box:nth-of-type(3) {
+        height: 11rem; }
+        .faq__question-and-answer-box:nth-of-type(3):hover {
+          height: 29.4rem !important; }
+        .faq__question-and-answer-box:nth-of-type(3) .faq__arrow {
+          top: 26px; } }
+    @media (max-width: 620px) {
+      .faq__question-and-answer-box:nth-of-type(4):hover {
+        height: 22rem !important; }
+      .faq__question-and-answer-box:nth-of-type(4) .faq__arrow {
+        top: 26px; } }
   .faq__question-box {
     display: flex;
     justify-content: flex-start;
@@ -1576,14 +1607,16 @@ body {
     display: inline-block;
     position: relative;
     font-size: 2.4rem;
-    font-weight: 1000; }
+    font-weight: 1000;
+    max-width: 83%; }
   .faq__arrow {
     margin: 0 0 0 2rem;
-    height: 12px;
-    width: 12px;
+    height: 1.4rem;
+    width: 1.4rem;
     display: inline-block;
     position: absolute;
     right: 45px;
+    top: 18px;
     border-bottom: 1px solid var(--color-primary-opposite);
     border-right: 1px solid var(--color-primary-opposite);
     transform: rotate(45deg);
@@ -1597,7 +1630,9 @@ body {
     color: var(--color-secondary-opposite);
     font-size: 2rem;
     letter-spacing: 1px;
-    width: 100%; }
+    width: 100%;
+    max-width: 90%;
+    text-align: justify; }
   .faq__link, .faq__link:link, .faq__link:visited {
     text-transform: lowercase !important; }
 
