@@ -289,7 +289,7 @@
     // min-height: 61rem;
     height: auto;
 
-    height: 80rem;
+    min-height: 120rem;
 
     padding: 5rem 20px 0 20px;
 
@@ -359,22 +359,33 @@
         }
 
         &__link-box {
-            // border: 1px solid red;
             padding: 3rem 0;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 100%;
 
             &:first-of-type {
                 // background-color: #fff;
-                margin-top: 10px;
+                margin-top: -5px;
             }
+        }
+
+        &__link-icon {
+            fill: red;
         }
 
         &__link {
             &,
             &:link,
             &:visited {
+                border: 1px solid red;
                 color: var(--color-tertiary-opposite) !important;
-                font-size: 2.5rem;
+                font-size: 2.1rem;
                 font-weight: 1000;
+                transform: translateY(-27px);
             }
         }
     }
