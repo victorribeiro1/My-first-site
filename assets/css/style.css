@@ -1105,14 +1105,14 @@ body {
   background: var(--color-zero);
   height: auto;
   height: 80rem;
-  padding: 5rem 32px 0 32px; }
+  padding: 5rem 20px 0 20px; }
   .footer-mobile__links-box {
     cursor: pointer;
     padding: 2rem 0;
     height: 9rem;
     overflow: hidden;
     transition: .6s ease !important; }
-    .footer-mobile__links-box:hover {
+    .footer-mobile__links-box.active {
       height: 55em; }
     .footer-mobile__links-box__header {
       display: flex;
@@ -1128,7 +1128,10 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: .5s !important;
       transform: rotateZ(135deg) translateY(0px); }
+    .footer-mobile__links-box.active .footer-mobile__links-box__arrow-box {
+      transform: rotateZ(315deg) translateY(0px); }
     .footer-mobile__links-box__arrow {
       border-top: 2px solid var(--color-primary-opposite);
       border-right: 2px solid var(--color-primary-opposite);
@@ -1425,7 +1428,7 @@ body {
   justify-content: flex-start;
   align-items: right;
   z-index: 0; }
-  @media only handheld and (max-width: 700px) {
+  @media only screen and (max-width: 600px) {
     .evaluations {
       height: 100vh; } }
   .evaluations__header {
@@ -1441,11 +1444,11 @@ body {
     width: 34rem;
     height: 39rem;
     --first-bp: 655px; }
-    @media (max-width: 700px) {
+    @media only screen and (max-width: 700px) {
       .evaluations .swiper-slide {
         height: 70rem;
         width: 52rem; } }
-    @media (max-width: 400px) {
+    @media only screen and (max-width: 400px) {
       .evaluations .swiper-slide {
         height: 82rem;
         width: 52rem; } }
@@ -1493,7 +1496,7 @@ body {
     object-fit: cover;
     width: 8.9rem;
     height: 8.9rem; }
-    @media (max-width: 700px) {
+    @media only screen and (max-width: 700px) {
       .evaluations__evaluator-img {
         border: 3px solid #eee;
         height: 15rem;
@@ -1512,7 +1515,7 @@ body {
     font-weight: 1000;
     text-align: center;
     color: var(--color-secondary-opposite); }
-    @media (max-width: 700px) {
+    @media only screen and (max-width: 700px) {
       .evaluations__evaluation-text {
         font-size: 2.5rem; } }
   .evaluations__card:hover .evaluations__evaluation-text {
@@ -1521,7 +1524,7 @@ body {
     width: 100%;
     height: 13%;
     z-index: 1; }
-    @media (max-width: 700px) {
+    @media only screen and (max-width: 700px) {
       .evaluations__evaluator-details-box {
         transform: translateY(10px); } }
   .evaluations__evaluator-name {
@@ -1529,7 +1532,7 @@ body {
     font-weight: 1000;
     font-size: 1.9rem;
     line-height: 28px; }
-    @media (max-width: 700px) {
+    @media only screen and (max-width: 700px) {
       .evaluations__evaluator-name {
         font-size: 2.4rem; } }
   .evaluations__card:hover .evaluations__evaluator-name {
@@ -1538,7 +1541,7 @@ body {
     color: #03a9f4;
     font-weight: 1000;
     font-size: 1.7rem; }
-    @media (max-width: 700px) {
+    @media only screen and (max-width: 700px) {
       .evaluations__evaluator-profession {
         font-size: 2.4rem; } }
 
