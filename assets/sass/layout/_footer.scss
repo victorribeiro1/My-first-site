@@ -11,10 +11,13 @@
 
     padding: 6rem 8rem 2rem 6rem;
     
-    display: none;
-
+    
     @media only screen and (max-width: $second-breakpoint) {
         padding: 6rem 3rem 2rem 3rem;
+    }
+
+    @media only screen and (max-width: 700px) {
+        display: none;
     }
 
     &__links-area {
@@ -286,15 +289,20 @@
 .footer-mobile {
     background: var(--color-zero);
 
-    // min-height: 61rem;
-    height: auto;
+    display: none;
+
+    @media only screen and (max-width: 700px) {
+        display: block;
+    }
+
 
     min-height: 120rem;
 
     padding: 5rem 20px 0 20px;
 
     &__links-area {
-
+        border-bottom: 1px solid white;
+        padding-bottom: 5rem;
     }
 
     &__links-box {
@@ -311,8 +319,20 @@
 
         transition: .6s ease !important;
 
+        --link-box-high: 11rem;
+
         &.active {
-            height: 55em;
+
+            &:nth-of-type(1), &:nth-of-type(2) {
+                height: calc(var(--link-box-high) * 5); // vezes o numero de links
+            }
+            &:nth-of-type(3) {
+                height: calc(var(--link-box-high) * 3.5); // vezes o numero de links
+            }
+            &:nth-of-type(4) {
+                height: calc(var(--link-box-high) * 2.6); // vezes o numero de links
+            }
+            
         }
 
         &__header {
@@ -359,17 +379,24 @@
         }
 
         &__link-box {
-            padding: 3rem 0;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            width: 100%;
-
-            &:first-of-type {
+            &,
+            &:visited,
+            &:link {
                 // background-color: #fff;
-                margin-top: -5px;
+                padding: 3rem 0;
+
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                width: 100%;
+
+                transform: translateY(23px);
+
+                &:first-of-type {
+                    // background-color: #fff;
+                    margin-top: -5px;
+                }
             }
         }
 
@@ -384,7 +411,8 @@
                 color: var(--color-tertiary-opposite) !important;
                 font-size: 2.1rem;
                 font-weight: 1000;
-                transform: translateY(-27px);
+                display: inline-block;
+                transform: translateY(-4px);
             }
         }
     }
