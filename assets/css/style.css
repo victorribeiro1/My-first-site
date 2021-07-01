@@ -1105,14 +1105,23 @@ body {
   background: var(--color-zero);
   height: auto;
   height: 80rem;
-  padding-top: 2rem; }
+  padding: 5rem 32px 0 32px; }
   .footer-mobile__links-box {
-    color: blue; }
+    cursor: pointer;
+    padding: 2rem 0;
+    height: 9rem;
+    overflow: hidden;
+    transition: .6s ease !important; }
+    .footer-mobile__links-box:hover {
+      height: 55em; }
     .footer-mobile__links-box__header {
       display: flex;
-      justify-content: space-around; }
+      justify-content: space-between; }
     .footer-mobile__links-box__heading {
-      font-size: 2rem; }
+      color: var(--color-primary-opposite);
+      font-size: 3rem;
+      letter-spacing: 3px;
+      font-weight: 1000; }
     .footer-mobile__links-box__arrow-box {
       height: 20px;
       width: 20px;
@@ -1121,10 +1130,18 @@ body {
       align-items: center;
       transform: rotateZ(135deg) translateY(0px); }
     .footer-mobile__links-box__arrow {
-      border-top: 0.2px solid black;
-      border-right: 0.2px solid black;
-      height: 15px;
-      width: 15px; }
+      border-top: 2px solid var(--color-primary-opposite);
+      border-right: 2px solid var(--color-primary-opposite);
+      height: 1.4rem;
+      width: 1.4rem; }
+    .footer-mobile__links-box__link-box {
+      padding: 3rem 0; }
+      .footer-mobile__links-box__link-box:first-of-type {
+        margin-top: 10px; }
+    .footer-mobile__links-box__link, .footer-mobile__links-box__link:link, .footer-mobile__links-box__link:visited {
+      color: var(--color-tertiary-opposite) !important;
+      font-size: 2.5rem;
+      font-weight: 1000; }
 
 .nav {
   background-color: var(--color-secondary);
@@ -1408,7 +1425,7 @@ body {
   justify-content: flex-start;
   align-items: right;
   z-index: 0; }
-  @media (max-width: 700px) {
+  @media only handheld and (max-width: 700px) {
     .evaluations {
       height: 100vh; } }
   .evaluations__header {

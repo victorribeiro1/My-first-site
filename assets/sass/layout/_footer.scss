@@ -291,22 +291,41 @@
 
     height: 80rem;
 
-    padding-top: 2rem;
+    padding: 5rem 32px 0 32px;
     &__links-area {
 
     }
 
     &__links-box {
-        // background-color: #FFF;
-        color: blue;
+        // background-color: #f3a5a5;
+        // color: white;
+        cursor: pointer;
+
+        // padding: 0 25px;
+
+        padding:  2rem 0;
+
+        height: 9rem;
+        overflow: hidden;
+
+        transition: .6s ease !important;
+
+        &:hover {
+            height: 55em;
+        }
 
         &__header {
+            // background-color: lightblue;
+
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
         }
 
         &__heading {
-            font-size: 2rem;
+            color: var(--color-primary-opposite);
+            font-size: 3rem;
+            letter-spacing: 3px;
+            font-weight: 1000;
         }
 
         &__arrow-box {
@@ -322,26 +341,34 @@
         }
 
         &__arrow {
-            border-top:     0.2px solid black;
-            border-right:   0.2px solid black;
+            border-top:     2px solid var(--color-primary-opposite);
+            border-right:   2px solid var(--color-primary-opposite);
 
-            height: 15px;
-            width:  15px;
+            height: 1.4rem;
+            width:  1.4rem;
         }
 
         &__links-box {
-
+            // background-color: lightgreen;
         }
 
         &__link-box {
+            // border: 1px solid red;
+            padding: 3rem 0;
 
+            &:first-of-type {
+                // background-color: #fff;
+                margin-top: 10px;
+            }
         }
 
         &__link {
             &,
             &:link,
             &:visited {
-
+                color: var(--color-tertiary-opposite) !important;
+                font-size: 2.5rem;
+                font-weight: 1000;
             }
         }
     }
