@@ -2,6 +2,10 @@
     width: 4px;
     z-index: -1;
 
+    @media only screen and (max-width: 650px) {
+        width: 0;
+    }
+
     &.hidden {
         width: 0 !important;
     }
