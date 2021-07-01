@@ -330,7 +330,7 @@
                 height: calc(var(--link-box-high) * 5); // vezes o numero de links
             }
             &:nth-of-type(3) {
-                height: calc(var(--link-box-high) * 3.5); // vezes o numero de links
+                height: calc(var(--link-box-high) * 3.4); // vezes o numero de links
             }
             &:nth-of-type(4) {
                 height: calc(var(--link-box-high) * 2.6); // vezes o numero de links
@@ -452,6 +452,12 @@
         font-weight: var(--font-weight);
     }
     
+    &__all-rights-reserved {
+        @media only screen and (max-width: 455px) {
+            display: none;
+        }
+    }
+
     &__social-medias-box {
         // background-color: #d6d6d6;
         // width: 20rem;
