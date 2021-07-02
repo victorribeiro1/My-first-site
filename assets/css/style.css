@@ -1424,7 +1424,7 @@ body {
     z-index: 4; }
     @media only screen and (max-width: 51.25em) {
       .toggle-menu__button {
-        height: 18px;
+        height: 25px;
         width: 58px; } }
     .toggle-menu__button:hover .toggle-menu__button-background {
       transform: translate(50%, -50%) scale(1); }
@@ -1467,7 +1467,7 @@ body {
       width: 80%; }
       @media only screen and (max-width: 51.25em) {
         .toggle-menu__icon--2 {
-          width: 62%; } }
+          width: 67%; } }
   .toggle-menu__background-box {
     position: absolute;
     left: .2rem;
