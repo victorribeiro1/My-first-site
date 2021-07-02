@@ -1306,6 +1306,9 @@ body {
   transition: top .3s linear, background-color .2s ease-out !important; }
   @media screen and (max-width: 34em) {
     .nav-mobile {
+      --navigation-width: 11.5rem; } }
+  @media screen and (max-width: 34em) {
+    .nav-mobile {
       display: flex; } }
   .nav-mobile__substitute {
     background-color: var(--color-primary);
@@ -1354,10 +1357,13 @@ body {
       bottom: 11px;
       right: -7px; }
   .nav-mobile__link--brand--img {
-    background: var(--bg-img-logo) no-repeat center;
-    background-size: 87%;
-    height: 7rem;
     width: 17rem; }
+    @media only screen and (max-width: 51.25em) {
+      .nav-mobile__link--brand--img {
+        display: none;
+        width: 120px; } }
+    .nav-mobile__link--brand--img img {
+      width: 105px; }
 
 .toggle-menu {
   position: fixed;

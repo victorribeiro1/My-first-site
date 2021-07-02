@@ -146,10 +146,15 @@
     
     // margin-bottom: 2rem;
 
+    @media screen and (max-width: 34em) {
+    --navigation-width: 11.5rem;
+    }
+
     position: fixed;
     top: 0;
     height: var(--navigation-width);
     width: 100%;    
+    
     
     z-index: 8;
     
@@ -253,11 +258,20 @@
             }
 
             &--img {
-                background: var(--bg-img-logo) no-repeat center;
-                background-size: 87%;
+                // background: var(--bg-img-logo) no-repeat center;
+                // background-size: 84%;
                 
-                height: 7rem;
+                // height: 7rem;
                 width: 17rem;
+                
+                @media only screen and (max-width: $fourth-breakpoint) {
+                    display: none;
+                    width: 120px;
+                }
+
+                img {
+                    width: 105px;
+                }
             }
         }
     }
