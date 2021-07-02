@@ -839,6 +839,9 @@ body {
 
 .swipe-button {
   cursor: pointer; }
+  @media only screen and (max-width: 51.25em) {
+    .swipe-button {
+      transform: translateY(-2px); } }
   .swipe-button__body {
     background: linear-gradient(110deg, #edfbff, #7575c2 40%, #c01f55, red 100%);
     border: 5px solid var(--color-secondary);
@@ -849,8 +852,9 @@ body {
     position: relative; }
     @media only screen and (max-width: 51.25em) {
       .swipe-button__body {
-        height: 30px;
-        width: 65px; } }
+        border: 3px solid var(--color-secondary);
+        height: 25px;
+        width: 55px; } }
   .swipe-button__background {
     border-radius: 999px;
     position: absolute;
@@ -884,10 +888,14 @@ body {
     transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) !important; }
     @media only screen and (max-width: 51.25em) {
       .swipe-button__ball {
-        height: 20px;
-        width: 20px; } }
+        height: 19px;
+        width: 19px;
+        transform: translateY(-48%); } }
   .swipe-button.active .swipe-button__ball {
     left: 36px; }
+    @media only screen and (max-width: 51.25em) {
+      .swipe-button.active .swipe-button__ball {
+        left: 31px; } }
 
 .vertical-carousel {
   height: 12rem;
@@ -1370,7 +1378,7 @@ body {
 
 .toggle-menu {
   position: fixed;
-  top: 6rem;
+  top: 6.4rem;
   height: 10rem;
   width: 10rem;
   z-index: 8;
@@ -1413,6 +1421,10 @@ body {
     bottom: -3px;
     display: inline-block;
     z-index: 4; }
+    @media only screen and (max-width: 51.25em) {
+      .toggle-menu__button {
+        height: 25px;
+        width: 58px; } }
     .toggle-menu__button:hover .toggle-menu__button-background {
       transform: translate(50%, -50%) scale(1); }
   .toggle-menu__background-box {
