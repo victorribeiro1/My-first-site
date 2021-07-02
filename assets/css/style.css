@@ -841,7 +841,7 @@ body {
   cursor: pointer; }
   @media only screen and (max-width: 51.25em) {
     .swipe-button {
-      transform: translateY(-2px); } }
+      transform: translateY(-3px); } }
   .swipe-button__body {
     background: linear-gradient(110deg, #edfbff, #7575c2 40%, #c01f55, red 100%);
     border: 5px solid var(--color-secondary);
@@ -1332,7 +1332,8 @@ body {
       width: 30rem; }
     .nav-mobile__column--right {
       display: flex;
-      justify-content: flex-end; }
+      justify-content: flex-end;
+      padding-right: 3px; }
     .nav-mobile__column--center {
       position: relative; }
   .nav-mobile__item {
@@ -1423,7 +1424,7 @@ body {
     z-index: 4; }
     @media only screen and (max-width: 51.25em) {
       .toggle-menu__button {
-        height: 25px;
+        height: 18px;
         width: 58px; } }
     .toggle-menu__button:hover .toggle-menu__button-background {
       transform: translate(50%, -50%) scale(1); }
@@ -1464,6 +1465,9 @@ body {
       width: 100%; }
     .toggle-menu__icon--2 {
       width: 80%; }
+      @media only screen and (max-width: 51.25em) {
+        .toggle-menu__icon--2 {
+          width: 62%; } }
   .toggle-menu__background-box {
     position: absolute;
     left: .2rem;

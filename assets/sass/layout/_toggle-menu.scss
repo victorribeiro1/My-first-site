@@ -74,7 +74,7 @@
         width:  75px;
         
         @media only screen and (max-width: $fourth-breakpoint) {
-            height: 25px;
+            height: 18px;
             width:  58px;
         }
 
@@ -149,6 +149,10 @@
         
         &--2 {
             width: 80%;
+
+            @media only screen and (max-width: $fourth-breakpoint) {
+                width:  62%;
+            }
         }
     }
 
