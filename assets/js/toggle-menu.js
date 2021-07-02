@@ -1,16 +1,23 @@
-const toggleMenu = document.querySelector('.toggle-menu')
-const toggleMenuButton = document.querySelector('.toggle-menu__icon-box')
+const toggleMenus = document.querySelectorAll('.toggle-menu')
+const toggleMenuButtons = document.querySelectorAll('.toggle-menu__icon-box')
 const htmlTag = document.querySelector('html')
 const Alllinks = document.querySelectorAll('a.link')
-const toggleInput = document.getElementById('toggle')
+const toggleInputs = document.querySelectorAll('#toggle')
 
 // block scroll when toggle-menu is oppened
 // encrease the z-index to hide navigation
-toggleMenuButton.addEventListener('click', () => {
-    htmlTag.classList.toggle('menu-is-active')
-    toggleMenu.classList.toggle('active')
-    toggleInput.classList.toggle('checked')
-}) 
+toggleMenuButtons.forEach(toggleMenuButton => { 
+    toggleMenuButton.addEventListener('click', () => {
+        htmlTag.classList.toggle('menu-is-active')
+        toggleMenus.forEach(toggleMenu => {
+            toggleMenu.classList.toggle('active')
+        })
+        
+        toggleInputs.forEach(toggleInput => {
+            toggleInput.classList.toggle('checked')
+        })
+    }) 
+});
 
 Alllinks.forEach(link => {
     link.addEventListener('click', () => {
