@@ -46,8 +46,9 @@
             &--sun {
                 fill: #ebc47d;
 
-                width:  17px;
-                transform: translate(-4px, -1px);
+                height: 12px;
+                width:  12px;
+                transform: translate(-6px, -1px);
             }
         }
     }
@@ -74,6 +75,6 @@
     }
 
     &.active .swipe-button__ball {
-        left: 33px;
+        left: 36px;
     }
 }
