@@ -2,12 +2,12 @@
     background-color: var(--color-secondary);
     box-shadow: 0px 2px 7px #000; 
     
-    display: none;
-
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
+    display: none ;
     
     list-style: none;
     
@@ -30,7 +30,7 @@
     }
     
     &__substitute {
-        display: none;
+        // display: none;
         background-color: var(--color-primary);
         height: var(--navigation-width);
     }

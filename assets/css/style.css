@@ -847,6 +847,10 @@ body {
     height: 35px;
     width: 70px;
     position: relative; }
+    @media only screen and (max-width: 51.25em) {
+      .swipe-button__body {
+        height: 30px;
+        width: 65px; } }
   .swipe-button__background {
     border-radius: 999px;
     position: absolute;
@@ -864,8 +868,7 @@ body {
         fill: #D6D6D6; }
       .swipe-button__background .icon--sun {
         fill: #ebc47d;
-        height: 1.7rem;
-        width: 1.7rem;
+        width: 17px;
         transform: translate(-4px, -1px); }
   .swipe-button__ball {
     border-radius: 50px;
@@ -878,6 +881,10 @@ body {
     left: -1px;
     transform: translateY(-50%);
     transition: 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955) !important; }
+    @media only screen and (max-width: 51.25em) {
+      .swipe-button__ball {
+        height: 20px;
+        width: 20px; } }
   .swipe-button.active .swipe-button__ball {
     left: 33px; }
 
@@ -1219,10 +1226,10 @@ body {
 .nav {
   background-color: var(--color-secondary);
   box-shadow: 0px 2px 7px #000;
-  display: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  display: none;
   list-style: none;
   padding: 1.4rem 2rem;
   position: fixed;
@@ -1235,7 +1242,6 @@ body {
     .nav {
       display: none; } }
   .nav__substitute {
-    display: none;
     background-color: var(--color-primary);
     height: var(--navigation-width); }
   .nav__column {
