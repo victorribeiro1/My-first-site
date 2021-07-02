@@ -7,8 +7,6 @@
     justify-content: space-between;
     align-items: center;
     
-    display: none ;
-    
     list-style: none;
     
     padding: 1.4rem 2rem;
@@ -25,7 +23,7 @@
     transition: top .3s linear,
                 background-color .2s ease-out !important;
     
-    @media screen and (max-width: 34em) {
+    @media screen and (max-width: 39em) {
         display: none;
     }
     
@@ -136,7 +134,7 @@
     background-color: var(--color-secondary);
     box-shadow: 0px 2px 7px #000; 
     
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     
@@ -161,7 +159,7 @@
     transition: top .3s linear,
                 background-color .2s ease-out !important;
     
-    @media screen and (max-width: 34em) {
+    @media screen and (max-width: 39em) {
         display: flex;
     }
     

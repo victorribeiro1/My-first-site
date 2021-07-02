@@ -295,6 +295,10 @@
         display: block;
     }
 
+    box-shadow: 10px 10px 1px white;
+    position: relative;
+    z-index: 2;
+
     height: auto;
 
     padding: 5rem 20px 0 20px;
