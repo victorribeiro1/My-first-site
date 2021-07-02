@@ -1233,7 +1233,7 @@ body {
   transition: top .3s linear, background-color .2s ease-out !important; }
   @media screen and (max-width: 34em) {
     .nav {
-      display: flex; } }
+      display: none; } }
   .nav__substitute {
     display: none;
     background-color: var(--color-primary);
@@ -1300,7 +1300,7 @@ body {
   transition: top .3s linear, background-color .2s ease-out !important; }
   @media screen and (max-width: 34em) {
     .nav-mobile {
-      display: block; } }
+      display: flex; } }
   .nav-mobile__substitute {
     background-color: var(--color-primary);
     height: var(--navigation-width); }
@@ -1312,8 +1312,7 @@ body {
       width: 30rem; }
     .nav-mobile__column--right {
       display: flex;
-      justify-content: flex-end;
-      padding-right: 20px; }
+      justify-content: flex-end; }
     .nav-mobile__column--center {
       position: relative; }
   .nav-mobile__item {
@@ -1393,8 +1392,8 @@ body {
     cursor: pointer;
     transition: top .3s linear !important; }
   .toggle-menu__button {
-    height: 2.8rem;
-    width: 7.5rem;
+    height: 28px;
+    width: 75px;
     position: relative;
     bottom: -3px;
     display: inline-block;

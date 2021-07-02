@@ -26,7 +26,7 @@
                 background-color .2s ease-out !important;
     
     @media screen and (max-width: 34em) {
-        display: flex;
+        display: none;
     }
     
     &__substitute {
@@ -157,7 +157,7 @@
                 background-color .2s ease-out !important;
     
     @media screen and (max-width: 34em) {
-        display: block;
+        display: flex;
     }
     
     &__substitute {
@@ -172,13 +172,14 @@
 
         &--left,
         &--right {
+            // border: 1px solid red;
             width: 30rem;
         }
 
         &--right {
             display: flex;
             justify-content: flex-end;
-            padding-right: 20px;
+            // padding-right: 20px;
         }
 
         // &--left {
@@ -186,6 +187,7 @@
         // }
 
         &--center {
+            // border: 1px solid red;
             position: relative;
         }
 

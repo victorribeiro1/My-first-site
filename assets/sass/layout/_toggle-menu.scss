@@ -69,8 +69,9 @@
     }
 
     &__button {
-        height: 2.8rem;
-        width: 7.5rem;
+
+        height: 28px;
+        width: 75px;
 
         position: relative;
         bottom: -3px;
@@ -105,7 +106,6 @@
 
     &__icon-box {
         cursor: pointer;
-
         width: 65%;
         height: 50%;
 
