@@ -1,16 +1,28 @@
-const nav = document.getElementById('nav')
-const toggleMenuButton2 = document.querySelector('.toggle-menu__button-box')
+const navs = document.querySelectorAll('#nav')
+const toggleMenuButtons2 = document.querySelectorAll('.toggle-menu__button-box')
 let lastScrollTop = 0
 
 function toggleNavVisibility() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     
     if ((scrollTop > lastScrollTop) && (document.documentElement.scrollTop > 60)) {
-        nav.style.top = '-10rem'
-        toggleMenuButton2.style.top = '-10rem'
+        navs.forEach(nav => {
+            nav.style.top = '-100px'
+        })
+        
+        toggleMenuButtons2.forEach(toggleMenuButton2 => {
+            toggleMenuButton2.style.top = '-100px'
+        })
+        
     } else {
-        nav.style.top = '0'
-        toggleMenuButton2.style.top = '-1.2rem'
+        navs.forEach(nav => {
+            nav.style.top = '0'
+        })
+        
+        toggleMenuButtons2.forEach(toggleMenuButton2 => {
+            toggleMenuButton2.style.top = '-8px'
+        })
+
     }
 
     lastScrollTop = scrollTop
