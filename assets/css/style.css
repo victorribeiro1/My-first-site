@@ -1662,18 +1662,25 @@ body {
     bottom: -35px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    padding-bottom: 20px; }
+    align-items: center; }
     .toggle-menu-mobile__headings-box::before {
       content: "";
       background-color: red;
       position: absolute;
       bottom: -1px;
       left: 0;
+      transition: inherit;
       height: 1px;
       width: 50%; }
+    .toggle-menu-mobile__headings-box.right::before {
+      left: 50%; }
   .toggle-menu-mobile__heading {
     font-size: 3rem;
+    display: block;
+    padding: 5px 5px 20px 5px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
     letter-spacing: 5px;
     text-transform: capitalize;
     font-weight: 100 !important;
@@ -2556,7 +2563,7 @@ body {
     inset: -1rem 0 0 -1.8rem; }
 
 .service__header {
-  background: var(--bg-service-header), url("../../media/images/car-landscape.jpg");
+  background: var(--bg-service-header), url("../..//media/images/service-2.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

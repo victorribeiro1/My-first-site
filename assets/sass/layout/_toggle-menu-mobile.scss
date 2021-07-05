@@ -48,7 +48,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        padding-bottom: 20px;
+        // padding-bottom: 20px;
 
         &::before {
             content: "";
@@ -58,15 +58,27 @@
             position: absolute;
             bottom: -1px;
             left: 0;
+            
+            transition: inherit;
 
             height: 1px;
             width: 50%;
+        }
+        
+        &.right::before {
+            left: 50%;
         }
     }
 
     &__heading {
         font-size: 3rem;
         // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        // border: 1px solid red;
+        display: block;
+        padding: 5px 5px 20px 5px;
+        width: 100%;
+        text-align: center;
+        cursor: pointer;
         letter-spacing: 5px;
         text-transform: capitalize;
         font-weight: 100 !important;
