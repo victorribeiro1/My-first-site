@@ -1642,14 +1642,13 @@ body {
     left: -30px;
     border-radius: 999px;
     z-index: -1;
-    background-color: var(--color-primary);
+    background-color: var(--color-zero);
     height: 100px;
     width: 100px;
     opacity: 0;
     transition: transform 1.5s -0.5s cubic-bezier(0.68, -0.1, 0.265, 1.25), opacity 0.1s 0.9s ease !important;
     transform: scale(0.2); }
   .toggle-menu-mobile.active .toggle-menu-mobile__background {
-    background-color: var(--color-primary);
     opacity: 1;
     transition: transform 0.8s cubic-bezier(0.68, -0.1, 0.265, 1.25), opacity 0.2s 0.1s ease !important;
     transform: scale(30); }
@@ -1660,7 +1659,7 @@ body {
     position: relative;
     width: 100vw;
     left: -12px;
-    bottom: -30px;
+    bottom: -35px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1676,7 +1675,11 @@ body {
   .toggle-menu-mobile__heading {
     font-size: 3rem;
     letter-spacing: 5px;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    font-weight: 100 !important;
+    color: #AAA; }
+    .toggle-menu-mobile__heading.active {
+      color: white; }
   .toggle-menu-mobile__button {
     background-color: transparent;
     border: none;
