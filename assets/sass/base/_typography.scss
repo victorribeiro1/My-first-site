@@ -63,6 +63,10 @@ body {
     display: inline-block;
     
     padding: 0 20px;
+
+    &--first-line {
+        white-space: nowrap;
+    }
     
     &--left {
         margin-right: 100%;
@@ -73,6 +77,26 @@ body {
                 
                 @media only screen and (max-width: $first-breakpoint) {
                     margin-right: 76%;
+                }
+
+                @media only screen and (max-width: $second-breakpoint) {
+                    margin-right: 74%;
+                }
+
+                @media only screen and (max-width: $third-breakpoint) {
+                    margin-right: 70%;
+                }
+
+                @media only screen and (max-width: $fourth-breakpoint) {
+                    margin-right: 65%;
+                }
+
+                @media only screen and (max-width: $fifth-breakpoint) {
+                    margin-right: 60%;
+                }
+
+                @media only screen and (max-width: $sixth-breakpoint) {
+                    margin-right: 55%;
                 }
             }
     }

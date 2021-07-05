@@ -46,13 +46,36 @@
         border-radius: 4px;
         width: 38rem;
         position: relative;
-        bottom: -200px;
+        bottom: -120px;
+
+        @media only screen and (max-width:  $third-breakpoint) {
+            width: 35rem;
+        }
+
+        @media only screen and (max-width:  $fourth-breakpoint) {
+            width: 34rem;
+        }
     }
 
     &__text-box {
         color: var(--color-secondary-opposite);
         width: 500px;
         text-align: center;
+
+        
+        @media only screen and (max-width:  $fourth-breakpoint) {
+            width: 400px;
+
+            position: relative;
+            top: -60px;
+        }
+
+        @media only screen and (max-width:  $fifth-breakpoint) {
+            width: 350px;
+
+            position: relative;
+            top: -60px;
+        }
     }
 
     &__tertiary-heading {
