@@ -189,7 +189,6 @@ html[current-theme='light'] {
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
-  overflow: hidden;
   -webkit-tap-highlight-color: transparent;
   outline: none; }
   html.menu-is-active {
@@ -205,8 +204,7 @@ body {
   overflow-x: hidden;
   width: 100%;
   margin-right: 20rem;
-  border: none;
-  overflow: hidden; }
+  border: none; }
 
 ::selection {
   background-color: transparent;
