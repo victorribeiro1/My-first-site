@@ -189,6 +189,7 @@ html[current-theme='light'] {
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  overflow: hidden;
   -webkit-tap-highlight-color: transparent;
   outline: none; }
   html.menu-is-active {
@@ -204,7 +205,8 @@ body {
   overflow-x: hidden;
   width: 100%;
   margin-right: 20rem;
-  border: none; }
+  border: none;
+  overflow: hidden; }
 
 ::selection {
   background-color: transparent;
@@ -1725,9 +1727,26 @@ body {
     display: block;
     font-size: 2.5rem; }
     .toggle-menu-mobile__item:not(:last-child) {
-      margin-bottom: 4rem; }
+      margin-bottom: 50px; }
   .toggle-menu-mobile__footer {
-    display: none; }
+    border-top: 1px solid #222;
+    position: relative;
+    bottom: -95px;
+    left: -12px;
+    height: 101px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px; }
+  .toggle-menu-mobile__copyright {
+    font-size: 1.5rem; }
+  .toggle-menu-mobile__social-medias-box :not(:last-child) {
+    margin-right: 10px; }
+  .toggle-menu-mobile__social-media, .toggle-menu-mobile__social-media:link, .toggle-menu-mobile__social-media:visited {
+    text-decoration: none; }
+  .toggle-menu-mobile__icon {
+    height: 3rem;
+    width: 3rem; }
 
 .about {
   background-color: var(--color-primary);

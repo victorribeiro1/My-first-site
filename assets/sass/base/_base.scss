@@ -10,6 +10,7 @@ html {
     scroll-behavior: smooth;
 
     overflow-x: hidden;
+    overflow: hidden;
 
     -webkit-tap-highlight-color: transparent;
     outline: none;
@@ -35,6 +36,8 @@ body {
     margin-right: 20rem;
 
     border: none;
+
+    overflow: hidden;
 }
 
 ::selection {
