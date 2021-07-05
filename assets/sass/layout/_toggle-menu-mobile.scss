@@ -141,7 +141,34 @@
     }
 
     &__content {
-        display: none;
+        // background-color: #fff;
+        // display: none;
+        position: relative;
+        bottom: -35px;
+        left: -12px;
+
+        padding: 20px 0 0 15px;
+    }
+
+    &__list {
+        
+        
+        &--services {
+            
+        }
+        
+    }
+
+    &__item {
+        display: block;
+        // font-size: 5rem;
+        &:not(:last-child) {
+            margin-bottom: 4rem;
+        }
+
+        font-size: 2.5rem;
+        // background-color: #f00;
+
     }
 
     &__link {
