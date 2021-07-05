@@ -8,10 +8,27 @@
 
     &__background {
         position: absolute;
+        top: -46px;
+        left: -30px;
+        border-radius: 999px;
         z-index: 0;
-        // background-color: var(--color-primary);
-        height: 100vh;
-        width:  100%;
+        background-color: var(--color-primary);
+        height: 100px;
+        width:  100px;
+        opacity: 0;
+        transition: transform 1.5s -.5s cubic-bezier(0.68, -0.10, 0.265, 1.25),
+        opacity .1s .9s ease !important;
+        transform: scale(.2);
+        
+    }
+    
+        &.active &__background {
+            background-color: var(--color-primary);
+            opacity: 1;
+            
+            transition: transform .8s cubic-bezier(0.68, -0.10, 0.265, 1.25),
+                        opacity .2s .1s ease !important;
+            transform: scale(30);
     }
 
     &__header {
@@ -55,13 +72,14 @@
 
     &.active &__line {
         background-color: red;
-
+        
         &--1 {
-            transform: rotateZ(135deg) translateY(-6px);
+            transform: rotateZ(135deg) translateY(-2px) translateX(3px);
+            // background-color: blue;
         }
         
         &--2 {
-            transform: rotateZ(-135deg) translateY(4px);
+            transform: rotateZ(-135deg) translateY(2px) translateX(2px);
             width: 100%;
         }
     }

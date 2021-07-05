@@ -1638,9 +1638,21 @@ body {
   z-index: 1; }
   .toggle-menu-mobile__background {
     position: absolute;
+    top: -46px;
+    left: -30px;
+    border-radius: 999px;
     z-index: 0;
-    height: 100vh;
-    width: 100%; }
+    background-color: var(--color-primary);
+    height: 100px;
+    width: 100px;
+    opacity: 0;
+    transition: transform 1.5s -0.5s cubic-bezier(0.68, -0.1, 0.265, 1.25), opacity 0.1s 0.9s ease !important;
+    transform: scale(0.2); }
+  .toggle-menu-mobile.active .toggle-menu-mobile__background {
+    background-color: var(--color-primary);
+    opacity: 1;
+    transition: transform 0.8s cubic-bezier(0.68, -0.1, 0.265, 1.25), opacity 0.2s 0.1s ease !important;
+    transform: scale(30); }
   .toggle-menu-mobile__button {
     background-color: transparent;
     border: none;
@@ -1666,9 +1678,9 @@ body {
   .toggle-menu-mobile.active .toggle-menu-mobile__line {
     background-color: red; }
     .toggle-menu-mobile.active .toggle-menu-mobile__line--1 {
-      transform: rotateZ(135deg) translateY(-6px); }
+      transform: rotateZ(135deg) translateY(-2px) translateX(3px); }
     .toggle-menu-mobile.active .toggle-menu-mobile__line--2 {
-      transform: rotateZ(-135deg) translateY(4px);
+      transform: rotateZ(-135deg) translateY(2px) translateX(2px);
       width: 100%; }
   .toggle-menu-mobile__content {
     display: none; }
