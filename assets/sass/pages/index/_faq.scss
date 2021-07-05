@@ -122,6 +122,12 @@
     &__question-and-answer-box {
         background-color: var(--color-secondary);
         margin-bottom: 2rem;
+        
+        @media only screen and (max-width: $fourth-breakpoint) {
+            
+            margin-bottom: 6rem;
+
+        }
         padding: 2rem 0;
         
         position: relative;

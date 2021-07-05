@@ -1632,9 +1632,7 @@ body {
     transition: opacity 180ms 0s ease-out !important; }
 
 .toggle-menu-mobile {
-  background-color: #f00;
-  height: 3rem;
-  width: 3rem; }
+  display: none; }
 
 .about {
   background-color: var(--color-primary);
@@ -1893,6 +1891,9 @@ body {
     height: 7.7rem;
     overflow: hidden;
     transform: translateY(50px) scale(0.8); }
+    @media only screen and (max-width: 51.25em) {
+      .faq__question-and-answer-box {
+        margin-bottom: 6rem; } }
     .faq__question-and-answer-box::before {
       content: "";
       border-radius: 999px;
