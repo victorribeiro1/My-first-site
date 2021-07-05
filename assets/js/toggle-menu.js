@@ -1,7 +1,7 @@
 const toggleMenus = document.querySelectorAll('.toggle-menu')
 const toggleMenuButtons = document.querySelectorAll('.toggle-menu__icon-box')
 const htmlTag = document.querySelector('html')
-const Alllinks = document.querySelectorAll('a.link')
+const AllLinks = document.querySelectorAll('a.link')
 const toggleInputs = document.querySelectorAll('#toggle')
 
 // block scroll when toggle-menu is oppened
@@ -19,10 +19,14 @@ toggleMenuButtons.forEach(toggleMenuButton => {
     }) 
 });
 
-Alllinks.forEach(link => {
+AllLinks.forEach(link => {
     link.addEventListener('click', () => {
-        toggleInput.classList.remove('checked')
+        toggleInputs.forEach(toggleInput => {
+            toggleInput.classList.remove('checked')
+        })
+        toggleMenus.forEach(toggleMenu => {
+            toggleMenu.classList.remove('active')
+        })
         htmlTag.classList.remove('menu-is-active')
-        toggleMenu.classList.remove('active')
     })
 })

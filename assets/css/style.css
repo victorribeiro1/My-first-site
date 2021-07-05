@@ -1394,6 +1394,82 @@ body {
     .nav-mobile__link--brand--img img {
       width: 95px; }
 
+.nav-mobile {
+  background-color: var(--color-secondary);
+  box-shadow: 0px 2px 7px #000;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 1.4rem 2rem;
+  position: fixed;
+  top: 0;
+  height: var(--navigation-width);
+  width: 100%;
+  z-index: 8;
+  transition: top .3s linear, background-color .2s ease-out !important; }
+  @media screen and (max-width: 34em) {
+    .nav-mobile {
+      --navigation-width: 11.5rem; } }
+  @media screen and (max-width: 39em) {
+    .nav-mobile {
+      display: flex; } }
+  .nav-mobile__substitute {
+    background-color: var(--color-primary);
+    height: var(--navigation-width); }
+  .nav-mobile__column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .nav-mobile__column--left, .nav-mobile__column--right {
+      width: 30rem; }
+    .nav-mobile__column--right {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 3px; }
+    .nav-mobile__column--center {
+      position: relative; }
+  .nav-mobile__item {
+    position: relative; }
+    .nav-mobile__item--toggle-menu {
+      height: 3rem;
+      width: 3rem; }
+  .nav-mobile__link, .nav-mobile__link:link, .nav-mobile__link:visited {
+    color: var(--color-secondary-opposite);
+    font-size: 1.2rem;
+    font-family: 'nunito-regular';
+    font-weight: var(--font-weight);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    position: relative; }
+  .nav-mobile__link--services {
+    position: relative;
+    right: -30px; }
+  .nav-mobile__link--brand--text {
+    font-size: 3rem !important;
+    font-family: 'nunito-extraLight';
+    font-weight: 9999 !important;
+    position: relative; }
+    .nav-mobile__link--brand--text::before {
+      content: "";
+      background-color: currentColor;
+      border-radius: 50%;
+      height: .7rem;
+      width: .7rem;
+      position: absolute;
+      bottom: 11px;
+      right: -7px; }
+  .nav-mobile__link--brand--img {
+    width: 17rem; }
+    @media only screen and (max-width: 51.25em) {
+      .nav-mobile__link--brand--img {
+        display: none;
+        width: 120px; } }
+    .nav-mobile__link--brand--img img {
+      width: 95px; }
+
 .toggle-menu {
   position: fixed;
   top: 6.4rem;
@@ -1554,6 +1630,11 @@ body {
     width: 13rem;
     opacity: 0;
     transition: opacity 180ms 0s ease-out !important; }
+
+.toggle-menu-mobile {
+  background-color: #f00;
+  height: 3rem;
+  width: 3rem; }
 
 .about {
   background-color: var(--color-primary);
