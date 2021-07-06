@@ -1,13 +1,22 @@
 .toggle-menu-mobile {
     width: 100vw;
-    height: 100vh;
-    min-height: 579px;
+    height: 0vh;
+    // min-height: 579px;
     // max-height: 590px;
     overflow-y: visible;
     position: relative;
-    z-index: 1;
-
     // background-color: #fff;
+    // z-index: -10 !important;
+    
+    // background-color: #fff;
+
+    transition: height 0s 1s;
+    
+    &.active {
+        height: 100vh;
+        min-height: 579px;
+        z-index: 1;
+    }
 
     &.active &__headings-box,
     &.active &__content {

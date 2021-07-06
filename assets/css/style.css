@@ -1633,11 +1633,14 @@ body {
 
 .toggle-menu-mobile {
   width: 100vw;
-  height: 100vh;
-  min-height: 579px;
+  height: 0vh;
   overflow-y: visible;
   position: relative;
-  z-index: 1; }
+  transition: height 0s 1s; }
+  .toggle-menu-mobile.active {
+    height: 100vh;
+    min-height: 579px;
+    z-index: 1; }
   .toggle-menu-mobile.active .toggle-menu-mobile__headings-box,
   .toggle-menu-mobile.active .toggle-menu-mobile__content,
   .toggle-menu-mobile.active .toggle-menu-mobile__footer {
