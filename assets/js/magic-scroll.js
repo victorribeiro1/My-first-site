@@ -18,7 +18,6 @@ function showOrHideOnScroll() {
                     } else {
                         animateCounter()
                     }
-
                 }
                 element.classList.add('in')
                 element.classList.add('alreadyAnimated')

@@ -15,6 +15,7 @@ linksHome.forEach(link => {
         toggleMenus.forEach(toggleMenu => {
             toggleMenu.classList.toggle('active')
         })
+        document.querySelector('.toggle-menu-mobile').classList.toggle('active')
         scrollto(homePosition)
     })
 })
@@ -24,6 +25,7 @@ linksAbout.forEach(link => {
         toggleMenus.forEach(toggleMenu => {
             toggleMenu.classList.toggle('active')
         })
+        document.querySelector('.toggle-menu-mobile').classList.toggle('active')
         scrollto(aboutPosition)
     })
 })
@@ -33,6 +35,7 @@ linksFaq.forEach(link => {
         toggleMenus.forEach(toggleMenu => {
             toggleMenu.classList.toggle('active')
         })
+        document.querySelector('.toggle-menu-mobile').classList.toggle('active')
         scrollto(faqPosition)
     })
 })
@@ -42,6 +45,7 @@ linksLines.forEach(link => {
         toggleMenus.forEach(toggleMenu => {
             toggleMenu.classList.toggle('active')
         })
+        document.querySelector('.toggle-menu-mobile').classList.toggle('active')
         scrollto(linesPosition)
     })
 })
@@ -51,6 +55,7 @@ linksEvaluations.forEach(link => {
         toggleMenus.forEach(toggleMenu => {
             toggleMenu.classList.toggle('active')
         })
+        document.querySelector('.toggle-menu-mobile').classList.toggle('active')
         scrollto(evaluationsPosition)
     })
 })
