@@ -151,7 +151,7 @@
                 // align-items: ce;
 
                 position: relative;
-                top: -10px;
+                top: -50px;
             }
 
             &__img-box {
@@ -163,13 +163,14 @@
             }
 
             &__heading {
-                width: 130%;
+                width: 145%;
+                margin-bottom: 10px;
             }
 
             &__text {
                 font-size: 2rem;
                 max-width: 150%;
-                width: 130%;
+                width: 145%;
             }
 
             &__benefits-list {

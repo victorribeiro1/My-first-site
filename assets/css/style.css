@@ -1008,6 +1008,13 @@ body {
     height: 3.2rem;
     width: 3.2rem;
     fill: var(--color-zero); }
+  @media only screen and (max-width: 51.25em) {
+    .wpp-call {
+      height: 9rem;
+      width: 9rem; }
+      .wpp-call .icon {
+        height: 4rem;
+        width: 4rem; } }
 
 .footer {
   background: var(--color-zero);
@@ -2646,17 +2653,18 @@ body {
         padding: 0;
         align-items: center;
         position: relative;
-        top: -10px; }
+        top: -50px; }
       .service__about__img-box {
         position: absolute; }
       .service__about__img {
         inset: 120px 0 100px -70px; }
       .service__about__heading {
-        width: 130%; }
+        width: 145%;
+        margin-bottom: 10px; }
       .service__about__text {
         font-size: 2rem;
         max-width: 150%;
-        width: 130%; }
+        width: 145%; }
       .service__about__benefits-list {
         position: relative;
         left: -140px; } }
