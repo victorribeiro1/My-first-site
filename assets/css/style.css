@@ -992,6 +992,23 @@ body {
     font-size: 20rem;
     color: var(--color-tertiary); }
 
+.wpp-call {
+  height: 7rem;
+  width: 7rem;
+  background-color: var(--color-zero-opposite);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 2; }
+  .wpp-call .icon {
+    height: 3.2rem;
+    width: 3.2rem;
+    fill: var(--color-zero); }
+
 .footer {
   background: var(--color-zero);
   height: auto;
