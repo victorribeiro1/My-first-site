@@ -10,7 +10,7 @@
     
     // background-color: #fff;
 
-    transition: height 0s 1s;
+    transition: height 0s .5s;
     
     &.active {
         height: 100vh;
@@ -120,12 +120,10 @@
         letter-spacing: 5px;
         text-transform: capitalize;
         font-weight: 100 !important;
-        color: #AAA;
+        color: var(--color-tertiary);
         
         &.active {
-            // color: white;
-            color: white;
-            // font-weight: 1000 !important;
+            color: var(--color-primary-opposite);
         }
     }
     
@@ -229,7 +227,11 @@
     }
     
     &__link {
-
+        &,
+        &:link,
+        &:visited {
+            color: var(--color-secondary-opposite);
+        }
     }
 
     

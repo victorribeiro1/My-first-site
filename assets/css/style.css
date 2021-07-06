@@ -1636,7 +1636,7 @@ body {
   height: 0vh;
   overflow-y: visible;
   position: relative;
-  transition: height 0s 1s; }
+  transition: height 0s .5s; }
   .toggle-menu-mobile.active {
     height: 100vh;
     min-height: 579px;
@@ -1698,9 +1698,9 @@ body {
     letter-spacing: 5px;
     text-transform: capitalize;
     font-weight: 100 !important;
-    color: #AAA; }
+    color: var(--color-tertiary); }
     .toggle-menu-mobile__heading.active {
-      color: white; }
+      color: var(--color-primary-opposite); }
   .toggle-menu-mobile__button {
     background-color: transparent;
     border: none;
@@ -1751,6 +1751,8 @@ body {
     font-size: 2.5rem; }
     .toggle-menu-mobile__item:not(:last-child) {
       margin-bottom: 50px; }
+  .toggle-menu-mobile__link, .toggle-menu-mobile__link:link, .toggle-menu-mobile__link:visited {
+    color: var(--color-secondary-opposite); }
   .toggle-menu-mobile__footer {
     border-top: 1px solid #222;
     position: absolute;
