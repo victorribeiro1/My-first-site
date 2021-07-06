@@ -136,5 +136,46 @@
             // top: -1rem;
             inset: -1rem 0 0 -1.8rem;
         }
+
+        @media only screen and (max-width: $seventh-breakpoint) {
+            // min-height: 200px;
+            // height: 10vh !important;
+            // display: none;
+
+            padding: 0px 0;
+
+            &__content-box {
+                padding: 0;
+
+                align-items: center;
+                // align-items: ce;
+
+                position: relative;
+                top: -10px;
+            }
+
+            &__img-box {
+                position: absolute;
+            }
+
+            &__img {
+                inset: 120px 0 100px -70px;
+            }
+
+            &__heading {
+                width: 130%;
+            }
+
+            &__text {
+                font-size: 2rem;
+                max-width: 150%;
+                width: 130%;
+            }
+
+            &__benefits-list {
+                position: relative;
+                left: -140px;
+            }
+        }
     }
 }

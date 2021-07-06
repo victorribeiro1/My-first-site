@@ -1168,7 +1168,9 @@ body {
     .footer-mobile {
       display: block; } }
   .footer-mobile__links-area {
+    border-top: 1px solid #222;
     border-bottom: 1px solid #222;
+    padding-top: 4rem;
     padding-bottom: 5rem;
     text-align: center; }
   .footer-mobile__links-box {
@@ -2637,6 +2639,27 @@ body {
     width: 30rem;
     position: relative;
     inset: -1rem 0 0 -1.8rem; }
+  @media only screen and (max-width: 39.375em) {
+    .service__about {
+      padding: 0px 0; }
+      .service__about__content-box {
+        padding: 0;
+        align-items: center;
+        position: relative;
+        top: -10px; }
+      .service__about__img-box {
+        position: absolute; }
+      .service__about__img {
+        inset: 120px 0 100px -70px; }
+      .service__about__heading {
+        width: 130%; }
+      .service__about__text {
+        font-size: 2rem;
+        max-width: 150%;
+        width: 130%; }
+      .service__about__benefits-list {
+        position: relative;
+        left: -140px; } }
 
 .service__header {
   background: var(--bg-service-header), url("../..//media/images/service-2.jpg");
@@ -2706,6 +2729,14 @@ body {
   .service__header__button {
     top: -50px !important;
     left: 180px !important; }
+  @media only screen and (max-width: 39.375em) {
+    .service__header {
+      min-height: 200px;
+      height: 10vh !important; }
+      .service__header__heading {
+        font-size: 3rem; }
+      .service__header__button {
+        display: none !important; } }
 
 .contact {
   display: flex;

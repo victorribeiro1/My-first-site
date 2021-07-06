@@ -106,5 +106,20 @@
             top: -50px !important;
             left: 180px !important;
         }
+
+        @media only screen and (max-width: $seventh-breakpoint) {
+            min-height: 200px;
+            height: 10vh !important;
+            // display: none;
+
+            &__heading {
+                font-size: 3rem;
+            }
+
+            &__button {
+                display: none !important;
+            }
+        }
     }
+
 }
