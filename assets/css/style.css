@@ -1689,7 +1689,7 @@ body {
     transition: transform 0.8s cubic-bezier(0.68, -0.1, 0.265, 1.25), opacity 0.2s 0.1s ease !important;
     transform: scale(30); }
   .toggle-menu-mobile__header {
-    width: 100vw; }
+    width: 0; }
   .toggle-menu-mobile__headings-box {
     border-bottom: 1px solid #222;
     position: relative;
@@ -1713,6 +1713,7 @@ body {
     .toggle-menu-mobile__headings-box.right::before {
       left: 50%; }
   .toggle-menu-mobile.active .toggle-menu-mobile__headings-box {
+    display: flex;
     opacity: 1; }
   .toggle-menu-mobile__heading {
     font-size: 3rem;

@@ -54,10 +54,7 @@
     }
 
     &__header {
-        // background-color: #f00;
-
-        width: 100vw;
-    
+        width: 0;
     }
 
     
@@ -73,6 +70,8 @@
         justify-content: space-around;
         align-items: center;
         // padding-bottom: 20px;
+
+        // display: none;
 
         transition: opacity .2s 0s,
                     left 0s .3s !important;
@@ -101,6 +100,7 @@
     }
     
     &.active &__headings-box {
+        display: flex;
         opacity: 1;
     }
 
