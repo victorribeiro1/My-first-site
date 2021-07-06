@@ -194,7 +194,15 @@
         
         
         &--services {
-            
+            display: none;   
+        }
+        
+        &--explore {
+            display: none;   
+        }
+        
+        &.active {
+            display: block;   
         }
         
     }

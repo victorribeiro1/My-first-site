@@ -10,6 +10,7 @@ toggleMenuMobileButton.addEventListener('click', () => {
 
 const TMBheadings = document.querySelectorAll('.toggle-menu-mobile__heading')
 const TMBheadingBox = document.querySelector('.toggle-menu-mobile__headings-box')
+const TMBlists = document.querySelectorAll('.toggle-menu-mobile__list')
 
 TMBheadings.forEach(TMBheading => {
     TMBheading.addEventListener('click', e => {
@@ -17,12 +18,18 @@ TMBheadings.forEach(TMBheading => {
             TMBheadings[0].classList.remove('active')
             e.target.classList.add('active')
             TMBheadingBox.classList.add('right')
+
+            TMBlists[0].classList.remove('active')
+            TMBlists[1].classList.add('active')
             
         }
         else {
             e.target.classList.add('active')
             TMBheadings[1].classList.remove('active')
             TMBheadingBox.classList.remove('right')
+
+            TMBlists[0].classList.add('active')
+            TMBlists[1].classList.remove('active')
         }
     })
 })
