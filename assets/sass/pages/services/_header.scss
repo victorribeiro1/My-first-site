@@ -1,125 +1,142 @@
-.service {
-    &__header {
-        background: var(--bg-service-header), url("../..//media/images/service-2.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height: 350px;
-        height: 62vh;
-
-        position: relative;
-
-        display: flex;
+main {
+    &.alinhamento-e-geometria {
+        --img: url("../..//media/images/service-1.jpg");
+    }
+    &.ar-condicionado-e-climatizacao {
+        --img: url("../..//media/images/service-4.jpg");
+    }
+    &.borracharia-movel {
+        --img: url("../..//media/images/service-3.jpg");
+    }
+    &.higienizacao-interna {
+        --img: url("../..//media/images/service-2.jpg");
+    }
+    &.manutencao-de-freios {
+        --img: url("../..//media/images/service-3.jpg");
+    }
     
-        &__heading-box {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            
-            padding-top: 4rem;
+    .service {
+        &__header {
+            background: var(--bg-service-header), var(--img);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 350px;
+            height: 62vh;
 
-            width: 50%;
-        }
-
-        &__heading-box-box {
             position: relative;
-            top: -5rem;
-            right: -5rem;
-        }
-
-        &__heading {
-            color: var(--color-primary-opposite);
-            font-size: 4.2rem;
-            letter-spacing: 7px;
-            text-transform: uppercase;
-            white-space: nowrap;
-        }
-        
-        &__alert {
-            color: var(--color-primary-opposite);
-            font-size: 2rem;
-            letter-spacing: 8px;
-            padding-left: 4px;
-            display: block;
-
-            margin-bottom: 3.3rem !important;
-        }
-
-        &__lines-box {
-            width: 45rem;
-            height: 3.7rem;
 
             display: flex;
-            justify-content: flex-start;
-            align-items: center;
-
-            white-space: nowrap;
-
-            :not(:last-child) {
-                margin-right: 1rem;
-            }
-
-        }
         
-        &__line {
-            border-radius: 2px;
-            background-color: var(--color-primary-opposite);
-            
-            width: 35%;
-            height: 100%;
+            &__heading-box {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                
+                padding-top: 4rem;
 
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-
-            &__icon {
-                fill: var(--color-primary) !important;
-
-                height: 1.9rem;
-                width:  1.9rem;
+                width: 50%;
             }
-            
-            &__text {
-                color: var(--color-primary);
-                text-transform: uppercase;
-                font-size: 1.4rem;
-                font-weight: 1000;
-                font-family: 'nunito-black';
+
+            &__heading-box-box {
+                position: relative;
+                top: -5rem;
+                right: -5rem;
             }
-        }
-        
-        &__contact-box {
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-            width: 50%;
-        }
-
-        &__button {
-            // position: absolute !important;
-
-            // width: 18rem !important;
-
-            // display: none !important;
-
-            top: -50px !important;
-            left: 180px !important;
-        }
-
-        @media only screen and (max-width: $seventh-breakpoint) {
-            min-height: 200px;
-            height: 10vh !important;
-            // display: none;
 
             &__heading {
-                font-size: 3rem;
+                color: var(--color-primary-opposite);
+                font-size: 4.2rem;
+                letter-spacing: 7px;
+                text-transform: uppercase;
+                white-space: nowrap;
+            }
+            
+            &__alert {
+                color: var(--color-primary-opposite);
+                font-size: 2rem;
+                letter-spacing: 8px;
+                padding-left: 4px;
+                display: block;
+
+                margin-bottom: 3.3rem !important;
+            }
+
+            &__lines-box {
+                width: 45rem;
+                height: 3.7rem;
+
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+
+                white-space: nowrap;
+
+                :not(:last-child) {
+                    margin-right: 1rem;
+                }
+
+            }
+            
+            &__line {
+                border-radius: 2px;
+                background-color: var(--color-primary-opposite);
+                
+                width: 35%;
+                height: 100%;
+
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                &__icon {
+                    fill: var(--color-primary) !important;
+
+                    height: 1.9rem;
+                    width:  1.9rem;
+                }
+                
+                &__text {
+                    color: var(--color-primary);
+                    text-transform: uppercase;
+                    font-size: 1.4rem;
+                    font-weight: 1000;
+                    font-family: 'nunito-black';
+                }
+            }
+            
+            &__contact-box {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                width: 50%;
             }
 
             &__button {
-                display: none !important;
+                // position: absolute !important;
+
+                // width: 18rem !important;
+
+                // display: none !important;
+
+                top: -50px !important;
+                left: 180px !important;
+            }
+
+            @media only screen and (max-width: $seventh-breakpoint) {
+                min-height: 200px;
+                height: 10vh !important;
+                // display: none;
+
+                &__heading {
+                    font-size: 3rem;
+                }
+
+                &__button {
+                    display: none !important;
+                }
             }
         }
     }
-
 }
