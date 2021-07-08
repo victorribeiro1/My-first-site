@@ -1184,7 +1184,7 @@ body {
   position: relative;
   z-index: 2;
   height: auto;
-  padding: 5rem 20px 0 20px; }
+  padding: 3rem 20px 0 20px; }
   @media only screen and (max-width: 700px) {
     .footer-mobile {
       display: block; } }
@@ -2607,7 +2607,7 @@ body {
       align-items: center;
       justify-content: space-between;
       position: relative;
-      top: -70px;
+      top: -80px;
       padding: 0 15px; }
       .service__about__content-box--mobile .service__about__img-box {
         display: flex;
@@ -2631,6 +2631,8 @@ body {
         width: 44%; }
         .service__about__content-box--mobile .service__about__button .button-secondary__text, .service__about__content-box--mobile .service__about__button:visited .button-secondary__text, .service__about__content-box--mobile .service__about__button:link .button-secondary__text {
           font-size: 2.3rem; }
+      .service__about__content-box--mobile .service__about__text {
+        font-size: 2.1rem; }
     @media only screen and (max-width: 39.375em) {
       .service__about__content-box--desktop {
         display: none; }
