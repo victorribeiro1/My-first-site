@@ -2802,7 +2802,8 @@ main .service__header {
       min-height: 200px;
       height: 10vh !important; }
       main .service__header__heading {
-        font-size: 3rem; }
+        font-size: 3rem;
+        white-space: normal; }
       main .service__header__button {
         display: none !important; } }
 
