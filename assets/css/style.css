@@ -2608,7 +2608,7 @@ body {
       align-items: center;
       justify-content: space-between;
       position: relative;
-      top: -150px;
+      top: -100px;
       padding: 0 15px; }
       .service__about__content-box--mobile .service__about__img-box {
         display: flex; }
