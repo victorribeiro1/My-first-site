@@ -34,6 +34,43 @@
             justify-content: space-around;
 
             padding-top: 4.5rem;
+
+            &--desktop {
+                display: none;
+            }
+
+            &--mobile {
+                // background-color: #fff;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+
+                padding: 0 15px;
+
+                .service__about__img-box {
+                    display: flex;
+                }
+            }
+        }
+
+        &__list-and-link {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        &__content-top {
+            
+        }
+
+        &__content-bottom {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            position: relative;
+            // border: 1px solid red;
         }
         
         &__heading {
@@ -57,7 +94,7 @@
         &__benefits-list {
             list-style: none;
 
-            margin-top: 4rem;
+            // margin-top: 4rem;
         }
         
         &__benefit {
@@ -87,9 +124,10 @@
             &:visited,
             &:link {
                 text-decoration: none;
-                transform: translateX(9%) translateY(10px);
+                transform: translateX(9%) translateY(0px);
                 width: 24.5rem;
                 margin-top: 4rem;
+                white-space: nowrap;
 
                 .arrow-box {
                     transform: translateY(-2px);
@@ -115,68 +153,72 @@
 
         &__img-box {
             // background-color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            // flex-direction: column;
 
-            width: 20%;
-            height: 48rem;
-            padding-top: 6rem;
+            width: 35%;
+            height: 210px;
+            // padding-top: 6rem;
+
+
+
+            display: none;
         }
 
         &__img {
             border-radius: 1px;
             opacity: 1;
             width: 100%;
-            width: 30rem;
+            // width: 30rem;
             
-            position: relative;
-            // left: -10rem;
+            // position: absolute;
+            right: 16px;
             // top: -1rem;
-            inset: -1rem 0 0 -1.8rem;
+            // inset: -1rem 0 0 -1.8rem;
         }
 
-        @media only screen and (max-width: $seventh-breakpoint) {
-            // min-height: 200px;
-            // height: 10vh !important;
-            // display: none;
+        // @media only screen and (max-width: $seventh-breakpoint) {
+        //     // min-height: 200px;
+        //     // height: 10vh !important;
+        //     // display: none;
 
-            padding: 0px 0;
+        //     padding: 0px 0;
 
-            &__content-box {
-                padding: 0;
+        //     &__content-box {
+        //         // padding: 0;
 
-                align-items: center;
-                // align-items: ce;
+        //         // align-items: center;
+        //         // align-items: ce;
 
-                position: relative;
-                top: -50px;
-            }
+        //         // position: relative;
+        //         // top: -50px;
+        //     }
 
-            &__img-box {
-                position: absolute;
-            }
+        //     &__img-box {
+        //         // position: absolute;
+        //     }
 
-            &__img {
-                inset: 120px 0 100px -70px;
-            }
+        //     &__img {
+        //         // inset: 120px 0 100px -70px;
+        //     }
 
-            &__heading {
-                width: 145%;
-                margin-bottom: 10px;
-            }
+        //     &__heading {
+        //         width: 145%;
+        //         margin-bottom: 10px;
+        //     }
 
-            &__text {
-                font-size: 2rem;
-                max-width: 150%;
-                width: 145%;
-            }
+        //     &__text {
+        //         font-size: 2rem;
+        //         max-width: 150%;
+        //         width: 145%;
+        //     }
 
-            &__benefits-list {
-                position: relative;
-                left: -140px;
-            }
-        }
+        //     &__benefits-list {
+        //         position: relative;
+        //         left: -140px;
+        //     }
+        // }
     }
 }

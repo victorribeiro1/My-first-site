@@ -53,9 +53,15 @@
             &--sun {
                 fill: #ebc47d;
 
-                height: 12px;
-                width:  12px;
+                height: 17px;
+                width:  17px;
                 transform: translate(-6px, -1px);
+                
+                @media only screen and (max-width: $fourth-breakpoint) {
+                    height: 11px;
+                    width:  11px;
+                    transform: translate(-6px, 0px);
+                }
             }
         }
     }

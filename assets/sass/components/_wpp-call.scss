@@ -15,6 +15,14 @@
     right: 20px;
     z-index: 2;
 
+    &--desktop {
+        display: flex;
+    }
+
+    &--mobile {
+        display: none;
+    }
+
     .icon {
         height: 3.2rem;   
         width:  3.2rem;   
@@ -24,10 +32,20 @@
     @media only screen and (max-width: $fourth-breakpoint) {
         height: 9rem;
         width:  9rem;
-
+        
         .icon {
             height: 4rem;   
             width:  4rem;   
+        }
+    }
+    
+    @media only screen and (max-width: $eighth-breakpoint) {
+        &--desktop {
+            display: none;    
+        }
+
+        &--mobile {
+            display: flex;
         }
     }
 }

@@ -889,9 +889,14 @@ body {
         fill: #D6D6D6; }
       .swipe-button__background .icon--sun {
         fill: #ebc47d;
-        height: 12px;
-        width: 12px;
+        height: 17px;
+        width: 17px;
         transform: translate(-6px, -1px); }
+        @media only screen and (max-width: 51.25em) {
+          .swipe-button__background .icon--sun {
+            height: 11px;
+            width: 11px;
+            transform: translate(-6px, 0px); } }
   .swipe-button__ball {
     border-radius: 50px;
     background: var(--bg-color-swipe-button-ball);
@@ -1004,6 +1009,10 @@ body {
   bottom: 30px;
   right: 20px;
   z-index: 2; }
+  .wpp-call--desktop {
+    display: flex; }
+  .wpp-call--mobile {
+    display: none; }
   .wpp-call .icon {
     height: 3.2rem;
     width: 3.2rem;
@@ -1015,6 +1024,11 @@ body {
       .wpp-call .icon {
         height: 4rem;
         width: 4rem; } }
+  @media only screen and (max-width: 32.1875em) {
+    .wpp-call--desktop {
+      display: none; }
+    .wpp-call--mobile {
+      display: flex; } }
 
 .footer {
   background: var(--color-zero);
@@ -2587,6 +2601,26 @@ body {
     flex-direction: column;
     justify-content: space-around;
     padding-top: 4.5rem; }
+    .service__about__content-box--desktop {
+      display: none; }
+    .service__about__content-box--mobile {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 15px; }
+      .service__about__content-box--mobile .service__about__img-box {
+        display: flex; }
+  .service__about__list-and-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+  .service__about__content-bottom {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative; }
   .service__about__heading {
     font-size: 3.7rem;
     color: var(--color-primary-opposite);
@@ -2599,8 +2633,7 @@ body {
     max-width: 98%;
     line-height: 26px; }
   .service__about__benefits-list {
-    list-style: none;
-    margin-top: 4rem; }
+    list-style: none; }
   .service__about__benefit {
     display: flex;
     align-items: center; }
@@ -2617,9 +2650,10 @@ body {
     fill: red; }
   .service__about__button, .service__about__button:visited, .service__about__button:link {
     text-decoration: none;
-    transform: translateX(9%) translateY(10px);
+    transform: translateX(9%) translateY(0px);
     width: 24.5rem;
-    margin-top: 4rem; }
+    margin-top: 4rem;
+    white-space: nowrap; }
     .service__about__button .arrow-box, .service__about__button:visited .arrow-box, .service__about__button:link .arrow-box {
       transform: translateY(-2px); }
     .service__about__button .arrow, .service__about__button:visited .arrow, .service__about__button:link .arrow {
@@ -2633,42 +2667,14 @@ body {
       text-transform: uppercase;
       font-size: 1.7rem; }
   .service__about__img-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 20%;
-    height: 48rem;
-    padding-top: 6rem; }
+    width: 35%;
+    height: 210px;
+    display: none; }
   .service__about__img {
     border-radius: 1px;
     opacity: 1;
     width: 100%;
-    width: 30rem;
-    position: relative;
-    inset: -1rem 0 0 -1.8rem; }
-  @media only screen and (max-width: 39.375em) {
-    .service__about {
-      padding: 0px 0; }
-      .service__about__content-box {
-        padding: 0;
-        align-items: center;
-        position: relative;
-        top: -50px; }
-      .service__about__img-box {
-        position: absolute; }
-      .service__about__img {
-        inset: 120px 0 100px -70px; }
-      .service__about__heading {
-        width: 145%;
-        margin-bottom: 10px; }
-      .service__about__text {
-        font-size: 2rem;
-        max-width: 150%;
-        width: 145%; }
-      .service__about__benefits-list {
-        position: relative;
-        left: -140px; } }
+    right: 16px; }
 
 main.alinhamento-e-geometria {
   --img: url("../..//media/images/service-1.jpg"); }
