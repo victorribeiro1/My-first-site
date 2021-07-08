@@ -2609,6 +2609,8 @@ body {
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
+      position: relative;
+      top: -60px;
       padding: 0 15px; }
       .service__about__content-box--mobile .service__about__img-box {
         display: flex; }
