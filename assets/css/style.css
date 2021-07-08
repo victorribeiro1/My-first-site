@@ -2610,19 +2610,35 @@ body {
       align-items: center;
       justify-content: space-between;
       position: relative;
-      top: -60px;
+      top: -80px;
       padding: 0 15px; }
       .service__about__content-box--mobile .service__about__img-box {
         display: flex; }
-  .service__about__list-and-link {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around; }
+      .service__about__content-box--mobile .service__about__benefits-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; }
+        .service__about__content-box--mobile .service__about__benefits-list li:not(:last-of-type) {
+          margin-bottom: 15px; }
+      .service__about__content-box--mobile .service__about__button, .service__about__content-box--mobile .service__about__button:visited, .service__about__content-box--mobile .service__about__button:link {
+        text-decoration: none;
+        transform: translateX(9%) translateY(-10px); }
+        .service__about__content-box--mobile .service__about__button .button-secondary__text, .service__about__content-box--mobile .service__about__button:visited .button-secondary__text, .service__about__content-box--mobile .service__about__button:link .button-secondary__text {
+          font-size: 2.3rem; }
+  .service__about__content-top {
+    margin-bottom: 20px; }
+    .service__about__content-top h1 {
+      margin-bottom: 10px; }
   .service__about__content-bottom {
     display: flex;
     width: 100%;
     justify-content: space-between;
     position: relative; }
+  .service__about__button-box {
+    position: relative;
+    bottom: -23px;
+    z-index: 2;
+    width: 100%; }
   .service__about__heading {
     font-size: 3.7rem;
     color: var(--color-primary-opposite);
