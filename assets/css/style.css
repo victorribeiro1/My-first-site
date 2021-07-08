@@ -2799,10 +2799,21 @@ main .service__header {
     left: 180px !important; }
   @media only screen and (max-width: 39.375em) {
     main .service__header {
-      min-height: 200px;
-      height: 10vh !important; }
+      min-height: 150px;
+      height: 15vh !important; }
+      main .service__header__heading-box-box {
+        width: 100vw;
+        right: 0;
+        top: -10px;
+        padding-left: 10px; }
       main .service__header__heading {
-        font-size: 3rem;
+        font-size: 17px;
+        letter-spacing: 4px;
+        white-space: normal; }
+      main .service__header__alert {
+        font-size: 13px;
+        letter-spacing: 8px;
+        padding-left: 0;
         white-space: normal; }
       main .service__header__button {
         display: none !important; } }
