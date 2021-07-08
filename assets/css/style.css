@@ -2607,7 +2607,7 @@ body {
       align-items: center;
       justify-content: space-between;
       position: relative;
-      top: -80px;
+      top: -100px;
       padding: 0 15px; }
       .service__about__content-box--mobile .service__about__img-box {
         display: flex;
@@ -2799,21 +2799,25 @@ main .service__header {
     left: 180px !important; }
   @media only screen and (max-width: 39.375em) {
     main .service__header {
-      min-height: 150px;
+      min-height: 200px;
       height: 15vh !important; }
       main .service__header__heading-box-box {
         width: 100vw;
+        height: 110px;
         right: 0;
         top: -10px;
-        padding-left: 10px; }
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; }
       main .service__header__heading {
-        font-size: 17px;
+        font-size: 19px;
         letter-spacing: 4px;
         white-space: normal; }
       main .service__header__alert {
         font-size: 13px;
-        letter-spacing: 8px;
-        padding-left: 0;
+        letter-spacing: 7px;
+        padding-left: 2px;
         white-space: normal; }
       main .service__header__button {
         display: none !important; } }

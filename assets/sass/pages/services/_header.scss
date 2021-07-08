@@ -125,29 +125,34 @@ main {
             }
 
             @media only screen and (max-width: $seventh-breakpoint) {
-                min-height: 150px;
+                min-height: 200px;
                 height: 15vh !important;
                 // display: none;
 
                 &__heading-box-box {
                     width: 100vw;
+                    height: 110px;
                     // border: 1px solid red;
                     right: 0;
                     top: -10px;
                     padding-left: 10px;
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
                 }
 
                 &__heading {
-                    font-size: 17px;
+                    font-size: 19px;
                     letter-spacing: 4px;
                     white-space: normal;
                 }
 
                 &__alert {
                     font-size: 13px;
-                    letter-spacing: 8px;
+                    letter-spacing: 7px;
                     // font-weight: 100;
-                    padding-left: 0;
+                    padding-left: 2px;
                     white-space: normal;
                 }
 
