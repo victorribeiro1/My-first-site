@@ -2683,8 +2683,8 @@ body {
       text-transform: uppercase;
       font-size: 1.7rem; }
   .service__about__img-box {
-    width: 35%;
-    height: 210px;
+    width: 140px;
+    height: 200px;
     display: none; }
   .service__about__img {
     border-radius: 1px;
