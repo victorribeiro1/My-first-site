@@ -2577,7 +2577,7 @@ body {
 
 .service__about {
   background-color: var(--color-zero);
-  min-height: 600px;
+  min-height: 580px;
   display: flex;
   justify-content: space-around;
   align-items: center;
