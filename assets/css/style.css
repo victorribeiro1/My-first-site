@@ -2577,7 +2577,7 @@ body {
 
 .service__about {
   background-color: var(--color-zero);
-  min-height: 550px;
+  min-height: 580px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -2624,6 +2624,9 @@ body {
         justify-content: space-around; }
         .service__about__content-box--mobile .service__about__benefits-list li:not(:last-of-type) {
           margin-bottom: 15px; }
+        .service__about__content-box--mobile .service__about__benefits-list li span {
+          font-size: 2rem;
+          max-width: 80%; }
       .service__about__content-box--mobile .service__about__button, .service__about__content-box--mobile .service__about__button:visited, .service__about__content-box--mobile .service__about__button:link {
         text-decoration: none;
         transform: translateX(9%) translateY(-10px);
