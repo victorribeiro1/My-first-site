@@ -2,8 +2,8 @@
     &__about {
         background-color: var(--color-zero);
         // padding: 7rem 0;
-        min-height: 500px;
-        height: 85vh;
+        min-height: 520px;
+        // height: 85vh;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -50,7 +50,7 @@
                 justify-content: space-between;
 
                 position: relative;
-                top: -100px;
+                top: -70px;
 
                 padding: 0 15px;
 
@@ -106,8 +106,8 @@
                         }
                     }
                 }
-
             }
+
             @media only screen and (max-width: $seventh-breakpoint) {
                 &--desktop {
                     display: none;
@@ -124,7 +124,6 @@
     
             }
         }
-
 
         &__content-top {
             h1 {

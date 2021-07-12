@@ -2577,8 +2577,7 @@ body {
 
 .service__about {
   background-color: var(--color-zero);
-  min-height: 500px;
-  height: 85vh;
+  min-height: 520px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -2607,7 +2606,7 @@ body {
       align-items: center;
       justify-content: space-between;
       position: relative;
-      top: -100px;
+      top: -70px;
       padding: 0 15px; }
       .service__about__content-box--mobile .service__about__img-box {
         display: flex;
