@@ -303,6 +303,10 @@
 
     padding: 3rem 20px 0 20px;
 
+    &.no-border-top &__links-area  {
+        border-top: none;
+    }
+
     &__links-area {
         border-top: 1px solid #222;
         border-bottom: 1px solid #222;

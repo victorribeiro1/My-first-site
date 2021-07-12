@@ -1188,6 +1188,8 @@ body {
   @media only screen and (max-width: 700px) {
     .footer-mobile {
       display: block; } }
+  .footer-mobile.no-border-top .footer-mobile__links-area {
+    border-top: none; }
   .footer-mobile__links-area {
     border-top: 1px solid #222;
     border-bottom: 1px solid #222;
