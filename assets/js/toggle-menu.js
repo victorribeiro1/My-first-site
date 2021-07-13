@@ -12,6 +12,7 @@ toggleMenuButtons.forEach(toggleMenuButton => {
         toggleMenus.forEach(toggleMenu => {
             toggleMenu.classList.toggle('active')
         })
+        document.querySelector('.toggle-menu-mobile').classList.toggle('active')
         
         toggleInputs.forEach(toggleInput => {
             toggleInput.classList.toggle('checked')
@@ -28,5 +29,6 @@ AllLinks.forEach(link => {
             toggleMenu.classList.remove('active')
         })
         htmlTag.classList.remove('menu-is-active')
+        document.querySelector('.toggle-menu-mobile').classList.remove('active')
     })
 })

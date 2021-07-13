@@ -3,6 +3,9 @@ const toggleMenuMobileButton = document.querySelector('.toggle-menu-mobile__butt
 
 toggleMenuMobileButton.addEventListener('click', () => {
     toggleMenuMobile.classList.toggle('active')
+    document.querySelector('.toggle-menu').classList.toggle('active')
+    document.querySelector('#toggle').classList.toggle('checked')
+
     htmlTag.classList.toggle('menu-is-active')
 })
 
