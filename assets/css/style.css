@@ -3236,21 +3236,24 @@ main .service__header {
       height: 120%;
       width: 80%; } }
   @media only screen and (max-width: 33em) {
+    .contact {
+      margin-bottom: 30px; }
     .contact__additional-informations-box {
       flex-direction: column;
       align-items: center;
       padding: 0;
-      padding-top: 30px; }
+      padding-top: 60px; }
     .contact__additional-information {
       max-width: 80%;
       align-items: flex-start; }
       .contact__additional-information__text {
         position: relative;
-        top: -18px; }
+        top: -22px; }
       .contact__additional-information :first-of-type {
-        margin-bottom: 25px; }
+        margin-bottom: 30px; }
     .contact__gradient-background {
-      clip-path: polygon(0% 30%, 100% 10%, 100% 100%, 0% 100%); } }
+      clip-path: polygon(0% 35%, 100% 27%, 100% 100%, 0% 100%);
+      padding-bottom: 1200px; } }
   @media only screen and (max-width: 28em) {
     .contact__heading {
       font-size: 3.5rem;
