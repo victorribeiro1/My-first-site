@@ -2081,8 +2081,8 @@ body {
     overflow: hidden;
     transform: translateY(50px) scale(0.8); }
     @media only screen and (max-width: 51.25em) {
-      .faq__question-and-answer-box {
-        margin-bottom: 6rem; } }
+      .faq__question-and-answer-box:not(:last-of-type) {
+        margin-bottom: 8rem; } }
     .faq__question-and-answer-box::before {
       content: "";
       border-radius: 999px;
