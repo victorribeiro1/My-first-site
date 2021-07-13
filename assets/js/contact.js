@@ -2,7 +2,7 @@ const contactButton = document.querySelector('.contact__form__button')
 const servicesSelect = document.querySelector('.contact__form__select--services')
 const mediasSelect = document.querySelector('.contact__form__select--medias')
 
-contactButton.addEventListener('mouseenter', e => {
+contactButton.addEventListener('click', e => {
     e.preventDefault()
 
     const service = servicesSelect.value
@@ -50,7 +50,6 @@ function directUser() {
                 window.location.href = `http://api.whatsapp.com/send?phone=${number}`;
             break;
             case "direct":
-                alert('ok')
                 window.location.href = "https://www.instagram.com/direct/t/340282366841710300949128354136017563099";
             break;
         default:
