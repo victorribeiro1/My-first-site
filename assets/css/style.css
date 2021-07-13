@@ -3083,8 +3083,8 @@ main .service__header {
     font-family: 'nunito-extraLight';
     text-transform: uppercase;
     color: var(--color-primary-opposite);
-    letter-spacing: 2px;
-    font-weight: 100; }
+    font-weight: var(--font-weight);
+    letter-spacing: 2px; }
   .contact__heading {
     font-weight: 1000;
     color: var(--color-primary-opposite);
@@ -3092,8 +3092,8 @@ main .service__header {
     letter-spacing: 3px;
     margin: .5rem 0 1.5rem 0; }
   .contact__instruction-text {
-    color: var(--color-secondary-opposite);
-    color: #fff;
+    color: var(--color-zero-opposite);
+    font-weight: var(--font-weight);
     letter-spacing: 2px;
     font-size: 1.5rem;
     text-align: center;
@@ -3158,8 +3158,13 @@ main .service__header {
       color: #51557B;
       border-radius: 5px;
       cursor: pointer; }
-    .contact__form__button {
-      background: linear-gradient(to left, #ce1d1d 24%, #760086 94%);
+    .contact__form__button, .contact__form__button:link, .contact__form__button:visited {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      line-height: 50px;
+      background: #f71d1d;
+      background: linear-gradient(90deg, #d61919 0%, #e23737 46%, #f65959 100%);
       border-radius: 5px;
       border: 0;
       cursor: pointer;
@@ -3173,7 +3178,7 @@ main .service__header {
       letter-spacing: 1px; }
   .contact__img {
     height: auto;
-    width: 57rem; }
+    width: 50rem; }
   .contact__additional-informations-box {
     width: 100%;
     padding: 10rem 0;
@@ -3211,9 +3216,9 @@ main .service__header {
   .contact__gradient-background {
     position: absolute;
     box-shadow: -2px -5px 10px 20px white;
-    background-color: #cf2020;
-    background: linear-gradient(to right, #ce1d1d 24%, #760086 94%);
+    background: #f71d1d;
+    background: linear-gradient(90deg, #d61919 0%, #e23737 46%, #f65959 100%);
     height: 100rem;
     width: 100%;
     z-index: -1;
-    clip-path: polygon(0% 28%, 100% 0%, 100% 100%, 0% 100%); }
+    clip-path: polygon(0% 25%, 100% 0%, 100% 100%, 0% 100%); }
