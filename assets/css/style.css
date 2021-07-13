@@ -2097,32 +2097,273 @@ body {
       height: 14.5rem; }
       .faq__question-and-answer-box:hover .faq__arrow {
         transform: rotate(225deg); }
+    @media (max-width: 1288px) {
+      .faq__question-and-answer-box:nth-of-type(4) {
+        height: 7.5rem; }
+        .faq__question-and-answer-box:nth-of-type(4):hover {
+          height: 17.5rem !important; }
+        .faq__question-and-answer-box:nth-of-type(4) .faq__arrow {
+          top: 26px; } }
+    @media (max-width: 1016px) {
+      .faq__question-and-answer-box:nth-of-type(3) {
+        height: 7.5rem; }
+        .faq__question-and-answer-box:nth-of-type(3):hover {
+          height: 19rem !important; }
+        .faq__question-and-answer-box:nth-of-type(3) .faq__arrow {
+          top: 26px; } }
+    @media (max-width: 865px) {
+      .faq__question-and-answer-box:nth-of-type(2) {
+        height: 10rem; }
+        .faq__question-and-answer-box:nth-of-type(2):hover {
+          height: 20.5rem !important; }
+        .faq__question-and-answer-box:nth-of-type(2) .faq__arrow {
+          top: 26px; }
+      .faq__question-and-answer-box:nth-of-type(5) {
+        height: 7.6rem; }
+        .faq__question-and-answer-box:nth-of-type(5):hover {
+          height: 18rem !important; }
+        .faq__question-and-answer-box:nth-of-type(5) .faq__arrow {
+          top: 26px; } }
+    @media (max-width: 805px) {
+      .faq__question-and-answer-box:nth-of-type(2) {
+        height: 7.5rem; }
+        .faq__question-and-answer-box:nth-of-type(2):hover {
+          height: 17rem !important; }
+        .faq__question-and-answer-box:nth-of-type(2) .faq__arrow {
+          top: 26px; } }
+    @media (max-width: 765px) {
+      .faq__question-and-answer-box:nth-of-type(1) {
+        height: 7.8rem; }
+        .faq__question-and-answer-box:nth-of-type(1):hover {
+          height: 17.6rem !important; }
+        .faq__question-and-answer-box:nth-of-type(1) .faq__arrow {
+          top: 26px; }
+      .faq__question-and-answer-box:nth-of-type(2) {
+        height: 7.8rem; }
+        .faq__question-and-answer-box:nth-of-type(2):hover {
+          height: 19rem !important; }
+        .faq__question-and-answer-box:nth-of-type(2) .faq__arrow {
+          top: 26px; }
+      .faq__question-and-answer-box:nth-of-type(3) {
+        height: 7.6rem; }
+        .faq__question-and-answer-box:nth-of-type(3):hover {
+          height: 20rem !important; }
+        .faq__question-and-answer-box:nth-of-type(3) .faq__arrow {
+          top: 26px; }
+      .faq__question-and-answer-box:nth-of-type(4) {
+        height: 8rem; }
+        .faq__question-and-answer-box:nth-of-type(4):hover {
+          height: 19rem !important; }
+        .faq__question-and-answer-box:nth-of-type(4) .faq__arrow {
+          top: 26px; } }
+    @media (max-width: 660px) {
+      .faq__question-and-answer-box:nth-of-type(5) {
+        height: 7.9rem; }
+        .faq__question-and-answer-box:nth-of-type(5):hover {
+          height: 19rem !important; }
+        .faq__question-and-answer-box:nth-of-type(5) .faq__arrow {
+          top: 26px; } }
+    @media (max-width: 630px) {
+      .faq__question-and-answer-box:nth-of-type(2) {
+        height: 8.3rem; }
+        .faq__question-and-answer-box:nth-of-type(2):hover {
+          height: 23rem !important; }
+        .faq__question-and-answer-box:nth-of-type(2) .faq__arrow {
+          top: 26px; }
+      .faq__question-and-answer-box:nth-of-type(3) {
+        height: 7.6rem; }
+        .faq__question-and-answer-box:nth-of-type(3):hover {
+          height: 24rem !important; }
+        .faq__question-and-answer-box:nth-of-type(3) .faq__arrow {
+          top: 26px; }
+      .faq__question-and-answer-box:nth-of-type(4) {
+        height: 8rem; }
+        .faq__question-and-answer-box:nth-of-type(4):hover {
+          height: 21.8rem !important; }
+        .faq__question-and-answer-box:nth-of-type(4) .faq__arrow {
+          top: 26px; } }
     @media (max-width: 567px) {
       .faq__question-and-answer-box:nth-of-type(1) {
         height: 11rem; }
         .faq__question-and-answer-box:nth-of-type(1):hover {
-          height: 22.6rem !important; }
+          height: 25rem !important; }
         .faq__question-and-answer-box:nth-of-type(1) .faq__arrow {
+          top: 26px; }
+      .faq__question-and-answer-box:nth-of-type(3) {
+        height: 7.6rem; }
+        .faq__question-and-answer-box:nth-of-type(3):hover {
+          height: 29rem !important; }
+        .faq__question-and-answer-box:nth-of-type(3) .faq__arrow {
           top: 26px; } }
-    @media (max-width: 613px) {
-      .faq__question-and-answer-box:nth-of-type(2) {
-        height: 11rem; }
-        .faq__question-and-answer-box:nth-of-type(2):hover {
-          height: 26rem !important; }
-        .faq__question-and-answer-box:nth-of-type(2) .faq__arrow {
-          top: 26px; } }
-    @media (max-width: 557px) {
+    @media (max-width: 555px) {
       .faq__question-and-answer-box:nth-of-type(3) {
         height: 11rem; }
         .faq__question-and-answer-box:nth-of-type(3):hover {
-          height: 29.4rem !important; }
+          height: 29rem !important; }
         .faq__question-and-answer-box:nth-of-type(3) .faq__arrow {
           top: 26px; } }
-    @media (max-width: 620px) {
-      .faq__question-and-answer-box:nth-of-type(4):hover {
-        height: 22rem !important; }
-      .faq__question-and-answer-box:nth-of-type(4) .faq__arrow {
-        top: 26px; } }
+    @media (max-width: 510px) {
+      .faq__question-and-answer-box:nth-of-type(2) {
+        height: 11.5rem; }
+        .faq__question-and-answer-box:nth-of-type(2):hover {
+          height: 29rem !important; }
+        .faq__question-and-answer-box:nth-of-type(2) .faq__arrow {
+          top: 26px; }
+      .faq__question-and-answer-box:nth-of-type(3) {
+        height: 11rem; }
+        .faq__question-and-answer-box:nth-of-type(3):hover {
+          height: 32rem !important; }
+        .faq__question-and-answer-box:nth-of-type(3) .faq__arrow {
+          top: 26px; } }
+    @media (max-width: 490px) {
+      .faq__question-and-answer-box:nth-of-type(4) {
+        height: 8rem; }
+        .faq__question-and-answer-box:nth-of-type(4):hover {
+          height: 26rem !important; }
+        .faq__question-and-answer-box:nth-of-type(4) .faq__arrow {
+          top: 26px; }
+      .faq__question-and-answer-box:nth-of-type(5) {
+        height: 7.9rem; }
+        .faq__question-and-answer-box:nth-of-type(5):hover {
+          height: 22rem !important; }
+        .faq__question-and-answer-box:nth-of-type(5) .faq__arrow {
+          top: 26px; } }
+    @media (max-width: 457px) {
+      .faq__question-and-answer-box:nth-of-type(5) {
+        height: 11.5rem; }
+        .faq__question-and-answer-box:nth-of-type(5):hover {
+          height: 26rem !important; }
+        .faq__question-and-answer-box:nth-of-type(5) .faq__arrow {
+          top: 26px; } }
+    @media (max-width: 445px) {
+      .faq__question-and-answer-box:nth-of-type(1) {
+        height: 11rem; }
+        .faq__question-and-answer-box:nth-of-type(1):hover {
+          height: 29rem !important; }
+        .faq__question-and-answer-box:nth-of-type(1) .faq__arrow {
+          top: 26px; }
+      .faq__question-and-answer-box:nth-of-type(2) {
+        height: 11rem; }
+        .faq__question-and-answer-box:nth-of-type(2):hover {
+          height: 31.5rem !important; }
+        .faq__question-and-answer-box:nth-of-type(2) .faq__arrow {
+          top: 26px; }
+      .faq__question-and-answer-box:nth-of-type(3) {
+        height: 11rem; }
+        .faq__question-and-answer-box:nth-of-type(3):hover {
+          height: 37rem !important; }
+        .faq__question-and-answer-box:nth-of-type(3) .faq__arrow {
+          top: 26px; }
+      .faq__question-and-answer-box:nth-of-type(4) {
+        height: 8rem; }
+        .faq__question-and-answer-box:nth-of-type(4):hover {
+          height: 29rem !important; }
+        .faq__question-and-answer-box:nth-of-type(4) .faq__arrow {
+          top: 26px; } }
+    @media (max-width: 415px) {
+      .faq__question-and-answer-box:nth-of-type(5) {
+        height: 11.5rem; }
+        .faq__question-and-answer-box:nth-of-type(5):hover {
+          height: 30rem !important; }
+        .faq__question-and-answer-box:nth-of-type(5) .faq__arrow {
+          top: 26px; } }
+    @media (max-width: 389px) {
+      .faq__question-and-answer-box:nth-of-type(4) {
+        height: 11.5rem; }
+        .faq__question-and-answer-box:nth-of-type(4):hover {
+          height: 33rem !important; }
+        .faq__question-and-answer-box:nth-of-type(4) .faq__arrow {
+          top: 26px; } }
+    @media (max-width: 375px) {
+      .faq__question-and-answer-box:nth-of-type(3) {
+        height: 11rem; }
+        .faq__question-and-answer-box:nth-of-type(3):hover {
+          height: 42rem !important; }
+        .faq__question-and-answer-box:nth-of-type(3) .faq__arrow {
+          top: 26px; } }
+    @media (max-width: 360px) {
+      .faq__question-and-answer-box:nth-of-type(1) {
+        height: 11rem; }
+        .faq__question-and-answer-box:nth-of-type(1):hover {
+          height: 32rem !important; }
+        .faq__question-and-answer-box:nth-of-type(1) .faq__arrow {
+          top: 26px; }
+      .faq__question-and-answer-box:nth-of-type(2) {
+        height: 11rem; }
+        .faq__question-and-answer-box:nth-of-type(2):hover {
+          height: 35.5rem !important; }
+        .faq__question-and-answer-box:nth-of-type(2) .faq__arrow {
+          top: 26px; }
+      .faq__question-and-answer-box:nth-of-type(4) {
+        height: 11.5rem; }
+        .faq__question-and-answer-box:nth-of-type(4):hover {
+          height: 37rem !important; }
+        .faq__question-and-answer-box:nth-of-type(4) .faq__arrow {
+          top: 26px; } }
+    @media (max-width: 340px) {
+      .faq__question-and-answer-box:nth-of-type(2) {
+        height: 15rem; }
+        .faq__question-and-answer-box:nth-of-type(2):hover {
+          height: 44rem !important; }
+        .faq__question-and-answer-box:nth-of-type(2) .faq__arrow {
+          top: 26px; }
+      .faq__question-and-answer-box:nth-of-type(3) {
+        height: 15rem; }
+        .faq__question-and-answer-box:nth-of-type(3):hover {
+          height: 45.5rem !important; }
+        .faq__question-and-answer-box:nth-of-type(3) .faq__arrow {
+          top: 26px; }
+      .faq__question-and-answer-box:nth-of-type(4) {
+        height: 11.5rem; }
+        .faq__question-and-answer-box:nth-of-type(4):hover {
+          height: 39rem !important; }
+        .faq__question-and-answer-box:nth-of-type(4) .faq__arrow {
+          top: 26px; }
+      .faq__question-and-answer-box:nth-of-type(5) {
+        height: 11.5rem; }
+        .faq__question-and-answer-box:nth-of-type(5):hover {
+          height: 33rem !important; }
+        .faq__question-and-answer-box:nth-of-type(5) .faq__arrow {
+          top: 26px; } }
+    @media (max-width: 330px) {
+      .faq__question-and-answer-box:nth-of-type(1) {
+        height: 15rem; }
+        .faq__question-and-answer-box:nth-of-type(1):hover {
+          height: 39.7rem !important; }
+        .faq__question-and-answer-box:nth-of-type(1) .faq__arrow {
+          top: 26px; }
+      .faq__question-and-answer-box:nth-of-type(3) {
+        height: 15rem; }
+        .faq__question-and-answer-box:nth-of-type(3):hover {
+          height: 49rem !important; }
+        .faq__question-and-answer-box:nth-of-type(3) .faq__arrow {
+          top: 26px; } }
+    @media (max-width: 301px) {
+      .faq__question-and-answer-box:nth-of-type(5) {
+        height: 14.6rem; }
+        .faq__question-and-answer-box:nth-of-type(5):hover {
+          height: 37rem !important; }
+        .faq__question-and-answer-box:nth-of-type(5) .faq__arrow {
+          top: 26px; } }
+    @media (max-width: 290px) {
+      .faq__question-and-answer-box:nth-of-type(1) {
+        height: 15rem; }
+        .faq__question-and-answer-box:nth-of-type(1):hover {
+          height: 43rem !important; }
+        .faq__question-and-answer-box:nth-of-type(1) .faq__arrow {
+          top: 26px; }
+      .faq__question-and-answer-box:nth-of-type(3) {
+        height: 15rem; }
+        .faq__question-and-answer-box:nth-of-type(3):hover {
+          height: 51rem !important; }
+        .faq__question-and-answer-box:nth-of-type(3) .faq__arrow {
+          top: 26px; }
+      .faq__question-and-answer-box:nth-of-type(4) {
+        height: 11.5rem; }
+        .faq__question-and-answer-box:nth-of-type(4):hover {
+          height: 42rem !important; }
+        .faq__question-and-answer-box:nth-of-type(4) .faq__arrow {
+          top: 26px; } }
   .faq__question-box {
     display: flex;
     justify-content: flex-start;
@@ -2137,12 +2378,12 @@ body {
     max-width: 83%; }
   .faq__arrow {
     margin: 0 0 0 2rem;
-    height: 1.4rem;
-    width: 1.4rem;
+    height: 1.1rem;
+    width: 1.1rem;
     display: inline-block;
     position: absolute;
     right: 45px;
-    top: 18px;
+    top: 25px;
     border-bottom: 1px solid var(--color-primary-opposite);
     border-right: 1px solid var(--color-primary-opposite);
     transform: rotate(45deg);

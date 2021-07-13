@@ -164,11 +164,11 @@
             }
         }
 
-        @media (max-width: 567px) {
-            &:nth-of-type(1) {
-                height: 11rem;
+        @media (max-width: 1288px) {
+            &:nth-of-type(4) {
+                height: 7.5rem;
                 &:hover {
-                    height: 22.6rem !important;
+                    height: 17.5rem !important;
                 }
 
                 .faq__arrow {
@@ -176,10 +176,219 @@
                 }
             }
         }
+        @media (max-width: 1016px) {
+            &:nth-of-type(3) {
+                height: 7.5rem;
+                &:hover {
+                    height: 19rem !important;
+                }
 
-        @media (max-width: 613px) {
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+        }
+        @media (max-width: 865px) {
             &:nth-of-type(2) {
+                height: 10rem;
+                &:hover {
+                    height: 20.5rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+            &:nth-of-type(5) {
+                height: 7.6rem;
+                &:hover {
+                    height: 18rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+        }
+        @media (max-width: 805px) {
+            &:nth-of-type(2) {
+                height: 7.5rem;
+                &:hover {
+                    height: 17rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+        }
+        @media (max-width: 765px) {
+            &:nth-of-type(1) {
+                height: 7.8rem;
+                &:hover {
+                    height: 17.6rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+            &:nth-of-type(2) {
+                height: 7.8rem;
+                &:hover {
+                    height: 19rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+            &:nth-of-type(3) {
+                height: 7.6rem;
+                &:hover {
+                    height: 20rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+            &:nth-of-type(4) {
+                height: 8rem;
+                &:hover {
+                    height: 19rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+        }
+        @media (max-width: 660px) {
+            &:nth-of-type(5) {
+                height: 7.9rem;
+                &:hover {
+                    height: 19rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+        }
+        @media (max-width: 630px) {
+            &:nth-of-type(2) {
+                height: 8.3rem;
+                &:hover {
+                    height: 23rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+            &:nth-of-type(3) {
+                height: 7.6rem;
+                &:hover {
+                    height: 24rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+            &:nth-of-type(4) {
+                height: 8rem;
+                &:hover {
+                    height: 21.8rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+        }
+        @media (max-width: 567px) {
+            &:nth-of-type(1) {
                 height: 11rem;
+                &:hover {
+                    height: 25rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+            &:nth-of-type(3) {
+                height: 7.6rem;
+                &:hover {
+                    height: 29rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+        }
+        @media (max-width: 555px) {
+            &:nth-of-type(3) {
+                height: 11rem;
+                &:hover {
+                    height: 29rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+        }
+        @media (max-width: 510px) {
+            &:nth-of-type(2) {
+                height: 11.5rem;
+                &:hover {
+                    height: 29rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+            &:nth-of-type(3) {
+                height: 11rem;
+                &:hover {
+                    height: 32rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+        }
+        @media (max-width: 490px) {
+            &:nth-of-type(4) {
+                height: 8rem;
+                &:hover {
+                    height: 26rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+            &:nth-of-type(5) {
+                height: 7.9rem;
+                &:hover {
+                    height: 22rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+        }
+        @media (max-width: 457px) {
+            &:nth-of-type(5) {
+                height: 11.5rem;
                 &:hover {
                     height: 26rem !important;
                 }
@@ -189,12 +398,41 @@
                 }
             }
         }
+        @media (max-width: 445px) {
+            &:nth-of-type(1) {
+                height: 11rem;
+                &:hover {
+                    height: 29rem !important;
+                }
 
-        @media (max-width: 557px) {
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+            &:nth-of-type(2) {
+                height: 11rem;
+                &:hover {
+                    height: 31.5rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
             &:nth-of-type(3) {
                 height: 11rem;
                 &:hover {
-                    height: 29.4rem !important;
+                    height: 37rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+            &:nth-of-type(4) {
+                height: 8rem;
+                &:hover {
+                    height: 29rem !important;
                 }
 
                 .faq__arrow {
@@ -202,11 +440,175 @@
                 }
             }
         }
-
-        @media (max-width: 620px) {
-            &:nth-of-type(4) {
+        @media (max-width: 415px) {
+            &:nth-of-type(5) {
+                height: 11.5rem;
                 &:hover {
-                    height: 22rem !important;
+                    height: 30rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+        }
+        @media (max-width: 389px) {
+            &:nth-of-type(4) {
+                height: 11.5rem;
+                &:hover {
+                    height: 33rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+        }
+        @media (max-width: 375px) {
+            &:nth-of-type(3) {
+                height: 11rem;
+                &:hover {
+                    height: 42rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+        }
+        @media (max-width: 360px) {
+            &:nth-of-type(1) {
+                height: 11rem;
+                &:hover {
+                    height: 32rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+            &:nth-of-type(2) {
+                height: 11rem;
+                &:hover {
+                    height: 35.5rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+            &:nth-of-type(4) {
+                height: 11.5rem;
+                &:hover {
+                    height: 37rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+        }
+        @media (max-width: 340px) {
+            &:nth-of-type(2) {
+                height: 15rem;
+                &:hover {
+                    height: 44rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+            &:nth-of-type(3) {
+                height: 15rem;
+                &:hover {
+                    height: 45.5rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+            &:nth-of-type(4) {
+                height: 11.5rem;
+                &:hover {
+                    height: 39rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+            &:nth-of-type(5) {
+                height: 11.5rem;
+                &:hover {
+                    height: 33rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+        }
+        @media (max-width: 330px) {
+            &:nth-of-type(1) {
+                height: 15rem;
+                &:hover {
+                    height: 39.7rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+            &:nth-of-type(3) {
+                height: 15rem;
+                &:hover {
+                    height: 49rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+        }
+        @media (max-width: 301px) {
+            &:nth-of-type(5) {
+                height: 14.6rem;
+                &:hover {
+                    height: 37rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+        }
+        @media (max-width: 290px) {
+            &:nth-of-type(1) {
+                height: 15rem;
+                &:hover {
+                    height: 43rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+            &:nth-of-type(3) {
+                height: 15rem;
+                &:hover {
+                    height: 51rem !important;
+                }
+
+                .faq__arrow {
+                    top: 26px;
+                }
+            }
+            &:nth-of-type(4) {
+                height: 11.5rem;
+                &:hover {
+                    height: 42rem !important;
                 }
 
                 .faq__arrow {
@@ -238,14 +640,14 @@
     &__arrow {
         margin: 0 0 0 2rem;
         
-        height: 1.4rem;
-        width: 1.4rem;
+        height: 1.1rem;
+        width:  1.1rem;
         
         display: inline-block;
 
         position: absolute;
         right: 45px;
-        top: 18px;
+        top: 25px;
 
         border-bottom: 1px solid var(--color-primary-opposite);
         border-right: 1px solid var(--color-primary-opposite);
