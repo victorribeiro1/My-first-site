@@ -50,6 +50,7 @@ function directUser() {
                 window.location.href = `http://api.whatsapp.com/send?phone=${number}`;
             break;
             case "direct":
+                alert('ok')
                 window.location.href = "https://www.instagram.com/direct/t/340282366841710300949128354136017563099";
             break;
         default:
