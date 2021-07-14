@@ -3074,7 +3074,6 @@ main .service__header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  min-width: 336px;
   overflow: hidden; }
   .contact__header {
     display: flex;
@@ -3295,3 +3294,10 @@ main .service__header {
     .contact__gradient-background {
       clip-path: polygon(0% 35%, 100% 27%, 100% 100%, 0% 100%);
       padding-bottom: 1200px; } }
+  @media only screen and (max-width: 29.0625em) {
+    .contact__heading {
+      letter-spacing: 2px; }
+    .contact__instruction-text {
+      max-width: 75%; }
+    .contact__form {
+      width: 90%; } }

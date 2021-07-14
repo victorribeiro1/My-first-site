@@ -6,7 +6,7 @@
     justify-content: flex-start;
     align-items: center;
 
-    min-width: 336px;
+    // min-width: 336px;
 
     overflow: hidden;
 
@@ -392,6 +392,19 @@
         &__gradient-background {
             clip-path: polygon(0% 35%, 100% 27%, 100% 100%, 0% 100%);
             padding-bottom: 1200px;
+        }
+    }
+    @media only screen and (max-width: 29.0625em) {
+        &__heading {
+            letter-spacing: 2px;
+        }
+
+        &__instruction-text {
+            max-width: 75%;
+        }
+        
+        &__form {
+            width: 90%;
         }
     }
 
