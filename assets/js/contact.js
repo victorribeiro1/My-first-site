@@ -57,7 +57,11 @@ function redirectUser() {
             break;
 
         case "direct":
-            window.open("tel:(+55) 11 99122-6633", "_blank");
+            window.open("https://www.instagram.com/aggaragemsp/", "_blank");
+            break;
+
+        case "tell":
+            window.location.href("tel:(+55) 11 99122-6633", "_blank");
             break;
 
         default:
