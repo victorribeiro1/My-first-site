@@ -188,6 +188,7 @@ html[current-theme='light'] {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;
   outline: none; }
   html.menu-is-active {
@@ -3166,9 +3167,6 @@ main .service__header {
       color: #51557B;
       border-radius: 5px;
       cursor: pointer; }
-      @media only screen and (max-width: 450px) {
-        .contact__form__option[value="tell"] {
-          display: block; } }
     .contact__form__button {
       display: block;
       text-align: center;

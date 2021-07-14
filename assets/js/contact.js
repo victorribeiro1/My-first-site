@@ -61,9 +61,10 @@ function redirectUser() {
             break;
 
         case "tell":
-            window.location.href("tel:(+55) 11 99122-6633", "_blank");
+            const phoneNumber = getPhoneNumber()
+            window.location.href = `tel:${phoneNumber}`;
             break;
-
+            
         default:
             break;
     }

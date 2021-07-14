@@ -155,13 +155,13 @@
 
             cursor: pointer;
 
-            &[value = "tell"] {
-                // display: none;
+            // &[value = "tell"] {
+            //     display: none;
 
-                @media only screen and (max-width: 450px) {
-                    display: block;
-                }
-            }
+            //     @media only screen and (max-width: 400px) {
+            //         display: block;
+            //     }
+            // }
         }
         
         &__button {
@@ -307,7 +307,7 @@
             }
         }
     }
-    
+
     @media only screen and (max-width: 51.25em) {
         &__heading {
             letter-spacing: 4px;
