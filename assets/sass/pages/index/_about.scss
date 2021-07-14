@@ -107,4 +107,57 @@
         font-size: 2.2rem;
         font-weight: var(--font-weight);
     }
+
+    @media only screen and (max-width: 38.125em) {
+        & {
+            height: auto;
+            // min-height: 550px;
+        }
+
+        &__header {
+            margin: 20px 0 0 0px;
+        }
+
+        &__text-area {
+            position: static;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__text-box {
+            order: 2;
+
+            position: relative !important;
+            top: 10px;
+
+            width: 80%;
+            
+            transform: none !important;
+
+            text-align: left;
+
+            margin-bottom: 50px;
+        }
+        
+        &__img-box {
+            width: 100%;
+        }
+
+        picture {
+            position: relative;
+            width: 100%;
+
+            margin: 250px 0 140px 0;
+        }
+        
+        &__img {
+            position: absolute;
+            left: 50%;
+
+            transform: translateX(-50%) !important;
+
+            width: 80%;
+
+        }
+    }
 }
