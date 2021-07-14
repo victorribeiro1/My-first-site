@@ -296,14 +296,29 @@
             }
         }
     }
-    @media only screen and (max-width: 33em) {
+    @media only screen and (max-width: 51.25em) {
+        &__form {
+            height: 55rem;
+            width:  68rem;
+        }
+    }
+    @media only screen and (max-width: 32em) {
         & {
             margin-bottom: 30px;
         }
 
+        &__subheading {
+            font-size: 2.3rem;
+        }
+
+        &__instruction-text {
+            font-size: 2rem;
+            max-width: 60%;
+        }
+
         &__form {
             height: 57rem;
-            width: 55rem;
+            width: 80%;
 
             &__hint{
                 font-size: 2.4rem;
