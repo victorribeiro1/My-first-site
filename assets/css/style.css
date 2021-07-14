@@ -3259,12 +3259,20 @@ main .service__header {
       padding-top: 60px; }
     .contact__additional-information {
       max-width: 80%;
-      align-items: flex-start; }
+      align-items: flex-start;
+      position: relative; }
+      .contact__additional-information__heading {
+        font-size: 2.6rem; }
       .contact__additional-information__text {
         position: relative;
-        top: -22px; }
+        top: -22px;
+        font-size: 2.1rem; }
       .contact__additional-information :first-of-type {
         margin-bottom: 30px; }
+      .contact__additional-information:nth-of-type(1) {
+        left: -10px; }
+      .contact__additional-information:nth-of-type(2) {
+        left: -4px; }
       .contact__additional-information__img--bolt {
         height: 6.5rem;
         width: 6.5rem;
