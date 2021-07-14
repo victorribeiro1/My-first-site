@@ -154,6 +154,14 @@
             border-radius: 5px;
 
             cursor: pointer;
+
+            &[value = "tell"] {
+                // display: none;
+
+                @media only screen and (max-width: 450px) {
+                    display: block;
+                }
+            }
         }
         
         &__button {
@@ -408,9 +416,9 @@
         }
     }
 
-    @media only screen and (max-width: 28em) {
+    @media only screen and (max-width: 25.625em) {
         &__heading {
-            // font-size: 3.5rem;
+            font-size: 3.5em;
         }
     }
 }

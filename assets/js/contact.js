@@ -4,11 +4,16 @@ const mediasSelect = document.querySelector('.contact__form__select--medias')
 
 contactButton.addEventListener('click', e => {
     e.preventDefault()
+    redirectUser()
+})
 
+function getSelectedMedia() {
+    return mediasSelect.value
+}
+
+function getPhoneNumber() {
     const service = servicesSelect.value
     let number
-
-    
 
     switch (service) {
         case "alinhamento-e-geometria":
@@ -30,34 +35,49 @@ contactButton.addEventListener('click', e => {
             break;
     }
 
-    directUser()
-
-})
-
-function getSelectedMedia() {
-    return mediasSelect.value
+    return number
 }
 
-function directUser() {
+function getVW() { //Viewport Width
+    return window.innerWidth
+}
+
+function redirectUser() {
     switch (getSelectedMedia()) {
         case "whatsapp":
-            number = "(+55) 11 95306-5563"
+            whatsAppRedirectionerManager()
             break;
-            case "e-mail":
-                window.open("https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNqskDXdrLVHxQwTtGLxrdpvrckhhFLVgNXJfjVvvpXphcTXJBDwZKRFxLPpzXlZTNZRjq", "_blank");
+
+        case "e-mail":
+            window.open("https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNqskDXdrLVHxQwTtGLxrdpvrckhhFLVgNXJfjVvvpXphcTXJBDwZKRFxLPpzXlZTNZRjq", "_blank");
             break;
-            case "messenger":
-                window.open("https://www.messenger.com/t/100109504772290/?messaging_source=source%3Apages%3Amessage_shortlink", "_blank");
-                break;
-                case "direct":
-                window.open("https://www.instagram.com/aggaragemsp/", "_blank");
+
+        case "messenger":
+            window.open("https://www.messenger.com/t/100109504772290/?messaging_source=source%3Apages%3Amessage_shortlink", "_blank");
             break;
+
+        case "direct":
+            window.open("tel:(+55) 11 99122-6633", "_blank");
+            break;
+
         default:
             break;
     }
 }
 
+function mobileRedirect() {
+    const phoneNumber = getPhoneNumber()
+    window.open(`https://wa.me/${phoneNumber}`, "_blank");
+}
 
+function desktopRedirect() {
+    const phoneNumber = getPhoneNumber()
+    window.open(`http://api.whatsapp.com/send?phone=${phoneNumber}`, "_blank");
+}
+
+function whatsAppRedirectionerManager() {
+    getVW() < 500 ? mobileRedirect() : desktopRedirec()
+}
 
 "(+55) 11 99002-7420"
 "(+55) 11 95306-5563"

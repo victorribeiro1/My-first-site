@@ -188,7 +188,6 @@ html[current-theme='light'] {
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;
   outline: none; }
   html.menu-is-active {
@@ -205,6 +204,10 @@ body {
   width: 100%;
   margin-right: 20rem;
   border: none; }
+  @media only screen and (max-width: 284px) {
+    body {
+      min-width: 284px;
+      overflow-x: scroll; } }
 
 ::selection {
   background-color: transparent;
@@ -3163,6 +3166,9 @@ main .service__header {
       color: #51557B;
       border-radius: 5px;
       cursor: pointer; }
+      @media only screen and (max-width: 450px) {
+        .contact__form__option[value="tell"] {
+          display: block; } }
     .contact__form__button {
       display: block;
       text-align: center;
@@ -3301,3 +3307,6 @@ main .service__header {
       max-width: 75%; }
     .contact__form {
       width: 90%; } }
+  @media only screen and (max-width: 25.625em) {
+    .contact__heading {
+      font-size: 3.5em; } }

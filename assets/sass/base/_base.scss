@@ -9,7 +9,7 @@
 html {
     scroll-behavior: smooth;
 
-    overflow-x: hidden;
+    // overflow-x: hidden;
 
     -webkit-tap-highlight-color: transparent;
     outline: none;
@@ -35,6 +35,11 @@ body {
     margin-right: 20rem;
 
     border: none;
+
+    @media only screen and (max-width: 284px) {
+        min-width: 284px;
+        overflow-x: scroll;
+    }
 }
 
 ::selection {
