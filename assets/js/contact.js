@@ -44,13 +44,13 @@ function directUser() {
             number = "(+55) 11 95306-5563"
             break;
             case "e-mail":
-                window.location.href = `http://api.whatsapp.com/send?phone=${number}`;
+                window.open("https://mail.google.com/mail/u/0/#inbox?compose=CllgCJNqskDXdrLVHxQwTtGLxrdpvrckhhFLVgNXJfjVvvpXphcTXJBDwZKRFxLPpzXlZTNZRjq", "_blank");
             break;
             case "messenger":
-                window.location.href = `http://api.whatsapp.com/send?phone=${number}`;
-            break;
-            case "direct":
-                window.location.href = "https://www.instagram.com/direct/t/340282366841710300949128354136017563099";
+                window.open("https://www.messenger.com/t/100109504772290/?messaging_source=source%3Apages%3Amessage_shortlink", "_blank");
+                break;
+                case "direct":
+                window.open("https://www.instagram.com/aggaragemsp/", "_blank");
             break;
         default:
             break;
