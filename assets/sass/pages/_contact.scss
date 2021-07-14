@@ -289,6 +289,10 @@
                 background: #e23737;
                 height: 120%;
                 width:  80%;
+                
+                &:hover {
+                    background: #8d0303f0;
+                }
             }
         }
     }
@@ -298,7 +302,7 @@
         }
 
         &__form {
-            height: 60rem;
+            height: 57rem;
             width: 55rem;
 
             &__hint{
