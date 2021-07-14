@@ -3309,4 +3309,11 @@ main .service__header {
       width: 90%; } }
   @media only screen and (max-width: 25.625em) {
     .contact__heading {
-      font-size: 3.5em; } }
+      font-size: 3.4em; } }
+  @media only screen and (max-width: 23.875em) {
+    .contact__heading {
+      font-size: 3.2em; }
+    .contact__subheading {
+      font-size: 1.8rem; }
+    .contact__instruction-text {
+      font-size: 1.8rem; } }
