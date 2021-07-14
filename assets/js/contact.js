@@ -28,7 +28,7 @@ function getPhoneNumber() {
         case "higienizacao-interna":
             number = "(+55) 11 95306-5563"
             break;
-        case "freio-para-carreta":
+        case "freios-para-carreta":
             number = "(+55) 11 93006-3018"
             break;
         default:
@@ -76,11 +76,5 @@ function desktopRedirect() {
 }
 
 function whatsAppRedirectionerManager() {
-    getVW() < 500 ? mobileRedirect() : desktopRedirec()
+    getVW() < 500 ? mobileRedirect() : desktopRedirect()
 }
-
-"(+55) 11 99002-7420"
-"(+55) 11 95306-5563"
-"(+55) 11 99002-7420"
-"(+55) 11 95306-5563"
-"(+55) 11 93006-3018"
