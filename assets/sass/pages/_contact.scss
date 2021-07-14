@@ -18,6 +18,9 @@
         align-items: center;
 
         margin-top: 4rem;
+
+        position: relative;
+        bottom: -5px;
     }
 
     &__subheading {
@@ -297,14 +300,8 @@
         }
     }
     @media only screen and (max-width: 51.25em) {
-        &__form {
-            height: 55rem;
-            width:  68rem;
-        }
-    }
-    @media only screen and (max-width: 32em) {
-        & {
-            margin-bottom: 30px;
+        &__heading {
+            letter-spacing: 4px;
         }
 
         &__subheading {
@@ -317,17 +314,27 @@
         }
 
         &__form {
-            height: 57rem;
-            width: 80%;
+            height: 55rem;
+            width:  68rem;
 
             &__hint{
                 font-size: 2.4rem;
                 width: 40%;
             }
-
+        
             &__select {
                 font-size: 2.2rem;
             }
+        }
+    }
+    @media only screen and (max-width: 32em) {
+        & {
+            margin-bottom: 30px;
+        }
+
+        &__form {
+            height: 57rem;
+            width: 80%;
 
             &__button {
                 background: #e23737;
@@ -390,8 +397,7 @@
 
     @media only screen and (max-width: 28em) {
         &__heading {
-            font-size: 3.5rem;
-            letter-spacing: normal;
+            // font-size: 3.5rem;
         }
     }
 }
