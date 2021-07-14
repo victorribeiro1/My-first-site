@@ -207,8 +207,7 @@ body {
   border: none; }
   @media only screen and (max-width: 284px) {
     body {
-      min-width: 284px;
-      overflow-x: scroll; } }
+      min-width: 284px; } }
 
 ::selection {
   background-color: transparent;

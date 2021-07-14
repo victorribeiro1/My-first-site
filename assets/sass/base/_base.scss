@@ -36,10 +36,10 @@ body {
 
     border: none;
 
-    @media only screen and (max-width: 284px) {
-        min-width: 284px;
-        overflow-x: scroll;
-    }
+    // @media only screen and (max-width: 284px) {
+        // min-width: 284px;
+        // overflow-x: scroll;
+    // }
 }
 
 ::selection {
