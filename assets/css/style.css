@@ -3074,7 +3074,7 @@ main .service__header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  min-width: 282px;
+  min-width: 336px;
   overflow: hidden; }
   .contact__header {
     display: flex;
@@ -3239,6 +3239,19 @@ main .service__header {
   @media only screen and (max-width: 33em) {
     .contact {
       margin-bottom: 30px; }
+    .contact__form {
+      height: 60rem;
+      width: 55rem; }
+      .contact__form__hint {
+        font-size: 2.4rem;
+        width: 40%; }
+      .contact__form__select {
+        font-size: 2.2rem; }
+      .contact__form__button {
+        background: #e23737;
+        height: 140%;
+        width: 100%;
+        font-size: 1.8rem; }
     .contact__additional-informations-box {
       flex-direction: column;
       align-items: center;
@@ -3252,6 +3265,10 @@ main .service__header {
         top: -22px; }
       .contact__additional-information :first-of-type {
         margin-bottom: 30px; }
+      .contact__additional-information__img--bolt {
+        height: 6.5rem;
+        width: 6.5rem;
+        transform: translateY(-15px) rotate(20deg) translateX(5px); }
     .contact__gradient-background {
       clip-path: polygon(0% 35%, 100% 27%, 100% 100%, 0% 100%);
       padding-bottom: 1200px; } }
