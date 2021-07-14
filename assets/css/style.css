@@ -205,9 +205,6 @@ body {
   width: 100%;
   margin-right: 20rem;
   border: none; }
-  @media only screen and (max-width: 284px) {
-    body {
-      min-width: 284px; } }
 
 ::selection {
   background-color: transparent;
@@ -1804,7 +1801,7 @@ body {
   .toggle-menu-mobile__footer {
     border-top: 1px solid #222;
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     width: 100%;
     transform: translateY(-24%);
     left: -9999px;
