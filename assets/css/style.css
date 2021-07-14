@@ -1515,7 +1515,7 @@ body {
 
 .toggle-menu {
   position: fixed;
-  top: 6.4rem;
+  top: 6.1rem;
   height: 10rem;
   width: 10rem;
   z-index: 8;
@@ -1679,6 +1679,7 @@ body {
   height: 0vh;
   overflow-y: visible;
   position: relative;
+  bottom: -4px;
   z-index: 1;
   transition: height 0s .5s; }
   .toggle-menu-mobile.active {

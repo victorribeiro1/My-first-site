@@ -20,7 +20,7 @@ function toggleNavVisibility() {
         })
         
         toggleMenuButtons2.forEach(toggleMenuButton2 => {
-            toggleMenuButton2.style.top = '-8px'
+            toggleMenuButton2.style.top = '-12px'
         })
 
     }
