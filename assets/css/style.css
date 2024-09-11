@@ -175,9 +175,9 @@ html[current-theme='light'] {
   --main-button-width: 21rem; }
 
 .slider {
-  --bg-img-header-1: url("url(../../../../media/images/truck.jpg");
-  --bg-img-header-2: url("url(../../../../media/images/car.jpg");
-  --bg-img-header-3: url("url(../../../../media/images/bulldozer.jpg"); }
+  --bg-img-header-1: url("url(../../../../media/images/truck.jpeg");
+  --bg-img-header-2: url("url(../../../../media/images/car.jpeg");
+  --bg-img-header-3: url("url(../../../../media/images/bulldozer.jpeg"); }
 
 *,
 *::before,
